@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Decibel Meter — Sound level &amp; daily noise dose</title>
 <meta name="description" content="Real-time sound level meter with daily noise dose tracking. Audio never leaves your iPhone.">
+<meta property="og:title" content="Decibel Meter — Sound level &amp; daily noise dose">
+<meta property="og:description" content="Real-time dB meter with a daily noise dose tracker to protect your hearing. Fully on-device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2645809444.github.io/decibelmeter/">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -19,30 +23,31 @@
   </div>
 </header>
 
-<main class="page wrap">
-  <div class="app-mark" style="background: var(--decibelmeter);">D</div>
-  <h1>Decibel Meter</h1>
-  <p class="subtitle">Real-time sound level meter with a daily noise dose tracker to help protect your hearing.</p>
+<main class="page wrap product-hero" style="--accent: var(--decibelmeter);">
+  <div class="app-mark reveal" style="background: var(--decibelmeter);">D</div>
+  <h1 class="reveal">Decibel Meter</h1>
+  <p class="subtitle reveal d1">Real-time sound level meter with a daily noise dose tracker to help protect your hearing.</p>
 
-  <div class="link-row">
-    <a class="btn primary" href="https://apps.apple.com/app/decibel-meter" rel="noopener">Download on the App Store</a>
+  <div class="link-row reveal d2">
+    <a class="btn primary disabled" aria-disabled="true">App Store — Coming Soon</a>
     <a class="btn" href="privacy.html">Privacy Policy</a>
     <a class="btn" href="support.html">Support</a>
   </div>
 
-  <h2>Why Decibel Meter</h2>
-  <ul class="features">
-    <li><strong>Live measurement</strong> — real-time dB readout with MIN / AVG / MAX statistics.</li>
-    <li><strong>Daily noise dose</strong> — tracks your exposure against the NIOSH 85 dB / 8 h guideline.</li>
-    <li><strong>Nothing is recorded</strong> — audio is analyzed in real time and never stored or transmitted.</li>
-    <li><strong>Home Screen widget &amp; Siri</strong> — start and stop measuring hands-free.</li>
-    <li><strong>31 languages</strong> — fully localized worldwide.</li>
+  <h2 class="reveal">Why Decibel Meter</h2>
+  <ul class="feature-grid">
+    <li class="reveal"><strong>Live measurement</strong> Real-time dB readout with MIN / AVG / MAX statistics.</li>
+    <li class="reveal d1"><strong>Daily noise dose</strong> Tracks your exposure against the NIOSH 85 dB / 8 h guideline.</li>
+    <li class="reveal d2"><strong>Nothing is recorded</strong> Audio is analyzed in real time and never stored or transmitted.</li>
+    <li class="reveal"><strong>Widget &amp; Siri</strong> Start and stop measuring hands-free from your Home Screen.</li>
+    <li class="reveal d1"><strong>31 languages</strong> Fully localized worldwide.</li>
+    <li class="reveal d2"><strong>Fully private</strong> No account, no server, no tracking.</li>
   </ul>
 
-  <h2>Privacy</h2>
-  <p>All analysis happens on your device. No audio is ever recorded or uploaded. Read the full <a href="privacy.html">privacy policy</a>.</p>
+  <h2 class="reveal">Privacy</h2>
+  <p class="reveal">All analysis happens on your device. No audio is ever recorded or uploaded. Read the full <a href="privacy.html">privacy policy</a>.</p>
 
-  <p><em>Noise dose figures are general reference information, not a medical measurement.</em></p>
+  <p class="reveal"><em>Noise dose figures are general reference information, not a medical measurement.</em></p>
 </main>
 
 <footer class="site">
@@ -51,5 +56,6 @@
   </div>
 </footer>
 
+<script src="../assets/site.js"></script>
 </body>
 </html>

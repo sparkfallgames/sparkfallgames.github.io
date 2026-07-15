@@ -5,6 +5,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>QuickCost — Log an expense in 3 seconds</title>
 <meta name="description" content="QuickCost is a minimal expense tracker for iPhone. All data stays on your device.">
+<meta property="og:title" content="QuickCost — Log an expense in 3 seconds">
+<meta property="og:description" content="A minimal, private expense tracker for iPhone. 31 languages, everything on-device.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://2645809444.github.io/quickcost/">
 <link rel="stylesheet" href="../assets/style.css">
 </head>
 <body>
@@ -19,28 +23,29 @@
   </div>
 </header>
 
-<main class="page wrap">
-  <div class="app-mark" style="background: var(--quickcost);">Q</div>
-  <h1>QuickCost</h1>
-  <p class="subtitle">Log an expense in 3 seconds. A minimal, private expense tracker for iPhone.</p>
+<main class="page wrap product-hero" style="--accent: var(--quickcost);">
+  <div class="app-mark reveal" style="background: var(--quickcost);">Q</div>
+  <h1 class="reveal">QuickCost</h1>
+  <p class="subtitle reveal d1">Log an expense in 3 seconds. A minimal, private expense tracker for iPhone.</p>
 
-  <div class="link-row">
-    <a class="btn primary" href="https://apps.apple.com/app/quickcost" rel="noopener">Download on the App Store</a>
+  <div class="link-row reveal d2">
+    <a class="btn primary disabled" aria-disabled="true">App Store — Coming Soon</a>
     <a class="btn" href="privacy.html">Privacy Policy</a>
     <a class="btn" href="support.html">Support</a>
   </div>
 
-  <h2>Why QuickCost</h2>
-  <ul class="features">
-    <li><strong>3-second logging</strong> — open the app, tap amount and category, done.</li>
-    <li><strong>100% on-device</strong> — no account, no server, your financial records never leave your iPhone.</li>
-    <li><strong>Clear overview</strong> — daily, monthly, and category summaries at a glance.</li>
-    <li><strong>31 languages</strong> — fully localized worldwide.</li>
-    <li><strong>No ads</strong> — free to use, with an optional Premium upgrade.</li>
+  <h2 class="reveal">Why QuickCost</h2>
+  <ul class="feature-grid">
+    <li class="reveal"><strong>3-second logging</strong> Open the app, tap amount and category, done.</li>
+    <li class="reveal d1"><strong>100% on-device</strong> No account, no server — your financial records never leave your iPhone.</li>
+    <li class="reveal d2"><strong>Clear overview</strong> Daily, monthly, and category summaries at a glance.</li>
+    <li class="reveal"><strong>31 languages</strong> Fully localized worldwide, including right-to-left layouts.</li>
+    <li class="reveal d1"><strong>App Lock</strong> Protect your records with Face ID.</li>
+    <li class="reveal d2"><strong>No ads</strong> Free to use, with an optional Premium upgrade.</li>
   </ul>
 
-  <h2>Privacy</h2>
-  <p>QuickCost stores everything locally on your device. We do not collect any data. Read the full <a href="privacy.html">privacy policy</a>.</p>
+  <h2 class="reveal">Privacy</h2>
+  <p class="reveal">QuickCost stores everything locally on your device. We do not collect any data. Read the full <a href="privacy.html">privacy policy</a>.</p>
 </main>
 
 <footer class="site">
@@ -49,5 +54,6 @@
   </div>
 </footer>
 
+<script src="../assets/site.js"></script>
 </body>
 </html>

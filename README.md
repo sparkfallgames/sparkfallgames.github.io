@@ -12,13 +12,18 @@
 ## 目录结构
 
 ```
-index.html            首页（全部 App 卡片）
-assets/style.css      共享样式（自适应深色模式）
+index.html            品牌首页（主张/数据条/App 卡片/理念/工作室介绍）
+assets/style.css      共享样式（品牌渐变设计系统、自适应深色模式、滚动动画）
+assets/site.js        增强脚本（粒子特效、滚动渐入、WebAudio 原创音效——默认关、
+                      用户主动开启，偏好存 localStorage；尊重 prefers-reduced-motion）
 quickcost/            001 QuickCost
 decibelmeter/         002 Decibel Meter
 fastzen/              003 FastZen
 mathspark/            004 MathSpark
 ```
+
+JS 铁律：自写自托管、零第三方、无跟踪；音效全部 WebAudio 合成（无采样素材）。
+产品页下载按钮在 App 上架前是置灰的 "Coming Soon"，上架后回填真实链接。
 
 每个 App 目录固定三个文件：`index.html`（产品页）、`privacy.html`（隐私政策，
 英文 + 中文）、`support.html`（支持页 + FAQ）。
