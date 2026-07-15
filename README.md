@@ -3,7 +3,7 @@
 个人游戏开发者官网（品牌 Sparkfall Games，2026-07-15 定名：与旗舰游戏 MathSpark
 同源、贴合霓虹火花视觉母题、经查无游戏工作室占用）。游戏优先展示，工具 App 为
 次要区块；托管全部矩阵 App 的产品页、隐私政策和支持页。
-部署为 GitHub Pages 用户主页仓库：`2645809444.github.io`。
+部署为 GitHub Pages 用户主页仓库：`sparkfallgames.github.io`。
 
 设计基调：深色霓虹（近黑底 + 紫/青渐变辉光），首屏 Canvas 火花粒子（尊重
 Reduce Motion），响应式适配手机/平板/桌面，RTL（ar/he）镜像。首页分区：
@@ -12,8 +12,8 @@ Hero → Games（含「Project 005」Coming Soon 预告卡，不透名）→ Too
 
 ## 线上地址
 
-- 首页：https://2645809444.github.io/
-- 各 App：`https://2645809444.github.io/<app>/`（产品页）、
+- 首页：https://sparkfallgames.github.io/
+- 各 App：`https://sparkfallgames.github.io/<app>/`（产品页）、
   `/<app>/privacy.html`（隐私政策）、`/<app>/support.html`（支持页）
 
 ## 目录结构（页面由生成器产出，不要手改仓库根的 HTML）
