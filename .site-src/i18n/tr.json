@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Basit ve gizliliğe saygılı iOS uygulamaları",
-    "home_desc": "Basit, gizliliğe saygılı ve dürüst iOS uygulamaları. Verileriniz cihazınızda kalır — hesap yok, sunucu yok, izleme yok."
+    "home_title": "Sparkfall Games — Bağımsız oyunlar ve dürüst iOS uygulamaları",
+    "home_desc": "Sparkfall Games, eğlenceli oyunlar ile dürüst ve gizliliğe saygılı iOS araçları yapan tek kişilik bir bağımsız stüdyodur. Hesap yok, sunucu yok, takip yok."
   },
   "nav": {
-    "apps": "Uygulamalar",
     "contact": "İletişim",
     "privacy": "Gizlilik",
     "support": "Destek",
     "all_apps": "Tüm uygulamalar",
-    "language": "Dil"
+    "language": "Dil",
+    "games": "Oyunlar",
+    "tools": "Araçlar",
+    "about": "Hakkında"
   },
   "hero": {
-    "title": "Basit, gizli, dürüst uygulamalar.",
-    "subtitle": "Her uygulama tek bir fikir üzerine kurulu: verileriniz cihazınızda kalır. Hesap yok, sunucu yok, izleme yok.",
-    "explore": "Uygulamaları keşfet"
+    "title": "Eğlenceli oyunlar. Dürüst araçlar.",
+    "subtitle": "Her yapım tek başına geliştirilir ve tasarımdan itibaren gizlidir — verileriniz cihazınızda kalır. Hesap yok, sunucu yok, takip yok.",
+    "explore": "Oyunlara bak",
+    "kicker": "Tek kişilik oyun stüdyosu",
+    "explore_tools": "Araçlara göz at"
   },
   "values": {
     "private_title": "Tasarım gereği gizli",
@@ -31,7 +35,7 @@
     "support": "Destek",
     "features": "Neden {app}",
     "privacy_heading": "Gizlilik",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Gizlilik politikaları",
     "learn_more": "Daha fazla bilgi"
   },
@@ -48,10 +52,22 @@
       "subtitle": "iPhone için minimalist, gizliliğe saygılı bir harcama takipçisi. Aç, dokun, bitti — 3 saniyede.",
       "meta_desc": "QuickCost, iPhone için minimalist bir harcama takipçisidir. Harcamanızı 3 saniyede kaydedin. Tüm veriler cihazınızda kalır.",
       "features": [
-        {"t": "3 saniyede kayıt", "d": "Uygulamayı açın, tutara ve kategoriye dokunun — harcamanız kaydedildi."},
-        {"t": "%100 cihaz üzerinde", "d": "Hesap yok, sunucu yok. Finansal kayıtlarınız iPhone'unuzdan asla çıkmaz."},
-        {"t": "Net içgörüler", "d": "Günlük, aylık ve kategori özetleri paranızın nereye gittiğini gösterir."},
-        {"t": "31 dil", "d": "Dünya çapında tam yerelleştirme, karanlık mod ve büyük yazı desteği."}
+        {
+          "t": "3 saniyede kayıt",
+          "d": "Uygulamayı açın, tutara ve kategoriye dokunun — harcamanız kaydedildi."
+        },
+        {
+          "t": "%100 cihaz üzerinde",
+          "d": "Hesap yok, sunucu yok. Finansal kayıtlarınız iPhone'unuzdan asla çıkmaz."
+        },
+        {
+          "t": "Net içgörüler",
+          "d": "Günlük, aylık ve kategori özetleri paranızın nereye gittiğini gösterir."
+        },
+        {
+          "t": "31 dil",
+          "d": "Dünya çapında tam yerelleştirme, karanlık mod ve büyük yazı desteği."
+        }
       ],
       "privacy_blurb": "QuickCost her şeyi cihazınızda yerel olarak saklar ve hiçbir şey toplamaz.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "İşitmenizi korumaya yardımcı olan, günlük gürültü dozu takipli gerçek zamanlı bir ses düzeyi ölçer.",
       "meta_desc": "Decibel Meter ses düzeyini gerçek zamanlı ölçer ve günlük gürültü dozunuzu takip eder. Ses asla iPhone'unuzdan çıkmaz.",
       "features": [
-        {"t": "Canlı ölçüm", "d": "Gerçek zamanlı dB göstergesi; MIN, ORT ve MAKS bir bakışta."},
-        {"t": "Günlük gürültü dozu", "d": "Maruziyetinizi NIOSH 85 dB / 8 saat kılavuzuna göre izler."},
-        {"t": "Hiçbir şey kaydedilmez", "d": "Ses gerçek zamanlı analiz edilir; asla saklanmaz veya yüklenmez."},
-        {"t": "Widget ve Siri", "d": "Ölçümü ana ekrandan veya sesle başlatıp durdurun."}
+        {
+          "t": "Canlı ölçüm",
+          "d": "Gerçek zamanlı dB göstergesi; MIN, ORT ve MAKS bir bakışta."
+        },
+        {
+          "t": "Günlük gürültü dozu",
+          "d": "Maruziyetinizi NIOSH 85 dB / 8 saat kılavuzuna göre izler."
+        },
+        {
+          "t": "Hiçbir şey kaydedilmez",
+          "d": "Ses gerçek zamanlı analiz edilir; asla saklanmaz veya yüklenmez."
+        },
+        {
+          "t": "Widget ve Siri",
+          "d": "Ölçümü ana ekrandan veya sesle başlatıp durdurun."
+        }
       ],
       "privacy_blurb": "Tüm analiz cihazınızda gerçekleşir. Ses asla kaydedilmez veya yüklenmez.",
       "disclaimer": "Gürültü dozu değerleri genel referans bilgisidir, tıbbi bir ölçüm değildir."
@@ -76,10 +104,22 @@
       "subtitle": "Dürüst bir aralıklı oruç zamanlayıcısı. Ücretsiz sürüm eksiksizdir — sonsuza dek.",
       "meta_desc": "FastZen dürüst bir aralıklı oruç zamanlayıcısıdır. Temel özellikler sonsuza dek ücretsiz, Pro tek seferlik satın alma, tamamen gizli.",
       "features": [
-        {"t": "Temel özellikler hep ücretsiz", "d": "Tüm hazır planlar, zamanlayıcı, geçmiş, seriler ve bildirimler ücretsiz."},
-        {"t": "Tek seferlik Pro", "d": "Özel hedefler ve içgörüler tek ödemeyle. Abonelik yok."},
-        {"t": "Aşama zaman çizelgesi", "d": "Orucunuzun her saatiyle yaygın olarak ilişkilendirilen aşamaları görün."},
-        {"t": "Tamamen gizli", "d": "Hesap yok, sunucu yok — oruç geçmişiniz cihazınızda kalır."}
+        {
+          "t": "Temel özellikler hep ücretsiz",
+          "d": "Tüm hazır planlar, zamanlayıcı, geçmiş, seriler ve bildirimler ücretsiz."
+        },
+        {
+          "t": "Tek seferlik Pro",
+          "d": "Özel hedefler ve içgörüler tek ödemeyle. Abonelik yok."
+        },
+        {
+          "t": "Aşama zaman çizelgesi",
+          "d": "Orucunuzun her saatiyle yaygın olarak ilişkilendirilen aşamaları görün."
+        },
+        {
+          "t": "Tamamen gizli",
+          "d": "Hesap yok, sunucu yok — oruç geçmişiniz cihazınızda kalır."
+        }
       ],
       "privacy_blurb": "Oruç geçmişiniz asla iPhone'unuzdan çıkmaz.",
       "disclaimer": "FastZen bir zamanlayıcı ve kayıt aracıdır, tıbbi tavsiye değildir. Herhangi bir oruca başlamadan önce bir sağlık uzmanına danışın."
@@ -90,13 +130,40 @@
       "subtitle": "Günlük zihinsel matematik bulmacaları — dünyada herkese aynı meydan okuma, çözümü söylemek yerine öğreten ipuçlarıyla.",
       "meta_desc": "MathSpark günlük sayı bulmacaları sunar — herkese aynı meydan okuma, öğreten ipuçları. Tamamen çevrimdışı ve gizli.",
       "features": [
-        {"t": "Günlük küresel meydan okuma", "d": "Dünyadaki herkes her gün aynı bulmacaları alır — tamamen çevrimdışı."},
-        {"t": "Öğreten ipuçları", "d": "Strateji önerileri ve yalnızca bir sonraki adım; asla tam çözüm değil."},
-        {"t": "Sonsuza dek ücretsiz", "d": "Günlük meydan okuma ve günde 5 alıştırma bulmacası her zaman ücretsiz."},
-        {"t": "Tek seferlik Premium", "d": "Sınırsız alıştırma, daha zor seviyeler ve tam istatistikler. Abonelik yok."}
+        {
+          "t": "Günlük küresel meydan okuma",
+          "d": "Dünyadaki herkes her gün aynı bulmacaları alır — tamamen çevrimdışı."
+        },
+        {
+          "t": "Öğreten ipuçları",
+          "d": "Strateji önerileri ve yalnızca bir sonraki adım; asla tam çözüm değil."
+        },
+        {
+          "t": "Sonsuza dek ücretsiz",
+          "d": "Günlük meydan okuma ve günde 5 alıştırma bulmacası her zaman ücretsiz."
+        },
+        {
+          "t": "Tek seferlik Premium",
+          "d": "Sınırsız alıştırma, daha zor seviyeler ve tam istatistikler. Abonelik yok."
+        }
       ],
       "privacy_blurb": "MathSpark tamamen çevrimdışı çalışır ve hiçbir şey toplamaz.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Oyunlar",
+    "games_sub": "Size saygı duyan özgün bulmacalar: bölümler arasında reklam yok, enerji sayacı yok, ücretli duvarların ardında eğlence yok.",
+    "tools_title": "Araçlar",
+    "tools_sub": "Yolunuza çıkmayan, verilerinize dokunmayan küçük ve keskin yardımcı araçlar."
+  },
+  "teaser": {
+    "badge": "Geliştiriliyor",
+    "title": "Project 005",
+    "desc": "Karanlıkta yeni bir şey parlıyor. Şimdilik spoiler yok."
+  },
+  "about": {
+    "title": "Geliştirici hakkında",
+    "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 31 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır."
   }
 }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Basit ve gizliliğe saygılı iOS uygulamaları</title>
-<meta name="description" content="Basit, gizliliğe saygılı ve dürüst iOS uygulamaları. Verileriniz cihazınızda kalır — hesap yok, sunucu yok, izleme yok.">
+<title>Sparkfall Games — Bağımsız oyunlar ve dürüst iOS uygulamaları</title>
+<meta name="description" content="Sparkfall Games, eğlenceli oyunlar ile dürüst ve gizliliğe saygılı iOS araçları yapan tek kişilik bir bağımsız stüdyodur. Hesap yok, sunucu yok, takip yok.">
 <link rel="canonical" href="https://2645809444.github.io/tr/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/tr/">Qiuyufei Apps</a>
+    <a class="brand" href="/tr/">Sparkfall Games</a>
     <nav>
-      <a href="/tr/#apps">Uygulamalar</a>
+      <a href="/tr/#games">Oyunlar</a>
+      <a href="/tr/#tools">Araçlar</a>
+      <a href="/tr/#about">Hakkında</a>
       <a href="mailto:2645809444@qq.com">İletişim</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/" selected>Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Basit, gizli, dürüst uygulamalar.</h1>
-    <p>Her uygulama tek bir fikir üzerine kurulu: verileriniz cihazınızda kalır. Hesap yok, sunucu yok, izleme yok.</p>
-    <a class="btn btn-primary" href="#apps">Uygulamaları keşfet</a>
+    <span class="hero-kicker">Tek kişilik oyun stüdyosu</span>
+    <h1>Eğlenceli oyunlar. Dürüst <span class="grad">araçlar.</span></h1>
+    <p>Her yapım tek başına geliştirilir ve tasarımdan itibaren gizlidir — verileriniz cihazınızda kalır. Hesap yok, sunucu yok, takip yok.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Oyunlara bak</a>
+      <a class="btn" href="#tools">Araçlara göz at</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/tr/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Oyunlar</span></h2>
+      <p>Size saygı duyan özgün bulmacalar: bölümler arasında reklam yok, enerji sayacı yok, ücretli duvarların ardında eğlence yok.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/tr/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Oyunlar</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Günde bir bulmaca. Tüm dünya oynuyor.</p>
+        <p class="game-desc">Öğreten ipuçlarıyla günlük zihinsel matematik bulmacaları.</p>
+        <span class="card-more">Daha fazla bilgi →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Geliştiriliyor</span>
+      <h3>Project 005</h3>
+      <p>Karanlıkta yeni bir şey parlıyor. Şimdilik spoiler yok.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Araçlar</h2>
+      <p>Yolunuza çıkmayan, verilerinize dokunmayan küçük ve keskin yardımcı araçlar.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/tr/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Finans</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Harcamanızı 3 saniyede kaydedin.</p>
-      <p class="app-desc">Her kaydı iPhone'unuzda tutan minimalist bir harcama takipçisi.</p>
+      <p class="tool-tagline">Harcamanızı 3 saniyede kaydedin.</p>
       <span class="card-more">Daha fazla bilgi →</span>
     </a>
-    <a class="app-card reveal" href="/tr/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/tr/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Araçlar</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Gürültünüzü bilin. İşitmenizi koruyun.</p>
-      <p class="app-desc">Günlük gürültü dozu takipli gerçek zamanlı ses ölçer.</p>
+      <p class="tool-tagline">Gürültünüzü bilin. İşitmenizi koruyun.</p>
       <span class="card-more">Daha fazla bilgi →</span>
     </a>
-    <a class="app-card reveal" href="/tr/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/tr/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Sağlık ve Fitness</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Dürüst oruç zamanlayıcısı.</p>
-      <p class="app-desc">Abonelik tuzağı olmayan aralıklı oruç zamanlayıcısı.</p>
+      <p class="tool-tagline">Dürüst oruç zamanlayıcısı.</p>
       <span class="card-more">Daha fazla bilgi →</span>
     </a>
-    <a class="app-card reveal" href="/tr/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Oyunlar</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Günde bir bulmaca. Tüm dünya oynuyor.</p>
-      <p class="app-desc">Öğreten ipuçlarıyla günlük zihinsel matematik bulmacaları.</p>
-      <span class="card-more">Daha fazla bilgi →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Tasarım gereği gizli</h3><p>Her şey cihazınızda saklanır. Sunucu işletmiyoruz ve verilerinizi göremiyoruz.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Dürüst fiyatlandırma</h3><p>Ücretsiz özellikler sonsuza dek ücretsiz kalır. Abonelik tuzağı yok, sahte geri sayım yok.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Herkes için</h3><p>Her uygulama 31 dile tam yerelleştirilmiştir; karanlık mod ve erişilebilirlik desteğiyle.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Geliştirici hakkında</h2>
+    <p>Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 31 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Gizlilik politikaları: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Gizlilik politikaları: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

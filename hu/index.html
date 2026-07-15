@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Egyszerű, privát iOS-alkalmazások</title>
-<meta name="description" content="Egyszerű, privát és őszinte iOS-alkalmazások. Az adataid az eszközödön maradnak — nincs fiók, nincs szerver, nincs követés.">
+<title>Sparkfall Games — Indie játékok és őszinte iOS-alkalmazások</title>
+<meta name="description" content="A Sparkfall Games egyszemélyes indie stúdió, amely játékos játékokat és őszinte, privát iOS-eszközöket készít. Nincs fiók, nincs szerver, nincs követés.">
 <link rel="canonical" href="https://2645809444.github.io/hu/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/hu/">Qiuyufei Apps</a>
+    <a class="brand" href="/hu/">Sparkfall Games</a>
     <nav>
-      <a href="/hu/#apps">Alkalmazások</a>
+      <a href="/hu/#games">Játékok</a>
+      <a href="/hu/#tools">Eszközök</a>
+      <a href="/hu/#about">Rólam</a>
       <a href="mailto:2645809444@qq.com">Kapcsolat</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/" selected>Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Egyszerű, privát, őszinte alkalmazások.</h1>
-    <p>Minden alkalmazás egyetlen gondolatra épül: az adataid az eszközödön maradnak. Nincs fiók, nincs szerver, nincs követés.</p>
-    <a class="btn btn-primary" href="#apps">Alkalmazások felfedezése</a>
+    <span class="hero-kicker">Egyszemélyes játékstúdió</span>
+    <h1>Játékos játékok. Őszinte <span class="grad">eszközök.</span></h1>
+    <p>Minden cím egyedül készül, és tervezésétől fogva privát — az adataid az eszközödön maradnak. Nincs fiók, nincs szerver, nincs követés.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Játékok megtekintése</a>
+      <a class="btn" href="#tools">Eszközök megtekintése</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/hu/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Játékok</span></h2>
+      <p>Eredeti fejtörők, amelyek tisztelnek téged: nincs reklám a szintek között, nincs energiaidőzítő, nincs fizetőfal mögé zárt szórakozás.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/hu/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Játékok</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Naponta egy fejtörő. Az egész világ játszik.</p>
+        <p class="game-desc">Napi fejszámolós fejtörők tanító tippekkel.</p>
+        <span class="card-more">Tudj meg többet →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Fejlesztés alatt</span>
+      <h3>Project 005</h3>
+      <p>Valami új izzik a sötétben. Egyelőre nincs spoiler.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Eszközök</h2>
+      <p>Kicsi, éles segédeszközök, amelyek nem állnak az utadba — és nem nyúlnak az adataidhoz.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/hu/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Pénzügyek</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Rögzíts egy kiadást 3 másodperc alatt.</p>
-      <p class="app-desc">Minimalista kiadáskövető, amely mindent az iPhone-odon tart.</p>
+      <p class="tool-tagline">Rögzíts egy kiadást 3 másodperc alatt.</p>
       <span class="card-more">Tudj meg többet →</span>
     </a>
-    <a class="app-card reveal" href="/hu/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/hu/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Segédprogramok</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Ismerd a zajt. Védd a hallásod.</p>
-      <p class="app-desc">Valós idejű zajszintmérő napi zajdózissal.</p>
+      <p class="tool-tagline">Ismerd a zajt. Védd a hallásod.</p>
       <span class="card-more">Tudj meg többet →</span>
     </a>
-    <a class="app-card reveal" href="/hu/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/hu/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Egészség és fitnesz</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Az őszinte böjtidőzítő.</p>
-      <p class="app-desc">Időszakos böjtidőzítő előfizetési csapdák nélkül.</p>
+      <p class="tool-tagline">Az őszinte böjtidőzítő.</p>
       <span class="card-more">Tudj meg többet →</span>
     </a>
-    <a class="app-card reveal" href="/hu/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Játékok</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Naponta egy fejtörő. Az egész világ játszik.</p>
-      <p class="app-desc">Napi fejszámolós fejtörők tanító tippekkel.</p>
-      <span class="card-more">Tudj meg többet →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Adatvédelem alapból</h3><p>Minden az eszközödön tárolódik. Nem üzemeltetünk szervereket, és nem látjuk az adataidat.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Őszinte árazás</h3><p>Ami ingyenes, örökre ingyenes marad. Nincsenek előfizetési csapdák és hamis visszaszámlálók.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Mindenkinek készült</h3><p>Minden alkalmazás 31 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>A fejlesztőről</h2>
+    <p>Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 31 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Adatvédelmi irányelvek: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Adatvédelmi irányelvek: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

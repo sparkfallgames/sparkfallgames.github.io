@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Proste, prywatne aplikacje na iOS",
-    "home_desc": "Proste, prywatne i uczciwe aplikacje na iOS. Twoje dane zostają na Twoim urządzeniu — bez kont, bez serwerów, bez śledzenia."
+    "home_title": "Sparkfall Games — Gry indie i uczciwe aplikacje na iOS",
+    "home_desc": "Sparkfall Games to jednoosobowe studio indie tworzące wciągające gry oraz uczciwe, prywatne narzędzia na iOS. Bez kont, bez serwerów, bez śledzenia."
   },
   "nav": {
-    "apps": "Aplikacje",
     "contact": "Kontakt",
     "privacy": "Prywatność",
     "support": "Wsparcie",
     "all_apps": "Wszystkie aplikacje",
-    "language": "Język"
+    "language": "Język",
+    "games": "Gry",
+    "tools": "Narzędzia",
+    "about": "O mnie"
   },
   "hero": {
-    "title": "Proste, prywatne, uczciwe aplikacje.",
-    "subtitle": "Każda aplikacja opiera się na jednej idei: Twoje dane zostają na Twoim urządzeniu. Bez kont, bez serwerów, bez śledzenia.",
-    "explore": "Poznaj aplikacje"
+    "title": "Wciągające gry. Uczciwe narzędzia.",
+    "subtitle": "Każdy tytuł powstaje w pojedynkę i jest prywatny z założenia — Twoje dane zostają na Twoim urządzeniu. Bez kont, bez serwerów, bez śledzenia.",
+    "explore": "Zobacz gry",
+    "kicker": "Jednoosobowe studio gier",
+    "explore_tools": "Zobacz narzędzia"
   },
   "values": {
     "private_title": "Prywatność w standardzie",
@@ -31,7 +35,7 @@
     "support": "Wsparcie",
     "features": "Dlaczego {app}",
     "privacy_heading": "Prywatność",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Polityki prywatności",
     "learn_more": "Dowiedz się więcej"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Minimalistyczny, prywatny rejestr wydatków na iPhone'a. Otwórz, stuknij, gotowe — w 3 sekundy.",
       "meta_desc": "QuickCost to minimalistyczny rejestr wydatków na iPhone'a. Zapisz wydatek w 3 sekundy. Wszystkie dane zostają na urządzeniu.",
       "features": [
-        {"t": "Zapis w 3 sekundy", "d": "Otwórz aplikację, stuknij kwotę i kategorię — wydatek zapisany."},
-        {"t": "100% na urządzeniu", "d": "Bez konta i serwera. Twoje finanse nigdy nie opuszczają iPhone'a."},
-        {"t": "Czytelne podsumowania", "d": "Zestawienia dzienne, miesięczne i według kategorii pokazują, gdzie idą pieniądze."},
-        {"t": "31 języków", "d": "Pełna lokalizacja na cały świat, z trybem ciemnym i dużą czcionką."}
+        {
+          "t": "Zapis w 3 sekundy",
+          "d": "Otwórz aplikację, stuknij kwotę i kategorię — wydatek zapisany."
+        },
+        {
+          "t": "100% na urządzeniu",
+          "d": "Bez konta i serwera. Twoje finanse nigdy nie opuszczają iPhone'a."
+        },
+        {
+          "t": "Czytelne podsumowania",
+          "d": "Zestawienia dzienne, miesięczne i według kategorii pokazują, gdzie idą pieniądze."
+        },
+        {
+          "t": "31 języków",
+          "d": "Pełna lokalizacja na cały świat, z trybem ciemnym i dużą czcionką."
+        }
       ],
       "privacy_blurb": "QuickCost przechowuje wszystko lokalnie na Twoim urządzeniu i niczego nie zbiera.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Miernik poziomu dźwięku w czasie rzeczywistym ze śledzeniem dziennej dawki hałasu, który pomaga chronić słuch.",
       "meta_desc": "Decibel Meter mierzy poziom dźwięku w czasie rzeczywistym i śledzi dzienną dawkę hałasu. Dźwięk nigdy nie opuszcza iPhone'a.",
       "features": [
-        {"t": "Pomiar na żywo", "d": "Odczyt dB w czasie rzeczywistym z MIN, ŚRED i MAKS na pierwszy rzut oka."},
-        {"t": "Dzienna dawka hałasu", "d": "Śledzi ekspozycję według wytycznej NIOSH 85 dB / 8 h."},
-        {"t": "Nic nie jest nagrywane", "d": "Dźwięk jest analizowany na bieżąco, nigdy nie jest zapisywany ani wysyłany."},
-        {"t": "Widżet i Siri", "d": "Rozpoczynaj i zatrzymuj pomiar z ekranu głównego lub głosem."}
+        {
+          "t": "Pomiar na żywo",
+          "d": "Odczyt dB w czasie rzeczywistym z MIN, ŚRED i MAKS na pierwszy rzut oka."
+        },
+        {
+          "t": "Dzienna dawka hałasu",
+          "d": "Śledzi ekspozycję według wytycznej NIOSH 85 dB / 8 h."
+        },
+        {
+          "t": "Nic nie jest nagrywane",
+          "d": "Dźwięk jest analizowany na bieżąco, nigdy nie jest zapisywany ani wysyłany."
+        },
+        {
+          "t": "Widżet i Siri",
+          "d": "Rozpoczynaj i zatrzymuj pomiar z ekranu głównego lub głosem."
+        }
       ],
       "privacy_blurb": "Cała analiza odbywa się na Twoim urządzeniu. Dźwięk nigdy nie jest nagrywany ani wysyłany.",
       "disclaimer": "Wartości dawki hałasu to ogólne informacje poglądowe, nie pomiar medyczny."
@@ -76,10 +104,22 @@
       "subtitle": "Uczciwy minutnik postu przerywanego. Wersja darmowa jest kompletna — na zawsze.",
       "meta_desc": "FastZen to uczciwy minutnik postu przerywanego. Podstawowe funkcje darmowe na zawsze, Pro za jednorazową opłatą, pełna prywatność.",
       "features": [
-        {"t": "Podstawa darmowa na zawsze", "d": "Wszystkie gotowe plany, minutnik, historia, serie i powiadomienia są darmowe."},
-        {"t": "Pro za jednorazową opłatą", "d": "Własne cele i statystyki za jedną płatność. Bez subskrypcji."},
-        {"t": "Oś czasu faz", "d": "Zobacz fazy zwykle wiązane z każdą godziną postu."},
-        {"t": "Pełna prywatność", "d": "Bez konta i serwera — historia postów zostaje na Twoim urządzeniu."}
+        {
+          "t": "Podstawa darmowa na zawsze",
+          "d": "Wszystkie gotowe plany, minutnik, historia, serie i powiadomienia są darmowe."
+        },
+        {
+          "t": "Pro za jednorazową opłatą",
+          "d": "Własne cele i statystyki za jedną płatność. Bez subskrypcji."
+        },
+        {
+          "t": "Oś czasu faz",
+          "d": "Zobacz fazy zwykle wiązane z każdą godziną postu."
+        },
+        {
+          "t": "Pełna prywatność",
+          "d": "Bez konta i serwera — historia postów zostaje na Twoim urządzeniu."
+        }
       ],
       "privacy_blurb": "Twoja historia postów nigdy nie opuszcza iPhone'a.",
       "disclaimer": "FastZen to narzędzie do odmierzania czasu i notowania, nie porada medyczna. Przed rozpoczęciem postu skonsultuj się z lekarzem."
@@ -90,13 +130,40 @@
       "subtitle": "Codzienne łamigłówki na liczenie w pamięci — to samo wyzwanie dla wszystkich na świecie, z podpowiedziami, które uczą zamiast zdradzać.",
       "meta_desc": "MathSpark serwuje codzienne łamigłówki liczbowe — to samo wyzwanie dla wszystkich, z edukacyjnymi podpowiedziami. Całkowicie offline i prywatnie.",
       "features": [
-        {"t": "Codzienne globalne wyzwanie", "d": "Wszyscy na świecie dostają codziennie te same łamigłówki — całkowicie offline."},
-        {"t": "Podpowiedzi, które uczą", "d": "Wskazówki strategiczne i tylko jeden następny krok, nigdy pełne rozwiązanie."},
-        {"t": "Za darmo na zawsze", "d": "Codzienne wyzwanie i 5 łamigłówek treningowych dziennie są zawsze darmowe."},
-        {"t": "Premium za jednorazową opłatą", "d": "Nieograniczony trening, wyższe poziomy trudności i pełne statystyki. Bez subskrypcji."}
+        {
+          "t": "Codzienne globalne wyzwanie",
+          "d": "Wszyscy na świecie dostają codziennie te same łamigłówki — całkowicie offline."
+        },
+        {
+          "t": "Podpowiedzi, które uczą",
+          "d": "Wskazówki strategiczne i tylko jeden następny krok, nigdy pełne rozwiązanie."
+        },
+        {
+          "t": "Za darmo na zawsze",
+          "d": "Codzienne wyzwanie i 5 łamigłówek treningowych dziennie są zawsze darmowe."
+        },
+        {
+          "t": "Premium za jednorazową opłatą",
+          "d": "Nieograniczony trening, wyższe poziomy trudności i pełne statystyki. Bez subskrypcji."
+        }
       ],
       "privacy_blurb": "MathSpark działa całkowicie offline i niczego nie zbiera.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Gry",
+    "games_sub": "Oryginalne łamigłówki, które Cię szanują: bez reklam między poziomami, bez liczników energii, bez zabawy zamkniętej za paywallem.",
+    "tools_title": "Narzędzia",
+    "tools_sub": "Małe, precyzyjne narzędzia, które nie wchodzą Ci w drogę — i nie dotykają Twoich danych."
+  },
+  "teaser": {
+    "badge": "W produkcji",
+    "title": "Project 005",
+    "desc": "Coś nowego jarzy się w ciemności. Na razie bez spoilerów."
+  },
+  "about": {
+    "title": "O deweloperze",
+    "body": "Jestem niezależnym deweloperem stojącym za Sparkfall Games. Każda gra i narzędzie są w 100% natywne dla iOS, zlokalizowane na 31 języków i zbudowane wokół jednej zasady: Twoje dane zostają na Twoim urządzeniu."
   }
 }

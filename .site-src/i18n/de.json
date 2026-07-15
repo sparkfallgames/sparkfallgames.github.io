@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Einfache, private iOS-Apps",
-    "home_desc": "Einfache, private und ehrliche iOS-Apps. Deine Daten bleiben auf deinem Gerät — keine Konten, keine Server, kein Tracking."
+    "home_title": "Sparkfall Games — Indie-Spiele & ehrliche iOS-Apps",
+    "home_desc": "Sparkfall Games ist ein Ein-Personen-Indie-Studio für verspielte Games und ehrliche, private iOS-Tools. Keine Konten, keine Server, kein Tracking."
   },
   "nav": {
-    "apps": "Apps",
     "contact": "Kontakt",
     "privacy": "Datenschutz",
     "support": "Support",
     "all_apps": "Alle Apps",
-    "language": "Sprache"
+    "language": "Sprache",
+    "games": "Spiele",
+    "tools": "Tools",
+    "about": "Über"
   },
   "hero": {
-    "title": "Einfache, private, ehrliche Apps.",
-    "subtitle": "Jede App folgt einer Idee: Deine Daten bleiben auf deinem Gerät. Keine Konten, keine Server, kein Tracking.",
-    "explore": "Apps entdecken"
+    "title": "Verspielte Games. Ehrliche Tools.",
+    "subtitle": "Jeder Titel entsteht solo und ist privat by design – deine Daten bleiben auf deinem Gerät. Keine Konten, keine Server, kein Tracking.",
+    "explore": "Spiele ansehen",
+    "kicker": "Ein-Personen-Spielestudio",
+    "explore_tools": "Tools entdecken"
   },
   "values": {
     "private_title": "Privatsphäre by Design",
@@ -31,7 +35,7 @@
     "support": "Support",
     "features": "Warum {app}",
     "privacy_heading": "Datenschutz",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Datenschutzerklärungen",
     "learn_more": "Mehr erfahren"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Ein minimalistischer, privater Ausgaben-Tracker fürs iPhone. Öffnen, tippen, fertig — in 3 Sekunden.",
       "meta_desc": "QuickCost ist ein minimalistischer Ausgaben-Tracker fürs iPhone. Erfasse eine Ausgabe in 3 Sekunden. Alle Daten bleiben auf deinem Gerät.",
       "features": [
-        {"t": "3-Sekunden-Eintrag", "d": "App öffnen, Betrag und Kategorie antippen — die Ausgabe ist gespeichert."},
-        {"t": "100 % auf dem Gerät", "d": "Kein Konto, kein Server. Deine Finanzdaten verlassen dein iPhone nie."},
-        {"t": "Klare Auswertungen", "d": "Tages-, Monats- und Kategorie-Übersichten zeigen, wohin dein Geld fließt."},
-        {"t": "31 Sprachen", "d": "Weltweit vollständig lokalisiert, mit Dark Mode und großer Schrift."}
+        {
+          "t": "3-Sekunden-Eintrag",
+          "d": "App öffnen, Betrag und Kategorie antippen — die Ausgabe ist gespeichert."
+        },
+        {
+          "t": "100 % auf dem Gerät",
+          "d": "Kein Konto, kein Server. Deine Finanzdaten verlassen dein iPhone nie."
+        },
+        {
+          "t": "Klare Auswertungen",
+          "d": "Tages-, Monats- und Kategorie-Übersichten zeigen, wohin dein Geld fließt."
+        },
+        {
+          "t": "31 Sprachen",
+          "d": "Weltweit vollständig lokalisiert, mit Dark Mode und großer Schrift."
+        }
       ],
       "privacy_blurb": "QuickCost speichert alles lokal auf deinem Gerät und sammelt nichts.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Ein Echtzeit-Schallpegelmesser mit täglicher Lärmdosis-Erfassung, der dein Gehör schützen hilft.",
       "meta_desc": "Decibel Meter misst den Schallpegel in Echtzeit und erfasst deine tägliche Lärmdosis. Audio verlässt dein iPhone nie.",
       "features": [
-        {"t": "Live-Messung", "d": "Echtzeit-dB-Anzeige mit MIN, MITTEL und MAX auf einen Blick."},
-        {"t": "Tägliche Lärmdosis", "d": "Erfasst deine Belastung nach der NIOSH-Richtlinie von 85 dB / 8 h."},
-        {"t": "Keine Aufnahmen", "d": "Audio wird in Echtzeit analysiert und nie gespeichert oder hochgeladen."},
-        {"t": "Widget & Siri", "d": "Starte und stoppe Messungen vom Home-Bildschirm oder per Sprache."}
+        {
+          "t": "Live-Messung",
+          "d": "Echtzeit-dB-Anzeige mit MIN, MITTEL und MAX auf einen Blick."
+        },
+        {
+          "t": "Tägliche Lärmdosis",
+          "d": "Erfasst deine Belastung nach der NIOSH-Richtlinie von 85 dB / 8 h."
+        },
+        {
+          "t": "Keine Aufnahmen",
+          "d": "Audio wird in Echtzeit analysiert und nie gespeichert oder hochgeladen."
+        },
+        {
+          "t": "Widget & Siri",
+          "d": "Starte und stoppe Messungen vom Home-Bildschirm oder per Sprache."
+        }
       ],
       "privacy_blurb": "Die gesamte Analyse findet auf deinem Gerät statt. Audio wird nie aufgenommen oder hochgeladen.",
       "disclaimer": "Die Lärmdosis-Werte sind allgemeine Referenzinformationen, keine medizinische Messung."
@@ -76,10 +104,22 @@
       "subtitle": "Ein ehrlicher Intervallfasten-Timer. Die kostenlose Version ist vollständig — für immer.",
       "meta_desc": "FastZen ist ein ehrlicher Intervallfasten-Timer. Kernfunktionen für immer kostenlos, Pro als Einmalkauf, komplett privat.",
       "features": [
-        {"t": "Kern für immer gratis", "d": "Alle Pläne, Timer, Verlauf, Serien und Mitteilungen sind kostenlos."},
-        {"t": "Pro als Einmalkauf", "d": "Eigene Ziele und Auswertungen für eine einmalige Zahlung. Kein Abo."},
-        {"t": "Phasen-Timeline", "d": "Sieh, welche Phasen üblicherweise mit jeder Fastenstunde verbunden werden."},
-        {"t": "Komplett privat", "d": "Kein Konto, kein Server — dein Fastenverlauf bleibt auf deinem Gerät."}
+        {
+          "t": "Kern für immer gratis",
+          "d": "Alle Pläne, Timer, Verlauf, Serien und Mitteilungen sind kostenlos."
+        },
+        {
+          "t": "Pro als Einmalkauf",
+          "d": "Eigene Ziele und Auswertungen für eine einmalige Zahlung. Kein Abo."
+        },
+        {
+          "t": "Phasen-Timeline",
+          "d": "Sieh, welche Phasen üblicherweise mit jeder Fastenstunde verbunden werden."
+        },
+        {
+          "t": "Komplett privat",
+          "d": "Kein Konto, kein Server — dein Fastenverlauf bleibt auf deinem Gerät."
+        }
       ],
       "privacy_blurb": "Dein Fastenverlauf verlässt dein iPhone nie.",
       "disclaimer": "FastZen ist ein Timer- und Protokoll-Tool, kein medizinischer Rat. Sprich vor jedem Fasten mit medizinischem Fachpersonal."
@@ -90,13 +130,40 @@
       "subtitle": "Tägliche Kopfrechen-Rätsel — dieselbe Herausforderung für alle weltweit, mit Hinweisen, die lehren statt verraten.",
       "meta_desc": "MathSpark liefert tägliche Zahlenrätsel — weltweit dieselbe Aufgabe, mit lehrreichen Hinweisen. Komplett offline und privat.",
       "features": [
-        {"t": "Tägliche globale Challenge", "d": "Alle weltweit bekommen jeden Tag dieselben Rätsel — komplett offline."},
-        {"t": "Hinweise, die lehren", "d": "Strategie-Tipps und ein einziger nächster Schritt, nie die komplette Lösung."},
-        {"t": "Für immer gratis", "d": "Die tägliche Challenge und 5 Übungsrätsel pro Tag sind immer kostenlos."},
-        {"t": "Premium als Einmalkauf", "d": "Unbegrenztes Üben, höhere Schwierigkeiten und volle Statistiken. Kein Abo."}
+        {
+          "t": "Tägliche globale Challenge",
+          "d": "Alle weltweit bekommen jeden Tag dieselben Rätsel — komplett offline."
+        },
+        {
+          "t": "Hinweise, die lehren",
+          "d": "Strategie-Tipps und ein einziger nächster Schritt, nie die komplette Lösung."
+        },
+        {
+          "t": "Für immer gratis",
+          "d": "Die tägliche Challenge und 5 Übungsrätsel pro Tag sind immer kostenlos."
+        },
+        {
+          "t": "Premium als Einmalkauf",
+          "d": "Unbegrenztes Üben, höhere Schwierigkeiten und volle Statistiken. Kein Abo."
+        }
       ],
       "privacy_blurb": "MathSpark funktioniert komplett offline und sammelt nichts.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Spiele",
+    "games_sub": "Originelle Rätsel mit Respekt – keine Werbung zwischen Leveln, keine Energie-Timer, kein Spaß hinter Bezahlschranken.",
+    "tools_title": "Tools",
+    "tools_sub": "Kleine, präzise Utilities, die dir nicht im Weg stehen – und deinen Daten fernbleiben."
+  },
+  "teaser": {
+    "badge": "In Entwicklung",
+    "title": "Project 005",
+    "desc": "Etwas Neues glüht im Dunkeln. Noch keine Spoiler."
+  },
+  "about": {
+    "title": "Über den Entwickler",
+    "body": "Ich bin der Solo-Entwickler hinter Sparkfall Games. Jedes Spiel und Tool ist zu 100 % nativ für iOS, in 31 Sprachen lokalisiert und folgt einer Regel: Deine Daten bleiben auf deinem Gerät."
   }
 }

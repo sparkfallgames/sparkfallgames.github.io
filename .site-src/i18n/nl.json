@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Eenvoudige, privacyvriendelijke iOS-apps",
-    "home_desc": "Eenvoudige, privacyvriendelijke en eerlijke iOS-apps. Je gegevens blijven op je apparaat: geen accounts, geen servers, geen tracking."
+    "home_title": "Sparkfall Games — Indiegames & eerlijke iOS-apps",
+    "home_desc": "Sparkfall Games is een eenpersoons indiestudio die speelse games en eerlijke, privacyvriendelijke iOS-tools maakt. Geen accounts, geen servers, geen tracking."
   },
   "nav": {
-    "apps": "Apps",
     "contact": "Contact",
     "privacy": "Privacy",
     "support": "Ondersteuning",
     "all_apps": "Alle apps",
-    "language": "Taal"
+    "language": "Taal",
+    "games": "Games",
+    "tools": "Tools",
+    "about": "Over"
   },
   "hero": {
-    "title": "Eenvoudige, private, eerlijke apps.",
-    "subtitle": "Elke app is gebouwd rond één idee: je gegevens blijven op je apparaat. Geen accounts, geen servers, geen tracking.",
-    "explore": "Bekijk de apps"
+    "title": "Speelse games. Eerlijke tools.",
+    "subtitle": "Elke titel wordt solo gebouwd en is privé by design — je gegevens blijven op je apparaat. Geen accounts, geen servers, geen tracking.",
+    "explore": "Bekijk de games",
+    "kicker": "Eenpersoons gamestudio",
+    "explore_tools": "Bekijk de tools"
   },
   "values": {
     "private_title": "Privacy by design",
@@ -31,7 +35,7 @@
     "support": "Ondersteuning",
     "features": "Waarom {app}",
     "privacy_heading": "Privacy",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Privacybeleid",
     "learn_more": "Meer informatie"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Een minimalistische, private uitgaventracker voor iPhone. Openen, tikken, klaar — in 3 seconden.",
       "meta_desc": "QuickCost is een minimalistische uitgaventracker voor iPhone. Noteer een uitgave in 3 seconden. Alle gegevens blijven op je apparaat.",
       "features": [
-        {"t": "In 3 seconden genoteerd", "d": "Open de app, tik het bedrag en een categorie aan: je uitgave is opgeslagen."},
-        {"t": "100% op je apparaat", "d": "Geen account, geen server. Je financiële gegevens verlaten je iPhone nooit."},
-        {"t": "Helder inzicht", "d": "Overzichten per dag, maand en categorie laten zien waar je geld heen gaat."},
-        {"t": "31 talen", "d": "Wereldwijd volledig gelokaliseerd, met donkere modus en grote tekst."}
+        {
+          "t": "In 3 seconden genoteerd",
+          "d": "Open de app, tik het bedrag en een categorie aan: je uitgave is opgeslagen."
+        },
+        {
+          "t": "100% op je apparaat",
+          "d": "Geen account, geen server. Je financiële gegevens verlaten je iPhone nooit."
+        },
+        {
+          "t": "Helder inzicht",
+          "d": "Overzichten per dag, maand en categorie laten zien waar je geld heen gaat."
+        },
+        {
+          "t": "31 talen",
+          "d": "Wereldwijd volledig gelokaliseerd, met donkere modus en grote tekst."
+        }
       ],
       "privacy_blurb": "QuickCost bewaart alles lokaal op je apparaat en verzamelt niets.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Een realtime geluidsmeter met dagelijkse geluidsdosis-tracking die je gehoor helpt beschermen.",
       "meta_desc": "Decibel Meter meet het geluidsniveau in realtime en houdt je dagelijkse geluidsdosis bij. Audio verlaat je iPhone nooit.",
       "features": [
-        {"t": "Live meten", "d": "Realtime dB-weergave met MIN, GEM en MAX in één oogopslag."},
-        {"t": "Dagelijkse geluidsdosis", "d": "Volgt je blootstelling volgens de NIOSH-richtlijn van 85 dB / 8 u."},
-        {"t": "Niets wordt opgenomen", "d": "Audio wordt realtime geanalyseerd en nooit opgeslagen of geüpload."},
-        {"t": "Widget en Siri", "d": "Start en stop metingen vanaf je beginscherm of met je stem."}
+        {
+          "t": "Live meten",
+          "d": "Realtime dB-weergave met MIN, GEM en MAX in één oogopslag."
+        },
+        {
+          "t": "Dagelijkse geluidsdosis",
+          "d": "Volgt je blootstelling volgens de NIOSH-richtlijn van 85 dB / 8 u."
+        },
+        {
+          "t": "Niets wordt opgenomen",
+          "d": "Audio wordt realtime geanalyseerd en nooit opgeslagen of geüpload."
+        },
+        {
+          "t": "Widget en Siri",
+          "d": "Start en stop metingen vanaf je beginscherm of met je stem."
+        }
       ],
       "privacy_blurb": "Alle analyse gebeurt op je apparaat. Audio wordt nooit opgenomen of geüpload.",
       "disclaimer": "De geluidsdosiscijfers zijn algemene referentie-informatie, geen medische meting."
@@ -76,10 +104,22 @@
       "subtitle": "Een eerlijke intermittent-fasting-timer. De gratis versie is compleet — voor altijd.",
       "meta_desc": "FastZen is een eerlijke intermittent-fasting-timer. Kernfuncties voor altijd gratis, eenmalige Pro-aankoop, volledig privé.",
       "features": [
-        {"t": "Kern voor altijd gratis", "d": "Alle vooraf ingestelde schema's, de timer, historie, reeksen en meldingen zijn gratis."},
-        {"t": "Eenmalige Pro-aankoop", "d": "Eigen doelen en inzichten voor één betaling. Geen abonnement."},
-        {"t": "Fasetijdlijn", "d": "Bekijk de fasen die doorgaans bij elk uur van je vasten horen."},
-        {"t": "Volledig privé", "d": "Geen account, geen server — je vastenhistorie blijft op je apparaat."}
+        {
+          "t": "Kern voor altijd gratis",
+          "d": "Alle vooraf ingestelde schema's, de timer, historie, reeksen en meldingen zijn gratis."
+        },
+        {
+          "t": "Eenmalige Pro-aankoop",
+          "d": "Eigen doelen en inzichten voor één betaling. Geen abonnement."
+        },
+        {
+          "t": "Fasetijdlijn",
+          "d": "Bekijk de fasen die doorgaans bij elk uur van je vasten horen."
+        },
+        {
+          "t": "Volledig privé",
+          "d": "Geen account, geen server — je vastenhistorie blijft op je apparaat."
+        }
       ],
       "privacy_blurb": "Je vastenhistorie verlaat je iPhone nooit.",
       "disclaimer": "FastZen is een timer- en logboektool, geen medisch advies. Raadpleeg een zorgprofessional voordat je met vasten begint."
@@ -90,13 +130,40 @@
       "subtitle": "Dagelijkse hoofdrekenpuzzels: dezelfde uitdaging voor iedereen wereldwijd, met hints die leren in plaats van verklappen.",
       "meta_desc": "MathSpark biedt dagelijkse getallenpuzzels: dezelfde uitdaging voor iedereen, met leerzame hints. Volledig offline en privé.",
       "features": [
-        {"t": "Dagelijkse wereldwijde challenge", "d": "Iedereen ter wereld krijgt elke dag dezelfde puzzels — volledig offline."},
-        {"t": "Hints die leren", "d": "Strategietips en één volgende stap, nooit de volledige oplossing."},
-        {"t": "Voor altijd gratis", "d": "De dagelijkse challenge en 5 oefenpuzzels per dag zijn altijd gratis."},
-        {"t": "Eenmalige Premium-aankoop", "d": "Onbeperkt oefenen, hogere moeilijkheden en volledige statistieken. Geen abonnement."}
+        {
+          "t": "Dagelijkse wereldwijde challenge",
+          "d": "Iedereen ter wereld krijgt elke dag dezelfde puzzels — volledig offline."
+        },
+        {
+          "t": "Hints die leren",
+          "d": "Strategietips en één volgende stap, nooit de volledige oplossing."
+        },
+        {
+          "t": "Voor altijd gratis",
+          "d": "De dagelijkse challenge en 5 oefenpuzzels per dag zijn altijd gratis."
+        },
+        {
+          "t": "Eenmalige Premium-aankoop",
+          "d": "Onbeperkt oefenen, hogere moeilijkheden en volledige statistieken. Geen abonnement."
+        }
       ],
       "privacy_blurb": "MathSpark werkt volledig offline en verzamelt niets.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Games",
+    "games_sub": "Originele puzzels die jou respecteren: geen advertenties tussen levels, geen energietimers, geen plezier achter een betaalmuur.",
+    "tools_title": "Tools",
+    "tools_sub": "Kleine, scherpe hulpprogramma's die je niet in de weg zitten — en van je data afblijven."
+  },
+  "teaser": {
+    "badge": "In ontwikkeling",
+    "title": "Project 005",
+    "desc": "Iets nieuws gloeit in het donker. Nog geen spoilers."
+  },
+  "about": {
+    "title": "Over de ontwikkelaar",
+    "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 31 talen en gebouwd rond één regel: je gegevens blijven op je apparaat."
   }
 }

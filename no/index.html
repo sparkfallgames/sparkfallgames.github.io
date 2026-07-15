@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Enkle, private iOS-apper</title>
-<meta name="description" content="Enkle, private og ærlige iOS-apper. Dataene dine blir på enheten din — ingen kontoer, ingen servere, ingen sporing.">
+<title>Sparkfall Games — Indiespill og ærlige iOS-apper</title>
+<meta name="description" content="Sparkfall Games er et enmanns indiestudio som lager lekne spill og ærlige, private iOS-verktøy. Ingen kontoer, ingen servere, ingen sporing.">
 <link rel="canonical" href="https://2645809444.github.io/no/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/no/">Qiuyufei Apps</a>
+    <a class="brand" href="/no/">Sparkfall Games</a>
     <nav>
-      <a href="/no/#apps">Apper</a>
+      <a href="/no/#games">Spill</a>
+      <a href="/no/#tools">Verktøy</a>
+      <a href="/no/#about">Om</a>
       <a href="mailto:2645809444@qq.com">Kontakt</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/" selected>Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Enkle, private, ærlige apper.</h1>
-    <p>Hver app er bygget rundt én idé: dataene dine blir på enheten din. Ingen kontoer, ingen servere, ingen sporing.</p>
-    <a class="btn btn-primary" href="#apps">Utforsk appene</a>
+    <span class="hero-kicker">Enmannsstudio for spill</span>
+    <h1>Lekne spill. Ærlige <span class="grad">verktøy.</span></h1>
+    <p>Hver tittel bygges solo og er privat by design — dataene dine blir på enheten din. Ingen kontoer, ingen servere, ingen sporing.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Se spillene</a>
+      <a class="btn" href="#tools">Se verktøyene</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/no/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Spill</span></h2>
+      <p>Originale gåter som respekterer deg: ingen reklame mellom nivåer, ingen energitimere, ingen moro bak betalingsmurer.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/no/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Spill</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Ett puslespill om dagen. Hele verden spiller.</p>
+        <p class="game-desc">Daglige hoderegningsnøtter med hint som lærer deg noe.</p>
+        <span class="card-more">Les mer →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Under utvikling</span>
+      <h3>Project 005</h3>
+      <p>Noe nytt gløder i mørket. Ingen spoilere ennå.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Verktøy</h2>
+      <p>Små, skarpe verktøy som ikke står i veien for deg — og ikke rører dataene dine.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/no/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Økonomi</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Loggfør en utgift på 3 sekunder.</p>
-      <p class="app-desc">En minimalistisk utgiftssporer som beholder alt på iPhonen din.</p>
+      <p class="tool-tagline">Loggfør en utgift på 3 sekunder.</p>
       <span class="card-more">Les mer →</span>
     </a>
-    <a class="app-card reveal" href="/no/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/no/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Verktøy</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Kjenn støyen din. Beskytt hørselen din.</p>
-      <p class="app-desc">Lydmåler i sanntid med daglig støydose.</p>
+      <p class="tool-tagline">Kjenn støyen din. Beskytt hørselen din.</p>
       <span class="card-more">Les mer →</span>
     </a>
-    <a class="app-card reveal" href="/no/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/no/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Helse og trening</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Den ærlige fastetimeren.</p>
-      <p class="app-desc">En timer for periodisk faste uten abonnementsfeller.</p>
+      <p class="tool-tagline">Den ærlige fastetimeren.</p>
       <span class="card-more">Les mer →</span>
     </a>
-    <a class="app-card reveal" href="/no/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Spill</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Ett puslespill om dagen. Hele verden spiller.</p>
-      <p class="app-desc">Daglige hoderegningsnøtter med hint som lærer deg noe.</p>
-      <span class="card-more">Les mer →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Personvern i bunn</h3><p>Alt lagres på enheten din. Vi drifter ingen servere og kan ikke se dataene dine.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Ærlige priser</h3><p>Gratisfunksjoner forblir gratis for alltid. Ingen abonnementsfeller, ingen falske nedtellinger.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Laget for alle</h3><p>Hver app er fullt lokalisert til 31 språk, med mørk modus og tilgjengelighet.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Om utvikleren</h2>
+    <p>Jeg er soloutvikleren bak Sparkfall Games. Hvert spill og verktøy er 100 % native for iOS, lokalisert til 31 språk og bygget rundt én regel: dataene dine blir på enheten din.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Personvernerklæringer: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Personvernerklæringer: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

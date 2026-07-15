@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Eenvoudige, privacyvriendelijke iOS-apps</title>
-<meta name="description" content="Eenvoudige, privacyvriendelijke en eerlijke iOS-apps. Je gegevens blijven op je apparaat: geen accounts, geen servers, geen tracking.">
+<title>Sparkfall Games — Indiegames &amp; eerlijke iOS-apps</title>
+<meta name="description" content="Sparkfall Games is een eenpersoons indiestudio die speelse games en eerlijke, privacyvriendelijke iOS-tools maakt. Geen accounts, geen servers, geen tracking.">
 <link rel="canonical" href="https://2645809444.github.io/nl/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/nl/">Qiuyufei Apps</a>
+    <a class="brand" href="/nl/">Sparkfall Games</a>
     <nav>
-      <a href="/nl/#apps">Apps</a>
+      <a href="/nl/#games">Games</a>
+      <a href="/nl/#tools">Tools</a>
+      <a href="/nl/#about">Over</a>
       <a href="mailto:2645809444@qq.com">Contact</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/" selected>Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Eenvoudige, private, eerlijke apps.</h1>
-    <p>Elke app is gebouwd rond één idee: je gegevens blijven op je apparaat. Geen accounts, geen servers, geen tracking.</p>
-    <a class="btn btn-primary" href="#apps">Bekijk de apps</a>
+    <span class="hero-kicker">Eenpersoons gamestudio</span>
+    <h1>Speelse games. Eerlijke <span class="grad">tools.</span></h1>
+    <p>Elke titel wordt solo gebouwd en is privé by design — je gegevens blijven op je apparaat. Geen accounts, geen servers, geen tracking.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Bekijk de games</a>
+      <a class="btn" href="#tools">Bekijk de tools</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/nl/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Games</span></h2>
+      <p>Originele puzzels die jou respecteren: geen advertenties tussen levels, geen energietimers, geen plezier achter een betaalmuur.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/nl/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Games</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Eén puzzel per dag. De hele wereld speelt mee.</p>
+        <p class="game-desc">Dagelijkse hoofdrekenpuzzels met hints die je iets leren.</p>
+        <span class="card-more">Meer informatie →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">In ontwikkeling</span>
+      <h3>Project 005</h3>
+      <p>Iets nieuws gloeit in het donker. Nog geen spoilers.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Tools</h2>
+      <p>Kleine, scherpe hulpprogramma's die je niet in de weg zitten — en van je data afblijven.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/nl/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Financiën</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Noteer een uitgave in 3 seconden.</p>
-      <p class="app-desc">Een minimalistische uitgaventracker die alles op je iPhone bewaart.</p>
+      <p class="tool-tagline">Noteer een uitgave in 3 seconden.</p>
       <span class="card-more">Meer informatie →</span>
     </a>
-    <a class="app-card reveal" href="/nl/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/nl/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Hulpprogramma's</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Ken je lawaai. Bescherm je gehoor.</p>
-      <p class="app-desc">Realtime geluidsmeter met dagelijkse geluidsdosis.</p>
+      <p class="tool-tagline">Ken je lawaai. Bescherm je gehoor.</p>
       <span class="card-more">Meer informatie →</span>
     </a>
-    <a class="app-card reveal" href="/nl/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/nl/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Gezondheid en fitness</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">De eerlijke vastentimer.</p>
-      <p class="app-desc">Een intermittent-fasting-timer zonder abonnementsvallen.</p>
+      <p class="tool-tagline">De eerlijke vastentimer.</p>
       <span class="card-more">Meer informatie →</span>
     </a>
-    <a class="app-card reveal" href="/nl/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Games</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Eén puzzel per dag. De hele wereld speelt mee.</p>
-      <p class="app-desc">Dagelijkse hoofdrekenpuzzels met hints die je iets leren.</p>
-      <span class="card-more">Meer informatie →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Privacy by design</h3><p>Alles wordt op je apparaat opgeslagen. We beheren geen servers en kunnen je gegevens niet zien.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Eerlijke prijzen</h3><p>Gratis functies blijven voor altijd gratis. Geen abonnementsvallen, geen neptimers.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Voor iedereen gemaakt</h3><p>Elke app is volledig gelokaliseerd in 31 talen, met donkere modus en toegankelijkheid.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Over de ontwikkelaar</h2>
+    <p>Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 31 talen en gebouwd rond één regel: je gegevens blijven op je apparaat.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Privacybeleid: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Privacybeleid: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

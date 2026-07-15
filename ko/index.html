@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — 심플하고 프라이빗한 iOS 앱</title>
-<meta name="description" content="심플하고 프라이빗하며 정직한 iOS 앱. 데이터는 기기 밖으로 나가지 않습니다 — 계정 없음, 서버 없음, 추적 없음.">
+<title>Sparkfall Games — 인디 게임과 정직한 iOS 앱</title>
+<meta name="description" content="Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음.">
 <link rel="canonical" href="https://2645809444.github.io/ko/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/ko/">Qiuyufei Apps</a>
+    <a class="brand" href="/ko/">Sparkfall Games</a>
     <nav>
-      <a href="/ko/#apps">앱</a>
+      <a href="/ko/#games">게임</a>
+      <a href="/ko/#tools">도구</a>
+      <a href="/ko/#about">소개</a>
       <a href="mailto:2645809444@qq.com">문의하기</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/" selected>한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>심플하고, 프라이빗하고, 정직한 앱.</h1>
-    <p>모든 앱은 하나의 원칙으로 만들어졌습니다: 데이터는 당신의 기기에만 저장됩니다. 계정 없음, 서버 없음, 추적 없음.</p>
-    <a class="btn btn-primary" href="#apps">앱 둘러보기</a>
+    <span class="hero-kicker">1인 게임 스튜디오</span>
+    <h1>재미있는 게임, 정직한 <span class="grad">도구.</span></h1>
+    <p>모든 작품을 혼자 만들며 설계부터 프라이버시를 지킵니다. 데이터는 기기 밖으로 나가지 않습니다. 계정 없음, 서버 없음, 추적 없음.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">게임 보기</a>
+      <a class="btn" href="#tools">도구 둘러보기</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/ko/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">게임</span></h2>
+      <p>플레이어를 존중하는 오리지널 퍼즐 — 레벨 사이 광고 없음, 에너지 타이머 없음, 유료 장벽 없음.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/ko/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">게임</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">매일 한 문제, 전 세계가 함께.</p>
+        <p class="game-desc">가르쳐 주는 힌트가 있는 매일의 암산 퍼즐.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">개발 중</span>
+      <h3>Project 005</h3>
+      <p>어둠 속에서 새로운 무언가가 빛나고 있습니다. 아직은 비밀입니다.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>도구</h2>
+      <p>작고 정교한 유틸리티. 방해하지 않고, 데이터도 건드리지 않습니다.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/ko/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">금융</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">3초 만에 지출 기록.</p>
-      <p class="app-desc">모든 기록을 iPhone에만 저장하는 미니멀 가계부.</p>
+      <p class="tool-tagline">3초 만에 지출 기록.</p>
       <span class="card-more">자세히 보기 →</span>
     </a>
-    <a class="app-card reveal" href="/ko/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/ko/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">유틸리티</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">소음을 알고, 청력을 지키세요.</p>
-      <p class="app-desc">일일 소음 노출량 추적이 있는 실시간 소음 측정기.</p>
+      <p class="tool-tagline">소음을 알고, 청력을 지키세요.</p>
       <span class="card-more">자세히 보기 →</span>
     </a>
-    <a class="app-card reveal" href="/ko/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/ko/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">건강 및 피트니스</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">정직한 단식 타이머.</p>
-      <p class="app-desc">구독 함정이 없는 간헐적 단식 타이머.</p>
+      <p class="tool-tagline">정직한 단식 타이머.</p>
       <span class="card-more">자세히 보기 →</span>
     </a>
-    <a class="app-card reveal" href="/ko/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">게임</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">매일 한 문제, 전 세계가 함께.</p>
-      <p class="app-desc">가르쳐 주는 힌트가 있는 매일의 암산 퍼즐.</p>
-      <span class="card-more">자세히 보기 →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>프라이버시 중심 설계</h3><p>모든 데이터는 기기에 저장됩니다. 서버를 운영하지 않으며 당신의 데이터를 볼 수 없습니다.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>정직한 가격</h3><p>무료 기능은 영원히 무료입니다. 구독 함정도, 가짜 카운트다운도 없습니다.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>모두를 위한 앱</h3><p>모든 앱이 31개 언어를 완벽 지원하며 다크 모드와 손쉬운 사용도 지원합니다.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>개발자 소개</h2>
+    <p>Sparkfall Games를 만드는 1인 개발자입니다. 모든 게임과 도구는 100% iOS 네이티브이며 31개 언어로 현지화되어 있고, '데이터는 기기 밖으로 내보내지 않는다'는 하나의 원칙으로 만들어집니다.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">개인정보 처리방침: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">개인정보 처리방침: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Ứng dụng iOS đơn giản và riêng tư</title>
-<meta name="description" content="Ứng dụng iOS đơn giản, riêng tư và trung thực. Dữ liệu của bạn ở lại trên thiết bị — không tài khoản, không máy chủ, không theo dõi.">
+<title>Sparkfall Games — Game indie và ứng dụng iOS trung thực</title>
+<meta name="description" content="Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi.">
 <link rel="canonical" href="https://2645809444.github.io/vi/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/vi/">Qiuyufei Apps</a>
+    <a class="brand" href="/vi/">Sparkfall Games</a>
     <nav>
-      <a href="/vi/#apps">Ứng dụng</a>
+      <a href="/vi/#games">Trò chơi</a>
+      <a href="/vi/#tools">Công cụ</a>
+      <a href="/vi/#about">Giới thiệu</a>
       <a href="mailto:2645809444@qq.com">Liên hệ</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/" selected>Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Ứng dụng đơn giản, riêng tư, trung thực.</h1>
-    <p>Mỗi ứng dụng được xây dựng quanh một ý tưởng: dữ liệu của bạn ở lại trên thiết bị. Không tài khoản, không máy chủ, không theo dõi.</p>
-    <a class="btn btn-primary" href="#apps">Khám phá ứng dụng</a>
+    <span class="hero-kicker">Studio game một người</span>
+    <h1>Game vui nhộn. Công cụ trung <span class="grad">thực.</span></h1>
+    <p>Mỗi sản phẩm được xây dựng một mình và riêng tư ngay từ thiết kế — dữ liệu của bạn ở lại trên thiết bị. Không tài khoản, không máy chủ, không theo dõi.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Xem trò chơi</a>
+      <a class="btn" href="#tools">Xem công cụ</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/vi/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Trò chơi</span></h2>
+      <p>Những câu đố nguyên bản tôn trọng bạn: không quảng cáo giữa các màn, không đồng hồ năng lượng, không khóa niềm vui sau bức tường trả phí.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/vi/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Trò chơi</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Mỗi ngày một câu đố. Cả thế giới cùng chơi.</p>
+        <p class="game-desc">Câu đố tính nhẩm hằng ngày với gợi ý mang tính dạy học.</p>
+        <span class="card-more">Tìm hiểu thêm →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Đang phát triển</span>
+      <h3>Project 005</h3>
+      <p>Điều gì đó mới đang phát sáng trong bóng tối. Chưa tiết lộ.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Công cụ</h2>
+      <p>Các tiện ích nhỏ gọn, sắc bén, không cản trở bạn — và không chạm vào dữ liệu của bạn.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/vi/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Tài chính</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Ghi một khoản chi trong 3 giây.</p>
-      <p class="app-desc">Ứng dụng theo dõi chi tiêu tối giản, giữ mọi bản ghi trên iPhone của bạn.</p>
+      <p class="tool-tagline">Ghi một khoản chi trong 3 giây.</p>
       <span class="card-more">Tìm hiểu thêm →</span>
     </a>
-    <a class="app-card reveal" href="/vi/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/vi/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Tiện ích</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Hiểu tiếng ồn. Bảo vệ thính giác.</p>
-      <p class="app-desc">Máy đo âm thanh thời gian thực với liều tiếng ồn hằng ngày.</p>
+      <p class="tool-tagline">Hiểu tiếng ồn. Bảo vệ thính giác.</p>
       <span class="card-more">Tìm hiểu thêm →</span>
     </a>
-    <a class="app-card reveal" href="/vi/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/vi/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Sức khỏe & Thể chất</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Đồng hồ nhịn ăn trung thực.</p>
-      <p class="app-desc">Đồng hồ nhịn ăn gián đoạn không có bẫy đăng ký.</p>
+      <p class="tool-tagline">Đồng hồ nhịn ăn trung thực.</p>
       <span class="card-more">Tìm hiểu thêm →</span>
     </a>
-    <a class="app-card reveal" href="/vi/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Trò chơi</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Mỗi ngày một câu đố. Cả thế giới cùng chơi.</p>
-      <p class="app-desc">Câu đố tính nhẩm hằng ngày với gợi ý mang tính dạy học.</p>
-      <span class="card-more">Tìm hiểu thêm →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Riêng tư từ thiết kế</h3><p>Mọi thứ được lưu trên thiết bị của bạn. Chúng tôi không vận hành máy chủ và không thể xem dữ liệu của bạn.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Giá cả trung thực</h3><p>Tính năng miễn phí sẽ miễn phí mãi mãi. Không bẫy đăng ký, không đồng hồ đếm ngược giả.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Dành cho mọi người</h3><p>Mỗi ứng dụng được bản địa hóa đầy đủ 31 ngôn ngữ, có chế độ tối và trợ năng.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Về nhà phát triển</h2>
+    <p>Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 31 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Chính sách quyền riêng tư: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Chính sách quyền riêng tư: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

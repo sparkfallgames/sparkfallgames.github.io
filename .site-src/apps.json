@@ -1,14 +1,27 @@
 {
   "site": {
-    "brand": "Qiuyufei Apps",
+    "brand": "Sparkfall Games",
     "base_url": "https://2645809444.github.io",
     "contact_email": "2645809444@qq.com",
     "year": "2026"
   },
   "apps": [
     {
+      "slug": "mathspark",
+      "name": "MathSpark",
+      "kind": "game",
+      "accent": "#7C5CFF",
+      "accent_dark": "#1A1030",
+      "gradient": ["#7C5CFF", "#5B3CE0"],
+      "category_key": "games",
+      "letter": "M",
+      "released": false,
+      "store_url": ""
+    },
+    {
       "slug": "quickcost",
       "name": "QuickCost",
+      "kind": "tool",
       "accent": "#2E9E5B",
       "accent_dark": "#0E2A1B",
       "gradient": ["#2E9E5B", "#1C7A44"],
@@ -20,6 +33,7 @@
     {
       "slug": "decibelmeter",
       "name": "Decibel Meter",
+      "kind": "tool",
       "accent": "#1AC766",
       "accent_dark": "#0E1A16",
       "gradient": ["#1AC766", "#0F8A4D"],
@@ -31,22 +45,12 @@
     {
       "slug": "fastzen",
       "name": "FastZen",
+      "kind": "tool",
       "accent": "#F08A24",
       "accent_dark": "#2A1E12",
       "gradient": ["#F9A833", "#E86A1A"],
       "category_key": "health",
       "letter": "F",
-      "released": false,
-      "store_url": ""
-    },
-    {
-      "slug": "mathspark",
-      "name": "MathSpark",
-      "accent": "#7C5CFF",
-      "accent_dark": "#1A1030",
-      "gradient": ["#7C5CFF", "#5B3CE0"],
-      "category_key": "games",
-      "letter": "M",
       "released": false,
       "store_url": ""
     }

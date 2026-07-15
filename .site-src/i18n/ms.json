@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Aplikasi iOS yang ringkas dan privat",
-    "home_desc": "Aplikasi iOS yang ringkas, privat dan jujur. Data anda kekal pada peranti anda — tiada akaun, tiada pelayan, tiada penjejakan."
+    "home_title": "Sparkfall Games — Permainan indie & aplikasi iOS yang jujur",
+    "home_desc": "Sparkfall Games ialah studio indie seorang diri yang mencipta permainan seronok serta alat iOS yang jujur dan privat. Tiada akaun, tiada pelayan, tiada penjejakan."
   },
   "nav": {
-    "apps": "Aplikasi",
     "contact": "Hubungi kami",
     "privacy": "Privasi",
     "support": "Sokongan",
     "all_apps": "Semua aplikasi",
-    "language": "Bahasa"
+    "language": "Bahasa",
+    "games": "Permainan",
+    "tools": "Alat",
+    "about": "Perihal"
   },
   "hero": {
-    "title": "Aplikasi ringkas, privat dan jujur.",
-    "subtitle": "Setiap aplikasi dibina berdasarkan satu idea: data anda kekal pada peranti anda. Tiada akaun, tiada pelayan, tiada penjejakan.",
-    "explore": "Teroka aplikasi"
+    "title": "Permainan yang seronok. Alat yang jujur.",
+    "subtitle": "Setiap karya dibina seorang diri dan privat sejak reka bentuk — data anda kekal pada peranti anda. Tiada akaun, tiada pelayan, tiada penjejakan.",
+    "explore": "Lihat permainan",
+    "kicker": "Studio permainan seorang diri",
+    "explore_tools": "Lihat alat"
   },
   "values": {
     "private_title": "Privasi sejak reka bentuk",
@@ -31,7 +35,7 @@
     "support": "Sokongan",
     "features": "Mengapa {app}",
     "privacy_heading": "Privasi",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Dasar privasi",
     "learn_more": "Ketahui lebih lanjut"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Penjejak perbelanjaan minimalis dan privat untuk iPhone. Buka, ketik, siap — dalam 3 saat.",
       "meta_desc": "QuickCost ialah penjejak perbelanjaan minimalis untuk iPhone. Catat perbelanjaan dalam 3 saat. Semua data kekal pada peranti anda.",
       "features": [
-        {"t": "Catatan 3 saat", "d": "Buka aplikasi, ketik jumlah dan kategori — perbelanjaan terus disimpan."},
-        {"t": "100% pada peranti", "d": "Tiada akaun, tiada pelayan. Rekod kewangan anda tidak pernah meninggalkan iPhone."},
-        {"t": "Analisis yang jelas", "d": "Ringkasan harian, bulanan dan mengikut kategori menunjukkan ke mana wang anda pergi."},
-        {"t": "31 bahasa", "d": "Disetempatkan sepenuhnya di seluruh dunia, dengan mod gelap dan teks besar."}
+        {
+          "t": "Catatan 3 saat",
+          "d": "Buka aplikasi, ketik jumlah dan kategori — perbelanjaan terus disimpan."
+        },
+        {
+          "t": "100% pada peranti",
+          "d": "Tiada akaun, tiada pelayan. Rekod kewangan anda tidak pernah meninggalkan iPhone."
+        },
+        {
+          "t": "Analisis yang jelas",
+          "d": "Ringkasan harian, bulanan dan mengikut kategori menunjukkan ke mana wang anda pergi."
+        },
+        {
+          "t": "31 bahasa",
+          "d": "Disetempatkan sepenuhnya di seluruh dunia, dengan mod gelap dan teks besar."
+        }
       ],
       "privacy_blurb": "QuickCost menyimpan semuanya secara setempat pada peranti anda dan tidak mengumpul apa-apa.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Meter aras bunyi masa nyata dengan penjejak dos hingar harian untuk membantu melindungi pendengaran anda.",
       "meta_desc": "Decibel Meter mengukur aras bunyi secara masa nyata dan menjejaki dos hingar harian anda. Audio tidak pernah meninggalkan iPhone.",
       "features": [
-        {"t": "Pengukuran langsung", "d": "Bacaan dB masa nyata dengan MIN, PURATA dan MAKS sepintas lalu."},
-        {"t": "Dos hingar harian", "d": "Menjejaki pendedahan anda mengikut garis panduan NIOSH 85 dB / 8 jam."},
-        {"t": "Tiada rakaman", "d": "Audio dianalisis secara masa nyata dan tidak pernah disimpan atau dimuat naik."},
-        {"t": "Widget & Siri", "d": "Mula dan hentikan pengukuran dari Skrin Utama atau dengan suara."}
+        {
+          "t": "Pengukuran langsung",
+          "d": "Bacaan dB masa nyata dengan MIN, PURATA dan MAKS sepintas lalu."
+        },
+        {
+          "t": "Dos hingar harian",
+          "d": "Menjejaki pendedahan anda mengikut garis panduan NIOSH 85 dB / 8 jam."
+        },
+        {
+          "t": "Tiada rakaman",
+          "d": "Audio dianalisis secara masa nyata dan tidak pernah disimpan atau dimuat naik."
+        },
+        {
+          "t": "Widget & Siri",
+          "d": "Mula dan hentikan pengukuran dari Skrin Utama atau dengan suara."
+        }
       ],
       "privacy_blurb": "Semua analisis berlaku pada peranti anda. Audio tidak pernah dirakam atau dimuat naik.",
       "disclaimer": "Angka dos hingar ialah maklumat rujukan umum, bukan pengukuran perubatan."
@@ -76,10 +104,22 @@
       "subtitle": "Pemasa puasa berselang yang jujur. Versi percuma adalah lengkap — selamanya.",
       "meta_desc": "FastZen ialah pemasa puasa berselang yang jujur. Ciri teras percuma selamanya, belian Pro sekali sahaja, privat sepenuhnya.",
       "features": [
-        {"t": "Teras percuma selamanya", "d": "Semua pelan pratetap, pemasa, sejarah, rentetan dan pemberitahuan adalah percuma."},
-        {"t": "Pro belian sekali", "d": "Matlamat tersuai dan analisis dengan satu bayaran sahaja. Tiada langganan."},
-        {"t": "Garis masa fasa", "d": "Lihat fasa yang lazim dikaitkan dengan setiap jam puasa anda."},
-        {"t": "Privat sepenuhnya", "d": "Tiada akaun, tiada pelayan — sejarah puasa kekal pada peranti anda."}
+        {
+          "t": "Teras percuma selamanya",
+          "d": "Semua pelan pratetap, pemasa, sejarah, rentetan dan pemberitahuan adalah percuma."
+        },
+        {
+          "t": "Pro belian sekali",
+          "d": "Matlamat tersuai dan analisis dengan satu bayaran sahaja. Tiada langganan."
+        },
+        {
+          "t": "Garis masa fasa",
+          "d": "Lihat fasa yang lazim dikaitkan dengan setiap jam puasa anda."
+        },
+        {
+          "t": "Privat sepenuhnya",
+          "d": "Tiada akaun, tiada pelayan — sejarah puasa kekal pada peranti anda."
+        }
       ],
       "privacy_blurb": "Sejarah puasa anda tidak pernah meninggalkan iPhone.",
       "disclaimer": "FastZen ialah alat pemasa dan pencatatan, bukan nasihat perubatan. Rujuk profesional kesihatan sebelum memulakan sebarang puasa."
@@ -90,13 +130,40 @@
       "subtitle": "Teka-teki kira cepat harian — cabaran yang sama untuk semua orang di dunia, dengan petunjuk yang mengajar dan bukannya membocorkan.",
       "meta_desc": "MathSpark menyajikan teka-teki nombor harian — cabaran yang sama untuk semua, dengan petunjuk mendidik. Sepenuhnya luar talian dan privat.",
       "features": [
-        {"t": "Cabaran global harian", "d": "Semua orang di dunia menerima teka-teki yang sama setiap hari — sepenuhnya luar talian."},
-        {"t": "Petunjuk yang mengajar", "d": "Petua strategi dan satu langkah seterusnya sahaja, tidak pernah penyelesaian penuh."},
-        {"t": "Percuma selamanya", "d": "Cabaran harian dan 5 teka-teki latihan sehari sentiasa percuma."},
-        {"t": "Premium belian sekali", "d": "Latihan tanpa had, tahap lebih sukar dan statistik penuh. Tiada langganan."}
+        {
+          "t": "Cabaran global harian",
+          "d": "Semua orang di dunia menerima teka-teki yang sama setiap hari — sepenuhnya luar talian."
+        },
+        {
+          "t": "Petunjuk yang mengajar",
+          "d": "Petua strategi dan satu langkah seterusnya sahaja, tidak pernah penyelesaian penuh."
+        },
+        {
+          "t": "Percuma selamanya",
+          "d": "Cabaran harian dan 5 teka-teki latihan sehari sentiasa percuma."
+        },
+        {
+          "t": "Premium belian sekali",
+          "d": "Latihan tanpa had, tahap lebih sukar dan statistik penuh. Tiada langganan."
+        }
       ],
       "privacy_blurb": "MathSpark berfungsi sepenuhnya luar talian dan tidak mengumpul apa-apa.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Permainan",
+    "games_sub": "Teka-teki asli yang menghormati anda: tiada iklan antara tahap, tiada pemasa tenaga, tiada keseronokan di sebalik tembok bayaran.",
+    "tools_title": "Alat",
+    "tools_sub": "Utiliti kecil dan tepat yang tidak mengganggu anda — dan tidak menyentuh data anda."
+  },
+  "teaser": {
+    "badge": "Dalam pembangunan",
+    "title": "Project 005",
+    "desc": "Sesuatu yang baharu bersinar dalam gelap. Tiada pembocoran buat masa ini."
+  },
+  "about": {
+    "title": "Perihal pembangun",
+    "body": "Saya pembangun solo di sebalik Sparkfall Games. Setiap permainan dan alat adalah 100% natif untuk iOS, disetempatkan ke 31 bahasa dan dibina dengan satu peraturan: data anda kekal pada peranti anda."
   }
 }

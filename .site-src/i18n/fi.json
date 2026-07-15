@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Yksinkertaisia, yksityisiä iOS-sovelluksia",
-    "home_desc": "Yksinkertaisia, yksityisiä ja rehellisiä iOS-sovelluksia. Tietosi pysyvät laitteellasi — ei tilejä, ei palvelimia, ei seurantaa."
+    "home_title": "Sparkfall Games — Indie-pelejä ja rehellisiä iOS-sovelluksia",
+    "home_desc": "Sparkfall Games on yhden hengen indie-studio, joka tekee leikkisiä pelejä ja rehellisiä, yksityisiä iOS-työkaluja. Ei tilejä, ei palvelimia, ei seurantaa."
   },
   "nav": {
-    "apps": "Sovellukset",
     "contact": "Yhteystiedot",
     "privacy": "Tietosuoja",
     "support": "Tuki",
     "all_apps": "Kaikki sovellukset",
-    "language": "Kieli"
+    "language": "Kieli",
+    "games": "Pelit",
+    "tools": "Työkalut",
+    "about": "Tietoa"
   },
   "hero": {
-    "title": "Yksinkertaisia, yksityisiä, rehellisiä sovelluksia.",
-    "subtitle": "Jokainen sovellus perustuu yhteen ajatukseen: tietosi pysyvät laitteellasi. Ei tilejä, ei palvelimia, ei seurantaa.",
-    "explore": "Tutustu sovelluksiin"
+    "title": "Leikkisiä pelejä. Rehellisiä työkaluja.",
+    "subtitle": "Jokainen nimike rakennetaan yksin ja on yksityinen jo suunnittelultaan — tietosi pysyvät laitteellasi. Ei tilejä, ei palvelimia, ei seurantaa.",
+    "explore": "Katso pelit",
+    "kicker": "Yhden hengen pelistudio",
+    "explore_tools": "Katso työkalut"
   },
   "values": {
     "private_title": "Yksityisyys lähtökohtana",
@@ -31,7 +35,7 @@
     "support": "Tuki",
     "features": "Miksi {app}",
     "privacy_heading": "Tietosuoja",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Tietosuojakäytännöt",
     "learn_more": "Lue lisää"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Minimalistinen, yksityinen kuluseuranta iPhonelle. Avaa, napauta, valmis — 3 sekunnissa.",
       "meta_desc": "QuickCost on minimalistinen kuluseuranta iPhonelle. Kirjaa kulu 3 sekunnissa. Kaikki tiedot pysyvät laitteellasi.",
       "features": [
-        {"t": "Kirjaus 3 sekunnissa", "d": "Avaa sovellus, napauta summaa ja kategoriaa — kulu on tallennettu."},
-        {"t": "100 % laitteella", "d": "Ei tiliä, ei palvelinta. Taloustietosi eivät koskaan poistu iPhonestasi."},
-        {"t": "Selkeät näkymät", "d": "Päivä-, kuukausi- ja kategoriayhteenvedot näyttävät, mihin rahasi menevät."},
-        {"t": "31 kieltä", "d": "Täysin lokalisoitu maailmanlaajuisesti, tumma tila ja suuri teksti."}
+        {
+          "t": "Kirjaus 3 sekunnissa",
+          "d": "Avaa sovellus, napauta summaa ja kategoriaa — kulu on tallennettu."
+        },
+        {
+          "t": "100 % laitteella",
+          "d": "Ei tiliä, ei palvelinta. Taloustietosi eivät koskaan poistu iPhonestasi."
+        },
+        {
+          "t": "Selkeät näkymät",
+          "d": "Päivä-, kuukausi- ja kategoriayhteenvedot näyttävät, mihin rahasi menevät."
+        },
+        {
+          "t": "31 kieltä",
+          "d": "Täysin lokalisoitu maailmanlaajuisesti, tumma tila ja suuri teksti."
+        }
       ],
       "privacy_blurb": "QuickCost tallentaa kaiken paikallisesti laitteellesi eikä kerää mitään.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Reaaliaikainen äänitasomittari päivittäisen meluannoksen seurannalla — auttaa suojaamaan kuuloasi.",
       "meta_desc": "Decibel Meter mittaa äänitasoa reaaliajassa ja seuraa päivittäistä meluannostasi. Ääni ei koskaan poistu iPhonestasi.",
       "features": [
-        {"t": "Reaaliaikainen mittaus", "d": "Reaaliaikainen dB-lukema sekä MIN, KESK ja MAKS yhdellä silmäyksellä."},
-        {"t": "Päivittäinen meluannos", "d": "Seuraa altistumistasi NIOSH:n 85 dB / 8 h -ohjeen mukaan."},
-        {"t": "Mitään ei tallenneta", "d": "Ääni analysoidaan reaaliajassa eikä sitä koskaan tallenneta tai lähetetä."},
-        {"t": "Widget ja Siri", "d": "Aloita ja lopeta mittaus aloitusnäytöltä tai äänellä."}
+        {
+          "t": "Reaaliaikainen mittaus",
+          "d": "Reaaliaikainen dB-lukema sekä MIN, KESK ja MAKS yhdellä silmäyksellä."
+        },
+        {
+          "t": "Päivittäinen meluannos",
+          "d": "Seuraa altistumistasi NIOSH:n 85 dB / 8 h -ohjeen mukaan."
+        },
+        {
+          "t": "Mitään ei tallenneta",
+          "d": "Ääni analysoidaan reaaliajassa eikä sitä koskaan tallenneta tai lähetetä."
+        },
+        {
+          "t": "Widget ja Siri",
+          "d": "Aloita ja lopeta mittaus aloitusnäytöltä tai äänellä."
+        }
       ],
       "privacy_blurb": "Kaikki analyysi tapahtuu laitteellasi. Ääntä ei koskaan tallenneta eikä lähetetä.",
       "disclaimer": "Meluannosluvut ovat yleistä viitetietoa, eivät lääketieteellinen mittaus."
@@ -76,10 +104,22 @@
       "subtitle": "Rehellinen pätkäpaastoajastin. Ilmaisversio on täydellinen — ikuisesti.",
       "meta_desc": "FastZen on rehellinen pätkäpaastoajastin. Ydinominaisuudet ilmaisia ikuisesti, Pro kertaostona, täysin yksityinen.",
       "features": [
-        {"t": "Ydin ilmainen ikuisesti", "d": "Kaikki valmiit suunnitelmat, ajastin, historia, putket ja ilmoitukset ovat ilmaisia."},
-        {"t": "Pro kertaostona", "d": "Omat tavoitteet ja tilastot yhdellä maksulla. Ei tilausta."},
-        {"t": "Vaiheiden aikajana", "d": "Katso, mitkä vaiheet yleensä liitetään kuhunkin paastotuntiin."},
-        {"t": "Täysin yksityinen", "d": "Ei tiliä, ei palvelinta — paastohistoriasi pysyy laitteellasi."}
+        {
+          "t": "Ydin ilmainen ikuisesti",
+          "d": "Kaikki valmiit suunnitelmat, ajastin, historia, putket ja ilmoitukset ovat ilmaisia."
+        },
+        {
+          "t": "Pro kertaostona",
+          "d": "Omat tavoitteet ja tilastot yhdellä maksulla. Ei tilausta."
+        },
+        {
+          "t": "Vaiheiden aikajana",
+          "d": "Katso, mitkä vaiheet yleensä liitetään kuhunkin paastotuntiin."
+        },
+        {
+          "t": "Täysin yksityinen",
+          "d": "Ei tiliä, ei palvelinta — paastohistoriasi pysyy laitteellasi."
+        }
       ],
       "privacy_blurb": "Paastohistoriasi ei koskaan poistu iPhonestasi.",
       "disclaimer": "FastZen on ajastin- ja kirjaustyökalu, ei lääketieteellinen neuvo. Keskustele terveydenhuollon ammattilaisen kanssa ennen paaston aloittamista."
@@ -90,13 +130,40 @@
       "subtitle": "Päivittäiset päässälaskupulmat — sama haaste kaikille maailmassa, vihjeillä jotka opettavat paljastamatta ratkaisua.",
       "meta_desc": "MathSpark tarjoaa päivittäisiä numeropulmia — sama haaste kaikille, opettavat vihjeet. Täysin offline ja yksityinen.",
       "features": [
-        {"t": "Päivittäinen globaali haaste", "d": "Kaikki maailmassa saavat samat pulmat joka päivä — täysin offline."},
-        {"t": "Opettavat vihjeet", "d": "Strategiavinkkejä ja vain yksi seuraava askel, ei koskaan koko ratkaisua."},
-        {"t": "Ilmainen ikuisesti", "d": "Päivittäinen haaste ja 5 harjoituspulmaa päivässä ovat aina ilmaisia."},
-        {"t": "Premium kertaostona", "d": "Rajaton harjoittelu, vaikeammat tasot ja täydet tilastot. Ei tilausta."}
+        {
+          "t": "Päivittäinen globaali haaste",
+          "d": "Kaikki maailmassa saavat samat pulmat joka päivä — täysin offline."
+        },
+        {
+          "t": "Opettavat vihjeet",
+          "d": "Strategiavinkkejä ja vain yksi seuraava askel, ei koskaan koko ratkaisua."
+        },
+        {
+          "t": "Ilmainen ikuisesti",
+          "d": "Päivittäinen haaste ja 5 harjoituspulmaa päivässä ovat aina ilmaisia."
+        },
+        {
+          "t": "Premium kertaostona",
+          "d": "Rajaton harjoittelu, vaikeammat tasot ja täydet tilastot. Ei tilausta."
+        }
       ],
       "privacy_blurb": "MathSpark toimii täysin offline-tilassa eikä kerää mitään.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Pelit",
+    "games_sub": "Omaperäisiä pulmia, jotka kunnioittavat sinua: ei mainoksia tasojen välissä, ei energia-ajastimia, ei maksumuurin taakse lukittua hauskuutta.",
+    "tools_title": "Työkalut",
+    "tools_sub": "Pieniä, teräviä apuohjelmia, jotka eivät ole tielläsi — eivätkä koske tietoihisi."
+  },
+  "teaser": {
+    "badge": "Kehitteillä",
+    "title": "Project 005",
+    "desc": "Jotain uutta hehkuu pimeydessä. Ei spoilereita vielä."
+  },
+  "about": {
+    "title": "Tietoa kehittäjästä",
+    "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 31 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi."
   }
 }

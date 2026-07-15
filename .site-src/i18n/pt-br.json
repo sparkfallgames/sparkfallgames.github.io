@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Apps iOS simples e privados",
-    "home_desc": "Apps iOS simples, privados e honestos. Seus dados ficam no seu aparelho: sem contas, sem servidores, sem rastreamento."
+    "home_title": "Sparkfall Games — Jogos indie e apps honestos para iOS",
+    "home_desc": "A Sparkfall Games é um estúdio indie de uma pessoa só que cria jogos divertidos e ferramentas honestas e privadas para iOS. Sem contas, sem servidores, sem rastreamento."
   },
   "nav": {
-    "apps": "Apps",
     "contact": "Contato",
     "privacy": "Privacidade",
     "support": "Suporte",
     "all_apps": "Todos os apps",
-    "language": "Idioma"
+    "language": "Idioma",
+    "games": "Jogos",
+    "tools": "Ferramentas",
+    "about": "Sobre"
   },
   "hero": {
-    "title": "Apps simples, privados e honestos.",
-    "subtitle": "Cada app é construído em torno de uma ideia: seus dados ficam no seu aparelho. Sem contas, sem servidores, sem rastreamento.",
-    "explore": "Explorar os apps"
+    "title": "Jogos divertidos. Ferramentas honestas.",
+    "subtitle": "Cada título é criado solo e privado por padrão: seus dados ficam no seu aparelho. Sem contas, sem servidores, sem rastreamento.",
+    "explore": "Ver os jogos",
+    "kicker": "Estúdio de uma pessoa só",
+    "explore_tools": "Ver as ferramentas"
   },
   "values": {
     "private_title": "Privacidade por padrão",
@@ -31,7 +35,7 @@
     "support": "Suporte",
     "features": "Por que {app}",
     "privacy_heading": "Privacidade",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Políticas de privacidade",
     "learn_more": "Saiba mais"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Um controle de gastos minimalista e privado para iPhone. Abrir, tocar, pronto — em 3 segundos.",
       "meta_desc": "QuickCost é um controle de gastos minimalista para iPhone. Registre um gasto em 3 segundos. Todos os dados ficam no seu aparelho.",
       "features": [
-        {"t": "Registro em 3 segundos", "d": "Abra o app, toque no valor e em uma categoria: o gasto está salvo."},
-        {"t": "100% no aparelho", "d": "Sem conta, sem servidor. Seus registros financeiros nunca saem do seu iPhone."},
-        {"t": "Visão clara", "d": "Resumos por dia, mês e categoria mostram para onde vai seu dinheiro."},
-        {"t": "31 idiomas", "d": "Totalmente localizado no mundo todo, com modo escuro e letras grandes."}
+        {
+          "t": "Registro em 3 segundos",
+          "d": "Abra o app, toque no valor e em uma categoria: o gasto está salvo."
+        },
+        {
+          "t": "100% no aparelho",
+          "d": "Sem conta, sem servidor. Seus registros financeiros nunca saem do seu iPhone."
+        },
+        {
+          "t": "Visão clara",
+          "d": "Resumos por dia, mês e categoria mostram para onde vai seu dinheiro."
+        },
+        {
+          "t": "31 idiomas",
+          "d": "Totalmente localizado no mundo todo, com modo escuro e letras grandes."
+        }
       ],
       "privacy_blurb": "O QuickCost armazena tudo localmente no seu aparelho e não coleta nada.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Um decibelímetro em tempo real com acompanhamento da dose diária de ruído para proteger sua audição.",
       "meta_desc": "O Decibel Meter mede o nível sonoro em tempo real e acompanha sua dose diária de ruído. O áudio nunca sai do seu iPhone.",
       "features": [
-        {"t": "Medição ao vivo", "d": "Leitura de dB em tempo real com MÍN, MÉD e MÁX à primeira vista."},
-        {"t": "Dose diária de ruído", "d": "Acompanha sua exposição segundo a diretriz NIOSH de 85 dB / 8 h."},
-        {"t": "Nada é gravado", "d": "O áudio é analisado em tempo real e nunca é salvo ou enviado."},
-        {"t": "Widget e Siri", "d": "Inicie e pare a medição pela tela de início ou por voz."}
+        {
+          "t": "Medição ao vivo",
+          "d": "Leitura de dB em tempo real com MÍN, MÉD e MÁX à primeira vista."
+        },
+        {
+          "t": "Dose diária de ruído",
+          "d": "Acompanha sua exposição segundo a diretriz NIOSH de 85 dB / 8 h."
+        },
+        {
+          "t": "Nada é gravado",
+          "d": "O áudio é analisado em tempo real e nunca é salvo ou enviado."
+        },
+        {
+          "t": "Widget e Siri",
+          "d": "Inicie e pare a medição pela tela de início ou por voz."
+        }
       ],
       "privacy_blurb": "Toda a análise acontece no seu aparelho. O áudio nunca é gravado nem enviado.",
       "disclaimer": "Os valores de dose de ruído são informações de referência geral, não uma medição médica."
@@ -76,10 +104,22 @@
       "subtitle": "Um timer de jejum intermitente honesto. A versão gratuita é completa — para sempre.",
       "meta_desc": "FastZen é um timer de jejum intermitente honesto. Funções básicas grátis para sempre, compra única do Pro, totalmente privado.",
       "features": [
-        {"t": "Grátis para sempre", "d": "Todos os planos, o timer, o histórico, as sequências e as notificações são gratuitos."},
-        {"t": "Pro de compra única", "d": "Metas personalizadas e estatísticas por um único pagamento. Sem assinatura."},
-        {"t": "Linha do tempo de fases", "d": "Veja as fases comumente associadas a cada hora do seu jejum."},
-        {"t": "Totalmente privado", "d": "Sem conta, sem servidor: seu histórico de jejum fica no seu aparelho."}
+        {
+          "t": "Grátis para sempre",
+          "d": "Todos os planos, o timer, o histórico, as sequências e as notificações são gratuitos."
+        },
+        {
+          "t": "Pro de compra única",
+          "d": "Metas personalizadas e estatísticas por um único pagamento. Sem assinatura."
+        },
+        {
+          "t": "Linha do tempo de fases",
+          "d": "Veja as fases comumente associadas a cada hora do seu jejum."
+        },
+        {
+          "t": "Totalmente privado",
+          "d": "Sem conta, sem servidor: seu histórico de jejum fica no seu aparelho."
+        }
       ],
       "privacy_blurb": "Seu histórico de jejum nunca sai do seu iPhone.",
       "disclaimer": "O FastZen é uma ferramenta de cronômetro e registro, não um conselho médico. Consulte um profissional de saúde antes de iniciar qualquer jejum."
@@ -90,13 +130,40 @@
       "subtitle": "Quebra-cabeças diários de cálculo mental: o mesmo desafio para todos no mundo, com dicas que ensinam em vez de entregar.",
       "meta_desc": "O MathSpark traz quebra-cabeças numéricos diários: o mesmo desafio para todos, com dicas educativas. Totalmente offline e privado.",
       "features": [
-        {"t": "Desafio global diário", "d": "Todos no mundo recebem os mesmos quebra-cabeças por dia — totalmente offline."},
-        {"t": "Dicas que ensinam", "d": "Dicas de estratégia e um único próximo passo, nunca a solução completa."},
-        {"t": "Grátis para sempre", "d": "O desafio diário e 5 exercícios por dia são sempre gratuitos."},
-        {"t": "Premium de compra única", "d": "Prática ilimitada, dificuldades maiores e estatísticas completas. Sem assinatura."}
+        {
+          "t": "Desafio global diário",
+          "d": "Todos no mundo recebem os mesmos quebra-cabeças por dia — totalmente offline."
+        },
+        {
+          "t": "Dicas que ensinam",
+          "d": "Dicas de estratégia e um único próximo passo, nunca a solução completa."
+        },
+        {
+          "t": "Grátis para sempre",
+          "d": "O desafio diário e 5 exercícios por dia são sempre gratuitos."
+        },
+        {
+          "t": "Premium de compra única",
+          "d": "Prática ilimitada, dificuldades maiores e estatísticas completas. Sem assinatura."
+        }
       ],
       "privacy_blurb": "O MathSpark funciona totalmente offline e não coleta nada.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Jogos",
+    "games_sub": "Quebra-cabeças originais que respeitam você: sem anúncios entre fases, sem timer de energia, sem diversão trancada.",
+    "tools_title": "Ferramentas",
+    "tools_sub": "Utilitários pequenos e certeiros que não atrapalham — nem tocam nos seus dados."
+  },
+  "teaser": {
+    "badge": "Em desenvolvimento",
+    "title": "Project 005",
+    "desc": "Algo novo está brilhando no escuro. Sem spoilers por enquanto."
+  },
+  "about": {
+    "title": "Sobre o desenvolvedor",
+    "body": "Sou o desenvolvedor solo por trás da Sparkfall Games. Cada jogo e ferramenta é 100% nativo do iOS, localizado em 31 idiomas e construído com uma única regra: seus dados ficam no seu aparelho."
   }
 }

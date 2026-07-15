@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Enkle, private iOS-apps",
-    "home_desc": "Enkle, private og ærlige iOS-apps. Dine data bliver på din enhed — ingen konti, ingen servere, ingen sporing."
+    "home_title": "Sparkfall Games — Indiespil & ærlige iOS-apps",
+    "home_desc": "Sparkfall Games er et enmands indiestudie, der laver legende spil og ærlige, private iOS-værktøjer. Ingen konti, ingen servere, ingen sporing."
   },
   "nav": {
-    "apps": "Apps",
     "contact": "Kontakt",
     "privacy": "Privatliv",
     "support": "Support",
     "all_apps": "Alle apps",
-    "language": "Sprog"
+    "language": "Sprog",
+    "games": "Spil",
+    "tools": "Værktøjer",
+    "about": "Om"
   },
   "hero": {
-    "title": "Enkle, private, ærlige apps.",
-    "subtitle": "Hver app er bygget omkring én idé: dine data bliver på din enhed. Ingen konti, ingen servere, ingen sporing.",
-    "explore": "Udforsk apps"
+    "title": "Legende spil. Ærlige værktøjer.",
+    "subtitle": "Hver titel bygges solo og er privat by design — dine data bliver på din enhed. Ingen konti, ingen servere, ingen sporing.",
+    "explore": "Se spillene",
+    "kicker": "Enmandsstudie for spil",
+    "explore_tools": "Se værktøjerne"
   },
   "values": {
     "private_title": "Privatliv fra bunden",
@@ -31,7 +35,7 @@
     "support": "Support",
     "features": "Derfor {app}",
     "privacy_heading": "Privatliv",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Privatlivspolitikker",
     "learn_more": "Læs mere"
   },
@@ -48,10 +52,22 @@
       "subtitle": "En minimalistisk, privat udgiftstracker til iPhone. Åbn, tryk, færdig — på 3 sekunder.",
       "meta_desc": "QuickCost er en minimalistisk udgiftstracker til iPhone. Notér en udgift på 3 sekunder. Alle data bliver på din enhed.",
       "features": [
-        {"t": "Notering på 3 sekunder", "d": "Åbn appen, tryk på beløb og kategori — udgiften er gemt."},
-        {"t": "100 % på enheden", "d": "Ingen konto, ingen server. Dine økonomiske data forlader aldrig din iPhone."},
-        {"t": "Klare indsigter", "d": "Daglige, månedlige og kategoriopdelte oversigter viser, hvor pengene går hen."},
-        {"t": "31 sprog", "d": "Fuldt lokaliseret verden over, med mørk tilstand og stor tekst."}
+        {
+          "t": "Notering på 3 sekunder",
+          "d": "Åbn appen, tryk på beløb og kategori — udgiften er gemt."
+        },
+        {
+          "t": "100 % på enheden",
+          "d": "Ingen konto, ingen server. Dine økonomiske data forlader aldrig din iPhone."
+        },
+        {
+          "t": "Klare indsigter",
+          "d": "Daglige, månedlige og kategoriopdelte oversigter viser, hvor pengene går hen."
+        },
+        {
+          "t": "31 sprog",
+          "d": "Fuldt lokaliseret verden over, med mørk tilstand og stor tekst."
+        }
       ],
       "privacy_blurb": "QuickCost gemmer alt lokalt på din enhed og indsamler intet.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "En lydniveaumåler i realtid med daglig støjdosismåling, der hjælper med at beskytte din hørelse.",
       "meta_desc": "Decibel Meter måler lydniveauet i realtid og følger din daglige støjdosis. Lyden forlader aldrig din iPhone.",
       "features": [
-        {"t": "Måling i realtid", "d": "dB-visning i realtid med MIN, GNS og MAKS på ét blik."},
-        {"t": "Daglig støjdosis", "d": "Følger din eksponering efter NIOSH-retningslinjen på 85 dB / 8 t."},
-        {"t": "Intet optages", "d": "Lyden analyseres i realtid og gemmes eller uploades aldrig."},
-        {"t": "Widget og Siri", "d": "Start og stop målinger fra hjemmeskærmen eller med stemmen."}
+        {
+          "t": "Måling i realtid",
+          "d": "dB-visning i realtid med MIN, GNS og MAKS på ét blik."
+        },
+        {
+          "t": "Daglig støjdosis",
+          "d": "Følger din eksponering efter NIOSH-retningslinjen på 85 dB / 8 t."
+        },
+        {
+          "t": "Intet optages",
+          "d": "Lyden analyseres i realtid og gemmes eller uploades aldrig."
+        },
+        {
+          "t": "Widget og Siri",
+          "d": "Start og stop målinger fra hjemmeskærmen eller med stemmen."
+        }
       ],
       "privacy_blurb": "Al analyse sker på din enhed. Lyd optages eller uploades aldrig.",
       "disclaimer": "Støjdosistallene er generel referenceinformation, ikke en medicinsk måling."
@@ -76,10 +104,22 @@
       "subtitle": "En ærlig timer til periodisk faste. Gratisversionen er komplet — for altid.",
       "meta_desc": "FastZen er en ærlig timer til periodisk faste. Kernefunktioner gratis for altid, engangskøb af Pro, helt privat.",
       "features": [
-        {"t": "Kernen gratis for altid", "d": "Alle forudindstillede planer, timeren, historik, stimer og notifikationer er gratis."},
-        {"t": "Pro som engangskøb", "d": "Egne mål og indsigter for en enkelt betaling. Intet abonnement."},
-        {"t": "Fasetidslinje", "d": "Se de faser, der normalt forbindes med hver fastetime."},
-        {"t": "Helt privat", "d": "Ingen konto, ingen server — din fastehistorik bliver på enheden."}
+        {
+          "t": "Kernen gratis for altid",
+          "d": "Alle forudindstillede planer, timeren, historik, stimer og notifikationer er gratis."
+        },
+        {
+          "t": "Pro som engangskøb",
+          "d": "Egne mål og indsigter for en enkelt betaling. Intet abonnement."
+        },
+        {
+          "t": "Fasetidslinje",
+          "d": "Se de faser, der normalt forbindes med hver fastetime."
+        },
+        {
+          "t": "Helt privat",
+          "d": "Ingen konto, ingen server — din fastehistorik bliver på enheden."
+        }
       ],
       "privacy_blurb": "Din fastehistorik forlader aldrig din iPhone.",
       "disclaimer": "FastZen er et timer- og logværktøj, ikke lægelig rådgivning. Tal med en sundhedsprofessionel, før du begynder at faste."
@@ -90,13 +130,40 @@
       "subtitle": "Daglige hovedregningsgåder — samme udfordring for alle i verden, med hints der lærer fra sig i stedet for at afsløre.",
       "meta_desc": "MathSpark byder på daglige talgåder — samme udfordring for alle, med lærerige hints. Helt offline og privat.",
       "features": [
-        {"t": "Daglig global udfordring", "d": "Alle i verden får de samme gåder hver dag — helt offline."},
-        {"t": "Hints der lærer fra sig", "d": "Strategitips og ét enkelt næste skridt, aldrig hele løsningen."},
-        {"t": "Gratis for altid", "d": "Den daglige udfordring og 5 øvelsesgåder om dagen er altid gratis."},
-        {"t": "Premium som engangskøb", "d": "Ubegrænset øvelse, sværere niveauer og fuld statistik. Intet abonnement."}
+        {
+          "t": "Daglig global udfordring",
+          "d": "Alle i verden får de samme gåder hver dag — helt offline."
+        },
+        {
+          "t": "Hints der lærer fra sig",
+          "d": "Strategitips og ét enkelt næste skridt, aldrig hele løsningen."
+        },
+        {
+          "t": "Gratis for altid",
+          "d": "Den daglige udfordring og 5 øvelsesgåder om dagen er altid gratis."
+        },
+        {
+          "t": "Premium som engangskøb",
+          "d": "Ubegrænset øvelse, sværere niveauer og fuld statistik. Intet abonnement."
+        }
       ],
       "privacy_blurb": "MathSpark virker helt offline og indsamler intet.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Spil",
+    "games_sub": "Originale gåder, der respekterer dig: ingen reklamer mellem baner, ingen energi-timere, ingen sjov bag betalingsmure.",
+    "tools_title": "Værktøjer",
+    "tools_sub": "Små, skarpe værktøjer, der ikke står i vejen for dig — og ikke rører dine data."
+  },
+  "teaser": {
+    "badge": "Under udvikling",
+    "title": "Project 005",
+    "desc": "Noget nyt gløder i mørket. Ingen spoilers endnu."
+  },
+  "about": {
+    "title": "Om udvikleren",
+    "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 31 sprog og bygget om én regel: dine data bliver på din enhed."
   }
 }

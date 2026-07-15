@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Enkle, private iOS-apper",
-    "home_desc": "Enkle, private og ærlige iOS-apper. Dataene dine blir på enheten din — ingen kontoer, ingen servere, ingen sporing."
+    "home_title": "Sparkfall Games — Indiespill og ærlige iOS-apper",
+    "home_desc": "Sparkfall Games er et enmanns indiestudio som lager lekne spill og ærlige, private iOS-verktøy. Ingen kontoer, ingen servere, ingen sporing."
   },
   "nav": {
-    "apps": "Apper",
     "contact": "Kontakt",
     "privacy": "Personvern",
     "support": "Støtte",
     "all_apps": "Alle apper",
-    "language": "Språk"
+    "language": "Språk",
+    "games": "Spill",
+    "tools": "Verktøy",
+    "about": "Om"
   },
   "hero": {
-    "title": "Enkle, private, ærlige apper.",
-    "subtitle": "Hver app er bygget rundt én idé: dataene dine blir på enheten din. Ingen kontoer, ingen servere, ingen sporing.",
-    "explore": "Utforsk appene"
+    "title": "Lekne spill. Ærlige verktøy.",
+    "subtitle": "Hver tittel bygges solo og er privat by design — dataene dine blir på enheten din. Ingen kontoer, ingen servere, ingen sporing.",
+    "explore": "Se spillene",
+    "kicker": "Enmannsstudio for spill",
+    "explore_tools": "Se verktøyene"
   },
   "values": {
     "private_title": "Personvern i bunn",
@@ -31,7 +35,7 @@
     "support": "Støtte",
     "features": "Hvorfor {app}",
     "privacy_heading": "Personvern",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Personvernerklæringer",
     "learn_more": "Les mer"
   },
@@ -48,10 +52,22 @@
       "subtitle": "En minimalistisk, privat utgiftssporer for iPhone. Åpne, trykk, ferdig — på 3 sekunder.",
       "meta_desc": "QuickCost er en minimalistisk utgiftssporer for iPhone. Loggfør en utgift på 3 sekunder. Alle data blir på enheten din.",
       "features": [
-        {"t": "Loggføring på 3 sekunder", "d": "Åpne appen, trykk på beløp og kategori — utgiften er lagret."},
-        {"t": "100 % på enheten", "d": "Ingen konto, ingen server. Økonomidataene dine forlater aldri iPhonen."},
-        {"t": "Tydelig innsikt", "d": "Oversikter per dag, måned og kategori viser hvor pengene går."},
-        {"t": "31 språk", "d": "Fullt lokalisert verden over, med mørk modus og stor tekst."}
+        {
+          "t": "Loggføring på 3 sekunder",
+          "d": "Åpne appen, trykk på beløp og kategori — utgiften er lagret."
+        },
+        {
+          "t": "100 % på enheten",
+          "d": "Ingen konto, ingen server. Økonomidataene dine forlater aldri iPhonen."
+        },
+        {
+          "t": "Tydelig innsikt",
+          "d": "Oversikter per dag, måned og kategori viser hvor pengene går."
+        },
+        {
+          "t": "31 språk",
+          "d": "Fullt lokalisert verden over, med mørk modus og stor tekst."
+        }
       ],
       "privacy_blurb": "QuickCost lagrer alt lokalt på enheten din og samler ikke inn noe.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "En lydnivåmåler i sanntid med daglig støydosemåling som hjelper deg å beskytte hørselen.",
       "meta_desc": "Decibel Meter måler lydnivået i sanntid og følger den daglige støydosen din. Lyd forlater aldri iPhonen din.",
       "features": [
-        {"t": "Måling i sanntid", "d": "dB-avlesning i sanntid med MIN, GJ.SN og MAKS på ett blikk."},
-        {"t": "Daglig støydose", "d": "Følger eksponeringen din etter NIOSH-retningslinjen på 85 dB / 8 t."},
-        {"t": "Ingenting tas opp", "d": "Lyden analyseres i sanntid og lagres eller lastes aldri opp."},
-        {"t": "Widget og Siri", "d": "Start og stopp målinger fra Hjem-skjermen eller med stemmen."}
+        {
+          "t": "Måling i sanntid",
+          "d": "dB-avlesning i sanntid med MIN, GJ.SN og MAKS på ett blikk."
+        },
+        {
+          "t": "Daglig støydose",
+          "d": "Følger eksponeringen din etter NIOSH-retningslinjen på 85 dB / 8 t."
+        },
+        {
+          "t": "Ingenting tas opp",
+          "d": "Lyden analyseres i sanntid og lagres eller lastes aldri opp."
+        },
+        {
+          "t": "Widget og Siri",
+          "d": "Start og stopp målinger fra Hjem-skjermen eller med stemmen."
+        }
       ],
       "privacy_blurb": "All analyse skjer på enheten din. Lyd tas aldri opp eller lastes opp.",
       "disclaimer": "Støydosetallene er generell referanseinformasjon, ikke en medisinsk måling."
@@ -76,10 +104,22 @@
       "subtitle": "En ærlig timer for periodisk faste. Gratisversjonen er komplett — for alltid.",
       "meta_desc": "FastZen er en ærlig timer for periodisk faste. Kjernefunksjoner gratis for alltid, engangskjøp av Pro, helt privat.",
       "features": [
-        {"t": "Kjernen gratis for alltid", "d": "Alle forhåndsinnstilte planer, timeren, historikk, rekker og varsler er gratis."},
-        {"t": "Pro som engangskjøp", "d": "Egne mål og innsikt for én enkelt betaling. Ingen abonnement."},
-        {"t": "Fasetidslinje", "d": "Se fasene som vanligvis forbindes med hver fastetime."},
-        {"t": "Helt privat", "d": "Ingen konto, ingen server — fastehistorikken blir på enheten din."}
+        {
+          "t": "Kjernen gratis for alltid",
+          "d": "Alle forhåndsinnstilte planer, timeren, historikk, rekker og varsler er gratis."
+        },
+        {
+          "t": "Pro som engangskjøp",
+          "d": "Egne mål og innsikt for én enkelt betaling. Ingen abonnement."
+        },
+        {
+          "t": "Fasetidslinje",
+          "d": "Se fasene som vanligvis forbindes med hver fastetime."
+        },
+        {
+          "t": "Helt privat",
+          "d": "Ingen konto, ingen server — fastehistorikken blir på enheten din."
+        }
       ],
       "privacy_blurb": "Fastehistorikken din forlater aldri iPhonen.",
       "disclaimer": "FastZen er et timer- og loggverktøy, ikke medisinske råd. Snakk med helsepersonell før du starter en faste."
@@ -90,13 +130,40 @@
       "subtitle": "Daglige hoderegningsnøtter — samme utfordring for alle i verden, med hint som lærer i stedet for å røpe.",
       "meta_desc": "MathSpark byr på daglige tallnøtter — samme utfordring for alle, med lærerike hint. Helt offline og privat.",
       "features": [
-        {"t": "Daglig global utfordring", "d": "Alle i verden får de samme nøttene hver dag — helt offline."},
-        {"t": "Hint som lærer", "d": "Strategitips og bare ett neste steg, aldri hele løsningen."},
-        {"t": "Gratis for alltid", "d": "Den daglige utfordringen og 5 øvingsnøtter per dag er alltid gratis."},
-        {"t": "Premium som engangskjøp", "d": "Ubegrenset øving, høyere vanskelighetsgrader og full statistikk. Ingen abonnement."}
+        {
+          "t": "Daglig global utfordring",
+          "d": "Alle i verden får de samme nøttene hver dag — helt offline."
+        },
+        {
+          "t": "Hint som lærer",
+          "d": "Strategitips og bare ett neste steg, aldri hele løsningen."
+        },
+        {
+          "t": "Gratis for alltid",
+          "d": "Den daglige utfordringen og 5 øvingsnøtter per dag er alltid gratis."
+        },
+        {
+          "t": "Premium som engangskjøp",
+          "d": "Ubegrenset øving, høyere vanskelighetsgrader og full statistikk. Ingen abonnement."
+        }
       ],
       "privacy_blurb": "MathSpark fungerer helt offline og samler ikke inn noe.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Spill",
+    "games_sub": "Originale gåter som respekterer deg: ingen reklame mellom nivåer, ingen energitimere, ingen moro bak betalingsmurer.",
+    "tools_title": "Verktøy",
+    "tools_sub": "Små, skarpe verktøy som ikke står i veien for deg — og ikke rører dataene dine."
+  },
+  "teaser": {
+    "badge": "Under utvikling",
+    "title": "Project 005",
+    "desc": "Noe nytt gløder i mørket. Ingen spoilere ennå."
+  },
+  "about": {
+    "title": "Om utvikleren",
+    "body": "Jeg er soloutvikleren bak Sparkfall Games. Hvert spill og verktøy er 100 % native for iOS, lokalisert til 31 språk og bygget rundt én regel: dataene dine blir på enheten din."
   }
 }

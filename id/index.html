@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Aplikasi iOS yang simpel dan privat</title>
-<meta name="description" content="Aplikasi iOS yang simpel, privat, dan jujur. Data Anda tetap di perangkat — tanpa akun, tanpa server, tanpa pelacakan.">
+<title>Sparkfall Games — Game indie &amp; aplikasi iOS yang jujur</title>
+<meta name="description" content="Sparkfall Games adalah studio indie satu orang yang membuat game seru serta alat iOS yang jujur dan privat. Tanpa akun, tanpa server, tanpa pelacakan.">
 <link rel="canonical" href="https://2645809444.github.io/id/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/id/">Qiuyufei Apps</a>
+    <a class="brand" href="/id/">Sparkfall Games</a>
     <nav>
-      <a href="/id/#apps">Aplikasi</a>
+      <a href="/id/#games">Game</a>
+      <a href="/id/#tools">Alat</a>
+      <a href="/id/#about">Tentang</a>
       <a href="mailto:2645809444@qq.com">Kontak</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/" selected>Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Aplikasi simpel, privat, dan jujur.</h1>
-    <p>Setiap aplikasi dibangun di sekitar satu ide: data Anda tetap di perangkat Anda. Tanpa akun, tanpa server, tanpa pelacakan.</p>
-    <a class="btn btn-primary" href="#apps">Jelajahi aplikasi</a>
+    <span class="hero-kicker">Studio game satu orang</span>
+    <h1>Game yang seru. Alat yang <span class="grad">jujur.</span></h1>
+    <p>Setiap karya dibuat sendirian dan privat sejak dirancang — data Anda tetap di perangkat Anda. Tanpa akun, tanpa server, tanpa pelacakan.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Lihat game</a>
+      <a class="btn" href="#tools">Lihat alat</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/id/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Game</span></h2>
+      <p>Teka-teki orisinal yang menghargai Anda: tanpa iklan di antara level, tanpa timer energi, tanpa kesenangan yang dikunci berbayar.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/id/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Game</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Satu teka-teki sehari. Seluruh dunia bermain.</p>
+        <p class="game-desc">Teka-teki hitung mental harian dengan petunjuk yang mengajari.</p>
+        <span class="card-more">Pelajari lebih lanjut →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Dalam pengembangan</span>
+      <h3>Project 005</h3>
+      <p>Sesuatu yang baru bersinar dalam gelap. Belum ada bocoran.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Alat</h2>
+      <p>Utilitas kecil dan tajam yang tidak menghalangi Anda — dan tidak menyentuh data Anda.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/id/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Keuangan</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Catat pengeluaran dalam 3 detik.</p>
-      <p class="app-desc">Pencatat pengeluaran minimalis yang menyimpan semua catatan di iPhone Anda.</p>
+      <p class="tool-tagline">Catat pengeluaran dalam 3 detik.</p>
       <span class="card-more">Pelajari lebih lanjut →</span>
     </a>
-    <a class="app-card reveal" href="/id/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/id/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Utilitas</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Kenali kebisingan Anda. Lindungi pendengaran Anda.</p>
-      <p class="app-desc">Pengukur suara real-time dengan dosis kebisingan harian.</p>
+      <p class="tool-tagline">Kenali kebisingan Anda. Lindungi pendengaran Anda.</p>
       <span class="card-more">Pelajari lebih lanjut →</span>
     </a>
-    <a class="app-card reveal" href="/id/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/id/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Kesehatan & Kebugaran</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Timer puasa yang jujur.</p>
-      <p class="app-desc">Timer puasa intermiten tanpa jebakan langganan.</p>
+      <p class="tool-tagline">Timer puasa yang jujur.</p>
       <span class="card-more">Pelajari lebih lanjut →</span>
     </a>
-    <a class="app-card reveal" href="/id/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Game</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Satu teka-teki sehari. Seluruh dunia bermain.</p>
-      <p class="app-desc">Teka-teki hitung mental harian dengan petunjuk yang mengajari.</p>
-      <span class="card-more">Pelajari lebih lanjut →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Privasi sejak dirancang</h3><p>Semuanya disimpan di perangkat Anda. Kami tidak mengoperasikan server dan tidak bisa melihat data Anda.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Harga yang jujur</h3><p>Fitur gratis tetap gratis selamanya. Tanpa jebakan langganan, tanpa hitung mundur palsu.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Dibuat untuk semua</h3><p>Setiap aplikasi dilokalkan penuh dalam 31 bahasa, dengan mode gelap dan aksesibilitas.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Tentang pengembang</h2>
+    <p>Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 31 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Kebijakan privasi: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Kebijakan privasi: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

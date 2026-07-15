@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — 简单、私密的 iOS 应用</title>
-<meta name="description" content="简单、私密、诚实的 iOS 应用。你的数据只存在你的设备上——无账号、无服务器、无追踪。">
+<title>Sparkfall Games — 独立游戏与诚实的 iOS 工具</title>
+<meta name="description" content="Sparkfall Games 是一人独立工作室，打造好玩的游戏和诚实、注重隐私的 iOS 工具。无账号、无服务器、无跟踪。">
 <link rel="canonical" href="https://2645809444.github.io/zh-hans/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/zh-hans/">Qiuyufei Apps</a>
+    <a class="brand" href="/zh-hans/">Sparkfall Games</a>
     <nav>
-      <a href="/zh-hans/#apps">应用</a>
+      <a href="/zh-hans/#games">游戏</a>
+      <a href="/zh-hans/#tools">工具</a>
+      <a href="/zh-hans/#about">关于</a>
       <a href="mailto:2645809444@qq.com">联系我们</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/" selected>简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>简单、私密、诚实的应用。</h1>
-    <p>每一款应用都围绕一个理念打造：你的数据只存在你的设备上。无账号、无服务器、无追踪。</p>
-    <a class="btn btn-primary" href="#apps">浏览应用</a>
+    <span class="hero-kicker">一人游戏工作室</span>
+    <h1><span class="grad">好玩的游戏，诚实的工具。</span></h1>
+    <p>每一款作品都由一个人独立打造，从设计上就保护隐私——数据只存在你的设备上。无账号、无服务器、无跟踪。</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">看看游戏</a>
+      <a class="btn" href="#tools">浏览工具</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/zh-hans/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">游戏</span></h2>
+      <p>原创谜题，尊重玩家——关卡之间没有广告，没有体力限制，乐趣不上锁。</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/zh-hans/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">游戏</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">每日一题，全球同题。</p>
+        <p class="game-desc">每日心算谜题，提示教你思路而不剧透。</p>
+        <span class="card-more">了解更多 →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">开发中</span>
+      <h3>Project 005</h3>
+      <p>黑暗中有新东西正在发光。暂时保密。</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>工具</h2>
+      <p>小而精的实用工具，不打扰你，也不碰你的数据。</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/zh-hans/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">财务</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">3 秒记完一笔账。</p>
-      <p class="app-desc">极简记账应用，每一条记录都只存在你的 iPhone 上。</p>
+      <p class="tool-tagline">3 秒记完一笔账。</p>
       <span class="card-more">了解更多 →</span>
     </a>
-    <a class="app-card reveal" href="/zh-hans/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/zh-hans/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">工具</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">了解噪音，保护听力。</p>
-      <p class="app-desc">实时分贝仪，附每日噪音剂量追踪。</p>
+      <p class="tool-tagline">了解噪音，保护听力。</p>
       <span class="card-more">了解更多 →</span>
     </a>
-    <a class="app-card reveal" href="/zh-hans/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/zh-hans/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">健康健美</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">诚实的断食计时器。</p>
-      <p class="app-desc">没有订阅陷阱的间歇性断食计时器。</p>
+      <p class="tool-tagline">诚实的断食计时器。</p>
       <span class="card-more">了解更多 →</span>
     </a>
-    <a class="app-card reveal" href="/zh-hans/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">游戏</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">每日一题，全球同题。</p>
-      <p class="app-desc">每日心算谜题，提示教你思路而不剧透。</p>
-      <span class="card-more">了解更多 →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>隐私优先设计</h3><p>所有数据都储存在你的设备上。我们不运营服务器，也无法看到你的数据。</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>诚实定价</h3><p>免费功能永久免费。没有订阅陷阱，没有虚假倒计时。</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>为所有人打造</h3><p>每款应用都完整支持 31 种语言，并支持深色模式与无障碍功能。</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>关于开发者</h2>
+    <p>我是 Sparkfall Games 背后的独立开发者。每一款游戏和工具都是 100% 原生 iOS 应用，本地化覆盖 31 种语言，并遵循同一条准则：你的数据只存在你的设备上。</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">隐私政策: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">隐私政策: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

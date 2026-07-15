@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Aplicații iOS simple și private",
-    "home_desc": "Aplicații iOS simple, private și oneste. Datele tale rămân pe dispozitivul tău — fără conturi, fără servere, fără urmărire."
+    "home_title": "Sparkfall Games — Jocuri indie și aplicații iOS oneste",
+    "home_desc": "Sparkfall Games este un studio indie dintr-o singură persoană care creează jocuri antrenante și instrumente iOS oneste și private. Fără conturi, fără servere, fără urmărire."
   },
   "nav": {
-    "apps": "Aplicații",
     "contact": "Contact",
     "privacy": "Confidențialitate",
     "support": "Asistență",
     "all_apps": "Toate aplicațiile",
-    "language": "Limbă"
+    "language": "Limbă",
+    "games": "Jocuri",
+    "tools": "Instrumente",
+    "about": "Despre"
   },
   "hero": {
-    "title": "Aplicații simple, private, oneste.",
-    "subtitle": "Fiecare aplicație e construită în jurul unei idei: datele tale rămân pe dispozitivul tău. Fără conturi, fără servere, fără urmărire.",
-    "explore": "Explorează aplicațiile"
+    "title": "Jocuri antrenante. Instrumente oneste.",
+    "subtitle": "Fiecare titlu este construit solo și privat prin design — datele tale rămân pe dispozitivul tău. Fără conturi, fără servere, fără urmărire.",
+    "explore": "Vezi jocurile",
+    "kicker": "Studio de jocuri dintr-o singură persoană",
+    "explore_tools": "Vezi instrumentele"
   },
   "values": {
     "private_title": "Confidențialitate din start",
@@ -31,7 +35,7 @@
     "support": "Asistență",
     "features": "De ce {app}",
     "privacy_heading": "Confidențialitate",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Politici de confidențialitate",
     "learn_more": "Află mai multe"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Un jurnal de cheltuieli minimalist și privat pentru iPhone. Deschizi, atingi, gata — în 3 secunde.",
       "meta_desc": "QuickCost este un jurnal de cheltuieli minimalist pentru iPhone. Notează o cheltuială în 3 secunde. Toate datele rămân pe dispozitivul tău.",
       "features": [
-        {"t": "Notare în 3 secunde", "d": "Deschide aplicația, atinge suma și o categorie — cheltuiala e salvată."},
-        {"t": "100% pe dispozitiv", "d": "Fără cont, fără server. Datele tale financiare nu părăsesc niciodată iPhone-ul."},
-        {"t": "Statistici clare", "d": "Rezumate zilnice, lunare și pe categorii arată unde se duc banii."},
-        {"t": "31 de limbi", "d": "Localizare completă în toată lumea, cu mod întunecat și text mare."}
+        {
+          "t": "Notare în 3 secunde",
+          "d": "Deschide aplicația, atinge suma și o categorie — cheltuiala e salvată."
+        },
+        {
+          "t": "100% pe dispozitiv",
+          "d": "Fără cont, fără server. Datele tale financiare nu părăsesc niciodată iPhone-ul."
+        },
+        {
+          "t": "Statistici clare",
+          "d": "Rezumate zilnice, lunare și pe categorii arată unde se duc banii."
+        },
+        {
+          "t": "31 de limbi",
+          "d": "Localizare completă în toată lumea, cu mod întunecat și text mare."
+        }
       ],
       "privacy_blurb": "QuickCost stochează totul local pe dispozitivul tău și nu colectează nimic.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Un sonometru în timp real cu urmărirea dozei zilnice de zgomot, care te ajută să-ți protejezi auzul.",
       "meta_desc": "Decibel Meter măsoară nivelul sonor în timp real și urmărește doza zilnică de zgomot. Sunetul nu părăsește niciodată iPhone-ul.",
       "features": [
-        {"t": "Măsurare live", "d": "Afișaj dB în timp real cu MIN, MED și MAX dintr-o privire."},
-        {"t": "Doza zilnică de zgomot", "d": "Urmărește expunerea conform ghidului NIOSH de 85 dB / 8 h."},
-        {"t": "Nimic nu se înregistrează", "d": "Sunetul e analizat în timp real și nu e niciodată stocat sau încărcat."},
-        {"t": "Widget și Siri", "d": "Pornește și oprește măsurarea de pe ecranul principal sau cu vocea."}
+        {
+          "t": "Măsurare live",
+          "d": "Afișaj dB în timp real cu MIN, MED și MAX dintr-o privire."
+        },
+        {
+          "t": "Doza zilnică de zgomot",
+          "d": "Urmărește expunerea conform ghidului NIOSH de 85 dB / 8 h."
+        },
+        {
+          "t": "Nimic nu se înregistrează",
+          "d": "Sunetul e analizat în timp real și nu e niciodată stocat sau încărcat."
+        },
+        {
+          "t": "Widget și Siri",
+          "d": "Pornește și oprește măsurarea de pe ecranul principal sau cu vocea."
+        }
       ],
       "privacy_blurb": "Toată analiza are loc pe dispozitivul tău. Sunetul nu e niciodată înregistrat sau încărcat.",
       "disclaimer": "Valorile dozei de zgomot sunt informații generale de referință, nu o măsurătoare medicală."
@@ -76,10 +104,22 @@
       "subtitle": "Un cronometru onest pentru post intermitent. Versiunea gratuită e completă — pentru totdeauna.",
       "meta_desc": "FastZen este un cronometru onest de post intermitent. Funcții de bază gratuite pentru totdeauna, Pro cu plată unică, complet privat.",
       "features": [
-        {"t": "Baza gratuită pentru totdeauna", "d": "Toate planurile presetate, cronometrul, istoricul, seriile și notificările sunt gratuite."},
-        {"t": "Pro cu plată unică", "d": "Obiective personalizate și statistici pentru o singură plată. Fără abonament."},
-        {"t": "Cronologia fazelor", "d": "Vezi fazele asociate de obicei cu fiecare oră de post."},
-        {"t": "Complet privat", "d": "Fără cont, fără server — istoricul postului rămâne pe dispozitivul tău."}
+        {
+          "t": "Baza gratuită pentru totdeauna",
+          "d": "Toate planurile presetate, cronometrul, istoricul, seriile și notificările sunt gratuite."
+        },
+        {
+          "t": "Pro cu plată unică",
+          "d": "Obiective personalizate și statistici pentru o singură plată. Fără abonament."
+        },
+        {
+          "t": "Cronologia fazelor",
+          "d": "Vezi fazele asociate de obicei cu fiecare oră de post."
+        },
+        {
+          "t": "Complet privat",
+          "d": "Fără cont, fără server — istoricul postului rămâne pe dispozitivul tău."
+        }
       ],
       "privacy_blurb": "Istoricul tău de post nu părăsește niciodată iPhone-ul.",
       "disclaimer": "FastZen este un instrument de cronometrare și jurnal, nu un sfat medical. Consultă un specialist înainte de a începe orice post."
@@ -90,13 +130,40 @@
       "subtitle": "Puzzle-uri zilnice de calcul mintal — aceeași provocare pentru toată lumea, cu indicii care te învață în loc să divulge.",
       "meta_desc": "MathSpark oferă puzzle-uri numerice zilnice — aceeași provocare pentru toți, cu indicii educative. Complet offline și privat.",
       "features": [
-        {"t": "Provocare globală zilnică", "d": "Toată lumea primește aceleași puzzle-uri în fiecare zi — complet offline."},
-        {"t": "Indicii care învață", "d": "Sfaturi de strategie și un singur pas următor, niciodată soluția completă."},
-        {"t": "Gratuit pentru totdeauna", "d": "Provocarea zilnică și 5 puzzle-uri de exercițiu pe zi sunt mereu gratuite."},
-        {"t": "Premium cu plată unică", "d": "Exerciții nelimitate, dificultăți mai mari și statistici complete. Fără abonament."}
+        {
+          "t": "Provocare globală zilnică",
+          "d": "Toată lumea primește aceleași puzzle-uri în fiecare zi — complet offline."
+        },
+        {
+          "t": "Indicii care învață",
+          "d": "Sfaturi de strategie și un singur pas următor, niciodată soluția completă."
+        },
+        {
+          "t": "Gratuit pentru totdeauna",
+          "d": "Provocarea zilnică și 5 puzzle-uri de exercițiu pe zi sunt mereu gratuite."
+        },
+        {
+          "t": "Premium cu plată unică",
+          "d": "Exerciții nelimitate, dificultăți mai mari și statistici complete. Fără abonament."
+        }
       ],
       "privacy_blurb": "MathSpark funcționează complet offline și nu colectează nimic.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Jocuri",
+    "games_sub": "Puzzle-uri originale care te respectă: fără reclame între niveluri, fără cronometre de energie, fără distracție blocată în spatele unui paywall.",
+    "tools_title": "Instrumente",
+    "tools_sub": "Utilitare mici și precise care nu îți stau în cale — și nu se ating de datele tale."
+  },
+  "teaser": {
+    "badge": "În dezvoltare",
+    "title": "Project 005",
+    "desc": "Ceva nou strălucește în întuneric. Fără spoilere deocamdată."
+  },
+  "about": {
+    "title": "Despre dezvoltator",
+    "body": "Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 31 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău."
   }
 }

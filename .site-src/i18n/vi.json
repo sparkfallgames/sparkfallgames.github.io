@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — Ứng dụng iOS đơn giản và riêng tư",
-    "home_desc": "Ứng dụng iOS đơn giản, riêng tư và trung thực. Dữ liệu của bạn ở lại trên thiết bị — không tài khoản, không máy chủ, không theo dõi."
+    "home_title": "Sparkfall Games — Game indie và ứng dụng iOS trung thực",
+    "home_desc": "Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi."
   },
   "nav": {
-    "apps": "Ứng dụng",
     "contact": "Liên hệ",
     "privacy": "Quyền riêng tư",
     "support": "Hỗ trợ",
     "all_apps": "Tất cả ứng dụng",
-    "language": "Ngôn ngữ"
+    "language": "Ngôn ngữ",
+    "games": "Trò chơi",
+    "tools": "Công cụ",
+    "about": "Giới thiệu"
   },
   "hero": {
-    "title": "Ứng dụng đơn giản, riêng tư, trung thực.",
-    "subtitle": "Mỗi ứng dụng được xây dựng quanh một ý tưởng: dữ liệu của bạn ở lại trên thiết bị. Không tài khoản, không máy chủ, không theo dõi.",
-    "explore": "Khám phá ứng dụng"
+    "title": "Game vui nhộn. Công cụ trung thực.",
+    "subtitle": "Mỗi sản phẩm được xây dựng một mình và riêng tư ngay từ thiết kế — dữ liệu của bạn ở lại trên thiết bị. Không tài khoản, không máy chủ, không theo dõi.",
+    "explore": "Xem trò chơi",
+    "kicker": "Studio game một người",
+    "explore_tools": "Xem công cụ"
   },
   "values": {
     "private_title": "Riêng tư từ thiết kế",
@@ -31,7 +35,7 @@
     "support": "Hỗ trợ",
     "features": "Vì sao chọn {app}",
     "privacy_heading": "Quyền riêng tư",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Chính sách quyền riêng tư",
     "learn_more": "Tìm hiểu thêm"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Ứng dụng theo dõi chi tiêu tối giản và riêng tư cho iPhone. Mở, chạm, xong — trong 3 giây.",
       "meta_desc": "QuickCost là ứng dụng theo dõi chi tiêu tối giản cho iPhone. Ghi một khoản chi trong 3 giây. Mọi dữ liệu ở lại trên thiết bị.",
       "features": [
-        {"t": "Ghi trong 3 giây", "d": "Mở ứng dụng, chạm số tiền và danh mục — khoản chi được lưu ngay."},
-        {"t": "100% trên thiết bị", "d": "Không tài khoản, không máy chủ. Dữ liệu tài chính không bao giờ rời iPhone."},
-        {"t": "Thống kê rõ ràng", "d": "Tổng hợp theo ngày, tháng và danh mục cho biết tiền của bạn đi đâu."},
-        {"t": "31 ngôn ngữ", "d": "Bản địa hóa đầy đủ trên toàn cầu, có chế độ tối và chữ lớn."}
+        {
+          "t": "Ghi trong 3 giây",
+          "d": "Mở ứng dụng, chạm số tiền và danh mục — khoản chi được lưu ngay."
+        },
+        {
+          "t": "100% trên thiết bị",
+          "d": "Không tài khoản, không máy chủ. Dữ liệu tài chính không bao giờ rời iPhone."
+        },
+        {
+          "t": "Thống kê rõ ràng",
+          "d": "Tổng hợp theo ngày, tháng và danh mục cho biết tiền của bạn đi đâu."
+        },
+        {
+          "t": "31 ngôn ngữ",
+          "d": "Bản địa hóa đầy đủ trên toàn cầu, có chế độ tối và chữ lớn."
+        }
       ],
       "privacy_blurb": "QuickCost lưu mọi thứ cục bộ trên thiết bị và không thu thập gì.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Máy đo mức âm thanh thời gian thực kèm theo dõi liều tiếng ồn hằng ngày, giúp bảo vệ thính giác của bạn.",
       "meta_desc": "Decibel Meter đo mức âm thanh theo thời gian thực và theo dõi liều tiếng ồn hằng ngày. Âm thanh không bao giờ rời iPhone.",
       "features": [
-        {"t": "Đo trực tiếp", "d": "Chỉ số dB thời gian thực cùng MIN, TB và MAX trong nháy mắt."},
-        {"t": "Liều tiếng ồn hằng ngày", "d": "Theo dõi mức phơi nhiễm theo hướng dẫn NIOSH 85 dB / 8 giờ."},
-        {"t": "Không ghi âm", "d": "Âm thanh được phân tích thời gian thực, không bao giờ lưu hay tải lên."},
-        {"t": "Widget & Siri", "d": "Bắt đầu và dừng đo từ Màn hình chính hoặc bằng giọng nói."}
+        {
+          "t": "Đo trực tiếp",
+          "d": "Chỉ số dB thời gian thực cùng MIN, TB và MAX trong nháy mắt."
+        },
+        {
+          "t": "Liều tiếng ồn hằng ngày",
+          "d": "Theo dõi mức phơi nhiễm theo hướng dẫn NIOSH 85 dB / 8 giờ."
+        },
+        {
+          "t": "Không ghi âm",
+          "d": "Âm thanh được phân tích thời gian thực, không bao giờ lưu hay tải lên."
+        },
+        {
+          "t": "Widget & Siri",
+          "d": "Bắt đầu và dừng đo từ Màn hình chính hoặc bằng giọng nói."
+        }
       ],
       "privacy_blurb": "Mọi phân tích diễn ra trên thiết bị của bạn. Âm thanh không bao giờ được ghi hay tải lên.",
       "disclaimer": "Số liệu liều tiếng ồn là thông tin tham khảo chung, không phải phép đo y tế."
@@ -76,10 +104,22 @@
       "subtitle": "Đồng hồ nhịn ăn gián đoạn trung thực. Bản miễn phí đầy đủ tính năng — mãi mãi.",
       "meta_desc": "FastZen là đồng hồ nhịn ăn gián đoạn trung thực. Tính năng cốt lõi miễn phí mãi mãi, Pro mua một lần, hoàn toàn riêng tư.",
       "features": [
-        {"t": "Cốt lõi miễn phí mãi mãi", "d": "Mọi kế hoạch có sẵn, đồng hồ, lịch sử, chuỗi ngày và thông báo đều miễn phí."},
-        {"t": "Pro mua một lần", "d": "Mục tiêu tùy chỉnh và thống kê chỉ với một lần thanh toán. Không đăng ký."},
-        {"t": "Dòng thời gian giai đoạn", "d": "Xem các giai đoạn thường gắn với từng giờ nhịn ăn của bạn."},
-        {"t": "Hoàn toàn riêng tư", "d": "Không tài khoản, không máy chủ — lịch sử nhịn ăn ở lại trên thiết bị."}
+        {
+          "t": "Cốt lõi miễn phí mãi mãi",
+          "d": "Mọi kế hoạch có sẵn, đồng hồ, lịch sử, chuỗi ngày và thông báo đều miễn phí."
+        },
+        {
+          "t": "Pro mua một lần",
+          "d": "Mục tiêu tùy chỉnh và thống kê chỉ với một lần thanh toán. Không đăng ký."
+        },
+        {
+          "t": "Dòng thời gian giai đoạn",
+          "d": "Xem các giai đoạn thường gắn với từng giờ nhịn ăn của bạn."
+        },
+        {
+          "t": "Hoàn toàn riêng tư",
+          "d": "Không tài khoản, không máy chủ — lịch sử nhịn ăn ở lại trên thiết bị."
+        }
       ],
       "privacy_blurb": "Lịch sử nhịn ăn của bạn không bao giờ rời iPhone.",
       "disclaimer": "FastZen là công cụ hẹn giờ và ghi chép, không phải lời khuyên y tế. Hãy tham khảo chuyên gia y tế trước khi bắt đầu nhịn ăn."
@@ -90,13 +130,40 @@
       "subtitle": "Câu đố tính nhẩm hằng ngày — cùng một thử thách cho mọi người trên thế giới, với gợi ý dạy cách nghĩ thay vì tiết lộ đáp án.",
       "meta_desc": "MathSpark mang đến câu đố số học hằng ngày — cùng một thử thách cho tất cả, gợi ý mang tính dạy học. Hoàn toàn ngoại tuyến và riêng tư.",
       "features": [
-        {"t": "Thử thách toàn cầu hằng ngày", "d": "Mọi người trên thế giới nhận cùng câu đố mỗi ngày — hoàn toàn ngoại tuyến."},
-        {"t": "Gợi ý dạy cách nghĩ", "d": "Mẹo chiến lược và chỉ một bước tiếp theo, không bao giờ là lời giải đầy đủ."},
-        {"t": "Miễn phí mãi mãi", "d": "Thử thách hằng ngày và 5 câu luyện tập mỗi ngày luôn miễn phí."},
-        {"t": "Premium mua một lần", "d": "Luyện tập không giới hạn, độ khó cao hơn và thống kê đầy đủ. Không đăng ký."}
+        {
+          "t": "Thử thách toàn cầu hằng ngày",
+          "d": "Mọi người trên thế giới nhận cùng câu đố mỗi ngày — hoàn toàn ngoại tuyến."
+        },
+        {
+          "t": "Gợi ý dạy cách nghĩ",
+          "d": "Mẹo chiến lược và chỉ một bước tiếp theo, không bao giờ là lời giải đầy đủ."
+        },
+        {
+          "t": "Miễn phí mãi mãi",
+          "d": "Thử thách hằng ngày và 5 câu luyện tập mỗi ngày luôn miễn phí."
+        },
+        {
+          "t": "Premium mua một lần",
+          "d": "Luyện tập không giới hạn, độ khó cao hơn và thống kê đầy đủ. Không đăng ký."
+        }
       ],
       "privacy_blurb": "MathSpark hoạt động hoàn toàn ngoại tuyến và không thu thập gì.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Trò chơi",
+    "games_sub": "Những câu đố nguyên bản tôn trọng bạn: không quảng cáo giữa các màn, không đồng hồ năng lượng, không khóa niềm vui sau bức tường trả phí.",
+    "tools_title": "Công cụ",
+    "tools_sub": "Các tiện ích nhỏ gọn, sắc bén, không cản trở bạn — và không chạm vào dữ liệu của bạn."
+  },
+  "teaser": {
+    "badge": "Đang phát triển",
+    "title": "Project 005",
+    "desc": "Điều gì đó mới đang phát sáng trong bóng tối. Chưa tiết lộ."
+  },
+  "about": {
+    "title": "Về nhà phát triển",
+    "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 31 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn."
   }
 }

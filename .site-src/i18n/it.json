@@ -1,20 +1,24 @@
 {
   "meta": {
-    "home_title": "Qiuyufei Apps — App iOS semplici e private",
-    "home_desc": "App iOS semplici, private e oneste. I tuoi dati restano sul tuo dispositivo: niente account, niente server, niente tracciamento."
+    "home_title": "Sparkfall Games — Giochi indie e app oneste per iOS",
+    "home_desc": "Sparkfall Games è uno studio indie di una sola persona che crea giochi divertenti e strumenti iOS onesti e privati. Niente account, niente server, niente tracciamento."
   },
   "nav": {
-    "apps": "App",
     "contact": "Contatti",
     "privacy": "Privacy",
     "support": "Supporto",
     "all_apps": "Tutte le app",
-    "language": "Lingua"
+    "language": "Lingua",
+    "games": "Giochi",
+    "tools": "Strumenti",
+    "about": "Chi sono"
   },
   "hero": {
-    "title": "App semplici, private e oneste.",
-    "subtitle": "Ogni app nasce da un'idea: i tuoi dati restano sul tuo dispositivo. Niente account, niente server, niente tracciamento.",
-    "explore": "Scopri le app"
+    "title": "Giochi divertenti. Strumenti onesti.",
+    "subtitle": "Ogni titolo è creato in solitaria e privato fin dalla progettazione: i tuoi dati restano sul tuo dispositivo. Niente account, niente server, niente tracciamento.",
+    "explore": "Scopri i giochi",
+    "kicker": "Studio di una sola persona",
+    "explore_tools": "Scopri gli strumenti"
   },
   "values": {
     "private_title": "Privacy by design",
@@ -31,7 +35,7 @@
     "support": "Supporto",
     "features": "Perché {app}",
     "privacy_heading": "Privacy",
-    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Informative sulla privacy",
     "learn_more": "Scopri di più"
   },
@@ -48,10 +52,22 @@
       "subtitle": "Un tracker di spese minimalista e privato per iPhone. Apri, tocca, fatto: in 3 secondi.",
       "meta_desc": "QuickCost è un tracker di spese minimalista per iPhone. Registra una spesa in 3 secondi. Tutti i dati restano sul tuo dispositivo.",
       "features": [
-        {"t": "Registrazione in 3 secondi", "d": "Apri l'app, tocca importo e categoria: la spesa è salvata."},
-        {"t": "100% sul dispositivo", "d": "Niente account né server. I tuoi dati finanziari non lasciano mai il tuo iPhone."},
-        {"t": "Analisi chiare", "d": "Riepiloghi per giorno, mese e categoria mostrano dove vanno i tuoi soldi."},
-        {"t": "31 lingue", "d": "Completamente localizzata in tutto il mondo, con modalità scura e testo grande."}
+        {
+          "t": "Registrazione in 3 secondi",
+          "d": "Apri l'app, tocca importo e categoria: la spesa è salvata."
+        },
+        {
+          "t": "100% sul dispositivo",
+          "d": "Niente account né server. I tuoi dati finanziari non lasciano mai il tuo iPhone."
+        },
+        {
+          "t": "Analisi chiare",
+          "d": "Riepiloghi per giorno, mese e categoria mostrano dove vanno i tuoi soldi."
+        },
+        {
+          "t": "31 lingue",
+          "d": "Completamente localizzata in tutto il mondo, con modalità scura e testo grande."
+        }
       ],
       "privacy_blurb": "QuickCost salva tutto localmente sul tuo dispositivo e non raccoglie nulla.",
       "disclaimer": ""
@@ -62,10 +78,22 @@
       "subtitle": "Un fonometro in tempo reale con monitoraggio della dose di rumore giornaliera per proteggere il tuo udito.",
       "meta_desc": "Decibel Meter misura il livello sonoro in tempo reale e monitora la tua dose di rumore giornaliera. L'audio non lascia mai il tuo iPhone.",
       "features": [
-        {"t": "Misurazione dal vivo", "d": "Lettura dei dB in tempo reale con MIN, MEDIA e MAX a colpo d'occhio."},
-        {"t": "Dose di rumore giornaliera", "d": "Monitora l'esposizione secondo la linea guida NIOSH di 85 dB / 8 h."},
-        {"t": "Nessuna registrazione", "d": "L'audio viene analizzato in tempo reale e mai salvato o caricato."},
-        {"t": "Widget e Siri", "d": "Avvia e ferma la misurazione dalla schermata Home o con la voce."}
+        {
+          "t": "Misurazione dal vivo",
+          "d": "Lettura dei dB in tempo reale con MIN, MEDIA e MAX a colpo d'occhio."
+        },
+        {
+          "t": "Dose di rumore giornaliera",
+          "d": "Monitora l'esposizione secondo la linea guida NIOSH di 85 dB / 8 h."
+        },
+        {
+          "t": "Nessuna registrazione",
+          "d": "L'audio viene analizzato in tempo reale e mai salvato o caricato."
+        },
+        {
+          "t": "Widget e Siri",
+          "d": "Avvia e ferma la misurazione dalla schermata Home o con la voce."
+        }
       ],
       "privacy_blurb": "Tutta l'analisi avviene sul tuo dispositivo. L'audio non viene mai registrato né caricato.",
       "disclaimer": "I valori della dose di rumore sono informazioni di riferimento generali, non una misurazione medica."
@@ -76,10 +104,22 @@
       "subtitle": "Un timer onesto per il digiuno intermittente. La versione gratuita è completa, per sempre.",
       "meta_desc": "FastZen è un timer onesto per il digiuno intermittente. Funzioni di base gratuite per sempre, acquisto unico di Pro, completamente privato.",
       "features": [
-        {"t": "Base gratuita per sempre", "d": "Tutti i piani, il timer, la cronologia, le serie e le notifiche sono gratuiti."},
-        {"t": "Pro con acquisto unico", "d": "Obiettivi personalizzati e statistiche con un solo pagamento. Niente abbonamento."},
-        {"t": "Timeline delle fasi", "d": "Scopri le fasi comunemente associate a ogni ora di digiuno."},
-        {"t": "Completamente privato", "d": "Niente account né server: la tua cronologia resta sul tuo dispositivo."}
+        {
+          "t": "Base gratuita per sempre",
+          "d": "Tutti i piani, il timer, la cronologia, le serie e le notifiche sono gratuiti."
+        },
+        {
+          "t": "Pro con acquisto unico",
+          "d": "Obiettivi personalizzati e statistiche con un solo pagamento. Niente abbonamento."
+        },
+        {
+          "t": "Timeline delle fasi",
+          "d": "Scopri le fasi comunemente associate a ogni ora di digiuno."
+        },
+        {
+          "t": "Completamente privato",
+          "d": "Niente account né server: la tua cronologia resta sul tuo dispositivo."
+        }
       ],
       "privacy_blurb": "La tua cronologia di digiuno non lascia mai il tuo iPhone.",
       "disclaimer": "FastZen è uno strumento di timer e registrazione, non un consiglio medico. Consulta un professionista sanitario prima di iniziare qualsiasi digiuno."
@@ -90,13 +130,40 @@
       "subtitle": "Puzzle quotidiani di calcolo mentale: la stessa sfida per tutti nel mondo, con indizi che insegnano invece di svelare.",
       "meta_desc": "MathSpark offre puzzle numerici quotidiani: la stessa sfida per tutti, con indizi educativi. Completamente offline e privato.",
       "features": [
-        {"t": "Sfida globale quotidiana", "d": "Tutti nel mondo ricevono gli stessi puzzle ogni giorno, completamente offline."},
-        {"t": "Indizi che insegnano", "d": "Consigli di strategia e un solo passo successivo, mai la soluzione completa."},
-        {"t": "Gratis per sempre", "d": "La sfida quotidiana e 5 puzzle di pratica al giorno sono sempre gratuiti."},
-        {"t": "Premium con acquisto unico", "d": "Pratica illimitata, difficoltà maggiori e statistiche complete. Niente abbonamento."}
+        {
+          "t": "Sfida globale quotidiana",
+          "d": "Tutti nel mondo ricevono gli stessi puzzle ogni giorno, completamente offline."
+        },
+        {
+          "t": "Indizi che insegnano",
+          "d": "Consigli di strategia e un solo passo successivo, mai la soluzione completa."
+        },
+        {
+          "t": "Gratis per sempre",
+          "d": "La sfida quotidiana e 5 puzzle di pratica al giorno sono sempre gratuiti."
+        },
+        {
+          "t": "Premium con acquisto unico",
+          "d": "Pratica illimitata, difficoltà maggiori e statistiche complete. Niente abbonamento."
+        }
       ],
       "privacy_blurb": "MathSpark funziona completamente offline e non raccoglie nulla.",
       "disclaimer": ""
     }
+  },
+  "sections": {
+    "games_title": "Giochi",
+    "games_sub": "Puzzle originali che ti rispettano: niente pubblicità tra i livelli, niente timer di energia, niente divertimento a pagamento.",
+    "tools_title": "Strumenti",
+    "tools_sub": "Utility piccole e precise che non ti intralciano — e non toccano i tuoi dati."
+  },
+  "teaser": {
+    "badge": "In sviluppo",
+    "title": "Project 005",
+    "desc": "Qualcosa di nuovo brilla nel buio. Niente spoiler per ora."
+  },
+  "about": {
+    "title": "Sullo sviluppatore",
+    "body": "Sono lo sviluppatore indipendente dietro Sparkfall Games. Ogni gioco e strumento è nativo iOS al 100%, localizzato in 31 lingue e costruito attorno a una sola regola: i tuoi dati restano sul tuo dispositivo."
   }
 }

@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Aplicații iOS simple și private</title>
-<meta name="description" content="Aplicații iOS simple, private și oneste. Datele tale rămân pe dispozitivul tău — fără conturi, fără servere, fără urmărire.">
+<title>Sparkfall Games — Jocuri indie și aplicații iOS oneste</title>
+<meta name="description" content="Sparkfall Games este un studio indie dintr-o singură persoană care creează jocuri antrenante și instrumente iOS oneste și private. Fără conturi, fără servere, fără urmărire.">
 <link rel="canonical" href="https://2645809444.github.io/ro/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/ro/">Qiuyufei Apps</a>
+    <a class="brand" href="/ro/">Sparkfall Games</a>
     <nav>
-      <a href="/ro/#apps">Aplicații</a>
+      <a href="/ro/#games">Jocuri</a>
+      <a href="/ro/#tools">Instrumente</a>
+      <a href="/ro/#about">Despre</a>
       <a href="mailto:2645809444@qq.com">Contact</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/" selected>Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Aplicații simple, private, oneste.</h1>
-    <p>Fiecare aplicație e construită în jurul unei idei: datele tale rămân pe dispozitivul tău. Fără conturi, fără servere, fără urmărire.</p>
-    <a class="btn btn-primary" href="#apps">Explorează aplicațiile</a>
+    <span class="hero-kicker">Studio de jocuri dintr-o singură persoană</span>
+    <h1>Jocuri antrenante. Instrumente <span class="grad">oneste.</span></h1>
+    <p>Fiecare titlu este construit solo și privat prin design — datele tale rămân pe dispozitivul tău. Fără conturi, fără servere, fără urmărire.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Vezi jocurile</a>
+      <a class="btn" href="#tools">Vezi instrumentele</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/ro/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Jocuri</span></h2>
+      <p>Puzzle-uri originale care te respectă: fără reclame între niveluri, fără cronometre de energie, fără distracție blocată în spatele unui paywall.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/ro/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Jocuri</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Un puzzle pe zi. Toată lumea joacă.</p>
+        <p class="game-desc">Puzzle-uri zilnice de calcul mintal cu indicii care te învață.</p>
+        <span class="card-more">Află mai multe →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">În dezvoltare</span>
+      <h3>Project 005</h3>
+      <p>Ceva nou strălucește în întuneric. Fără spoilere deocamdată.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Instrumente</h2>
+      <p>Utilitare mici și precise care nu îți stau în cale — și nu se ating de datele tale.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/ro/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Finanțe</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Notează o cheltuială în 3 secunde.</p>
-      <p class="app-desc">Un jurnal de cheltuieli minimalist care păstrează totul pe iPhone-ul tău.</p>
+      <p class="tool-tagline">Notează o cheltuială în 3 secunde.</p>
       <span class="card-more">Află mai multe →</span>
     </a>
-    <a class="app-card reveal" href="/ro/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/ro/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Utilitare</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Cunoaște-ți zgomotul. Protejează-ți auzul.</p>
-      <p class="app-desc">Sonometru în timp real cu doza zilnică de zgomot.</p>
+      <p class="tool-tagline">Cunoaște-ți zgomotul. Protejează-ți auzul.</p>
       <span class="card-more">Află mai multe →</span>
     </a>
-    <a class="app-card reveal" href="/ro/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/ro/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Sănătate și fitness</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Cronometrul de post onest.</p>
-      <p class="app-desc">Un cronometru de post intermitent fără capcane de abonament.</p>
+      <p class="tool-tagline">Cronometrul de post onest.</p>
       <span class="card-more">Află mai multe →</span>
     </a>
-    <a class="app-card reveal" href="/ro/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Jocuri</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Un puzzle pe zi. Toată lumea joacă.</p>
-      <p class="app-desc">Puzzle-uri zilnice de calcul mintal cu indicii care te învață.</p>
-      <span class="card-more">Află mai multe →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Confidențialitate din start</h3><p>Totul se stochează pe dispozitivul tău. Nu operăm servere și nu îți putem vedea datele.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Prețuri oneste</h3><p>Funcțiile gratuite rămân gratuite pentru totdeauna. Fără capcane de abonament, fără numărători inverse false.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Făcut pentru toți</h3><p>Fiecare aplicație e complet localizată în 31 de limbi, cu mod întunecat și accesibilitate.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>Despre dezvoltator</h2>
+    <p>Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 31 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Politici de confidențialitate: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Politici de confidențialitate: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

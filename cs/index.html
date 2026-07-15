@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Qiuyufei Apps — Jednoduché a soukromé aplikace pro iOS</title>
-<meta name="description" content="Jednoduché, soukromé a poctivé aplikace pro iOS. Vaše data zůstávají ve vašem zařízení — žádné účty, žádné servery, žádné sledování.">
+<title>Sparkfall Games — Indie hry a poctivé aplikace pro iOS</title>
+<meta name="description" content="Sparkfall Games je indie studio jednoho člověka, které vytváří hravé hry a poctivé, soukromé nástroje pro iOS. Žádné účty, žádné servery, žádné sledování.">
 <link rel="canonical" href="https://2645809444.github.io/cs/">
 <link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
 <link rel="alternate" hreflang="zh-Hans" href="https://2645809444.github.io/zh-hans/">
@@ -44,9 +44,11 @@
 <body>
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/cs/">Qiuyufei Apps</a>
+    <a class="brand" href="/cs/">Sparkfall Games</a>
     <nav>
-      <a href="/cs/#apps">Aplikace</a>
+      <a href="/cs/#games">Hry</a>
+      <a href="/cs/#tools">Nástroje</a>
+      <a href="/cs/#about">O mně</a>
       <a href="mailto:2645809444@qq.com">Kontakt</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/">Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/" selected>Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
     </nav>
@@ -54,65 +56,94 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>Jednoduché, soukromé, poctivé aplikace.</h1>
-    <p>Každá aplikace stojí na jediné myšlence: vaše data zůstávají ve vašem zařízení. Žádné účty, žádné servery, žádné sledování.</p>
-    <a class="btn btn-primary" href="#apps">Prozkoumat aplikace</a>
+    <span class="hero-kicker">Herní studio jednoho člověka</span>
+    <h1>Hravé hry. Poctivé <span class="grad">nástroje.</span></h1>
+    <p>Každý titul vzniká v jednom člověku a je soukromý už od návrhu — vaše data zůstávají ve vašem zařízení. Žádné účty, žádné servery, žádné sledování.</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">Prohlédnout hry</a>
+      <a class="btn" href="#tools">Prohlédnout nástroje</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-    <a class="app-card reveal" href="/cs/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="56" height="56">
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">Hry</span></h2>
+      <p>Originální hádanky, které vás respektují: žádné reklamy mezi úrovněmi, žádné časovače energie, žádná zábava za paywallem.</p>
+    </div>
+    <div class="game-grid">
+    <a class="game-card reveal" href="/cs/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+      <div class="game-copy">
+        <span class="badge">Hry</span>
+        <h3>MathSpark</h3>
+        <p class="game-tagline">Jeden hlavolam denně. Hraje celý svět.</p>
+        <p class="game-desc">Denní hlavolamy na počítání zpaměti s nápovědami, které učí.</p>
+        <span class="card-more">Zjistit více →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-mathspark.png" alt="MathSpark" loading="lazy"></div>
+    </a>
+    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">Ve vývoji</span>
+      <h3>Project 005</h3>
+      <p>Ve tmě září něco nového. Zatím bez spoilerů.</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>Nástroje</h2>
+      <p>Malé, přesné utility, které vám nepřekážejí — a nesahají na vaše data.</p>
+    </div>
+    <div class="tool-grid">
+    <a class="tool-card reveal" href="/cs/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
         <span class="badge">Finance</span>
       </div>
       <h3>QuickCost</h3>
-      <p class="app-tagline">Zapište výdaj za 3 sekundy.</p>
-      <p class="app-desc">Minimalistický sledovač výdajů, který vše uchovává ve vašem iPhonu.</p>
+      <p class="tool-tagline">Zapište výdaj za 3 sekundy.</p>
       <span class="card-more">Zjistit více →</span>
     </a>
-    <a class="app-card reveal" href="/cs/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/cs/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
         <span class="badge">Nástroje</span>
       </div>
       <h3>Decibel Meter</h3>
-      <p class="app-tagline">Poznejte svůj hluk. Chraňte svůj sluch.</p>
-      <p class="app-desc">Hlukoměr v reálném čase s denní dávkou hluku.</p>
+      <p class="tool-tagline">Poznejte svůj hluk. Chraňte svůj sluch.</p>
       <span class="card-more">Zjistit více →</span>
     </a>
-    <a class="app-card reveal" href="/cs/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="56" height="56">
+    <a class="tool-card reveal" href="/cs/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
         <span class="badge">Zdraví a fitness</span>
       </div>
       <h3>FastZen</h3>
-      <p class="app-tagline">Poctivý časovač půstu.</p>
-      <p class="app-desc">Časovač přerušovaného půstu bez předplatitelských pastí.</p>
+      <p class="tool-tagline">Poctivý časovač půstu.</p>
       <span class="card-more">Zjistit více →</span>
     </a>
-    <a class="app-card reveal" href="/cs/mathspark/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-mathspark.png" alt="" width="56" height="56">
-        <span class="badge">Hry</span>
-      </div>
-      <h3>MathSpark</h3>
-      <p class="app-tagline">Jeden hlavolam denně. Hraje celý svět.</p>
-      <p class="app-desc">Denní hlavolamy na počítání zpaměti s nápovědami, které učí.</p>
-      <span class="card-more">Zjistit více →</span>
-    </a>
-  </div>
+    </div>
+  </section>
 </main>
   <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>Soukromí od základu</h3><p>Vše se ukládá do vašeho zařízení. Neprovozujeme žádné servery a vaše data nevidíme.</p></div>
     <div class="value reveal"><div class="value-ic">🤝</div><h3>Poctivé ceny</h3><p>Bezplatné funkce zůstávají zdarma navždy. Žádné předplatitelské pasti, žádné falešné odpočty.</p></div>
     <div class="value reveal"><div class="value-ic">🌍</div><h3>Pro všechny</h3><p>Každá aplikace je plně lokalizována do 31 jazyků, s tmavým režimem a zpřístupněním.</p></div>
   </section>
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>O vývojáři</h2>
+    <p>Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 31 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení.</p>
+  </div>
+</section>
 <footer class="foot">
   <div class="wrap">
-    <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p class="foot-links">Zásady ochrany soukromí: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
+    <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
+    <p class="foot-links">Zásady ochrany soukromí: <a href="/mathspark/privacy.html">MathSpark</a> · <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a></p>
   </div>
 </footer>
 </body>

@@ -138,7 +138,9 @@ def header_nav(lang, s, page):
   <div class="wrap nav-inner">
     <a class="brand" href="{home}">{SITE['brand']}</a>
     <nav>
-      <a href="{home}#apps">{t(s, 'nav.apps')}</a>
+      <a href="{home}#games">{t(s, 'nav.games')}</a>
+      <a href="{home}#tools">{t(s, 'nav.tools')}</a>
+      <a href="{home}#about">{t(s, 'nav.about')}</a>
       <a href="mailto:{SITE['contact_email']}">{t(s, 'nav.contact')}</a>
       {switcher(lang, page)}
     </nav>
@@ -176,22 +178,51 @@ def phone(app, size=""):
 </div>"""
 
 
-def render_home(lang, s):
-    page = ""
-    canonical = SITE["base_url"] + lang_url(lang, page)
-    cards = []
-    for app in APPS:
-        aurl = lang_url(lang, f"{app['slug']}/")
-        cards.append(f"""    <a class="app-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
-      <div class="app-card-top">
-        <img class="app-icon" src="/assets/img/icon-{app['slug']}.png" alt="" width="56" height="56">
+def game_card(lang, s, app):
+    aurl = lang_url(lang, f"{app['slug']}/")
+    return f"""    <a class="game-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+      <div class="game-copy">
+        <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
+        <h3>{app['name']}</h3>
+        <p class="game-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
+        <p class="game-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
+        <span class="card-more">{t(s, 'common.learn_more')} →</span>
+      </div>
+      <div class="game-shot"><img src="/assets/img/shot-{app['slug']}.png" alt="{app['name']}" loading="lazy"></div>
+    </a>"""
+
+
+def tease_card(s):
+    return f"""    <div class="tease-card reveal">
+      <span class="badge" style="--aa:#8b5cf6;">{t(s, 'teaser.badge')}</span>
+      <h3>{t(s, 'teaser.title')}</h3>
+      <p>{t(s, 'teaser.desc')}</p>
+      <span class="tease-glyph" aria-hidden="true">?</span>
+    </div>"""
+
+
+def tool_card(lang, s, app):
+    aurl = lang_url(lang, f"{app['slug']}/")
+    return f"""    <a class="tool-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+      <div class="tool-top">
+        <img class="app-icon" src="/assets/img/icon-{app['slug']}.png" alt="" width="52" height="52">
         <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
       </div>
       <h3>{app['name']}</h3>
-      <p class="app-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
-      <p class="app-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
+      <p class="tool-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
       <span class="card-more">{t(s, 'common.learn_more')} →</span>
-    </a>""")
+    </a>"""
+
+
+def render_home(lang, s):
+    page = ""
+    canonical = SITE["base_url"] + lang_url(lang, page)
+    games = [a for a in APPS if a["kind"] == "game"]
+    tools = [a for a in APPS if a["kind"] == "tool"]
+
+    game_cards = "\n".join(game_card(lang, s, a) for a in games)
+    game_cards += "\n" + tease_card(s)
+    tool_cards = "\n".join(tool_card(lang, s, a) for a in tools)
 
     values = f"""  <section class="values wrap">
     <div class="value reveal"><div class="value-ic">🔒</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
@@ -199,22 +230,56 @@ def render_home(lang, s):
     <div class="value reveal"><div class="value-ic">🌍</div><h3>{t(s, 'values.global_title')}</h3><p>{t(s, 'values.global_desc')}</p></div>
   </section>"""
 
+    # Wrap the last word of the hero title in a gradient span.
+    title_words = t(s, "hero.title").rsplit(" ", 1)
+    if len(title_words) == 2:
+        hero_title = f'{esc(title_words[0])} <span class="grad">{esc(title_words[1])}</span>'
+    else:
+        hero_title = f'<span class="grad">{esc(t(s, "hero.title"))}</span>'
+
     html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"), page, canonical)
     html += "<body>\n" + header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <div class="hero-grid" aria-hidden="true"></div>
+  <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
-    <h1>{t(s, 'hero.title')}</h1>
+    <span class="hero-kicker">{t(s, 'hero.kicker')}</span>
+    <h1>{hero_title}</h1>
     <p>{t(s, 'hero.subtitle')}</p>
-    <a class="btn btn-primary" href="#apps">{t(s, 'hero.explore')}</a>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="#games">{t(s, 'hero.explore')}</a>
+      <a class="btn" href="#tools">{t(s, 'hero.explore_tools')}</a>
+    </div>
   </div>
 </section>
-<main class="wrap" id="apps">
-  <div class="app-grid">
-{chr(10).join(cards)}
-  </div>
+<main class="wrap">
+  <section class="sec" id="games">
+    <div class="sec-head reveal">
+      <h2><span class="grad">{t(s, 'sections.games_title')}</span></h2>
+      <p>{t(s, 'sections.games_sub')}</p>
+    </div>
+    <div class="game-grid">
+{game_cards}
+    </div>
+  </section>
+  <section class="sec" id="tools">
+    <div class="sec-head reveal">
+      <h2>{t(s, 'sections.tools_title')}</h2>
+      <p>{t(s, 'sections.tools_sub')}</p>
+    </div>
+    <div class="tool-grid">
+{tool_cards}
+    </div>
+  </section>
 </main>
 {values}
+<section class="wrap" id="about">
+  <div class="about reveal">
+    <h2>{t(s, 'about.title')}</h2>
+    <p>{t(s, 'about.body')}</p>
+  </div>
+</section>
 """
     html += footer(lang, s)
     out = ROOT / lang["path"] / "index.html" if lang["path"] else ROOT / "index.html"
