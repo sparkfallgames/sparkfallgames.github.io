@@ -150,13 +150,11 @@ def header_nav(lang, s, page):
 
 
 def footer(lang, s):
-    links = " · ".join(
-        f'<a href="/{a["slug"]}/privacy.html">{a["name"]}</a>' for a in APPS)
     rights = t(s, "common.footer_rights").replace("{year}", SITE["year"])
+    legal = lang_url(lang, "legal/")
     return f"""<footer class="foot">
   <div class="wrap">
-    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a></p>
-    <p class="foot-links">{t(s, 'common.footer_privacy')}: {links}</p>
+    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a></p>
   </div>
 </footer>
 </body>
@@ -338,10 +336,45 @@ def render_app(lang, s, app):
     out.write_text(html)
 
 
+def render_legal(lang, s):
+    """Per-language hub listing every app's privacy policy and support page.
+    Keeps the footer at a single link no matter how many apps ship."""
+    page = "legal/"
+    canonical = SITE["base_url"] + lang_url(lang, page)
+    title = f"{t(s, 'common.footer_privacy')} — {SITE['brand']}"
+    rows = []
+    for app in APPS:
+        rows.append(f"""    <div class="legal-row reveal" style="--aa:{app['gradient'][0]};">
+      <img class="app-icon" src="/assets/img/icon-{app['slug']}.png" alt="" width="44" height="44">
+      <h3>{app['name']}</h3>
+      <div class="legal-links">
+        <a href="/{app['slug']}/privacy.html">{t(s, 'common.privacy_policy')}</a>
+        <a href="/{app['slug']}/support.html">{t(s, 'common.support')}</a>
+      </div>
+    </div>""")
+
+    html = head(lang, s, title, t(s, "meta.home_desc"), page, canonical)
+    html += "<body>\n" + header_nav(lang, s, page)
+    html += f"""<main class="wrap legal-hub">
+  <div class="sec-head">
+    <h2>{t(s, 'common.footer_privacy')}</h2>
+  </div>
+  <div class="legal-list">
+{chr(10).join(rows)}
+  </div>
+</main>
+"""
+    html += footer(lang, s)
+    out = (ROOT / lang["path"] if lang["path"] else ROOT) / "legal" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
+
+
 def render_sitemap():
     urls = []
     for lang in LANGS:
         urls.append(SITE["base_url"] + lang_url(lang, ""))
+        urls.append(SITE["base_url"] + lang_url(lang, "legal/"))
         for app in APPS:
             urls.append(SITE["base_url"] + lang_url(lang, f"{app['slug']}/"))
     for app in APPS:
@@ -363,7 +396,8 @@ def main():
     for lang in LANGS:
         s = i18n[lang["code"]]
         render_home(lang, s)
-        count += 1
+        render_legal(lang, s)
+        count += 2
         for app in APPS:
             render_app(lang, s, app)
             count += 1

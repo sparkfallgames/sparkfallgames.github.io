@@ -540,6 +540,49 @@ a { color: var(--cyan); }
 
 .disclaimer { font-size: 0.84rem; color: var(--text-3); margin-top: 12px !important; }
 
+/* ---------- Legal hub ---------- */
+
+.legal-hub { min-height: 52vh; padding-top: 22px; }
+
+.legal-list { display: flex; flex-direction: column; gap: 12px; max-width: 640px; }
+
+.legal-row {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  padding: 14px 18px;
+  border-radius: var(--radius-sm);
+  background: var(--surface);
+  border: 1px solid var(--border);
+}
+
+.legal-row .app-icon { width: 44px; height: 44px; border-radius: 11px; }
+
+.legal-row h3 { margin: 0; font-size: 1.02rem; flex: 1; }
+
+.legal-links { display: flex; gap: 8px; flex-wrap: wrap; justify-content: flex-end; }
+
+.legal-links a {
+  font-size: 0.85rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: var(--text-2);
+  padding: 6px 13px;
+  border-radius: 99px;
+  border: 1px solid var(--border);
+  background: var(--surface-2);
+}
+
+.legal-links a:hover {
+  color: var(--text);
+  border-color: color-mix(in srgb, var(--aa, #8b5cf6) 55%, var(--border));
+}
+
+@media (max-width: 480px) {
+  .legal-row { flex-wrap: wrap; }
+  .legal-links { justify-content: flex-start; width: 100%; }
+}
+
 /* ---------- Footer ---------- */
 
 .foot {
