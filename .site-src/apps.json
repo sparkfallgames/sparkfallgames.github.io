@@ -1,0 +1,87 @@
+{
+  "site": {
+    "brand": "Qiuyufei Apps",
+    "base_url": "https://2645809444.github.io",
+    "contact_email": "2645809444@qq.com",
+    "year": "2026"
+  },
+  "apps": [
+    {
+      "slug": "quickcost",
+      "name": "QuickCost",
+      "accent": "#2E9E5B",
+      "accent_dark": "#0E2A1B",
+      "gradient": ["#2E9E5B", "#1C7A44"],
+      "category_key": "finance",
+      "letter": "Q",
+      "released": false,
+      "store_url": ""
+    },
+    {
+      "slug": "decibelmeter",
+      "name": "Decibel Meter",
+      "accent": "#1AC766",
+      "accent_dark": "#0E1A16",
+      "gradient": ["#1AC766", "#0F8A4D"],
+      "category_key": "utilities",
+      "letter": "D",
+      "released": false,
+      "store_url": ""
+    },
+    {
+      "slug": "fastzen",
+      "name": "FastZen",
+      "accent": "#F08A24",
+      "accent_dark": "#2A1E12",
+      "gradient": ["#F9A833", "#E86A1A"],
+      "category_key": "health",
+      "letter": "F",
+      "released": false,
+      "store_url": ""
+    },
+    {
+      "slug": "mathspark",
+      "name": "MathSpark",
+      "accent": "#7C5CFF",
+      "accent_dark": "#1A1030",
+      "gradient": ["#7C5CFF", "#5B3CE0"],
+      "category_key": "games",
+      "letter": "M",
+      "released": false,
+      "store_url": ""
+    }
+  ],
+  "languages": [
+    {"code": "en", "path": "", "hreflang": "en", "name": "English"},
+    {"code": "zh-hans", "path": "zh-hans", "hreflang": "zh-Hans", "name": "简体中文"},
+    {"code": "zh-hant", "path": "zh-hant", "hreflang": "zh-Hant", "name": "繁體中文"},
+    {"code": "es", "path": "es", "hreflang": "es", "name": "Español"},
+    {"code": "de", "path": "de", "hreflang": "de", "name": "Deutsch"},
+    {"code": "fr", "path": "fr", "hreflang": "fr", "name": "Français"},
+    {"code": "ja", "path": "ja", "hreflang": "ja", "name": "日本語"},
+    {"code": "pt-br", "path": "pt-br", "hreflang": "pt-BR", "name": "Português (Brasil)"},
+    {"code": "ko", "path": "ko", "hreflang": "ko", "name": "한국어"},
+    {"code": "it", "path": "it", "hreflang": "it", "name": "Italiano"},
+    {"code": "nl", "path": "nl", "hreflang": "nl", "name": "Nederlands"},
+    {"code": "pt-pt", "path": "pt-pt", "hreflang": "pt-PT", "name": "Português (Portugal)"},
+    {"code": "ru", "path": "ru", "hreflang": "ru", "name": "Русский"},
+    {"code": "uk", "path": "uk", "hreflang": "uk", "name": "Українська"},
+    {"code": "tr", "path": "tr", "hreflang": "tr", "name": "Türkçe"},
+    {"code": "ar", "path": "ar", "hreflang": "ar", "name": "العربية", "dir": "rtl"},
+    {"code": "th", "path": "th", "hreflang": "th", "name": "ไทย"},
+    {"code": "vi", "path": "vi", "hreflang": "vi", "name": "Tiếng Việt"},
+    {"code": "id", "path": "id", "hreflang": "id", "name": "Bahasa Indonesia"},
+    {"code": "ms", "path": "ms", "hreflang": "ms", "name": "Bahasa Melayu"},
+    {"code": "hi", "path": "hi", "hreflang": "hi", "name": "हिन्दी"},
+    {"code": "pl", "path": "pl", "hreflang": "pl", "name": "Polski"},
+    {"code": "sv", "path": "sv", "hreflang": "sv", "name": "Svenska"},
+    {"code": "da", "path": "da", "hreflang": "da", "name": "Dansk"},
+    {"code": "fi", "path": "fi", "hreflang": "fi", "name": "Suomi"},
+    {"code": "no", "path": "no", "hreflang": "no", "name": "Norsk"},
+    {"code": "cs", "path": "cs", "hreflang": "cs", "name": "Čeština"},
+    {"code": "hu", "path": "hu", "hreflang": "hu", "name": "Magyar"},
+    {"code": "ro", "path": "ro", "hreflang": "ro", "name": "Română"},
+    {"code": "el", "path": "el", "hreflang": "el", "name": "Ελληνικά"},
+    {"code": "he", "path": "he", "hreflang": "he", "name": "עברית", "dir": "rtl"}
+  ]
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Aplicații iOS simple și private",
+    "home_desc": "Aplicații iOS simple, private și oneste. Datele tale rămân pe dispozitivul tău — fără conturi, fără servere, fără urmărire."
+  },
+  "nav": {
+    "apps": "Aplicații",
+    "contact": "Contact",
+    "privacy": "Confidențialitate",
+    "support": "Asistență",
+    "all_apps": "Toate aplicațiile",
+    "language": "Limbă"
+  },
+  "hero": {
+    "title": "Aplicații simple, private, oneste.",
+    "subtitle": "Fiecare aplicație e construită în jurul unei idei: datele tale rămân pe dispozitivul tău. Fără conturi, fără servere, fără urmărire.",
+    "explore": "Explorează aplicațiile"
+  },
+  "values": {
+    "private_title": "Confidențialitate din start",
+    "private_desc": "Totul se stochează pe dispozitivul tău. Nu operăm servere și nu îți putem vedea datele.",
+    "honest_title": "Prețuri oneste",
+    "honest_desc": "Funcțiile gratuite rămân gratuite pentru totdeauna. Fără capcane de abonament, fără numărători inverse false.",
+    "global_title": "Făcut pentru toți",
+    "global_desc": "Fiecare aplicație e complet localizată în 31 de limbi, cu mod întunecat și accesibilitate."
+  },
+  "common": {
+    "coming_soon": "În curând pe App Store",
+    "download": "Descarcă din App Store",
+    "privacy_policy": "Politica de confidențialitate",
+    "support": "Asistență",
+    "features": "De ce {app}",
+    "privacy_heading": "Confidențialitate",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Politici de confidențialitate",
+    "learn_more": "Află mai multe"
+  },
+  "categories": {
+    "finance": "Finanțe",
+    "utilities": "Utilitare",
+    "health": "Sănătate și fitness",
+    "games": "Jocuri"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Notează o cheltuială în 3 secunde.",
+      "card_desc": "Un jurnal de cheltuieli minimalist care păstrează totul pe iPhone-ul tău.",
+      "subtitle": "Un jurnal de cheltuieli minimalist și privat pentru iPhone. Deschizi, atingi, gata — în 3 secunde.",
+      "meta_desc": "QuickCost este un jurnal de cheltuieli minimalist pentru iPhone. Notează o cheltuială în 3 secunde. Toate datele rămân pe dispozitivul tău.",
+      "features": [
+        {"t": "Notare în 3 secunde", "d": "Deschide aplicația, atinge suma și o categorie — cheltuiala e salvată."},
+        {"t": "100% pe dispozitiv", "d": "Fără cont, fără server. Datele tale financiare nu părăsesc niciodată iPhone-ul."},
+        {"t": "Statistici clare", "d": "Rezumate zilnice, lunare și pe categorii arată unde se duc banii."},
+        {"t": "31 de limbi", "d": "Localizare completă în toată lumea, cu mod întunecat și text mare."}
+      ],
+      "privacy_blurb": "QuickCost stochează totul local pe dispozitivul tău și nu colectează nimic.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Cunoaște-ți zgomotul. Protejează-ți auzul.",
+      "card_desc": "Sonometru în timp real cu doza zilnică de zgomot.",
+      "subtitle": "Un sonometru în timp real cu urmărirea dozei zilnice de zgomot, care te ajută să-ți protejezi auzul.",
+      "meta_desc": "Decibel Meter măsoară nivelul sonor în timp real și urmărește doza zilnică de zgomot. Sunetul nu părăsește niciodată iPhone-ul.",
+      "features": [
+        {"t": "Măsurare live", "d": "Afișaj dB în timp real cu MIN, MED și MAX dintr-o privire."},
+        {"t": "Doza zilnică de zgomot", "d": "Urmărește expunerea conform ghidului NIOSH de 85 dB / 8 h."},
+        {"t": "Nimic nu se înregistrează", "d": "Sunetul e analizat în timp real și nu e niciodată stocat sau încărcat."},
+        {"t": "Widget și Siri", "d": "Pornește și oprește măsurarea de pe ecranul principal sau cu vocea."}
+      ],
+      "privacy_blurb": "Toată analiza are loc pe dispozitivul tău. Sunetul nu e niciodată înregistrat sau încărcat.",
+      "disclaimer": "Valorile dozei de zgomot sunt informații generale de referință, nu o măsurătoare medicală."
+    },
+    "fastzen": {
+      "tagline": "Cronometrul de post onest.",
+      "card_desc": "Un cronometru de post intermitent fără capcane de abonament.",
+      "subtitle": "Un cronometru onest pentru post intermitent. Versiunea gratuită e completă — pentru totdeauna.",
+      "meta_desc": "FastZen este un cronometru onest de post intermitent. Funcții de bază gratuite pentru totdeauna, Pro cu plată unică, complet privat.",
+      "features": [
+        {"t": "Baza gratuită pentru totdeauna", "d": "Toate planurile presetate, cronometrul, istoricul, seriile și notificările sunt gratuite."},
+        {"t": "Pro cu plată unică", "d": "Obiective personalizate și statistici pentru o singură plată. Fără abonament."},
+        {"t": "Cronologia fazelor", "d": "Vezi fazele asociate de obicei cu fiecare oră de post."},
+        {"t": "Complet privat", "d": "Fără cont, fără server — istoricul postului rămâne pe dispozitivul tău."}
+      ],
+      "privacy_blurb": "Istoricul tău de post nu părăsește niciodată iPhone-ul.",
+      "disclaimer": "FastZen este un instrument de cronometrare și jurnal, nu un sfat medical. Consultă un specialist înainte de a începe orice post."
+    },
+    "mathspark": {
+      "tagline": "Un puzzle pe zi. Toată lumea joacă.",
+      "card_desc": "Puzzle-uri zilnice de calcul mintal cu indicii care te învață.",
+      "subtitle": "Puzzle-uri zilnice de calcul mintal — aceeași provocare pentru toată lumea, cu indicii care te învață în loc să divulge.",
+      "meta_desc": "MathSpark oferă puzzle-uri numerice zilnice — aceeași provocare pentru toți, cu indicii educative. Complet offline și privat.",
+      "features": [
+        {"t": "Provocare globală zilnică", "d": "Toată lumea primește aceleași puzzle-uri în fiecare zi — complet offline."},
+        {"t": "Indicii care învață", "d": "Sfaturi de strategie și un singur pas următor, niciodată soluția completă."},
+        {"t": "Gratuit pentru totdeauna", "d": "Provocarea zilnică și 5 puzzle-uri de exercițiu pe zi sunt mereu gratuite."},
+        {"t": "Premium cu plată unică", "d": "Exerciții nelimitate, dificultăți mai mari și statistici complete. Fără abonament."}
+      ],
+      "privacy_blurb": "MathSpark funcționează complet offline și nu colectează nimic.",
+      "disclaimer": ""
+    }
+  }
+}

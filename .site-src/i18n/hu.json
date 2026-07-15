@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Egyszerű, privát iOS-alkalmazások",
+    "home_desc": "Egyszerű, privát és őszinte iOS-alkalmazások. Az adataid az eszközödön maradnak — nincs fiók, nincs szerver, nincs követés."
+  },
+  "nav": {
+    "apps": "Alkalmazások",
+    "contact": "Kapcsolat",
+    "privacy": "Adatvédelem",
+    "support": "Támogatás",
+    "all_apps": "Összes alkalmazás",
+    "language": "Nyelv"
+  },
+  "hero": {
+    "title": "Egyszerű, privát, őszinte alkalmazások.",
+    "subtitle": "Minden alkalmazás egyetlen gondolatra épül: az adataid az eszközödön maradnak. Nincs fiók, nincs szerver, nincs követés.",
+    "explore": "Alkalmazások felfedezése"
+  },
+  "values": {
+    "private_title": "Adatvédelem alapból",
+    "private_desc": "Minden az eszközödön tárolódik. Nem üzemeltetünk szervereket, és nem látjuk az adataidat.",
+    "honest_title": "Őszinte árazás",
+    "honest_desc": "Ami ingyenes, örökre ingyenes marad. Nincsenek előfizetési csapdák és hamis visszaszámlálók.",
+    "global_title": "Mindenkinek készült",
+    "global_desc": "Minden alkalmazás 31 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel."
+  },
+  "common": {
+    "coming_soon": "Hamarosan az App Store-ban",
+    "download": "Letöltés az App Store-ból",
+    "privacy_policy": "Adatvédelmi irányelvek",
+    "support": "Támogatás",
+    "features": "Miért a {app}",
+    "privacy_heading": "Adatvédelem",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Adatvédelmi irányelvek",
+    "learn_more": "Tudj meg többet"
+  },
+  "categories": {
+    "finance": "Pénzügyek",
+    "utilities": "Segédprogramok",
+    "health": "Egészség és fitnesz",
+    "games": "Játékok"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Rögzíts egy kiadást 3 másodperc alatt.",
+      "card_desc": "Minimalista kiadáskövető, amely mindent az iPhone-odon tart.",
+      "subtitle": "Minimalista, privát kiadáskövető iPhone-ra. Megnyitás, koppintás, kész — 3 másodperc alatt.",
+      "meta_desc": "A QuickCost egy minimalista kiadáskövető iPhone-ra. Rögzíts egy kiadást 3 másodperc alatt. Minden adat az eszközödön marad.",
+      "features": [
+        {"t": "Rögzítés 3 másodperc alatt", "d": "Nyisd meg az appot, koppints az összegre és a kategóriára — a kiadás elmentve."},
+        {"t": "100% az eszközön", "d": "Nincs fiók, nincs szerver. A pénzügyi adataid soha nem hagyják el az iPhone-t."},
+        {"t": "Átlátható kimutatások", "d": "Napi, havi és kategóriánkénti összesítések mutatják, hová megy a pénzed."},
+        {"t": "31 nyelv", "d": "Teljes honosítás világszerte, sötét móddal és nagy betűkkel."}
+      ],
+      "privacy_blurb": "A QuickCost mindent helyben, az eszközödön tárol, és semmit nem gyűjt.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Ismerd a zajt. Védd a hallásod.",
+      "card_desc": "Valós idejű zajszintmérő napi zajdózissal.",
+      "subtitle": "Valós idejű zajszintmérő napi zajdózis-követéssel, amely segít megvédeni a hallásodat.",
+      "meta_desc": "A Decibel Meter valós időben méri a hangszintet, és követi a napi zajdózisodat. A hang soha nem hagyja el az iPhone-t.",
+      "features": [
+        {"t": "Élő mérés", "d": "Valós idejű dB-kijelzés MIN, ÁTL és MAX értékekkel egy pillantásra."},
+        {"t": "Napi zajdózis", "d": "A NIOSH 85 dB / 8 óra irányelve szerint követi a terhelésedet."},
+        {"t": "Semmi sem kerül rögzítésre", "d": "A hang valós időben kerül elemzésre, soha nem tárolódik és nem töltődik fel."},
+        {"t": "Widget és Siri", "d": "Indítsd és állítsd le a mérést a Főképernyőről vagy hanggal."}
+      ],
+      "privacy_blurb": "Minden elemzés az eszközödön történik. A hang soha nem kerül rögzítésre vagy feltöltésre.",
+      "disclaimer": "A zajdózis-értékek általános tájékoztató adatok, nem orvosi mérések."
+    },
+    "fastzen": {
+      "tagline": "Az őszinte böjtidőzítő.",
+      "card_desc": "Időszakos böjtidőzítő előfizetési csapdák nélkül.",
+      "subtitle": "Őszinte időszakos böjtidőzítő. Az ingyenes verzió teljes értékű — örökre.",
+      "meta_desc": "A FastZen egy őszinte időszakos böjtidőzítő. Az alapfunkciók örökre ingyenesek, a Pro egyszeri vásárlás, teljesen privát.",
+      "features": [
+        {"t": "Az alap örökre ingyenes", "d": "Minden előre beállított terv, az időzítő, az előzmények, a sorozatok és az értesítések ingyenesek."},
+        {"t": "Pro egyszeri vásárlással", "d": "Egyéni célok és kimutatások egyetlen fizetésért. Nincs előfizetés."},
+        {"t": "Fázis-idővonal", "d": "Nézd meg, milyen fázisokat társítanak általában a böjt egyes óráihoz."},
+        {"t": "Teljesen privát", "d": "Nincs fiók, nincs szerver — a böjtelőzményeid az eszközödön maradnak."}
+      ],
+      "privacy_blurb": "A böjtelőzményeid soha nem hagyják el az iPhone-t.",
+      "disclaimer": "A FastZen időzítő- és naplózóeszköz, nem orvosi tanács. Böjt megkezdése előtt konzultálj egészségügyi szakemberrel."
+    },
+    "mathspark": {
+      "tagline": "Naponta egy fejtörő. Az egész világ játszik.",
+      "card_desc": "Napi fejszámolós fejtörők tanító tippekkel.",
+      "subtitle": "Napi fejszámolós fejtörők — ugyanaz a kihívás mindenkinek a világon, tippekkel, amelyek tanítanak, nem lelőnek.",
+      "meta_desc": "A MathSpark napi számfejtörőket kínál — ugyanaz a kihívás mindenkinek, tanító tippekkel. Teljesen offline és privát.",
+      "features": [
+        {"t": "Napi globális kihívás", "d": "A világon mindenki ugyanazokat a fejtörőket kapja minden nap — teljesen offline."},
+        {"t": "Tippek, amelyek tanítanak", "d": "Stratégiai tanácsok és csak egyetlen következő lépés, soha a teljes megoldás."},
+        {"t": "Örökre ingyenes", "d": "A napi kihívás és napi 5 gyakorlófeladat mindig ingyenes."},
+        {"t": "Premium egyszeri vásárlással", "d": "Korlátlan gyakorlás, nehezebb szintek és teljes statisztikák. Nincs előfizetés."}
+      ],
+      "privacy_blurb": "A MathSpark teljesen offline működik, és semmit nem gyűjt.",
+      "disclaimer": ""
+    }
+  }
+}

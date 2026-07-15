@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Enkla, privata iOS-appar",
+    "home_desc": "Enkla, privata och ärliga iOS-appar. Dina data stannar på din enhet — inga konton, inga servrar, ingen spårning."
+  },
+  "nav": {
+    "apps": "Appar",
+    "contact": "Kontakt",
+    "privacy": "Integritet",
+    "support": "Support",
+    "all_apps": "Alla appar",
+    "language": "Språk"
+  },
+  "hero": {
+    "title": "Enkla, privata, ärliga appar.",
+    "subtitle": "Varje app bygger på en enda idé: dina data stannar på din enhet. Inga konton, inga servrar, ingen spårning.",
+    "explore": "Utforska apparna"
+  },
+  "values": {
+    "private_title": "Integritet i grunden",
+    "private_desc": "Allt lagras på din enhet. Vi driver inga servrar och kan inte se dina data.",
+    "honest_title": "Ärlig prissättning",
+    "honest_desc": "Gratisfunktioner förblir gratis för alltid. Inga prenumerationsfällor, inga falska nedräkningar.",
+    "global_title": "Gjord för alla",
+    "global_desc": "Varje app är helt lokaliserad till 31 språk, med mörkt läge och tillgänglighet."
+  },
+  "common": {
+    "coming_soon": "Kommer snart till App Store",
+    "download": "Hämta i App Store",
+    "privacy_policy": "Integritetspolicy",
+    "support": "Support",
+    "features": "Därför {app}",
+    "privacy_heading": "Integritet",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Integritetspolicyer",
+    "learn_more": "Läs mer"
+  },
+  "categories": {
+    "finance": "Ekonomi",
+    "utilities": "Verktyg",
+    "health": "Hälsa och fitness",
+    "games": "Spel"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Logga en utgift på 3 sekunder.",
+      "card_desc": "En minimalistisk utgiftsspårare som behåller allt på din iPhone.",
+      "subtitle": "En minimalistisk, privat utgiftsspårare för iPhone. Öppna, tryck, klart — på 3 sekunder.",
+      "meta_desc": "QuickCost är en minimalistisk utgiftsspårare för iPhone. Logga en utgift på 3 sekunder. Alla data stannar på din enhet.",
+      "features": [
+        {"t": "Loggning på 3 sekunder", "d": "Öppna appen, tryck på belopp och kategori — utgiften är sparad."},
+        {"t": "100 % på enheten", "d": "Inget konto, ingen server. Dina ekonomiska uppgifter lämnar aldrig din iPhone."},
+        {"t": "Tydliga insikter", "d": "Översikter per dag, månad och kategori visar vart pengarna tar vägen."},
+        {"t": "31 språk", "d": "Helt lokaliserad världen över, med mörkt läge och stor text."}
+      ],
+      "privacy_blurb": "QuickCost lagrar allt lokalt på din enhet och samlar inte in något.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Känn ditt buller. Skydda din hörsel.",
+      "card_desc": "Ljudnivåmätare i realtid med daglig bullerdos.",
+      "subtitle": "En ljudnivåmätare i realtid med daglig bullerdosmätning som hjälper dig skydda hörseln.",
+      "meta_desc": "Decibel Meter mäter ljudnivån i realtid och följer din dagliga bullerdos. Ljudet lämnar aldrig din iPhone.",
+      "features": [
+        {"t": "Mätning i realtid", "d": "dB-värden i realtid med MIN, MEDEL och MAX i en överblick."},
+        {"t": "Daglig bullerdos", "d": "Följer din exponering enligt NIOSH-riktlinjen 85 dB / 8 h."},
+        {"t": "Inget spelas in", "d": "Ljudet analyseras i realtid och sparas eller laddas aldrig upp."},
+        {"t": "Widget och Siri", "d": "Starta och stoppa mätningar från hemskärmen eller med rösten."}
+      ],
+      "privacy_blurb": "All analys sker på din enhet. Ljud spelas aldrig in eller laddas upp.",
+      "disclaimer": "Bullerdosvärdena är allmän referensinformation, inte en medicinsk mätning."
+    },
+    "fastzen": {
+      "tagline": "Den ärliga fastetimern.",
+      "card_desc": "En timer för periodisk fasta utan prenumerationsfällor.",
+      "subtitle": "En ärlig timer för periodisk fasta. Gratisversionen är komplett — för alltid.",
+      "meta_desc": "FastZen är en ärlig timer för periodisk fasta. Kärnfunktioner gratis för alltid, engångsköp av Pro, helt privat.",
+      "features": [
+        {"t": "Kärnan gratis för alltid", "d": "Alla förinställda planer, timern, historik, sviter och notiser är gratis."},
+        {"t": "Pro som engångsköp", "d": "Egna mål och insikter för en enda betalning. Ingen prenumeration."},
+        {"t": "Fastidslinje", "d": "Se vilka faser som vanligtvis förknippas med varje fastetimme."},
+        {"t": "Helt privat", "d": "Inget konto, ingen server — din fastehistorik stannar på enheten."}
+      ],
+      "privacy_blurb": "Din fastehistorik lämnar aldrig din iPhone.",
+      "disclaimer": "FastZen är ett timer- och loggverktyg, inte medicinsk rådgivning. Rådfråga vårdpersonal innan du börjar fasta."
+    },
+    "mathspark": {
+      "tagline": "Ett pussel om dagen. Hela världen spelar.",
+      "card_desc": "Dagliga huvudräkningspussel med ledtrådar som lär.",
+      "subtitle": "Dagliga huvudräkningspussel — samma utmaning för alla i världen, med ledtrådar som lär i stället för att avslöja.",
+      "meta_desc": "MathSpark bjuder på dagliga sifferpussel — samma utmaning för alla, med lärorika ledtrådar. Helt offline och privat.",
+      "features": [
+        {"t": "Daglig global utmaning", "d": "Alla i världen får samma pussel varje dag — helt offline."},
+        {"t": "Ledtrådar som lär", "d": "Strategitips och ett enda nästa steg, aldrig hela lösningen."},
+        {"t": "Gratis för alltid", "d": "Den dagliga utmaningen och 5 övningspussel per dag är alltid gratis."},
+        {"t": "Premium som engångsköp", "d": "Obegränsad träning, högre svårigheter och full statistik. Ingen prenumeration."}
+      ],
+      "privacy_blurb": "MathSpark fungerar helt offline och samlar inte in något.",
+      "disclaimer": ""
+    }
+  }
+}

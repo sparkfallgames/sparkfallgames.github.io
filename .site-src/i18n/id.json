@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Aplikasi iOS yang simpel dan privat",
+    "home_desc": "Aplikasi iOS yang simpel, privat, dan jujur. Data Anda tetap di perangkat — tanpa akun, tanpa server, tanpa pelacakan."
+  },
+  "nav": {
+    "apps": "Aplikasi",
+    "contact": "Kontak",
+    "privacy": "Privasi",
+    "support": "Dukungan",
+    "all_apps": "Semua aplikasi",
+    "language": "Bahasa"
+  },
+  "hero": {
+    "title": "Aplikasi simpel, privat, dan jujur.",
+    "subtitle": "Setiap aplikasi dibangun di sekitar satu ide: data Anda tetap di perangkat Anda. Tanpa akun, tanpa server, tanpa pelacakan.",
+    "explore": "Jelajahi aplikasi"
+  },
+  "values": {
+    "private_title": "Privasi sejak dirancang",
+    "private_desc": "Semuanya disimpan di perangkat Anda. Kami tidak mengoperasikan server dan tidak bisa melihat data Anda.",
+    "honest_title": "Harga yang jujur",
+    "honest_desc": "Fitur gratis tetap gratis selamanya. Tanpa jebakan langganan, tanpa hitung mundur palsu.",
+    "global_title": "Dibuat untuk semua",
+    "global_desc": "Setiap aplikasi dilokalkan penuh dalam 31 bahasa, dengan mode gelap dan aksesibilitas."
+  },
+  "common": {
+    "coming_soon": "Segera hadir di App Store",
+    "download": "Unduh di App Store",
+    "privacy_policy": "Kebijakan Privasi",
+    "support": "Dukungan",
+    "features": "Mengapa {app}",
+    "privacy_heading": "Privasi",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Kebijakan privasi",
+    "learn_more": "Pelajari lebih lanjut"
+  },
+  "categories": {
+    "finance": "Keuangan",
+    "utilities": "Utilitas",
+    "health": "Kesehatan & Kebugaran",
+    "games": "Game"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Catat pengeluaran dalam 3 detik.",
+      "card_desc": "Pencatat pengeluaran minimalis yang menyimpan semua catatan di iPhone Anda.",
+      "subtitle": "Pencatat pengeluaran minimalis dan privat untuk iPhone. Buka, ketuk, selesai — dalam 3 detik.",
+      "meta_desc": "QuickCost adalah pencatat pengeluaran minimalis untuk iPhone. Catat pengeluaran dalam 3 detik. Semua data tetap di perangkat Anda.",
+      "features": [
+        {"t": "Pencatatan 3 detik", "d": "Buka aplikasi, ketuk jumlah dan kategori — pengeluaran langsung tersimpan."},
+        {"t": "100% di perangkat", "d": "Tanpa akun, tanpa server. Catatan keuangan Anda tidak pernah meninggalkan iPhone."},
+        {"t": "Wawasan yang jelas", "d": "Ringkasan harian, bulanan, dan per kategori menunjukkan ke mana uang Anda pergi."},
+        {"t": "31 bahasa", "d": "Dilokalkan penuh di seluruh dunia, dengan mode gelap dan teks besar."}
+      ],
+      "privacy_blurb": "QuickCost menyimpan semuanya secara lokal di perangkat Anda dan tidak mengumpulkan apa pun.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Kenali kebisingan Anda. Lindungi pendengaran Anda.",
+      "card_desc": "Pengukur suara real-time dengan dosis kebisingan harian.",
+      "subtitle": "Pengukur tingkat suara real-time dengan pelacak dosis kebisingan harian untuk membantu melindungi pendengaran Anda.",
+      "meta_desc": "Decibel Meter mengukur tingkat suara secara real-time dan melacak dosis kebisingan harian Anda. Audio tidak pernah meninggalkan iPhone.",
+      "features": [
+        {"t": "Pengukuran langsung", "d": "Pembacaan dB real-time dengan MIN, RATA, dan MAKS sekilas."},
+        {"t": "Dosis kebisingan harian", "d": "Melacak paparan Anda sesuai pedoman NIOSH 85 dB / 8 jam."},
+        {"t": "Tidak ada yang direkam", "d": "Audio dianalisis real-time dan tidak pernah disimpan atau diunggah."},
+        {"t": "Widget & Siri", "d": "Mulai dan hentikan pengukuran dari Layar Utama atau dengan suara."}
+      ],
+      "privacy_blurb": "Semua analisis terjadi di perangkat Anda. Audio tidak pernah direkam atau diunggah.",
+      "disclaimer": "Angka dosis kebisingan adalah informasi referensi umum, bukan pengukuran medis."
+    },
+    "fastzen": {
+      "tagline": "Timer puasa yang jujur.",
+      "card_desc": "Timer puasa intermiten tanpa jebakan langganan.",
+      "subtitle": "Timer puasa intermiten yang jujur. Versi gratis lengkap — selamanya.",
+      "meta_desc": "FastZen adalah timer puasa intermiten yang jujur. Fitur inti gratis selamanya, pembelian Pro sekali bayar, sepenuhnya privat.",
+      "features": [
+        {"t": "Inti gratis selamanya", "d": "Semua rencana bawaan, timer, riwayat, runtunan, dan notifikasi gratis."},
+        {"t": "Pro sekali bayar", "d": "Target kustom dan wawasan dengan satu kali pembayaran. Tanpa langganan."},
+        {"t": "Linimasa fase", "d": "Lihat fase yang umum dikaitkan dengan setiap jam puasa Anda."},
+        {"t": "Sepenuhnya privat", "d": "Tanpa akun, tanpa server — riwayat puasa tetap di perangkat Anda."}
+      ],
+      "privacy_blurb": "Riwayat puasa Anda tidak pernah meninggalkan iPhone.",
+      "disclaimer": "FastZen adalah alat timer dan pencatatan, bukan saran medis. Konsultasikan dengan tenaga kesehatan sebelum memulai puasa apa pun."
+    },
+    "mathspark": {
+      "tagline": "Satu teka-teki sehari. Seluruh dunia bermain.",
+      "card_desc": "Teka-teki hitung mental harian dengan petunjuk yang mengajari.",
+      "subtitle": "Teka-teki hitung mental harian — tantangan yang sama untuk semua orang di dunia, dengan petunjuk yang mengajari alih-alih membocorkan.",
+      "meta_desc": "MathSpark menyajikan teka-teki angka harian — tantangan yang sama untuk semua, dengan petunjuk edukatif. Sepenuhnya offline dan privat.",
+      "features": [
+        {"t": "Tantangan global harian", "d": "Semua orang di dunia mendapat teka-teki yang sama setiap hari — sepenuhnya offline."},
+        {"t": "Petunjuk yang mengajari", "d": "Tips strategi dan satu langkah berikutnya saja, tidak pernah solusi lengkap."},
+        {"t": "Gratis selamanya", "d": "Tantangan harian dan 5 teka-teki latihan per hari selalu gratis."},
+        {"t": "Premium sekali bayar", "d": "Latihan tanpa batas, tingkat lebih sulit, dan statistik lengkap. Tanpa langganan."}
+      ],
+      "privacy_blurb": "MathSpark bekerja sepenuhnya offline dan tidak mengumpulkan apa pun.",
+      "disclaimer": ""
+    }
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Apps iOS simples et privées",
+    "home_desc": "Des apps iOS simples, privées et honnêtes. Vos données restent sur votre appareil : pas de compte, pas de serveur, pas de pistage."
+  },
+  "nav": {
+    "apps": "Apps",
+    "contact": "Contact",
+    "privacy": "Confidentialité",
+    "support": "Assistance",
+    "all_apps": "Toutes les apps",
+    "language": "Langue"
+  },
+  "hero": {
+    "title": "Des apps simples, privées et honnêtes.",
+    "subtitle": "Chaque app repose sur une idée : vos données restent sur votre appareil. Pas de compte, pas de serveur, pas de pistage.",
+    "explore": "Découvrir les apps"
+  },
+  "values": {
+    "private_title": "Confidentialité par conception",
+    "private_desc": "Tout est stocké sur votre appareil. Nous n'exploitons aucun serveur et ne pouvons pas voir vos données.",
+    "honest_title": "Tarifs honnêtes",
+    "honest_desc": "Le gratuit reste gratuit pour toujours. Pas de pièges d'abonnement ni de faux comptes à rebours.",
+    "global_title": "Conçu pour tous",
+    "global_desc": "Chaque app est entièrement localisée en 31 langues, avec mode sombre et accessibilité."
+  },
+  "common": {
+    "coming_soon": "Bientôt sur l'App Store",
+    "download": "Télécharger dans l'App Store",
+    "privacy_policy": "Politique de confidentialité",
+    "support": "Assistance",
+    "features": "Pourquoi {app}",
+    "privacy_heading": "Confidentialité",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Politiques de confidentialité",
+    "learn_more": "En savoir plus"
+  },
+  "categories": {
+    "finance": "Finance",
+    "utilities": "Utilitaires",
+    "health": "Santé et forme",
+    "games": "Jeux"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Notez une dépense en 3 secondes.",
+      "card_desc": "Un suivi de dépenses minimaliste qui garde tout sur votre iPhone.",
+      "subtitle": "Un suivi de dépenses minimaliste et privé pour iPhone. Ouvrir, toucher, terminé : en 3 secondes.",
+      "meta_desc": "QuickCost est un suivi de dépenses minimaliste pour iPhone. Notez une dépense en 3 secondes. Toutes les données restent sur votre appareil.",
+      "features": [
+        {"t": "Saisie en 3 secondes", "d": "Ouvrez l'app, touchez le montant et une catégorie : la dépense est enregistrée."},
+        {"t": "100 % sur l'appareil", "d": "Ni compte ni serveur. Vos données financières ne quittent jamais votre iPhone."},
+        {"t": "Vue claire", "d": "Des résumés par jour, mois et catégorie montrent où part votre argent."},
+        {"t": "31 langues", "d": "Entièrement localisée dans le monde entier, avec mode sombre et grands caractères."}
+      ],
+      "privacy_blurb": "QuickCost stocke tout localement sur votre appareil et ne collecte rien.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Connaissez votre bruit. Protégez votre audition.",
+      "card_desc": "Sonomètre en temps réel avec dose de bruit quotidienne.",
+      "subtitle": "Un sonomètre en temps réel avec suivi de la dose de bruit quotidienne pour protéger votre audition.",
+      "meta_desc": "Decibel Meter mesure le niveau sonore en temps réel et suit votre dose de bruit quotidienne. L'audio ne quitte jamais votre iPhone.",
+      "features": [
+        {"t": "Mesure en direct", "d": "Affichage des dB en temps réel avec MIN, MOY et MAX d'un coup d'œil."},
+        {"t": "Dose de bruit quotidienne", "d": "Suit votre exposition selon la référence NIOSH de 85 dB / 8 h."},
+        {"t": "Aucun enregistrement", "d": "L'audio est analysé en temps réel, jamais stocké ni envoyé."},
+        {"t": "Widget et Siri", "d": "Lancez et arrêtez la mesure depuis l'écran d'accueil ou à la voix."}
+      ],
+      "privacy_blurb": "Toute l'analyse se fait sur votre appareil. L'audio n'est jamais enregistré ni envoyé.",
+      "disclaimer": "Les chiffres de dose de bruit sont des informations de référence générales, pas une mesure médicale."
+    },
+    "fastzen": {
+      "tagline": "Le minuteur de jeûne honnête.",
+      "card_desc": "Un minuteur de jeûne intermittent sans pièges d'abonnement.",
+      "subtitle": "Un minuteur de jeûne intermittent honnête. La version gratuite est complète, pour toujours.",
+      "meta_desc": "FastZen est un minuteur de jeûne intermittent honnête. Fonctions de base gratuites pour toujours, achat unique de Pro, entièrement privé.",
+      "features": [
+        {"t": "Gratuit pour toujours", "d": "Tous les programmes, le minuteur, l'historique, les séries et les notifications sont gratuits."},
+        {"t": "Pro en achat unique", "d": "Objectifs personnalisés et statistiques pour un seul paiement. Sans abonnement."},
+        {"t": "Chronologie des phases", "d": "Découvrez les phases généralement associées à chaque heure de jeûne."},
+        {"t": "Entièrement privé", "d": "Ni compte ni serveur : votre historique de jeûne reste sur votre appareil."}
+      ],
+      "privacy_blurb": "Votre historique de jeûne ne quitte jamais votre iPhone.",
+      "disclaimer": "FastZen est un outil de minuterie et de suivi, pas un avis médical. Consultez un professionnel de santé avant de commencer tout jeûne."
+    },
+    "mathspark": {
+      "tagline": "Un puzzle par jour. Le monde entier joue.",
+      "card_desc": "Des puzzles de calcul mental quotidiens avec des indices qui enseignent.",
+      "subtitle": "Des puzzles de calcul mental quotidiens : le même défi pour tout le monde, avec des indices qui enseignent au lieu de révéler.",
+      "meta_desc": "MathSpark propose des puzzles numériques quotidiens : le même défi pour tous, avec des indices pédagogiques. Entièrement hors ligne et privé.",
+      "features": [
+        {"t": "Défi mondial quotidien", "d": "Tout le monde reçoit les mêmes puzzles chaque jour, entièrement hors ligne."},
+        {"t": "Des indices qui enseignent", "d": "Des conseils de stratégie et une seule étape suivante, jamais la solution complète."},
+        {"t": "Gratuit pour toujours", "d": "Le défi quotidien et 5 puzzles d'entraînement par jour sont toujours gratuits."},
+        {"t": "Premium en achat unique", "d": "Entraînement illimité, difficultés supérieures et statistiques complètes. Sans abonnement."}
+      ],
+      "privacy_blurb": "MathSpark fonctionne entièrement hors ligne et ne collecte rien.",
+      "disclaimer": ""
+    }
+  }
+}

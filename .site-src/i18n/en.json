@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Simple, private iOS apps",
+    "home_desc": "Simple, private, honest iOS apps. Your data stays on your device — no accounts, no servers, no tracking."
+  },
+  "nav": {
+    "apps": "Apps",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "support": "Support",
+    "all_apps": "All apps",
+    "language": "Language"
+  },
+  "hero": {
+    "title": "Simple, private, honest apps.",
+    "subtitle": "Every app is built around one idea: your data stays on your device. No accounts, no servers, no tracking.",
+    "explore": "Explore the apps"
+  },
+  "values": {
+    "private_title": "Private by design",
+    "private_desc": "Everything is stored on your device. We don't run servers and can't see your data.",
+    "honest_title": "Honest pricing",
+    "honest_desc": "Free tiers stay free forever. No subscription traps, no fake countdowns.",
+    "global_title": "Made for everyone",
+    "global_desc": "Every app is fully localized in 31 languages, with dark mode and accessibility support."
+  },
+  "common": {
+    "coming_soon": "Coming soon to the App Store",
+    "download": "Download on the App Store",
+    "privacy_policy": "Privacy Policy",
+    "support": "Support",
+    "features": "Why {app}",
+    "privacy_heading": "Privacy",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Privacy policies",
+    "learn_more": "Learn more"
+  },
+  "categories": {
+    "finance": "Finance",
+    "utilities": "Utilities",
+    "health": "Health & Fitness",
+    "games": "Games"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Log an expense in 3 seconds.",
+      "card_desc": "A minimal expense tracker that keeps every record on your iPhone.",
+      "subtitle": "A minimal, private expense tracker for iPhone. Open, tap, done — in 3 seconds.",
+      "meta_desc": "QuickCost is a minimal expense tracker for iPhone. Log an expense in 3 seconds. All data stays on your device.",
+      "features": [
+        {"t": "3-second logging", "d": "Open the app, tap the amount and a category — your expense is saved."},
+        {"t": "100% on-device", "d": "No account, no server. Your financial records never leave your iPhone."},
+        {"t": "Clear insights", "d": "Daily, monthly and category summaries show where your money goes."},
+        {"t": "31 languages", "d": "Fully localized worldwide, with dark mode and large-type support."}
+      ],
+      "privacy_blurb": "QuickCost stores everything locally on your device and collects nothing.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Know your noise. Protect your hearing.",
+      "card_desc": "Real-time sound level meter with a daily noise dose tracker.",
+      "subtitle": "A real-time sound level meter with a daily noise dose tracker that helps protect your hearing.",
+      "meta_desc": "Decibel Meter measures sound levels in real time and tracks your daily noise dose. Audio never leaves your iPhone.",
+      "features": [
+        {"t": "Live measurement", "d": "Real-time dB readout with MIN, AVG and MAX at a glance."},
+        {"t": "Daily noise dose", "d": "Tracks your exposure against the NIOSH 85 dB / 8 h guideline."},
+        {"t": "Nothing recorded", "d": "Audio is analyzed in real time and never stored or uploaded."},
+        {"t": "Widget & Siri", "d": "Start and stop measuring from your Home Screen or hands-free."}
+      ],
+      "privacy_blurb": "All analysis happens on your device. No audio is ever recorded or uploaded.",
+      "disclaimer": "Noise dose figures are general reference information, not a medical measurement."
+    },
+    "fastzen": {
+      "tagline": "The honest fasting timer.",
+      "card_desc": "An intermittent fasting timer with no subscription traps.",
+      "subtitle": "An honest intermittent fasting timer. The free tier is complete — forever.",
+      "meta_desc": "FastZen is an honest intermittent fasting timer. Free core features forever, one-time Pro purchase, fully private.",
+      "features": [
+        {"t": "Free core, forever", "d": "All preset plans, the timer, history, streaks and notifications are free."},
+        {"t": "One-time Pro", "d": "Custom goals and insights for a single payment. No subscription."},
+        {"t": "Stage timeline", "d": "See the phases commonly associated with each hour of your fast."},
+        {"t": "Fully private", "d": "No account, no server — your fasting history stays on your device."}
+      ],
+      "privacy_blurb": "Your fasting history never leaves your iPhone.",
+      "disclaimer": "FastZen is a timer and logging tool, not medical advice. Consult a healthcare professional before starting any fasting practice."
+    },
+    "mathspark": {
+      "tagline": "One daily puzzle. The whole world plays.",
+      "card_desc": "Daily mental math puzzles with hints that teach.",
+      "subtitle": "Daily mental math puzzles — the same challenge for everyone worldwide, with hints that teach instead of spoil.",
+      "meta_desc": "MathSpark serves daily number puzzles — the same challenge for everyone worldwide, with hints that teach. Fully offline and private.",
+      "features": [
+        {"t": "Daily global challenge", "d": "Everyone in the world gets the same puzzles each day — fully offline."},
+        {"t": "Hints that teach", "d": "Strategy tips and a single next step, never the full solution."},
+        {"t": "Free forever", "d": "The daily challenge and 5 practice puzzles per day are always free."},
+        {"t": "One-time Premium", "d": "Unlimited practice, harder difficulties and full statistics. No subscription."}
+      ],
+      "privacy_blurb": "MathSpark works entirely offline and collects nothing.",
+      "disclaimer": ""
+    }
+  }
+}

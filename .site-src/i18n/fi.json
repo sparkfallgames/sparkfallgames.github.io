@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Yksinkertaisia, yksityisiä iOS-sovelluksia",
+    "home_desc": "Yksinkertaisia, yksityisiä ja rehellisiä iOS-sovelluksia. Tietosi pysyvät laitteellasi — ei tilejä, ei palvelimia, ei seurantaa."
+  },
+  "nav": {
+    "apps": "Sovellukset",
+    "contact": "Yhteystiedot",
+    "privacy": "Tietosuoja",
+    "support": "Tuki",
+    "all_apps": "Kaikki sovellukset",
+    "language": "Kieli"
+  },
+  "hero": {
+    "title": "Yksinkertaisia, yksityisiä, rehellisiä sovelluksia.",
+    "subtitle": "Jokainen sovellus perustuu yhteen ajatukseen: tietosi pysyvät laitteellasi. Ei tilejä, ei palvelimia, ei seurantaa.",
+    "explore": "Tutustu sovelluksiin"
+  },
+  "values": {
+    "private_title": "Yksityisyys lähtökohtana",
+    "private_desc": "Kaikki tallennetaan laitteellesi. Emme ylläpidä palvelimia emmekä näe tietojasi.",
+    "honest_title": "Rehellinen hinnoittelu",
+    "honest_desc": "Ilmaiset ominaisuudet pysyvät ilmaisina ikuisesti. Ei tilausansoja, ei valheellisia laskureita.",
+    "global_title": "Tehty kaikille",
+    "global_desc": "Jokainen sovellus on täysin lokalisoitu 31 kielelle, tumman tilan ja saavutettavuuden kera."
+  },
+  "common": {
+    "coming_soon": "Tulossa pian App Storeen",
+    "download": "Lataa App Storesta",
+    "privacy_policy": "Tietosuojakäytäntö",
+    "support": "Tuki",
+    "features": "Miksi {app}",
+    "privacy_heading": "Tietosuoja",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Tietosuojakäytännöt",
+    "learn_more": "Lue lisää"
+  },
+  "categories": {
+    "finance": "Talous",
+    "utilities": "Apuohjelmat",
+    "health": "Terveys ja kuntoilu",
+    "games": "Pelit"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Kirjaa kulu 3 sekunnissa.",
+      "card_desc": "Minimalistinen kuluseuranta, joka pitää kaiken iPhonessasi.",
+      "subtitle": "Minimalistinen, yksityinen kuluseuranta iPhonelle. Avaa, napauta, valmis — 3 sekunnissa.",
+      "meta_desc": "QuickCost on minimalistinen kuluseuranta iPhonelle. Kirjaa kulu 3 sekunnissa. Kaikki tiedot pysyvät laitteellasi.",
+      "features": [
+        {"t": "Kirjaus 3 sekunnissa", "d": "Avaa sovellus, napauta summaa ja kategoriaa — kulu on tallennettu."},
+        {"t": "100 % laitteella", "d": "Ei tiliä, ei palvelinta. Taloustietosi eivät koskaan poistu iPhonestasi."},
+        {"t": "Selkeät näkymät", "d": "Päivä-, kuukausi- ja kategoriayhteenvedot näyttävät, mihin rahasi menevät."},
+        {"t": "31 kieltä", "d": "Täysin lokalisoitu maailmanlaajuisesti, tumma tila ja suuri teksti."}
+      ],
+      "privacy_blurb": "QuickCost tallentaa kaiken paikallisesti laitteellesi eikä kerää mitään.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Tunne melusi. Suojaa kuuloasi.",
+      "card_desc": "Reaaliaikainen äänitasomittari päivittäisellä meluannoksella.",
+      "subtitle": "Reaaliaikainen äänitasomittari päivittäisen meluannoksen seurannalla — auttaa suojaamaan kuuloasi.",
+      "meta_desc": "Decibel Meter mittaa äänitasoa reaaliajassa ja seuraa päivittäistä meluannostasi. Ääni ei koskaan poistu iPhonestasi.",
+      "features": [
+        {"t": "Reaaliaikainen mittaus", "d": "Reaaliaikainen dB-lukema sekä MIN, KESK ja MAKS yhdellä silmäyksellä."},
+        {"t": "Päivittäinen meluannos", "d": "Seuraa altistumistasi NIOSH:n 85 dB / 8 h -ohjeen mukaan."},
+        {"t": "Mitään ei tallenneta", "d": "Ääni analysoidaan reaaliajassa eikä sitä koskaan tallenneta tai lähetetä."},
+        {"t": "Widget ja Siri", "d": "Aloita ja lopeta mittaus aloitusnäytöltä tai äänellä."}
+      ],
+      "privacy_blurb": "Kaikki analyysi tapahtuu laitteellasi. Ääntä ei koskaan tallenneta eikä lähetetä.",
+      "disclaimer": "Meluannosluvut ovat yleistä viitetietoa, eivät lääketieteellinen mittaus."
+    },
+    "fastzen": {
+      "tagline": "Rehellinen paastoajastin.",
+      "card_desc": "Pätkäpaastoajastin ilman tilausansoja.",
+      "subtitle": "Rehellinen pätkäpaastoajastin. Ilmaisversio on täydellinen — ikuisesti.",
+      "meta_desc": "FastZen on rehellinen pätkäpaastoajastin. Ydinominaisuudet ilmaisia ikuisesti, Pro kertaostona, täysin yksityinen.",
+      "features": [
+        {"t": "Ydin ilmainen ikuisesti", "d": "Kaikki valmiit suunnitelmat, ajastin, historia, putket ja ilmoitukset ovat ilmaisia."},
+        {"t": "Pro kertaostona", "d": "Omat tavoitteet ja tilastot yhdellä maksulla. Ei tilausta."},
+        {"t": "Vaiheiden aikajana", "d": "Katso, mitkä vaiheet yleensä liitetään kuhunkin paastotuntiin."},
+        {"t": "Täysin yksityinen", "d": "Ei tiliä, ei palvelinta — paastohistoriasi pysyy laitteellasi."}
+      ],
+      "privacy_blurb": "Paastohistoriasi ei koskaan poistu iPhonestasi.",
+      "disclaimer": "FastZen on ajastin- ja kirjaustyökalu, ei lääketieteellinen neuvo. Keskustele terveydenhuollon ammattilaisen kanssa ennen paaston aloittamista."
+    },
+    "mathspark": {
+      "tagline": "Yksi pulma päivässä. Koko maailma pelaa.",
+      "card_desc": "Päivittäisiä päässälaskupulmia opettavilla vihjeillä.",
+      "subtitle": "Päivittäiset päässälaskupulmat — sama haaste kaikille maailmassa, vihjeillä jotka opettavat paljastamatta ratkaisua.",
+      "meta_desc": "MathSpark tarjoaa päivittäisiä numeropulmia — sama haaste kaikille, opettavat vihjeet. Täysin offline ja yksityinen.",
+      "features": [
+        {"t": "Päivittäinen globaali haaste", "d": "Kaikki maailmassa saavat samat pulmat joka päivä — täysin offline."},
+        {"t": "Opettavat vihjeet", "d": "Strategiavinkkejä ja vain yksi seuraava askel, ei koskaan koko ratkaisua."},
+        {"t": "Ilmainen ikuisesti", "d": "Päivittäinen haaste ja 5 harjoituspulmaa päivässä ovat aina ilmaisia."},
+        {"t": "Premium kertaostona", "d": "Rajaton harjoittelu, vaikeammat tasot ja täydet tilastot. Ei tilausta."}
+      ],
+      "privacy_blurb": "MathSpark toimii täysin offline-tilassa eikä kerää mitään.",
+      "disclaimer": ""
+    }
+  }
+}

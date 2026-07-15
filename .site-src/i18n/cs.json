@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Jednoduché a soukromé aplikace pro iOS",
+    "home_desc": "Jednoduché, soukromé a poctivé aplikace pro iOS. Vaše data zůstávají ve vašem zařízení — žádné účty, žádné servery, žádné sledování."
+  },
+  "nav": {
+    "apps": "Aplikace",
+    "contact": "Kontakt",
+    "privacy": "Soukromí",
+    "support": "Podpora",
+    "all_apps": "Všechny aplikace",
+    "language": "Jazyk"
+  },
+  "hero": {
+    "title": "Jednoduché, soukromé, poctivé aplikace.",
+    "subtitle": "Každá aplikace stojí na jediné myšlence: vaše data zůstávají ve vašem zařízení. Žádné účty, žádné servery, žádné sledování.",
+    "explore": "Prozkoumat aplikace"
+  },
+  "values": {
+    "private_title": "Soukromí od základu",
+    "private_desc": "Vše se ukládá do vašeho zařízení. Neprovozujeme žádné servery a vaše data nevidíme.",
+    "honest_title": "Poctivé ceny",
+    "honest_desc": "Bezplatné funkce zůstávají zdarma navždy. Žádné předplatitelské pasti, žádné falešné odpočty.",
+    "global_title": "Pro všechny",
+    "global_desc": "Každá aplikace je plně lokalizována do 31 jazyků, s tmavým režimem a zpřístupněním."
+  },
+  "common": {
+    "coming_soon": "Již brzy v App Store",
+    "download": "Stáhnout v App Store",
+    "privacy_policy": "Zásady ochrany soukromí",
+    "support": "Podpora",
+    "features": "Proč {app}",
+    "privacy_heading": "Soukromí",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Zásady ochrany soukromí",
+    "learn_more": "Zjistit více"
+  },
+  "categories": {
+    "finance": "Finance",
+    "utilities": "Nástroje",
+    "health": "Zdraví a fitness",
+    "games": "Hry"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Zapište výdaj za 3 sekundy.",
+      "card_desc": "Minimalistický sledovač výdajů, který vše uchovává ve vašem iPhonu.",
+      "subtitle": "Minimalistický, soukromý sledovač výdajů pro iPhone. Otevřít, klepnout, hotovo — za 3 sekundy.",
+      "meta_desc": "QuickCost je minimalistický sledovač výdajů pro iPhone. Zapište výdaj za 3 sekundy. Všechna data zůstávají ve vašem zařízení.",
+      "features": [
+        {"t": "Zápis za 3 sekundy", "d": "Otevřete aplikaci, klepněte na částku a kategorii — výdaj je uložen."},
+        {"t": "100% v zařízení", "d": "Žádný účet, žádný server. Vaše finanční záznamy nikdy neopustí iPhone."},
+        {"t": "Přehledné statistiky", "d": "Denní, měsíční a kategorické přehledy ukazují, kam jdou vaše peníze."},
+        {"t": "31 jazyků", "d": "Plná lokalizace po celém světě, s tmavým režimem a velkým písmem."}
+      ],
+      "privacy_blurb": "QuickCost ukládá vše lokálně do vašeho zařízení a nic nesbírá.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Poznejte svůj hluk. Chraňte svůj sluch.",
+      "card_desc": "Hlukoměr v reálném čase s denní dávkou hluku.",
+      "subtitle": "Hlukoměr v reálném čase se sledováním denní dávky hluku, který pomáhá chránit váš sluch.",
+      "meta_desc": "Decibel Meter měří hladinu zvuku v reálném čase a sleduje vaši denní dávku hluku. Zvuk nikdy neopustí váš iPhone.",
+      "features": [
+        {"t": "Měření naživo", "d": "Údaje v dB v reálném čase s MIN, PRŮM a MAX na první pohled."},
+        {"t": "Denní dávka hluku", "d": "Sleduje vaši expozici podle směrnice NIOSH 85 dB / 8 h."},
+        {"t": "Nic se nenahrává", "d": "Zvuk je analyzován v reálném čase a nikdy se neukládá ani neodesílá."},
+        {"t": "Widget a Siri", "d": "Spouštějte a zastavujte měření z plochy nebo hlasem."}
+      ],
+      "privacy_blurb": "Veškerá analýza probíhá ve vašem zařízení. Zvuk se nikdy nenahrává ani neodesílá.",
+      "disclaimer": "Hodnoty dávky hluku jsou obecné referenční informace, nikoli lékařské měření."
+    },
+    "fastzen": {
+      "tagline": "Poctivý časovač půstu.",
+      "card_desc": "Časovač přerušovaného půstu bez předplatitelských pastí.",
+      "subtitle": "Poctivý časovač přerušovaného půstu. Bezplatná verze je kompletní — navždy.",
+      "meta_desc": "FastZen je poctivý časovač přerušovaného půstu. Základní funkce zdarma navždy, Pro jako jednorázový nákup, zcela soukromé.",
+      "features": [
+        {"t": "Základ zdarma navždy", "d": "Všechny přednastavené plány, časovač, historie, série a oznámení jsou zdarma."},
+        {"t": "Pro jednorázově", "d": "Vlastní cíle a přehledy za jedinou platbu. Žádné předplatné."},
+        {"t": "Časová osa fází", "d": "Podívejte se, jaké fáze se obvykle spojují s každou hodinou půstu."},
+        {"t": "Zcela soukromé", "d": "Žádný účet, žádný server — historie půstů zůstává ve vašem zařízení."}
+      ],
+      "privacy_blurb": "Vaše historie půstů nikdy neopustí iPhone.",
+      "disclaimer": "FastZen je nástroj pro časování a záznam, nikoli lékařská rada. Před zahájením půstu se poraďte s lékařem."
+    },
+    "mathspark": {
+      "tagline": "Jeden hlavolam denně. Hraje celý svět.",
+      "card_desc": "Denní hlavolamy na počítání zpaměti s nápovědami, které učí.",
+      "subtitle": "Denní hlavolamy na počítání zpaměti — stejná výzva pro všechny na světě, s nápovědami, které učí místo prozrazování.",
+      "meta_desc": "MathSpark nabízí denní číselné hlavolamy — stejnou výzvu pro všechny, s poučnými nápovědami. Zcela offline a soukromě.",
+      "features": [
+        {"t": "Denní globální výzva", "d": "Všichni na světě dostávají každý den stejné hlavolamy — zcela offline."},
+        {"t": "Nápovědy, které učí", "d": "Strategické tipy a jen jeden další krok, nikdy celé řešení."},
+        {"t": "Zdarma navždy", "d": "Denní výzva a 5 procvičovacích hlavolamů denně jsou vždy zdarma."},
+        {"t": "Premium jednorázově", "d": "Neomezené procvičování, vyšší obtížnosti a úplné statistiky. Žádné předplatné."}
+      ],
+      "privacy_blurb": "MathSpark funguje zcela offline a nic nesbírá.",
+      "disclaimer": ""
+    }
+  }
+}

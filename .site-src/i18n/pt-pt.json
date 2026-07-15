@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Apps iOS simples e privadas",
+    "home_desc": "Apps iOS simples, privadas e honestas. Os seus dados ficam no seu dispositivo: sem contas, sem servidores, sem rastreio."
+  },
+  "nav": {
+    "apps": "Apps",
+    "contact": "Contacto",
+    "privacy": "Privacidade",
+    "support": "Suporte",
+    "all_apps": "Todas as apps",
+    "language": "Idioma"
+  },
+  "hero": {
+    "title": "Apps simples, privadas e honestas.",
+    "subtitle": "Cada app assenta numa ideia: os seus dados ficam no seu dispositivo. Sem contas, sem servidores, sem rastreio.",
+    "explore": "Explorar as apps"
+  },
+  "values": {
+    "private_title": "Privacidade desde a conceção",
+    "private_desc": "Tudo é guardado no seu dispositivo. Não operamos servidores e não conseguimos ver os seus dados.",
+    "honest_title": "Preços honestos",
+    "honest_desc": "O que é gratuito continua gratuito para sempre. Sem armadilhas de subscrição nem contagens decrescentes falsas.",
+    "global_title": "Feito para todos",
+    "global_desc": "Cada app está totalmente localizada em 31 idiomas, com modo escuro e acessibilidade."
+  },
+  "common": {
+    "coming_soon": "Brevemente na App Store",
+    "download": "Descarregar na App Store",
+    "privacy_policy": "Política de privacidade",
+    "support": "Suporte",
+    "features": "Porquê {app}",
+    "privacy_heading": "Privacidade",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Políticas de privacidade",
+    "learn_more": "Saber mais"
+  },
+  "categories": {
+    "finance": "Finanças",
+    "utilities": "Utilitários",
+    "health": "Saúde e fitness",
+    "games": "Jogos"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Registe uma despesa em 3 segundos.",
+      "card_desc": "Um registo de despesas minimalista que mantém tudo no seu iPhone.",
+      "subtitle": "Um registo de despesas minimalista e privado para iPhone. Abrir, tocar, feito — em 3 segundos.",
+      "meta_desc": "O QuickCost é um registo de despesas minimalista para iPhone. Registe uma despesa em 3 segundos. Todos os dados ficam no seu dispositivo.",
+      "features": [
+        {"t": "Registo em 3 segundos", "d": "Abra a app, toque no valor e numa categoria: a despesa fica guardada."},
+        {"t": "100% no dispositivo", "d": "Sem conta nem servidor. Os seus registos financeiros nunca saem do seu iPhone."},
+        {"t": "Visão clara", "d": "Resumos por dia, mês e categoria mostram para onde vai o seu dinheiro."},
+        {"t": "31 idiomas", "d": "Totalmente localizada em todo o mundo, com modo escuro e texto grande."}
+      ],
+      "privacy_blurb": "O QuickCost guarda tudo localmente no seu dispositivo e não recolhe nada.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Conheça o seu ruído. Proteja a sua audição.",
+      "card_desc": "Sonómetro em tempo real com dose diária de ruído.",
+      "subtitle": "Um sonómetro em tempo real com acompanhamento da dose diária de ruído para proteger a sua audição.",
+      "meta_desc": "O Decibel Meter mede o nível sonoro em tempo real e acompanha a sua dose diária de ruído. O áudio nunca sai do seu iPhone.",
+      "features": [
+        {"t": "Medição em direto", "d": "Leitura de dB em tempo real com MÍN, MÉD e MÁX num relance."},
+        {"t": "Dose diária de ruído", "d": "Acompanha a sua exposição segundo a diretriz NIOSH de 85 dB / 8 h."},
+        {"t": "Nada é gravado", "d": "O áudio é analisado em tempo real e nunca é guardado ou enviado."},
+        {"t": "Widget e Siri", "d": "Inicie e pare a medição a partir do ecrã principal ou por voz."}
+      ],
+      "privacy_blurb": "Toda a análise acontece no seu dispositivo. O áudio nunca é gravado nem enviado.",
+      "disclaimer": "Os valores da dose de ruído são informações de referência geral, não uma medição médica."
+    },
+    "fastzen": {
+      "tagline": "O temporizador de jejum honesto.",
+      "card_desc": "Um temporizador de jejum intermitente sem armadilhas de subscrição.",
+      "subtitle": "Um temporizador de jejum intermitente honesto. A versão gratuita é completa — para sempre.",
+      "meta_desc": "O FastZen é um temporizador de jejum intermitente honesto. Funções essenciais gratuitas para sempre, compra única do Pro, totalmente privado.",
+      "features": [
+        {"t": "Gratuito para sempre", "d": "Todos os planos, o temporizador, o histórico, as sequências e as notificações são gratuitos."},
+        {"t": "Pro de compra única", "d": "Objetivos personalizados e estatísticas por um único pagamento. Sem subscrição."},
+        {"t": "Cronologia de fases", "d": "Veja as fases habitualmente associadas a cada hora do seu jejum."},
+        {"t": "Totalmente privado", "d": "Sem conta nem servidor: o seu histórico de jejum fica no seu dispositivo."}
+      ],
+      "privacy_blurb": "O seu histórico de jejum nunca sai do seu iPhone.",
+      "disclaimer": "O FastZen é uma ferramenta de temporizador e registo, não aconselhamento médico. Consulte um profissional de saúde antes de iniciar qualquer jejum."
+    },
+    "mathspark": {
+      "tagline": "Um desafio por dia. O mundo inteiro joga.",
+      "card_desc": "Puzzles diários de cálculo mental com pistas que ensinam.",
+      "subtitle": "Puzzles diários de cálculo mental: o mesmo desafio para todos no mundo, com pistas que ensinam em vez de revelar.",
+      "meta_desc": "O MathSpark apresenta puzzles numéricos diários: o mesmo desafio para todos, com pistas educativas. Totalmente offline e privado.",
+      "features": [
+        {"t": "Desafio global diário", "d": "Todos no mundo recebem os mesmos puzzles por dia — totalmente offline."},
+        {"t": "Pistas que ensinam", "d": "Dicas de estratégia e apenas o passo seguinte, nunca a solução completa."},
+        {"t": "Gratuito para sempre", "d": "O desafio diário e 5 puzzles de prática por dia são sempre gratuitos."},
+        {"t": "Premium de compra única", "d": "Prática ilimitada, dificuldades superiores e estatísticas completas. Sem subscrição."}
+      ],
+      "privacy_blurb": "O MathSpark funciona totalmente offline e não recolhe nada.",
+      "disclaimer": ""
+    }
+  }
+}

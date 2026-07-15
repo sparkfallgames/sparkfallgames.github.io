@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Ứng dụng iOS đơn giản và riêng tư",
+    "home_desc": "Ứng dụng iOS đơn giản, riêng tư và trung thực. Dữ liệu của bạn ở lại trên thiết bị — không tài khoản, không máy chủ, không theo dõi."
+  },
+  "nav": {
+    "apps": "Ứng dụng",
+    "contact": "Liên hệ",
+    "privacy": "Quyền riêng tư",
+    "support": "Hỗ trợ",
+    "all_apps": "Tất cả ứng dụng",
+    "language": "Ngôn ngữ"
+  },
+  "hero": {
+    "title": "Ứng dụng đơn giản, riêng tư, trung thực.",
+    "subtitle": "Mỗi ứng dụng được xây dựng quanh một ý tưởng: dữ liệu của bạn ở lại trên thiết bị. Không tài khoản, không máy chủ, không theo dõi.",
+    "explore": "Khám phá ứng dụng"
+  },
+  "values": {
+    "private_title": "Riêng tư từ thiết kế",
+    "private_desc": "Mọi thứ được lưu trên thiết bị của bạn. Chúng tôi không vận hành máy chủ và không thể xem dữ liệu của bạn.",
+    "honest_title": "Giá cả trung thực",
+    "honest_desc": "Tính năng miễn phí sẽ miễn phí mãi mãi. Không bẫy đăng ký, không đồng hồ đếm ngược giả.",
+    "global_title": "Dành cho mọi người",
+    "global_desc": "Mỗi ứng dụng được bản địa hóa đầy đủ 31 ngôn ngữ, có chế độ tối và trợ năng."
+  },
+  "common": {
+    "coming_soon": "Sắp ra mắt trên App Store",
+    "download": "Tải trên App Store",
+    "privacy_policy": "Chính sách quyền riêng tư",
+    "support": "Hỗ trợ",
+    "features": "Vì sao chọn {app}",
+    "privacy_heading": "Quyền riêng tư",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Chính sách quyền riêng tư",
+    "learn_more": "Tìm hiểu thêm"
+  },
+  "categories": {
+    "finance": "Tài chính",
+    "utilities": "Tiện ích",
+    "health": "Sức khỏe & Thể chất",
+    "games": "Trò chơi"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Ghi một khoản chi trong 3 giây.",
+      "card_desc": "Ứng dụng theo dõi chi tiêu tối giản, giữ mọi bản ghi trên iPhone của bạn.",
+      "subtitle": "Ứng dụng theo dõi chi tiêu tối giản và riêng tư cho iPhone. Mở, chạm, xong — trong 3 giây.",
+      "meta_desc": "QuickCost là ứng dụng theo dõi chi tiêu tối giản cho iPhone. Ghi một khoản chi trong 3 giây. Mọi dữ liệu ở lại trên thiết bị.",
+      "features": [
+        {"t": "Ghi trong 3 giây", "d": "Mở ứng dụng, chạm số tiền và danh mục — khoản chi được lưu ngay."},
+        {"t": "100% trên thiết bị", "d": "Không tài khoản, không máy chủ. Dữ liệu tài chính không bao giờ rời iPhone."},
+        {"t": "Thống kê rõ ràng", "d": "Tổng hợp theo ngày, tháng và danh mục cho biết tiền của bạn đi đâu."},
+        {"t": "31 ngôn ngữ", "d": "Bản địa hóa đầy đủ trên toàn cầu, có chế độ tối và chữ lớn."}
+      ],
+      "privacy_blurb": "QuickCost lưu mọi thứ cục bộ trên thiết bị và không thu thập gì.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Hiểu tiếng ồn. Bảo vệ thính giác.",
+      "card_desc": "Máy đo âm thanh thời gian thực với liều tiếng ồn hằng ngày.",
+      "subtitle": "Máy đo mức âm thanh thời gian thực kèm theo dõi liều tiếng ồn hằng ngày, giúp bảo vệ thính giác của bạn.",
+      "meta_desc": "Decibel Meter đo mức âm thanh theo thời gian thực và theo dõi liều tiếng ồn hằng ngày. Âm thanh không bao giờ rời iPhone.",
+      "features": [
+        {"t": "Đo trực tiếp", "d": "Chỉ số dB thời gian thực cùng MIN, TB và MAX trong nháy mắt."},
+        {"t": "Liều tiếng ồn hằng ngày", "d": "Theo dõi mức phơi nhiễm theo hướng dẫn NIOSH 85 dB / 8 giờ."},
+        {"t": "Không ghi âm", "d": "Âm thanh được phân tích thời gian thực, không bao giờ lưu hay tải lên."},
+        {"t": "Widget & Siri", "d": "Bắt đầu và dừng đo từ Màn hình chính hoặc bằng giọng nói."}
+      ],
+      "privacy_blurb": "Mọi phân tích diễn ra trên thiết bị của bạn. Âm thanh không bao giờ được ghi hay tải lên.",
+      "disclaimer": "Số liệu liều tiếng ồn là thông tin tham khảo chung, không phải phép đo y tế."
+    },
+    "fastzen": {
+      "tagline": "Đồng hồ nhịn ăn trung thực.",
+      "card_desc": "Đồng hồ nhịn ăn gián đoạn không có bẫy đăng ký.",
+      "subtitle": "Đồng hồ nhịn ăn gián đoạn trung thực. Bản miễn phí đầy đủ tính năng — mãi mãi.",
+      "meta_desc": "FastZen là đồng hồ nhịn ăn gián đoạn trung thực. Tính năng cốt lõi miễn phí mãi mãi, Pro mua một lần, hoàn toàn riêng tư.",
+      "features": [
+        {"t": "Cốt lõi miễn phí mãi mãi", "d": "Mọi kế hoạch có sẵn, đồng hồ, lịch sử, chuỗi ngày và thông báo đều miễn phí."},
+        {"t": "Pro mua một lần", "d": "Mục tiêu tùy chỉnh và thống kê chỉ với một lần thanh toán. Không đăng ký."},
+        {"t": "Dòng thời gian giai đoạn", "d": "Xem các giai đoạn thường gắn với từng giờ nhịn ăn của bạn."},
+        {"t": "Hoàn toàn riêng tư", "d": "Không tài khoản, không máy chủ — lịch sử nhịn ăn ở lại trên thiết bị."}
+      ],
+      "privacy_blurb": "Lịch sử nhịn ăn của bạn không bao giờ rời iPhone.",
+      "disclaimer": "FastZen là công cụ hẹn giờ và ghi chép, không phải lời khuyên y tế. Hãy tham khảo chuyên gia y tế trước khi bắt đầu nhịn ăn."
+    },
+    "mathspark": {
+      "tagline": "Mỗi ngày một câu đố. Cả thế giới cùng chơi.",
+      "card_desc": "Câu đố tính nhẩm hằng ngày với gợi ý mang tính dạy học.",
+      "subtitle": "Câu đố tính nhẩm hằng ngày — cùng một thử thách cho mọi người trên thế giới, với gợi ý dạy cách nghĩ thay vì tiết lộ đáp án.",
+      "meta_desc": "MathSpark mang đến câu đố số học hằng ngày — cùng một thử thách cho tất cả, gợi ý mang tính dạy học. Hoàn toàn ngoại tuyến và riêng tư.",
+      "features": [
+        {"t": "Thử thách toàn cầu hằng ngày", "d": "Mọi người trên thế giới nhận cùng câu đố mỗi ngày — hoàn toàn ngoại tuyến."},
+        {"t": "Gợi ý dạy cách nghĩ", "d": "Mẹo chiến lược và chỉ một bước tiếp theo, không bao giờ là lời giải đầy đủ."},
+        {"t": "Miễn phí mãi mãi", "d": "Thử thách hằng ngày và 5 câu luyện tập mỗi ngày luôn miễn phí."},
+        {"t": "Premium mua một lần", "d": "Luyện tập không giới hạn, độ khó cao hơn và thống kê đầy đủ. Không đăng ký."}
+      ],
+      "privacy_blurb": "MathSpark hoạt động hoàn toàn ngoại tuyến và không thu thập gì.",
+      "disclaimer": ""
+    }
+  }
+}

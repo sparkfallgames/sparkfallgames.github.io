@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Eenvoudige, privacyvriendelijke iOS-apps",
+    "home_desc": "Eenvoudige, privacyvriendelijke en eerlijke iOS-apps. Je gegevens blijven op je apparaat: geen accounts, geen servers, geen tracking."
+  },
+  "nav": {
+    "apps": "Apps",
+    "contact": "Contact",
+    "privacy": "Privacy",
+    "support": "Ondersteuning",
+    "all_apps": "Alle apps",
+    "language": "Taal"
+  },
+  "hero": {
+    "title": "Eenvoudige, private, eerlijke apps.",
+    "subtitle": "Elke app is gebouwd rond één idee: je gegevens blijven op je apparaat. Geen accounts, geen servers, geen tracking.",
+    "explore": "Bekijk de apps"
+  },
+  "values": {
+    "private_title": "Privacy by design",
+    "private_desc": "Alles wordt op je apparaat opgeslagen. We beheren geen servers en kunnen je gegevens niet zien.",
+    "honest_title": "Eerlijke prijzen",
+    "honest_desc": "Gratis functies blijven voor altijd gratis. Geen abonnementsvallen, geen neptimers.",
+    "global_title": "Voor iedereen gemaakt",
+    "global_desc": "Elke app is volledig gelokaliseerd in 31 talen, met donkere modus en toegankelijkheid."
+  },
+  "common": {
+    "coming_soon": "Binnenkort in de App Store",
+    "download": "Download in de App Store",
+    "privacy_policy": "Privacybeleid",
+    "support": "Ondersteuning",
+    "features": "Waarom {app}",
+    "privacy_heading": "Privacy",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Privacybeleid",
+    "learn_more": "Meer informatie"
+  },
+  "categories": {
+    "finance": "Financiën",
+    "utilities": "Hulpprogramma's",
+    "health": "Gezondheid en fitness",
+    "games": "Games"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Noteer een uitgave in 3 seconden.",
+      "card_desc": "Een minimalistische uitgaventracker die alles op je iPhone bewaart.",
+      "subtitle": "Een minimalistische, private uitgaventracker voor iPhone. Openen, tikken, klaar — in 3 seconden.",
+      "meta_desc": "QuickCost is een minimalistische uitgaventracker voor iPhone. Noteer een uitgave in 3 seconden. Alle gegevens blijven op je apparaat.",
+      "features": [
+        {"t": "In 3 seconden genoteerd", "d": "Open de app, tik het bedrag en een categorie aan: je uitgave is opgeslagen."},
+        {"t": "100% op je apparaat", "d": "Geen account, geen server. Je financiële gegevens verlaten je iPhone nooit."},
+        {"t": "Helder inzicht", "d": "Overzichten per dag, maand en categorie laten zien waar je geld heen gaat."},
+        {"t": "31 talen", "d": "Wereldwijd volledig gelokaliseerd, met donkere modus en grote tekst."}
+      ],
+      "privacy_blurb": "QuickCost bewaart alles lokaal op je apparaat en verzamelt niets.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Ken je lawaai. Bescherm je gehoor.",
+      "card_desc": "Realtime geluidsmeter met dagelijkse geluidsdosis.",
+      "subtitle": "Een realtime geluidsmeter met dagelijkse geluidsdosis-tracking die je gehoor helpt beschermen.",
+      "meta_desc": "Decibel Meter meet het geluidsniveau in realtime en houdt je dagelijkse geluidsdosis bij. Audio verlaat je iPhone nooit.",
+      "features": [
+        {"t": "Live meten", "d": "Realtime dB-weergave met MIN, GEM en MAX in één oogopslag."},
+        {"t": "Dagelijkse geluidsdosis", "d": "Volgt je blootstelling volgens de NIOSH-richtlijn van 85 dB / 8 u."},
+        {"t": "Niets wordt opgenomen", "d": "Audio wordt realtime geanalyseerd en nooit opgeslagen of geüpload."},
+        {"t": "Widget en Siri", "d": "Start en stop metingen vanaf je beginscherm of met je stem."}
+      ],
+      "privacy_blurb": "Alle analyse gebeurt op je apparaat. Audio wordt nooit opgenomen of geüpload.",
+      "disclaimer": "De geluidsdosiscijfers zijn algemene referentie-informatie, geen medische meting."
+    },
+    "fastzen": {
+      "tagline": "De eerlijke vastentimer.",
+      "card_desc": "Een intermittent-fasting-timer zonder abonnementsvallen.",
+      "subtitle": "Een eerlijke intermittent-fasting-timer. De gratis versie is compleet — voor altijd.",
+      "meta_desc": "FastZen is een eerlijke intermittent-fasting-timer. Kernfuncties voor altijd gratis, eenmalige Pro-aankoop, volledig privé.",
+      "features": [
+        {"t": "Kern voor altijd gratis", "d": "Alle vooraf ingestelde schema's, de timer, historie, reeksen en meldingen zijn gratis."},
+        {"t": "Eenmalige Pro-aankoop", "d": "Eigen doelen en inzichten voor één betaling. Geen abonnement."},
+        {"t": "Fasetijdlijn", "d": "Bekijk de fasen die doorgaans bij elk uur van je vasten horen."},
+        {"t": "Volledig privé", "d": "Geen account, geen server — je vastenhistorie blijft op je apparaat."}
+      ],
+      "privacy_blurb": "Je vastenhistorie verlaat je iPhone nooit.",
+      "disclaimer": "FastZen is een timer- en logboektool, geen medisch advies. Raadpleeg een zorgprofessional voordat je met vasten begint."
+    },
+    "mathspark": {
+      "tagline": "Eén puzzel per dag. De hele wereld speelt mee.",
+      "card_desc": "Dagelijkse hoofdrekenpuzzels met hints die je iets leren.",
+      "subtitle": "Dagelijkse hoofdrekenpuzzels: dezelfde uitdaging voor iedereen wereldwijd, met hints die leren in plaats van verklappen.",
+      "meta_desc": "MathSpark biedt dagelijkse getallenpuzzels: dezelfde uitdaging voor iedereen, met leerzame hints. Volledig offline en privé.",
+      "features": [
+        {"t": "Dagelijkse wereldwijde challenge", "d": "Iedereen ter wereld krijgt elke dag dezelfde puzzels — volledig offline."},
+        {"t": "Hints die leren", "d": "Strategietips en één volgende stap, nooit de volledige oplossing."},
+        {"t": "Voor altijd gratis", "d": "De dagelijkse challenge en 5 oefenpuzzels per dag zijn altijd gratis."},
+        {"t": "Eenmalige Premium-aankoop", "d": "Onbeperkt oefenen, hogere moeilijkheden en volledige statistieken. Geen abonnement."}
+      ],
+      "privacy_blurb": "MathSpark werkt volledig offline en verzamelt niets.",
+      "disclaimer": ""
+    }
+  }
+}

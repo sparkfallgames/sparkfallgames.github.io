@@ -1,0 +1,102 @@
+{
+  "meta": {
+    "home_title": "Qiuyufei Apps — Proste, prywatne aplikacje na iOS",
+    "home_desc": "Proste, prywatne i uczciwe aplikacje na iOS. Twoje dane zostają na Twoim urządzeniu — bez kont, bez serwerów, bez śledzenia."
+  },
+  "nav": {
+    "apps": "Aplikacje",
+    "contact": "Kontakt",
+    "privacy": "Prywatność",
+    "support": "Wsparcie",
+    "all_apps": "Wszystkie aplikacje",
+    "language": "Język"
+  },
+  "hero": {
+    "title": "Proste, prywatne, uczciwe aplikacje.",
+    "subtitle": "Każda aplikacja opiera się na jednej idei: Twoje dane zostają na Twoim urządzeniu. Bez kont, bez serwerów, bez śledzenia.",
+    "explore": "Poznaj aplikacje"
+  },
+  "values": {
+    "private_title": "Prywatność w standardzie",
+    "private_desc": "Wszystko jest przechowywane na Twoim urządzeniu. Nie prowadzimy serwerów i nie widzimy Twoich danych.",
+    "honest_title": "Uczciwe ceny",
+    "honest_desc": "Darmowe funkcje pozostają darmowe na zawsze. Bez pułapek subskrypcji i fałszywych odliczań.",
+    "global_title": "Dla każdego",
+    "global_desc": "Każda aplikacja jest w pełni zlokalizowana w 31 językach, z trybem ciemnym i ułatwieniami dostępu."
+  },
+  "common": {
+    "coming_soon": "Wkrótce w App Store",
+    "download": "Pobierz w App Store",
+    "privacy_policy": "Polityka prywatności",
+    "support": "Wsparcie",
+    "features": "Dlaczego {app}",
+    "privacy_heading": "Prywatność",
+    "footer_rights": "© {year} Qiuyufei Apps",
+    "footer_privacy": "Polityki prywatności",
+    "learn_more": "Dowiedz się więcej"
+  },
+  "categories": {
+    "finance": "Finanse",
+    "utilities": "Narzędzia",
+    "health": "Zdrowie i fitness",
+    "games": "Gry"
+  },
+  "apps": {
+    "quickcost": {
+      "tagline": "Zapisz wydatek w 3 sekundy.",
+      "card_desc": "Minimalistyczny rejestr wydatków, który trzyma wszystko na Twoim iPhonie.",
+      "subtitle": "Minimalistyczny, prywatny rejestr wydatków na iPhone'a. Otwórz, stuknij, gotowe — w 3 sekundy.",
+      "meta_desc": "QuickCost to minimalistyczny rejestr wydatków na iPhone'a. Zapisz wydatek w 3 sekundy. Wszystkie dane zostają na urządzeniu.",
+      "features": [
+        {"t": "Zapis w 3 sekundy", "d": "Otwórz aplikację, stuknij kwotę i kategorię — wydatek zapisany."},
+        {"t": "100% na urządzeniu", "d": "Bez konta i serwera. Twoje finanse nigdy nie opuszczają iPhone'a."},
+        {"t": "Czytelne podsumowania", "d": "Zestawienia dzienne, miesięczne i według kategorii pokazują, gdzie idą pieniądze."},
+        {"t": "31 języków", "d": "Pełna lokalizacja na cały świat, z trybem ciemnym i dużą czcionką."}
+      ],
+      "privacy_blurb": "QuickCost przechowuje wszystko lokalnie na Twoim urządzeniu i niczego nie zbiera.",
+      "disclaimer": ""
+    },
+    "decibelmeter": {
+      "tagline": "Poznaj swój hałas. Chroń słuch.",
+      "card_desc": "Miernik dźwięku w czasie rzeczywistym z dzienną dawką hałasu.",
+      "subtitle": "Miernik poziomu dźwięku w czasie rzeczywistym ze śledzeniem dziennej dawki hałasu, który pomaga chronić słuch.",
+      "meta_desc": "Decibel Meter mierzy poziom dźwięku w czasie rzeczywistym i śledzi dzienną dawkę hałasu. Dźwięk nigdy nie opuszcza iPhone'a.",
+      "features": [
+        {"t": "Pomiar na żywo", "d": "Odczyt dB w czasie rzeczywistym z MIN, ŚRED i MAKS na pierwszy rzut oka."},
+        {"t": "Dzienna dawka hałasu", "d": "Śledzi ekspozycję według wytycznej NIOSH 85 dB / 8 h."},
+        {"t": "Nic nie jest nagrywane", "d": "Dźwięk jest analizowany na bieżąco, nigdy nie jest zapisywany ani wysyłany."},
+        {"t": "Widżet i Siri", "d": "Rozpoczynaj i zatrzymuj pomiar z ekranu głównego lub głosem."}
+      ],
+      "privacy_blurb": "Cała analiza odbywa się na Twoim urządzeniu. Dźwięk nigdy nie jest nagrywany ani wysyłany.",
+      "disclaimer": "Wartości dawki hałasu to ogólne informacje poglądowe, nie pomiar medyczny."
+    },
+    "fastzen": {
+      "tagline": "Uczciwy minutnik postu.",
+      "card_desc": "Minutnik postu przerywanego bez pułapek subskrypcji.",
+      "subtitle": "Uczciwy minutnik postu przerywanego. Wersja darmowa jest kompletna — na zawsze.",
+      "meta_desc": "FastZen to uczciwy minutnik postu przerywanego. Podstawowe funkcje darmowe na zawsze, Pro za jednorazową opłatą, pełna prywatność.",
+      "features": [
+        {"t": "Podstawa darmowa na zawsze", "d": "Wszystkie gotowe plany, minutnik, historia, serie i powiadomienia są darmowe."},
+        {"t": "Pro za jednorazową opłatą", "d": "Własne cele i statystyki za jedną płatność. Bez subskrypcji."},
+        {"t": "Oś czasu faz", "d": "Zobacz fazy zwykle wiązane z każdą godziną postu."},
+        {"t": "Pełna prywatność", "d": "Bez konta i serwera — historia postów zostaje na Twoim urządzeniu."}
+      ],
+      "privacy_blurb": "Twoja historia postów nigdy nie opuszcza iPhone'a.",
+      "disclaimer": "FastZen to narzędzie do odmierzania czasu i notowania, nie porada medyczna. Przed rozpoczęciem postu skonsultuj się z lekarzem."
+    },
+    "mathspark": {
+      "tagline": "Jedna łamigłówka dziennie. Gra cały świat.",
+      "card_desc": "Codzienne łamigłówki liczbowe z podpowiedziami, które uczą.",
+      "subtitle": "Codzienne łamigłówki na liczenie w pamięci — to samo wyzwanie dla wszystkich na świecie, z podpowiedziami, które uczą zamiast zdradzać.",
+      "meta_desc": "MathSpark serwuje codzienne łamigłówki liczbowe — to samo wyzwanie dla wszystkich, z edukacyjnymi podpowiedziami. Całkowicie offline i prywatnie.",
+      "features": [
+        {"t": "Codzienne globalne wyzwanie", "d": "Wszyscy na świecie dostają codziennie te same łamigłówki — całkowicie offline."},
+        {"t": "Podpowiedzi, które uczą", "d": "Wskazówki strategiczne i tylko jeden następny krok, nigdy pełne rozwiązanie."},
+        {"t": "Za darmo na zawsze", "d": "Codzienne wyzwanie i 5 łamigłówek treningowych dziennie są zawsze darmowe."},
+        {"t": "Premium za jednorazową opłatą", "d": "Nieograniczony trening, wyższe poziomy trudności i pełne statystyki. Bez subskrypcji."}
+      ],
+      "privacy_blurb": "MathSpark działa całkowicie offline i niczego nie zbiera.",
+      "disclaimer": ""
+    }
+  }
+}
