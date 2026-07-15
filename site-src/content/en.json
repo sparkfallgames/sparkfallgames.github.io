@@ -1,0 +1,221 @@
+{
+  "meta": {
+    "code": "en",
+    "htmlLang": "en",
+    "dir": "ltr",
+    "nativeName": "English"
+  },
+  "site": {
+    "brand": "Qiuyufei Apps",
+    "titleHome": "Qiuyufei Apps — Simple, private iOS apps",
+    "descHome": "An indie studio making simple, private, honest iOS apps. Your data stays on your device — no accounts, no servers, no tracking.",
+    "heroKicker": "Indie iOS studio",
+    "heroTitle": "Simple. Private. Honest.",
+    "heroSub": "Every app is built around one idea: your data stays on your device. No accounts, no servers, no tracking — just tools that respect you.",
+    "heroCta": "Explore the apps",
+    "statApps": "apps in the family",
+    "statLanguages": "languages supported",
+    "statTracking": "trackers, ever",
+    "principlesTitle": "What we stand for",
+    "principles": [
+      { "t": "On-device by design", "d": "Your records never leave your iPhone. We do not run servers, and we could not read your data even if we wanted to." },
+      { "t": "Honest pricing", "d": "Free tiers stay complete forever. Paid upgrades are clearly priced — no subscription traps, no fake countdowns." },
+      { "t": "No tracking", "d": "No analytics SDKs, no ads networks, no fingerprinting. This website has no trackers either." }
+    ],
+    "appsTitle": "The apps",
+    "appsSub": "Four apps, one philosophy.",
+    "nav": { "apps": "Apps", "contact": "Contact" },
+    "labels": {
+      "privacy": "Privacy Policy",
+      "support": "Support",
+      "allApps": "All apps",
+      "language": "Language",
+      "download": "Download on the App Store",
+      "comingSoon": "Coming soon to the App Store",
+      "features": "Why you'll like it",
+      "privacyHeading": "Privacy",
+      "faqHeading": "Frequently asked questions",
+      "contactHeading": "Contact",
+      "lastUpdated": "Last updated",
+      "backToApp": "About the app",
+      "footerRights": "© 2026 Qiuyufei Apps",
+      "footerPrivacyRow": "Privacy policies",
+      "contactReply": "We usually reply within 1–2 business days.",
+      "contactHint": "Please include your iOS version and a short description of the issue. Screenshots help a lot."
+    }
+  },
+  "apps": {
+    "quickcost": {
+      "name": "QuickCost",
+      "category": "Finance",
+      "tagline": "Log an expense in 3 seconds",
+      "titleProduct": "QuickCost — Log an expense in 3 seconds",
+      "descProduct": "QuickCost is a minimal, private expense tracker for iPhone. All data stays on your device.",
+      "heroSub": "A minimal expense tracker that keeps every record on your iPhone — and out of everyone else's hands.",
+      "features": [
+        { "t": "3-second logging", "d": "Open the app, tap amount and category, done. Tracking spending should never feel like homework." },
+        { "t": "100% on-device", "d": "No account, no server. Your financial records never leave your iPhone." },
+        { "t": "Clear overview", "d": "Daily, monthly, and category summaries show where your money goes at a glance." },
+        { "t": "31 languages", "d": "Fully localized worldwide, including right-to-left languages." },
+        { "t": "No ads", "d": "Free to use, with an optional Premium upgrade. Never any advertising." }
+      ],
+      "privacyBlurb": "QuickCost stores everything locally on your device. We do not collect any data.",
+      "shots": [
+        { "file": "quickcost-1.png", "alt": "QuickCost expense list" },
+        { "file": "quickcost-2.png", "alt": "QuickCost adding an expense" }
+      ],
+      "support": {
+        "title": "QuickCost Support",
+        "faq": [
+          { "q": "Where is my data stored?", "a": "All records are stored locally on your device. There is no account and no server. Deleting the app permanently deletes its data, so keep your device backed up via iCloud or computer backup." },
+          { "q": "How do I restore my Premium purchase?", "a": "Open Settings inside the app and tap \"Restore Purchases\". Make sure you are signed in with the same Apple ID used for the original purchase." },
+          { "q": "How do I manage or cancel a subscription?", "a": "Subscriptions are managed by Apple. Open iOS Settings → your name → Subscriptions." }
+        ]
+      },
+      "privacy": {
+        "title": "QuickCost – Privacy Policy",
+        "updated": "July 15, 2026",
+        "sections": [
+          { "h": "Your data stays on your device", "p": "QuickCost is designed to be private. All of your expense and income records are stored locally on your device. We do not operate any servers, and we never collect, transmit, or have access to your financial records." },
+          { "h": "iCloud sync (planned feature)", "p": "The current version does not sync any data. If a future version adds optional iCloud sync, your records would be stored in your personal iCloud account using Apple's CloudKit service, accessible only by you through your Apple ID. We would still not be able to read it." },
+          { "h": "No ads, no tracking", "p": "QuickCost contains no third-party advertising and no tracking of any kind. If a future version introduces ads, this policy will be updated before release and any tracking will require your explicit consent through Apple's App Tracking Transparency prompt." },
+          { "h": "In-app purchases", "p": "Purchases are processed entirely by Apple. We do not receive or store any payment information." },
+          { "h": "Analytics", "p": "QuickCost does not include any third-party analytics SDKs." },
+          { "h": "Children's privacy", "p": "QuickCost is not directed at children under 13 and does not knowingly collect personal information from children." },
+          { "h": "Changes to this policy", "p": "We may update this policy from time to time. Changes will be posted on this page with an updated date." },
+          { "h": "Contact", "p": "If you have any questions, contact us at: 2645809444@qq.com" }
+        ]
+      }
+    },
+    "decibelmeter": {
+      "name": "Decibel Meter",
+      "category": "Utilities",
+      "tagline": "Know your noise. Protect your hearing.",
+      "titleProduct": "Decibel Meter — Sound level & daily noise dose",
+      "descProduct": "Real-time sound level meter with daily noise dose tracking. Audio never leaves your iPhone.",
+      "heroSub": "A real-time sound level meter with a daily noise dose tracker — because hearing damage adds up quietly.",
+      "features": [
+        { "t": "Live measurement", "d": "Real-time dB readout with MIN / AVG / MAX statistics on a smooth gauge." },
+        { "t": "Daily noise dose", "d": "Tracks your exposure against the NIOSH 85 dB / 8 h guideline, so you know when your ears need a break." },
+        { "t": "Nothing is recorded", "d": "Audio is analyzed in real time and never stored or transmitted. No sound ever leaves your iPhone." },
+        { "t": "Widget & Siri", "d": "A Home Screen widget shows today's dose; Siri can start and stop measuring hands-free." },
+        { "t": "31 languages", "d": "Fully localized worldwide, including right-to-left languages." }
+      ],
+      "privacyBlurb": "All analysis happens on your device. No audio is ever recorded or uploaded.",
+      "disclaimer": "Noise dose figures are general reference information, not a medical measurement.",
+      "shots": [
+        { "file": "decibelmeter-1.png", "alt": "Decibel Meter live gauge" },
+        { "file": "decibelmeter-2.png", "alt": "Decibel Meter daily noise dose" }
+      ],
+      "support": {
+        "title": "Decibel Meter Support",
+        "faq": [
+          { "q": "Why does the app need microphone access?", "a": "The microphone is used only to measure the live sound level while measuring. Audio is analyzed in real time and never recorded, stored, or uploaded. You can revoke the permission anytime in iOS Settings." },
+          { "q": "How accurate are the readings?", "a": "iPhone microphones are not calibrated laboratory instruments. Readings are suitable for everyday reference; for accuracy-critical use we recommend a dedicated calibrated sound level meter." },
+          { "q": "Where is my measurement history stored?", "a": "Locally on your device only. Deleting the app permanently deletes its data." }
+        ]
+      },
+      "privacy": {
+        "title": "Decibel Meter – Privacy Policy",
+        "updated": "July 15, 2026",
+        "sections": [
+          { "h": "Sound is analyzed on your device only", "p": "Decibel Meter uses your iPhone's microphone to measure the sound level (in decibels) around you. All audio analysis happens in real time on your device. Audio is never recorded, stored, or transmitted. No sound ever leaves your iPhone." },
+          { "h": "Your measurements stay on your device", "p": "Saved measurements and your daily noise dose history are stored locally on your device. We do not operate any servers, and we never collect, transmit, or have access to your data." },
+          { "h": "Microphone permission", "p": "The microphone permission is used exclusively for live sound level measurement while the app is measuring. You can revoke this permission at any time in the iOS Settings app; the app will simply be unable to measure until it is granted again." },
+          { "h": "No ads, no tracking", "p": "This version of Decibel Meter contains no third-party advertising, no analytics SDKs, and no tracking of any kind. If a future version introduces ads, this policy will be updated before release and any tracking will require your explicit consent through Apple's App Tracking Transparency prompt." },
+          { "h": "In-app purchases", "p": "Any purchases are processed entirely by Apple. We do not receive or store any payment information." },
+          { "h": "Health disclaimer", "p": "Noise dose figures are provided for general reference based on the NIOSH daily exposure guideline (85 dB, 8 hours). They are not a medical measurement and should not replace professional hearing assessment." },
+          { "h": "Children's privacy", "p": "Decibel Meter is not directed at children under 13 and does not knowingly collect personal information from children." },
+          { "h": "Changes to this policy", "p": "We may update this policy from time to time. Changes will be posted on this page with an updated date." },
+          { "h": "Contact", "p": "If you have any questions, contact us at: 2645809444@qq.com" }
+        ]
+      }
+    },
+    "fastzen": {
+      "name": "FastZen",
+      "category": "Health & Fitness",
+      "tagline": "The honest fasting timer",
+      "titleProduct": "FastZen — Honest intermittent fasting timer",
+      "descProduct": "An honest fasting timer. Free core features forever, one-time Pro purchase, fully private.",
+      "heroSub": "An intermittent fasting timer with no subscription traps — the free tier is complete, forever.",
+      "features": [
+        { "t": "Free core, forever", "d": "All preset plans, timer, history, streaks, and notifications are free. That is a promise, not a trial." },
+        { "t": "One-time Pro purchase", "d": "Custom fasting goals (8–48 h) and data insights for a single payment. No subscription." },
+        { "t": "Fasting stage timeline", "d": "See the phases your body is commonly associated with during a fast, explained simply." },
+        { "t": "Fully private", "d": "No account, no server — your fasting history stays on your device." },
+        { "t": "31 languages", "d": "Fully localized worldwide, including right-to-left languages." }
+      ],
+      "privacyBlurb": "Your fasting history never leaves your iPhone.",
+      "disclaimer": "FastZen is a timer and logging tool, not medical advice. Consult a healthcare professional before starting any fasting practice.",
+      "shots": [
+        { "file": "fastzen-1.png", "alt": "FastZen fasting timer ring" },
+        { "file": "fastzen-2.png", "alt": "FastZen fasting stage timeline" }
+      ],
+      "support": {
+        "title": "FastZen Support",
+        "faq": [
+          { "q": "Is the free version really complete?", "a": "Yes. All preset fasting plans, the timer, history, streaks, and notifications are free forever. Pro is a one-time purchase that adds custom goal durations (8–48 h) and the insights dashboard." },
+          { "q": "How do I restore my Pro purchase?", "a": "Open Settings inside the app and tap \"Restore Purchases\" with the same Apple ID used for the original purchase." },
+          { "q": "Where is my fasting history stored?", "a": "Locally on your device only. Deleting the app permanently deletes its data, so keep your device backed up." },
+          { "q": "Notifications are not arriving", "a": "Check iOS Settings → Notifications → FastZen and make sure notifications are allowed. Focus modes can also silence them." }
+        ]
+      },
+      "privacy": {
+        "title": "FastZen – Privacy Policy",
+        "updated": "July 15, 2026",
+        "sections": [
+          { "h": "Your data stays on your device", "p": "FastZen is designed to be private. Your fasting sessions, history, and preferences are stored locally on your device. We do not operate any servers, and we never collect, transmit, or have access to your data. FastZen does not require an account." },
+          { "h": "Notifications", "p": "FastZen can send local notifications (for example when you reach your fasting goal). These are scheduled entirely on your device by iOS. No notification data is sent anywhere." },
+          { "h": "No ads, no tracking", "p": "This version of FastZen contains no third-party advertising, no analytics SDKs, and no tracking of any kind. If a future version introduces ads, this policy will be updated before release and any tracking will require your explicit consent through Apple's App Tracking Transparency prompt." },
+          { "h": "In-app purchases", "p": "FastZen Pro is a one-time purchase processed entirely by Apple. We do not receive or store any payment information." },
+          { "h": "Health disclaimer", "p": "FastZen is a timer and logging tool. The information it shows about fasting stages is general educational content, not medical advice. Consult a healthcare professional before starting any fasting practice, especially if you have a medical condition." },
+          { "h": "Children's privacy", "p": "FastZen is not directed at children under 13 and does not knowingly collect personal information from children." },
+          { "h": "Changes to this policy", "p": "We may update this policy from time to time. Changes will be posted on this page with an updated date." },
+          { "h": "Contact", "p": "If you have any questions, contact us at: 2645809444@qq.com" }
+        ]
+      }
+    },
+    "mathspark": {
+      "name": "MathSpark",
+      "category": "Games · Puzzle",
+      "tagline": "Daily mental math puzzles",
+      "titleProduct": "MathSpark — Daily mental math puzzles",
+      "descProduct": "Daily number puzzles, the same challenge for everyone worldwide, with hints that teach.",
+      "heroSub": "The same daily challenge for everyone on Earth, with hints that teach instead of spoil.",
+      "features": [
+        { "t": "Daily global challenge", "d": "Everyone in the world gets the same puzzles each day — generated on your device, no server needed." },
+        { "t": "Hints that teach", "d": "Strategy tips and a single next step, never the full solution. Solving it is the fun part." },
+        { "t": "Free forever", "d": "The daily challenge and 5 practice puzzles per day are always free." },
+        { "t": "One-time Premium", "d": "Unlimited practice, harder difficulties, and full statistics for a single payment. No subscription." },
+        { "t": "Fully private", "d": "No account, no tracking — your streaks stay on your device." }
+      ],
+      "privacyBlurb": "MathSpark works entirely offline and collects nothing.",
+      "shots": [
+        { "file": "mathspark-1.png", "alt": "MathSpark daily challenge board" },
+        { "file": "mathspark-2.png", "alt": "MathSpark puzzle in progress" }
+      ],
+      "support": {
+        "title": "MathSpark Support",
+        "faq": [
+          { "q": "What is free and what is paid?", "a": "The daily challenge (all of it) and 5 practice puzzles per day are free forever. Premium is a one-time purchase that unlocks unlimited practice, harder difficulties, and full statistics. There is no subscription." },
+          { "q": "Why don't hints give the full answer?", "a": "By design. Hints explain strategy and, at most, one concrete next step — solving the puzzle yourself is the point." },
+          { "q": "How do I restore my Premium purchase?", "a": "Open Settings inside the app and tap \"Restore Purchases\" with the same Apple ID used for the original purchase." },
+          { "q": "Where are my streaks and statistics stored?", "a": "Locally on your device only. Deleting the app permanently deletes its data." }
+        ]
+      },
+      "privacy": {
+        "title": "MathSpark – Privacy Policy",
+        "updated": "July 15, 2026",
+        "sections": [
+          { "h": "Your data stays on your device", "p": "MathSpark is designed to be private. Your puzzle progress, streaks, statistics, and preferences are stored locally on your device. We do not operate any servers, and we never collect, transmit, or have access to your data. MathSpark does not require an account." },
+          { "h": "Daily challenges work offline", "p": "The daily challenge is generated on your device from the date itself, so everyone in the world gets the same puzzles without any network connection. MathSpark never sends anything to the internet." },
+          { "h": "No ads, no tracking", "p": "This version of MathSpark contains no third-party advertising, no analytics SDKs, and no tracking of any kind. If a future version introduces ads, this policy will be updated before release and any tracking will require your explicit consent through Apple's App Tracking Transparency prompt." },
+          { "h": "In-app purchases", "p": "MathSpark Premium is a one-time purchase processed entirely by Apple. We do not receive or store any payment information." },
+          { "h": "Children's privacy", "p": "MathSpark does not collect personal information from anyone, including children. There are no accounts, no social features, and no data leaves the device." },
+          { "h": "Changes to this policy", "p": "We may update this policy from time to time. Changes will be posted on this page with an updated date." },
+          { "h": "Contact", "p": "If you have any questions, contact us at: 2645809444@qq.com" }
+        ]
+      }
+    }
+  }
+}

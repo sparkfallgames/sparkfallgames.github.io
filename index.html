@@ -1,143 +1,132 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" dir="ltr">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <title>Qiuyufei Apps — Simple, private iOS apps</title>
-<meta name="description" content="An independent iOS studio. Simple, private, honest apps in 31 languages. Your data stays on your device — no accounts, no servers, no tracking.">
-<meta property="og:title" content="Qiuyufei Apps — Simple, private iOS apps">
-<meta property="og:description" content="Independent iOS studio. Private by design, honest by default. 31 languages, worldwide.">
+<meta name="description" content="An indie studio making simple, private, honest iOS apps. Your data stays on your device — no accounts, no servers, no tracking.">
+<link rel="canonical" href="https://2645809444.github.io/">
 <meta property="og:type" content="website">
+<meta property="og:title" content="Qiuyufei Apps — Simple, private iOS apps">
+<meta property="og:description" content="An indie studio making simple, private, honest iOS apps. Your data stays on your device — no accounts, no servers, no tracking.">
 <meta property="og:url" content="https://2645809444.github.io/">
-<link rel="stylesheet" href="assets/style.css">
+<meta property="og:site_name" content="Qiuyufei Apps">
+<meta name="theme-color" content="#0e0d12">
+<link rel="alternate" hreflang="de" href="https://2645809444.github.io/de/">
+<link rel="alternate" hreflang="en" href="https://2645809444.github.io/">
+<link rel="alternate" hreflang="es" href="https://2645809444.github.io/es/">
+<link rel="alternate" hreflang="fr" href="https://2645809444.github.io/fr/">
+<link rel="alternate" hreflang="ja" href="https://2645809444.github.io/ja/">
+<link rel="alternate" hreflang="zh-hans" href="https://2645809444.github.io/zh-hans/">
+<link rel="alternate" hreflang="x-default" href="https://2645809444.github.io/">
+<link rel="stylesheet" href="/assets/style.css">
+<script>
+(function () {
+  try {
+    var supported = ["de", "en", "es", "fr", "ja", "zh-hans"];
+    var saved = localStorage.getItem("site-lang");
+    if (saved === "en") return;
+    if (saved && supported.indexOf(saved) > -1) { location.replace("/" + saved + "/"); return; }
+    if (saved) return;
+    var nav = (navigator.languages || [navigator.language || ""]).map(function (l) { return l.toLowerCase(); });
+    for (var i = 0; i < nav.length; i++) {
+      var l = nav[i];
+      var hit = null;
+      if (l.indexOf("zh") === 0) hit = (l.indexOf("tw") > -1 || l.indexOf("hk") > -1 || l.indexOf("hant") > -1) ? "zh-hant" : "zh-hans";
+      else if (l.indexOf("pt") === 0) hit = (l.indexOf("pt-pt") === 0) ? "pt-pt" : "pt-br";
+      else if (l.indexOf("no") === 0 || l.indexOf("nb") === 0) hit = "no";
+      else { var base = l.split("-")[0]; if (supported.indexOf(base) > -1) hit = base; }
+      if (hit && hit !== "en" && supported.indexOf(hit) > -1) { localStorage.setItem("site-lang", hit); location.replace("/" + hit + "/"); return; }
+      if (hit === "en") return;
+    }
+  } catch (e) {}
+})();
+</script>
 </head>
-<body>
-
-<header class="site">
+<body><header class="site">
   <div class="wrap">
-    <a class="brand" href="./">Qiuyufei Apps</a>
-    <nav class="site">
-      <a href="#apps">Apps</a>
-      <a href="#principles">Principles</a>
-      <a href="#about">About</a>
+    <a class="brand" href="/"><span class="brand-dot" aria-hidden="true"></span>Qiuyufei Apps</a>
+    <nav class="site-nav">
+      <a href="/#apps">Apps</a>
       <a href="mailto:2645809444@qq.com">Contact</a>
+      <details class="lang">
+  <summary aria-label="Language"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/></svg><span>English</span></summary>
+  <div class="lang-menu" role="listbox"><a role="option" href="/de/" data-lang="de">Deutsch</a><a role="option" href="/" data-lang="en" aria-current="true">English</a><a role="option" href="/es/" data-lang="es">Español</a><a role="option" href="/fr/" data-lang="fr">Français</a><a role="option" href="/ja/" data-lang="ja">日本語</a><a role="option" href="/zh-hans/" data-lang="zh-hans">简体中文</a></div>
+</details>
     </nav>
   </div>
 </header>
-
 <section class="hero">
-  <canvas id="fx-canvas" aria-hidden="true"></canvas>
-  <div class="wrap">
-    <span class="eyebrow">Independent iOS Studio</span>
-    <h1>Simple, private,<br><span class="gradient">honest apps.</span></h1>
-    <p>Every app is built around one idea: your data stays on your device. No accounts, no servers, no tracking — just tools that respect you.</p>
-    <div class="link-row">
-      <a class="btn primary" href="#apps">Explore the apps</a>
-      <a class="btn" href="#about">Meet the studio</a>
+  <canvas id="fx" aria-hidden="true"></canvas>
+  <div class="blob b1" aria-hidden="true"></div>
+  <div class="blob b2" aria-hidden="true"></div>
+  <div class="blob b3" aria-hidden="true"></div>
+  <div class="wrap hero-inner">
+    <p class="kicker reveal">Indie iOS studio</p>
+    <h1 class="reveal">Simple. Private. Honest.</h1>
+    <p class="sub reveal">Every app is built around one idea: your data stays on your device. No accounts, no servers, no tracking — just tools that respect you.</p>
+    <p class="reveal"><a class="btn primary big" href="#apps">Explore the apps</a></p>
+    <div class="stats reveal">
+      <div><strong>4</strong><span>apps in the family</span></div>
+      <div><strong>31</strong><span>languages supported</span></div>
+      <div><strong>0</strong><span>trackers, ever</span></div>
     </div>
   </div>
 </section>
 
-<main class="wrap">
-
-  <div class="stats">
-    <div class="stat reveal"><span class="num">4+</span><span class="label">Apps in the works</span></div>
-    <div class="stat reveal d1"><span class="num">31</span><span class="label">Languages, worldwide</span></div>
-    <div class="stat reveal d2"><span class="num">0</span><span class="label">Trackers &amp; ads SDKs</span></div>
-    <div class="stat reveal d3"><span class="num">100%</span><span class="label">Data on your device</span></div>
+<section class="principles">
+  <div class="wrap">
+    <h2 class="reveal">What we stand for</h2>
+    <div class="principle-grid"><div class="principle reveal"><h3>On-device by design</h3><p>Your records never leave your iPhone. We do not run servers, and we could not read your data even if we wanted to.</p></div><div class="principle reveal"><h3>Honest pricing</h3><p>Free tiers stay complete forever. Paid upgrades are clearly priced — no subscription traps, no fake countdowns.</p></div><div class="principle reveal"><h3>No tracking</h3><p>No analytics SDKs, no ads networks, no fingerprinting. This website has no trackers either.</p></div></div>
   </div>
+</section>
 
-  <section class="section" id="apps">
+<main class="apps" id="apps">
+  <div class="wrap">
     <h2 class="reveal">The apps</h2>
-    <p class="section-sub reveal">Small, focused tools — each one does a single job well, in your language, on your terms.</p>
+    <p class="sectionsub reveal">Four apps, one philosophy.</p>
     <div class="grid">
-
-      <a class="card reveal" href="quickcost/" style="--accent: var(--quickcost);">
-        <div class="app-mark" style="background: var(--quickcost); --accent: var(--quickcost);">Q</div>
-        <h2>QuickCost</h2>
-        <p class="tagline">Log an expense in 3 seconds. A minimal expense tracker that keeps every record on your iPhone.</p>
-        <span class="badge">Finance</span>
-      </a>
-
-      <a class="card reveal d1" href="decibelmeter/" style="--accent: var(--decibelmeter);">
-        <div class="app-mark" style="background: var(--decibelmeter); --accent: var(--decibelmeter);">D</div>
-        <h2>Decibel Meter</h2>
-        <p class="tagline">Real-time sound level meter with a daily noise dose tracker to help protect your hearing.</p>
-        <span class="badge">Utilities</span>
-      </a>
-
-      <a class="card reveal d2" href="fastzen/" style="--accent: var(--fastzen);">
-        <div class="app-mark" style="background: var(--fastzen); --accent: var(--fastzen);">F</div>
-        <h2>FastZen</h2>
-        <p class="tagline">An honest intermittent fasting timer. One-time purchase, no subscription traps, fully private.</p>
-        <span class="badge">Health &amp; Fitness</span>
-      </a>
-
-      <a class="card reveal d3" href="mathspark/" style="--accent: var(--mathspark);">
-        <div class="app-mark" style="background: var(--mathspark); --accent: var(--mathspark);">M</div>
-        <h2>MathSpark</h2>
-        <p class="tagline">Daily mental math puzzles — the same challenge for everyone worldwide, with hints that teach.</p>
-        <span class="badge">Games</span>
-      </a>
-
+    <a class="card reveal app-quickcost" href="/quickcost/">
+      <div class="card-glow" aria-hidden="true"></div>
+      <div class="app-mark" aria-hidden="true">Q</div>
+      <h3>QuickCost</h3>
+      <p class="tagline">Log an expense in 3 seconds</p>
+      <p class="carddesc">A minimal expense tracker that keeps every record on your iPhone — and out of everyone else&#x27;s hands.</p>
+      <span class="badge">Finance</span>
+    </a>
+    <a class="card reveal app-decibelmeter" href="/decibelmeter/">
+      <div class="card-glow" aria-hidden="true"></div>
+      <div class="app-mark" aria-hidden="true">D</div>
+      <h3>Decibel Meter</h3>
+      <p class="tagline">Know your noise. Protect your hearing.</p>
+      <p class="carddesc">A real-time sound level meter with a daily noise dose tracker — because hearing damage adds up quietly.</p>
+      <span class="badge">Utilities</span>
+    </a>
+    <a class="card reveal app-fastzen" href="/fastzen/">
+      <div class="card-glow" aria-hidden="true"></div>
+      <div class="app-mark" aria-hidden="true">F</div>
+      <h3>FastZen</h3>
+      <p class="tagline">The honest fasting timer</p>
+      <p class="carddesc">An intermittent fasting timer with no subscription traps — the free tier is complete, forever.</p>
+      <span class="badge">Health &amp; Fitness</span>
+    </a>
+    <a class="card reveal app-mathspark" href="/mathspark/">
+      <div class="card-glow" aria-hidden="true"></div>
+      <div class="app-mark" aria-hidden="true">M</div>
+      <h3>MathSpark</h3>
+      <p class="tagline">Daily mental math puzzles</p>
+      <p class="carddesc">The same daily challenge for everyone on Earth, with hints that teach instead of spoil.</p>
+      <span class="badge">Games · Puzzle</span>
+    </a>
     </div>
-  </section>
-
-  <section class="section" id="principles">
-    <h2 class="reveal">Principles</h2>
-    <p class="section-sub reveal">Four rules every app must pass before it ships. No exceptions.</p>
-    <div class="principles">
-
-      <div class="principle reveal">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--quickcost)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="11" width="18" height="10" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></div>
-        <h3>Private by design</h3>
-        <p>Everything is stored on your device. There is no server to breach, no account to leak, nothing to sell.</p>
-      </div>
-
-      <div class="principle reveal d1">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--decibelmeter)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></div>
-        <h3>Honest pricing</h3>
-        <p>Free means free. Paid means clearly priced. No dark patterns, no subscription traps, no bait-and-switch.</p>
-      </div>
-
-      <div class="principle reveal d2">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--fastzen)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M2 12h20M12 2a15.3 15.3 0 0 1 0 20 15.3 15.3 0 0 1 0-20z"/></svg></div>
-        <h3>Made for everyone</h3>
-        <p>Every app ships in 31 languages with full accessibility support — large text, dark mode, right-to-left layouts.</p>
-      </div>
-
-      <div class="principle reveal d3">
-        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="var(--mathspark)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polygon points="13 2 3 14 12 14 11 22 21 10 12 10 13 2"/></svg></div>
-        <h3>Fast and native</h3>
-        <p>100% native Swift. Small downloads, instant launches, zero third-party bloat — they feel like part of iOS.</p>
-      </div>
-
-    </div>
-  </section>
-
-  <section class="section" id="about">
-    <div class="about reveal">
-      <h2>About the studio</h2>
-      <p><strong>Qiuyufei Apps</strong> is a one-person iOS studio. Instead of one bloated do-everything app, it builds a family of small, sharp tools — a fast expense logger, a hearing-safety meter, an honest fasting timer, a daily math game — each shipped worldwide in 31 languages.</p>
-      <p>The trade is simple: apps that <strong>never take your data</strong>, never interrupt you, and never trick you. If a feature needs a server, an account, or a tracker, it doesn't get built.</p>
-      <p>Questions, ideas, or feedback? <a href="mailto:2645809444@qq.com">2645809444@qq.com</a> — every email gets read.</p>
-    </div>
-  </section>
-
+  </div>
 </main>
-
 <footer class="site">
   <div class="wrap">
     <p>© 2026 Qiuyufei Apps · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a></p>
-    <p>Privacy policies:
-      <a href="quickcost/privacy.html">QuickCost</a> ·
-      <a href="decibelmeter/privacy.html">Decibel Meter</a> ·
-      <a href="fastzen/privacy.html">FastZen</a> ·
-      <a href="mathspark/privacy.html">MathSpark</a>
-    </p>
+    <p>Privacy policies: <a href="/quickcost/privacy.html">QuickCost</a> · <a href="/decibelmeter/privacy.html">Decibel Meter</a> · <a href="/fastzen/privacy.html">FastZen</a> · <a href="/mathspark/privacy.html">MathSpark</a></p>
   </div>
 </footer>
-
-<script src="assets/site.js"></script>
+<script src="/assets/site.js" defer></script>
 </body>
 </html>

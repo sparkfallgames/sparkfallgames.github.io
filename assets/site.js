@@ -1,9 +1,9 @@
-/* Site enhancements: scroll reveal, hero particles, optional UI sounds.
-   Self-hosted, zero dependencies, no tracking. Sounds are opt-in (default off). */
+/* Site enhancements for the generated pages (see site-src/):
+   scroll reveal, hero particles, language choice persistence,
+   optional UI sounds (opt-in, default off).
+   Self-hosted, zero dependencies, no tracking. */
 (function () {
   "use strict";
-
-  document.documentElement.classList.add("js");
 
   var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
@@ -23,11 +23,29 @@
     revealEls.forEach(function (el) { el.classList.add("in"); });
   }
 
+  /* ---------- Language choice persistence ----------
+     Pages are pre-rendered per language; clicking a language link just
+     navigates. Remember the choice so the root page can auto-redirect
+     returning visitors (see the inline script on /index.html). */
+  document.addEventListener("click", function (e) {
+    var a = e.target.closest && e.target.closest(".lang-menu a[data-lang]");
+    if (a) {
+      try { localStorage.setItem("site-lang", a.getAttribute("data-lang")); } catch (err) {}
+    }
+  });
+
+  /* Close the language dropdown when clicking outside */
+  document.addEventListener("click", function (e) {
+    document.querySelectorAll("details.lang[open]").forEach(function (d) {
+      if (!d.contains(e.target)) d.removeAttribute("open");
+    });
+  });
+
   /* ---------- Hero particles ---------- */
-  var canvas = document.getElementById("fx-canvas");
+  var canvas = document.getElementById("fx");
   if (canvas && !reduceMotion) {
     var ctx = canvas.getContext("2d");
-    var COLORS = ["#2e9e5b", "#0f8a9d", "#d98a2b", "#7c5cff"];
+    var COLORS = ["#34c46f", "#17a6c4", "#f5a623", "#8e5cff"];
     var parts = [];
     var running = true;
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
@@ -49,7 +67,7 @@
           vx: (Math.random() - 0.5) * 0.22,
           vy: -0.06 - Math.random() * 0.20,
           c: COLORS[(Math.random() * COLORS.length) | 0],
-          a: 0.12 + Math.random() * 0.25,
+          a: 0.14 + Math.random() * 0.28,
           tw: Math.random() * Math.PI * 2
         });
       }
@@ -128,8 +146,8 @@
     off:   function () { blip(660, 330, 0.14, "triangle", 0.10); }
   };
 
-  /* Toggle button injected into nav */
-  var nav = document.querySelector("nav.site");
+  /* Sound toggle injected into the header nav */
+  var nav = document.querySelector(".site-nav");
   if (nav) {
     var btn = document.createElement("button");
     btn.className = "sound-toggle";
@@ -154,8 +172,7 @@
   document.addEventListener("click", function (e) {
     if (e.target.closest("a, button:not(.sound-toggle)")) sfx.click();
   });
-  var hoverables = document.querySelectorAll(".card, .btn");
-  hoverables.forEach(function (el) {
+  document.querySelectorAll(".card, .btn, .feature").forEach(function (el) {
     el.addEventListener("mouseenter", function () { sfx.hover(); });
   });
 })();
