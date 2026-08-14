@@ -191,5 +191,12 @@
   "about": {
     "title": "O deweloperze",
     "body": "Jestem niezależnym deweloperem stojącym za Sparkfall Games. Każda gra i narzędzie są w 100% natywne dla iOS, zlokalizowane na 31 języków i zbudowane wokół jednej zasady: Twoje dane zostają na Twoim urządzeniu."
+  },
+  "badges": {
+    "onetime": "Jednorazowy zakup",
+    "nosub": "Bez subskrypcji",
+    "noads": "Bez reklam",
+    "notracking": "Bez śledzenia",
+    "honest": "Uczciwe ceny"
   }
 }

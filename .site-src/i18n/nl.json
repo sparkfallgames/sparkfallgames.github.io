@@ -191,5 +191,12 @@
   "about": {
     "title": "Over de ontwikkelaar",
     "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 31 talen en gebouwd rond één regel: je gegevens blijven op je apparaat."
+  },
+  "badges": {
+    "onetime": "Eenmalige aankoop",
+    "nosub": "Geen abonnement",
+    "noads": "Geen advertenties",
+    "notracking": "Geen tracking",
+    "honest": "Eerlijke prijzen"
   }
 }

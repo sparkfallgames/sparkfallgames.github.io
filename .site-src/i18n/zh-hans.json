@@ -191,5 +191,12 @@
   "about": {
     "title": "关于开发者",
     "body": "我是 Sparkfall Games 背后的独立开发者。每一款游戏和工具都是 100% 原生 iOS 应用，本地化覆盖 31 种语言，并遵循同一条准则：你的数据只存在你的设备上。"
+  },
+  "badges": {
+    "onetime": "一次买断",
+    "nosub": "无订阅",
+    "noads": "无广告",
+    "notracking": "无追踪",
+    "honest": "明码标价"
   }
 }

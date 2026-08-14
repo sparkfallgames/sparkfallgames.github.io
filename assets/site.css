@@ -628,3 +628,9 @@ a { color: var(--cyan); }
   .nav-inner { height: auto; padding: 10px 0; flex-wrap: wrap; }
   .nav nav { gap: 4px 14px; }
 }
+
+/* 首屏三徽章（产线 D 任务 3：变现模式徽章组件） */
+.badge-row{display:flex;gap:8px;flex-wrap:wrap;margin:14px 0 4px}
+.pill{padding:5px 13px;border-radius:9999px;font-size:.82rem;font-weight:600;
+  color:#fff;background:color-mix(in srgb,var(--aa,#8b5cf6) 26%,transparent);
+  border:1px solid color-mix(in srgb,var(--aa,#8b5cf6) 55%,transparent)}

@@ -191,5 +191,12 @@
   "about": {
     "title": "A fejlesztőről",
     "body": "Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 31 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak."
+  },
+  "badges": {
+    "onetime": "Egyszeri vásárlás",
+    "nosub": "Nincs előfizetés",
+    "noads": "Nincs reklám",
+    "notracking": "Nincs követés",
+    "honest": "Tisztességes árak"
   }
 }

@@ -114,7 +114,7 @@ def switcher(current, page):
             'onchange="location.href=this.value">' + "".join(opts) + "</select>")
 
 
-def head(lang, s, title, desc, page, canonical):
+def head(lang, s, title, desc, page, canonical, extra=""):
     direction = ' dir="rtl"' if lang.get("dir") == "rtl" else ""
     asset = "../" if page.count("/") and lang["path"] == "" else ""
     # Use absolute asset paths — simplest and works at any depth.
@@ -126,11 +126,70 @@ def head(lang, s, title, desc, page, canonical):
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
 <link rel="canonical" href="{canonical}">
-{hreflang_links(page)}
+{hreflang_links(page)}{extra}
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
 """
+
+
+# 变现模式 → 首屏三徽章（总纲品牌卖点；hybrid 含订阅不得写"无订阅"）
+BADGE_SETS = {
+    "buyout": ["onetime", "nosub", "noads"],
+    "hybrid": ["noads", "notracking", "honest"],
+}
+CATEGORY_SCHEMA = {
+    "games": "GameApplication", "finance": "FinanceApplication",
+    "health": "HealthApplication", "utilities": "UtilitiesApplication",
+}
+
+
+def badge_row(app, s):
+    keys = BADGE_SETS.get(app.get("pricing", ""), BADGE_SETS["hybrid"])
+    pills = "".join(f'<span class="pill">{esc(t(s, f"badges.{k}"))}</span>'
+                    for k in keys)
+    return f'<div class="badge-row">{pills}</div>'
+
+
+def jsonld(obj):
+    return ('<script type="application/ld+json">'
+            + json.dumps(obj, ensure_ascii=False) + "</script>")
+
+
+def app_structured_data(lang, s, app, canonical):
+    """SoftwareApplication + BreadcrumbList（评分字段上架后有数据再回填）。"""
+    a = s["apps"][app["slug"]]
+    software = {
+        "@context": "https://schema.org",
+        "@type": "SoftwareApplication",
+        "name": app["name"],
+        "description": a["meta_desc"],
+        "operatingSystem": "iOS",
+        "applicationCategory": CATEGORY_SCHEMA.get(app["category_key"],
+                                                   "MobileApplication"),
+        "offers": {"@type": "Offer", "price": "0", "priceCurrency": "USD"},
+        "url": canonical,
+    }
+    if app["released"] and app["store_url"]:
+        software["installUrl"] = app["store_url"]
+    # aggregateRating 占位：apps.json 填 rating_value/rating_count 后自动出现
+    if app.get("rating_value") and app.get("rating_count"):
+        software["aggregateRating"] = {
+            "@type": "AggregateRating",
+            "ratingValue": app["rating_value"],
+            "ratingCount": app["rating_count"],
+        }
+    crumbs = {
+        "@context": "https://schema.org",
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+            {"@type": "ListItem", "position": 1, "name": SITE["brand"],
+             "item": SITE["base_url"] + lang_url(lang, "")},
+            {"@type": "ListItem", "position": 2, "name": app["name"],
+             "item": canonical},
+        ],
+    }
+    return "\n" + jsonld(software) + "\n" + jsonld(crumbs)
 
 
 def header_nav(lang, s, page):
@@ -236,7 +295,16 @@ def render_home(lang, s):
     else:
         hero_title = f'<span class="grad">{esc(t(s, "hero.title"))}</span>'
 
-    html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"), page, canonical)
+    org = jsonld({
+        "@context": "https://schema.org",
+        "@type": "Organization",
+        "name": SITE["brand"],
+        "url": SITE["base_url"],
+        "email": SITE["contact_email"],
+        "description": t(s, "meta.home_desc"),
+    })
+    html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"),
+                page, canonical, "\n" + org)
     html += "<body>\n" + header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
@@ -297,7 +365,11 @@ def render_app(lang, s, app):
     disclaimer = f'<p class="disclaimer">{esc(a["disclaimer"])}</p>' if a["disclaimer"] else ""
     features_heading = t(s, "common.features").replace("{app}", app["name"])
 
-    html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"], page, canonical)
+    extra = app_structured_data(lang, s, app, canonical)
+    if app.get("store_id"):
+        extra += (f'\n<meta name="apple-itunes-app" '
+                  f'content="app-id={app["store_id"]}">')
+    html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"], page, canonical, extra)
     html += "<body>\n" + header_nav(lang, s, page)
     html += f"""<section class="app-hero" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
   <div class="wrap app-hero-inner">
@@ -305,6 +377,7 @@ def render_app(lang, s, app):
       <img class="app-icon-lg" src="/assets/img/icon-{slug}.png" alt="" width="88" height="88">
       <h1>{app['name']}</h1>
       <p class="lede">{esc(a['subtitle'])}</p>
+      {badge_row(app, s)}
       <div class="cta-row">
         {store_button(app, s)}
         <a class="btn" href="/{slug}/privacy.html">{t(s, 'common.privacy_policy')}</a>
@@ -386,8 +459,27 @@ def render_sitemap():
         '<?xml version="1.0" encoding="UTF-8"?>\n'
         '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
         f"{body}\n</urlset>\n")
+    # AI 爬虫放行（GEO：想被 AI 搜索引用就得让爬）+ llms.txt 指引
     (ROOT / "robots.txt").write_text(
-        f"User-agent: *\nAllow: /\nSitemap: {SITE['base_url']}/sitemap.xml\n")
+        f"User-agent: *\nAllow: /\nSitemap: {SITE['base_url']}/sitemap.xml\n"
+        f"# AI crawlers welcome — see {SITE['base_url']}/llms.txt\n")
+
+
+def render_llms():
+    """站根 llms.txt：手选核心页索引（app-site GEO 模板，英文单份）。"""
+    en = json.loads((SRC / "i18n" / "en.json").read_text())
+    lines = [f"# {SITE['brand']}",
+             "> Independent iOS apps & games. No ads, no tracking, "
+             "honest one-time pricing, all data stays on-device.",
+             "", "## Apps"]
+    for app in APPS:
+        tag = en["apps"][app["slug"]]["tagline"]
+        lines.append(f"- [{app['name']}]({SITE['base_url']}/{app['slug']}/): {tag}")
+    lines += ["", "## Support"]
+    for app in APPS:
+        lines.append(f"- [{app['name']} support & FAQ]"
+                     f"({SITE['base_url']}/{app['slug']}/support.html)")
+    (ROOT / "llms.txt").write_text("\n".join(lines) + "\n")
 
 
 def main():
@@ -403,6 +495,7 @@ def main():
             render_app(lang, s, app)
             count += 1
     render_sitemap()
+    render_llms()
     print(f"Generated {count} pages for {len(LANGS)} languages.")
 
 
