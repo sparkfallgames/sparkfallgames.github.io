@@ -191,5 +191,12 @@
   "about": {
     "title": "Om udvikleren",
     "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 31 sprog og bygget om én regel: dine data bliver på din enhed."
+  },
+  "badges": {
+    "onetime": "Engangskøb",
+    "nosub": "Intet abonnement",
+    "noads": "Ingen reklamer",
+    "notracking": "Ingen sporing",
+    "honest": "Ærlige priser"
   }
 }

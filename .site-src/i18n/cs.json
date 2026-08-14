@@ -191,5 +191,12 @@
   "about": {
     "title": "O vývojáři",
     "body": "Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 31 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení."
+  },
+  "badges": {
+    "onetime": "Jednorázový nákup",
+    "nosub": "Bez předplatného",
+    "noads": "Bez reklam",
+    "notracking": "Bez sledování",
+    "honest": "Poctivé ceny"
   }
 }

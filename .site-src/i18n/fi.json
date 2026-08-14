@@ -191,5 +191,12 @@
   "about": {
     "title": "Tietoa kehittäjästä",
     "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 31 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi."
+  },
+  "badges": {
+    "onetime": "Kertaosto",
+    "nosub": "Ei tilausta",
+    "noads": "Ei mainoksia",
+    "notracking": "Ei seurantaa",
+    "honest": "Rehellinen hinnoittelu"
   }
 }

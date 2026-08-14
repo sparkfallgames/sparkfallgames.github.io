@@ -191,5 +191,12 @@
   "about": {
     "title": "Geliştirici hakkında",
     "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 31 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır."
+  },
+  "badges": {
+    "onetime": "Tek seferlik satın alma",
+    "nosub": "Abonelik yok",
+    "noads": "Reklam yok",
+    "notracking": "Takip yok",
+    "honest": "Dürüst fiyatlar"
   }
 }

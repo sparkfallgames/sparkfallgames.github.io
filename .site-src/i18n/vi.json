@@ -191,5 +191,12 @@
   "about": {
     "title": "Về nhà phát triển",
     "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 31 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn."
+  },
+  "badges": {
+    "onetime": "Mua một lần",
+    "nosub": "Không thuê bao",
+    "noads": "Không quảng cáo",
+    "notracking": "Không theo dõi",
+    "honest": "Giá minh bạch"
   }
 }

@@ -191,5 +191,12 @@
   "about": {
     "title": "Tentang pengembang",
     "body": "Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 31 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda."
+  },
+  "badges": {
+    "onetime": "Beli sekali",
+    "nosub": "Tanpa langganan",
+    "noads": "Tanpa iklan",
+    "notracking": "Tanpa pelacakan",
+    "honest": "Harga jujur"
   }
 }

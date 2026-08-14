@@ -19,7 +19,9 @@
       "category_key": "games",
       "letter": "N",
       "released": false,
-      "store_url": ""
+      "store_url": "",
+      "pricing": "buyout",
+      "store_id": ""
     },
     {
       "slug": "gloomfall",
@@ -34,7 +36,9 @@
       "category_key": "games",
       "letter": "G",
       "released": false,
-      "store_url": ""
+      "store_url": "",
+      "pricing": "buyout",
+      "store_id": ""
     },
     {
       "slug": "quickcost",
@@ -49,7 +53,9 @@
       "category_key": "finance",
       "letter": "Q",
       "released": false,
-      "store_url": ""
+      "store_url": "",
+      "pricing": "hybrid",
+      "store_id": ""
     },
     {
       "slug": "decibelmeter",
@@ -64,7 +70,9 @@
       "category_key": "utilities",
       "letter": "D",
       "released": false,
-      "store_url": ""
+      "store_url": "",
+      "pricing": "buyout",
+      "store_id": ""
     },
     {
       "slug": "fastzen",
@@ -79,7 +87,9 @@
       "category_key": "health",
       "letter": "F",
       "released": false,
-      "store_url": ""
+      "store_url": "",
+      "pricing": "hybrid",
+      "store_id": ""
     }
   ],
   "languages": [

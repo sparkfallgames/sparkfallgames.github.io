@@ -1,3 +1,4 @@
 User-agent: *
 Allow: /
 Sitemap: https://sparkfallgames.com/sitemap.xml
+# AI crawlers welcome — see https://sparkfallgames.com/llms.txt

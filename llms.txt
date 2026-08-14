@@ -1,0 +1,16 @@
+# Sparkfall Games
+> Independent iOS apps & games. No ads, no tracking, honest one-time pricing, all data stays on-device.
+
+## Apps
+- [NumZen](https://sparkfallgames.com/numzen/): Three daily puzzles. The whole world plays.
+- [Gloomfall](https://sparkfallgames.com/gloomfall/): Every enemy move is telegraphed.
+- [QuickCost](https://sparkfallgames.com/quickcost/): Log an expense in 3 seconds.
+- [Decibel Meter](https://sparkfallgames.com/decibelmeter/): Know your noise. Protect your hearing.
+- [FastZen](https://sparkfallgames.com/fastzen/): The honest fasting timer.
+
+## Support
+- [NumZen support & FAQ](https://sparkfallgames.com/numzen/support.html)
+- [Gloomfall support & FAQ](https://sparkfallgames.com/gloomfall/support.html)
+- [QuickCost support & FAQ](https://sparkfallgames.com/quickcost/support.html)
+- [Decibel Meter support & FAQ](https://sparkfallgames.com/decibelmeter/support.html)
+- [FastZen support & FAQ](https://sparkfallgames.com/fastzen/support.html)
