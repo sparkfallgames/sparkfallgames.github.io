@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Static site generator for the apps site (sparkfallgames.github.io).
+"""Static site generator for the apps site (sparkfallgames.com, hosted on GitHub Pages).
 
 Reads apps.json + i18n/<lang>.json, emits:
   /index.html, /<app>/index.html            (English, site root)
