@@ -102,15 +102,15 @@
       "tagline": "Le minuteur de jeûne honnête.",
       "card_desc": "Un minuteur de jeûne intermittent sans pièges d'abonnement.",
       "subtitle": "Un minuteur de jeûne intermittent honnête. La version gratuite est complète, pour toujours.",
-      "meta_desc": "FastZen est un minuteur de jeûne intermittent honnête. Fonctions de base gratuites pour toujours, achat unique de Pro, entièrement privé.",
+      "meta_desc": "FastZen est un tracker de jeûne intermittent honnête. L’essentiel gratuit pour toujours ; Pro mensuel, annuel ou à vie. Totalement privé. Sans pub.",
       "features": [
         {
           "t": "Gratuit pour toujours",
           "d": "Tous les programmes, le minuteur, l'historique, les séries et les notifications sont gratuits."
         },
         {
-          "t": "Pro en achat unique",
-          "d": "Objectifs personnalisés et statistiques pour un seul paiement. Sans abonnement."
+          "t": "Pro flexible",
+          "d": "Objectifs et stats via abonnement mensuel/annuel (essai 7 jours si éligible) ou à vie. Le gratuit reste complet. Sans pub."
         },
         {
           "t": "Chronologie des phases",
