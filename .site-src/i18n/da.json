@@ -26,7 +26,7 @@
     "honest_title": "Ærlige priser",
     "honest_desc": "Gratis funktioner forbliver gratis for altid. Ingen abonnementsfælder, ingen falske nedtællinger.",
     "global_title": "Lavet til alle",
-    "global_desc": "Hver app er fuldt lokaliseret til 31 sprog, med mørk tilstand og tilgængelighed."
+    "global_desc": "Hver app er fuldt lokaliseret til 34 sprog, med mørk tilstand og tilgængelighed."
   },
   "common": {
     "coming_soon": "Kommer snart i App Store",
@@ -43,7 +43,9 @@
     "finance": "Økonomi",
     "utilities": "Værktøjer",
     "health": "Sundhed og fitness",
-    "games": "Spil"
+    "games": "Spil",
+    "reference": "Opslagsværk",
+    "travel": "Rejser"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Daglige, månedlige og kategoriopdelte oversigter viser, hvor pengene går hen."
         },
         {
-          "t": "31 sprog",
+          "t": "34 sprog",
           "d": "Fuldt lokaliseret verden over, med mørk tilstand og stor tekst."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall virker helt offline og indsamler intet.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Se enhver skærm på dit sprog.",
+      "card_desc": "Liveoversættelse af skærmen til spil, apps og billeder — helt på enheden.",
+      "subtitle": "Et svævende vindue liveoversætter spil, apps og billeder på din skærm — udelukkende på din enhed.",
+      "meta_desc": "OverLens liveoversætter teksten på din skærm i et svævende vindue, plus gratis ubegrænset oversættelse af skærmbilleder. 100 % på enheden, ingen upload.",
+      "features": [
+        {
+          "t": "Svævende livevindue",
+          "d": "Start én gang, skift til et hvilket som helst spil eller en app — oversættelsen følger med."
+        },
+        {
+          "t": "Oversættelse af skærmbilleder",
+          "d": "Vælg eller indsæt et billede — oversættelsen vises direkte ovenpå. Gratis og ubegrænset."
+        },
+        {
+          "t": "Helt offline",
+          "d": "Sprogpakker downloades én gang. Din skærm forlader aldrig enheden."
+        },
+        {
+          "t": "Betal én gang",
+          "d": "Intet abonnement, ingen mønter. Gratis livetid hver dag og én ærlig oplåsning."
+        }
+      ],
+      "privacy_blurb": "Tekstgenkendelse og oversættelse kører udelukkende på din enhed. Intet optages, gemmes eller uploades.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Flet helte sammen. Hold linjen.",
+      "card_desc": "En taktisk merge-forsvarsduel fra De Tre Kongeriger og videre.",
+      "subtitle": "Flet helte, smed udstyr og udmanøvrér en spejlet rival bølge for bølge — fra De Tre Kongeriger over det gamle Egypten til det krigsramte Fusang.",
+      "meta_desc": "Mergehold er en taktisk merge-forsvarsduel til iPhone: byg dit bræt, flet helte og forsvar din borg mod en spejlet rival. Tre historiske epoker. Ingen lootbokse.",
+      "features": [
+        {
+          "t": "Spejlede dueller",
+          "d": "Du og din rival møder de samme bølger på det samme kort — ren strategi, intet held."
+        },
+        {
+          "t": "Tre spilbare epoker",
+          "d": "De Tre Kongeriger, det gamle Egypten og Fusang — hver med egne helte, udstyr og talenter."
+        },
+        {
+          "t": "Flet og kommandér",
+          "d": "Flet kort til stærkere helte, vælg talenter og udløs fraktionssynergier."
+        },
+        {
+          "t": "Ingen pay-to-win",
+          "d": "Kun kosmetik og epokepas — styrke er aldrig til salg, og der er ingen lootbokse."
+        }
+      ],
+      "privacy_blurb": "Kampe kører på din enhed og Game Center. Vi driver ingen servere og indsamler intet.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Pak rigtigt, hver rejse.",
+      "card_desc": "Smarte pakkelister ud fra din rejse, vejret og dine aktiviteter.",
+      "subtitle": "PackNest bygger din pakkeliste ud fra selve rejsen — dage, klima og aktiviteter — så intet bliver glemt.",
+      "meta_desc": "PackNest genererer smarte pakkelister ud fra destination, datoer og aktiviteter. Flere kufferter og rejsende, PDF-eksport, helt offline.",
+      "features": [
+        {
+          "t": "Lister, der bygger sig selv",
+          "d": "Angiv dage, klima og aktiviteter — og få en komplet liste på få sekunder."
+        },
+        {
+          "t": "Kufferter og personer",
+          "d": "Fordel tingene mellem kufferter og familiemedlemmer, og sæt flueben sammen."
+        },
+        {
+          "t": "Altid-pakket-favoritter",
+          "d": "Hav et genbrugeligt sæt af essentials, der ryger med i hver ny rejse."
+        },
+        {
+          "t": "Virker offline",
+          "d": "24 indbyggede regionsguider. Dine rejser bliver på din enhed."
+        }
+      ],
+      "privacy_blurb": "Dine rejser og lister bliver på din enhed. Det valgfrie vejr bruger Apples WeatherKit.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Spil",
-    "games_sub": "Originale gåder, der respekterer dig: ingen reklamer mellem baner, ingen energi-timere, ingen sjov bag betalingsmure.",
+    "games_sub": "Originale spil, der respekterer dig — ingen reklamer mellem baner, ingen energi-timere, ingen sjov bag betalingsmure.",
     "tools_title": "Værktøjer",
     "tools_sub": "Små, skarpe værktøjer, der ikke står i vejen for dig — og ikke rører dine data."
   },
   "teaser": {
     "badge": "Under udvikling",
-    "title": "Project 006",
-    "desc": "Noget nyt gløder i mørket. Ingen spoilers endnu."
+    "title": "Project 009",
+    "desc": "Noget varmer op bag scenen. Tæppet går snart op."
   },
   "about": {
     "title": "Om udvikleren",
-    "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 31 sprog og bygget om én regel: dine data bliver på din enhed."
+    "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 34 sprog og bygget om én regel: dine data bliver på din enhed."
   },
   "badges": {
     "onetime": "Engangskøb",

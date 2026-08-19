@@ -41,6 +41,23 @@
       "store_id": ""
     },
     {
+      "slug": "mergehold",
+      "name": "Mergehold",
+      "kind": "game",
+      "accent": "#D9A441",
+      "accent_dark": "#171208",
+      "gradient": [
+        "#D9A441",
+        "#B0432E"
+      ],
+      "category_key": "games",
+      "letter": "M",
+      "released": false,
+      "store_url": "",
+      "pricing": "hybrid",
+      "store_id": ""
+    },
+    {
       "slug": "quickcost",
       "name": "QuickCost",
       "kind": "tool",
@@ -89,6 +106,40 @@
       "released": false,
       "store_url": "",
       "pricing": "hybrid",
+      "store_id": ""
+    },
+    {
+      "slug": "overlens",
+      "name": "OverLens",
+      "kind": "tool",
+      "accent": "#6F5BF5",
+      "accent_dark": "#141129",
+      "gradient": [
+        "#6F5BF5",
+        "#4B36C9"
+      ],
+      "category_key": "reference",
+      "letter": "O",
+      "released": false,
+      "store_url": "",
+      "pricing": "buyout",
+      "store_id": ""
+    },
+    {
+      "slug": "packnest",
+      "name": "PackNest",
+      "kind": "tool",
+      "accent": "#2FA877",
+      "accent_dark": "#0E1F18",
+      "gradient": [
+        "#2FA877",
+        "#1E7A55"
+      ],
+      "category_key": "travel",
+      "letter": "P",
+      "released": false,
+      "store_url": "",
+      "pricing": "buyout",
       "store_id": ""
     }
   ],

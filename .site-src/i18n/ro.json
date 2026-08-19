@@ -26,7 +26,7 @@
     "honest_title": "Prețuri oneste",
     "honest_desc": "Funcțiile gratuite rămân gratuite pentru totdeauna. Fără capcane de abonament, fără numărători inverse false.",
     "global_title": "Făcut pentru toți",
-    "global_desc": "Fiecare aplicație e complet localizată în 31 de limbi, cu mod întunecat și accesibilitate."
+    "global_desc": "Fiecare aplicație e complet localizată în 34 de limbi, cu mod întunecat și accesibilitate."
   },
   "common": {
     "coming_soon": "În curând pe App Store",
@@ -43,7 +43,9 @@
     "finance": "Finanțe",
     "utilities": "Utilitare",
     "health": "Sănătate și fitness",
-    "games": "Jocuri"
+    "games": "Jocuri",
+    "reference": "Referință",
+    "travel": "Călătorii"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Rezumate zilnice, lunare și pe categorii arată unde se duc banii."
         },
         {
-          "t": "31 de limbi",
+          "t": "34 de limbi",
           "d": "Localizare completă în toată lumea, cu mod întunecat și text mare."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall funcționează complet offline și nu colectează nimic.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Vezi orice ecran în limba ta.",
+      "card_desc": "Traducere live a ecranului pentru jocuri, aplicații și imagini — integral pe dispozitiv.",
+      "subtitle": "O fereastră plutitoare traduce în timp real jocurile, aplicațiile și imaginile de pe ecranul tău — în întregime pe dispozitivul tău.",
+      "meta_desc": "OverLens traduce în timp real textul de pe ecran într-o fereastră plutitoare, plus traducere gratuită și nelimitată a capturilor de ecran. 100% pe dispozitiv, fără încărcări.",
+      "features": [
+        {
+          "t": "Fereastră plutitoare în timp real",
+          "d": "Pornești o dată, treci la orice joc sau aplicație — traducerea te urmează."
+        },
+        {
+          "t": "Traducerea capturilor de ecran",
+          "d": "Alege sau lipește o imagine — traducerea apare direct deasupra. Gratuit, nelimitat."
+        },
+        {
+          "t": "Complet offline",
+          "d": "Pachetele de limbă se descarcă o singură dată. Ecranul tău nu părăsește niciodată dispozitivul."
+        },
+        {
+          "t": "Plătești o dată",
+          "d": "Fără abonament, fără monede. Timp de traducere live gratuit în fiecare zi și o singură deblocare onestă."
+        }
+      ],
+      "privacy_blurb": "Recunoașterea textului și traducerea rulează în întregime pe dispozitivul tău. Nimic nu este înregistrat, stocat sau încărcat.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Unește eroii. Ține linia.",
+      "card_desc": "Un duel tactic de apărare cu fuziuni, de la Cele Trei Regate mai departe.",
+      "subtitle": "Unește eroi, făurește echipament și depășește un rival în oglindă val după val — de la Cele Trei Regate la Egiptul antic și Fusangul aflat în război.",
+      "meta_desc": "Mergehold este un duel tactic de apărare cu fuziuni pentru iPhone: construiește tabla, unește eroii și apără castelul de un rival în oglindă. Trei ere istorice. Fără loot box-uri.",
+      "features": [
+        {
+          "t": "Dueluri în oglindă",
+          "d": "Tu și rivalul înfruntați aceleași valuri pe aceeași hartă — strategie pură, fără noroc."
+        },
+        {
+          "t": "Trei ere jucabile",
+          "d": "Cele Trei Regate, Egiptul antic și Fusang — fiecare cu eroii, echipamentul și talentele proprii."
+        },
+        {
+          "t": "Unește și comandă",
+          "d": "Unește cărțile în eroi mai puternici, alege talente și declanșează sinergii de facțiune."
+        },
+        {
+          "t": "Fără pay-to-win",
+          "d": "Doar cosmetice și permise de eră — puterea nu e niciodată de vânzare și nu există loot box-uri."
+        }
+      ],
+      "privacy_blurb": "Meciurile rulează pe dispozitivul tău și în Game Center. Nu operăm servere și nu colectăm nimic.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Împachetează corect, la fiecare călătorie.",
+      "card_desc": "Liste de bagaje inteligente pe baza călătoriei, vremii și activităților.",
+      "subtitle": "PackNest îți construiește lista de bagaje din călătoria însăși — zile, climă și activități — ca nimic să nu rămână acasă.",
+      "meta_desc": "PackNest generează liste de bagaje inteligente pe baza destinației, datelor și activităților. Mai multe bagaje și călători, export PDF, complet offline.",
+      "features": [
+        {
+          "t": "Liste care se construiesc singure",
+          "d": "Spune-i zilele, clima și activitățile — primești o listă completă în câteva secunde."
+        },
+        {
+          "t": "Bagaje și persoane",
+          "d": "Împarte lucrurile între valize și membrii familiei și bifați împreună."
+        },
+        {
+          "t": "Esențiale mereu pregătite",
+          "d": "Păstrează un kit reutilizabil de esențiale care intră în fiecare călătorie nouă."
+        },
+        {
+          "t": "Funcționează offline",
+          "d": "24 de ghiduri regionale integrate. Călătoriile tale rămân pe dispozitivul tău."
+        }
+      ],
+      "privacy_blurb": "Călătoriile și listele tale rămân pe dispozitivul tău. Vremea opțională folosește WeatherKit de la Apple.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Jocuri",
-    "games_sub": "Puzzle-uri originale care te respectă: fără reclame între niveluri, fără cronometre de energie, fără distracție blocată în spatele unui paywall.",
+    "games_sub": "Jocuri originale care te respectă — fără reclame între niveluri, fără cronometre de energie, fără distracție blocată după paywall.",
     "tools_title": "Instrumente",
     "tools_sub": "Utilitare mici și precise care nu îți stau în cale — și nu se ating de datele tale."
   },
   "teaser": {
     "badge": "În dezvoltare",
-    "title": "Project 006",
-    "desc": "Ceva nou strălucește în întuneric. Fără spoilere deocamdată."
+    "title": "Project 009",
+    "desc": "Ceva se încălzește în culise. Cortina se ridică în curând."
   },
   "about": {
     "title": "Despre dezvoltator",
-    "body": "Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 31 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău."
+    "body": "Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 34 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău."
   },
   "badges": {
     "onetime": "Plată unică",

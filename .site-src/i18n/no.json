@@ -26,7 +26,7 @@
     "honest_title": "Ærlige priser",
     "honest_desc": "Gratisfunksjoner forblir gratis for alltid. Ingen abonnementsfeller, ingen falske nedtellinger.",
     "global_title": "Laget for alle",
-    "global_desc": "Hver app er fullt lokalisert til 31 språk, med mørk modus og tilgjengelighet."
+    "global_desc": "Hver app er fullt lokalisert til 34 språk, med mørk modus og tilgjengelighet."
   },
   "common": {
     "coming_soon": "Kommer snart til App Store",
@@ -43,7 +43,9 @@
     "finance": "Økonomi",
     "utilities": "Verktøy",
     "health": "Helse og trening",
-    "games": "Spill"
+    "games": "Spill",
+    "reference": "Oppslagsverk",
+    "travel": "Reise"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Oversikter per dag, måned og kategori viser hvor pengene går."
         },
         {
-          "t": "31 språk",
+          "t": "34 språk",
           "d": "Fullt lokalisert verden over, med mørk modus og stor tekst."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall fungerer helt offline og samler ikke inn noe.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Se enhver skjerm på ditt språk.",
+      "card_desc": "Direkte skjermoversettelse for spill, apper og bilder — helt på enheten.",
+      "subtitle": "Et svevende vindu direkteoversetter spill, apper og bilder på skjermen din — alt på enheten din.",
+      "meta_desc": "OverLens direkteoversetter teksten på skjermen i et svevende vindu, i tillegg til gratis ubegrenset oversettelse av skjermbilder. 100 % på enheten, ingen opplasting.",
+      "features": [
+        {
+          "t": "Svevende direktevindu",
+          "d": "Start én gang, bytt til et hvilket som helst spill eller en app — oversettelsen følger deg."
+        },
+        {
+          "t": "Oversettelse av skjermbilder",
+          "d": "Velg eller lim inn et bilde — oversettelsen vises rett oppå. Gratis og ubegrenset."
+        },
+        {
+          "t": "Helt offline",
+          "d": "Språkpakker lastes ned én gang. Skjermen din forlater aldri enheten."
+        },
+        {
+          "t": "Betal én gang",
+          "d": "Ingen abonnement, ingen mynter. Gratis direktetid hver dag og én ærlig opplåsing."
+        }
+      ],
+      "privacy_blurb": "Tekstgjenkjenning og oversettelse kjører helt og holdent på enheten din. Ingenting tas opp, lagres eller lastes opp.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Slå sammen helter. Hold linjen.",
+      "card_desc": "En taktisk merge-forsvarsduell fra De tre kongedømmene og videre.",
+      "subtitle": "Slå sammen helter, smi utstyr og utmanøvrer en speilet rival bølge for bølge — fra De tre kongedømmene via det gamle Egypt til det krigsherjede Fusang.",
+      "meta_desc": "Mergehold er en taktisk merge-forsvarsduell for iPhone: bygg brettet, slå sammen helter og forsvar borgen mot en speilet rival. Tre historiske epoker. Ingen lootbokser.",
+      "features": [
+        {
+          "t": "Speilede dueller",
+          "d": "Du og rivalen møter de samme bølgene på det samme kartet — ren strategi, ingen flaks."
+        },
+        {
+          "t": "Tre spillbare epoker",
+          "d": "De tre kongedømmene, det gamle Egypt og Fusang — hver med egne helter, utstyr og talenter."
+        },
+        {
+          "t": "Slå sammen og kommander",
+          "d": "Slå sammen kort til sterkere helter, velg talenter og utløs fraksjonssynergier."
+        },
+        {
+          "t": "Ingen pay-to-win",
+          "d": "Kun kosmetikk og epokepass — styrke er aldri til salgs, og det finnes ingen lootbokser."
+        }
+      ],
+      "privacy_blurb": "Kamper kjøres på enheten din og Game Center. Vi drifter ingen servere og samler ikke inn noe.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Pakk riktig, hver reise.",
+      "card_desc": "Smarte pakkelister basert på reisen, været og aktivitetene dine.",
+      "subtitle": "PackNest bygger pakkelisten ut fra selve reisen — dager, klima og aktiviteter — så ingenting blir glemt.",
+      "meta_desc": "PackNest lager smarte pakkelister ut fra destinasjon, datoer og aktiviteter. Flere kofferter og reisende, PDF-eksport, helt offline.",
+      "features": [
+        {
+          "t": "Lister som lager seg selv",
+          "d": "Oppgi dager, klima og aktiviteter — få en komplett liste på sekunder."
+        },
+        {
+          "t": "Kofferter og personer",
+          "d": "Fordel tingene mellom kofferter og familiemedlemmer, og huk av sammen."
+        },
+        {
+          "t": "Alltid-pakket-favoritter",
+          "d": "Ha et gjenbrukbart sett med essensielle ting som blir med i hver nye reise."
+        },
+        {
+          "t": "Fungerer offline",
+          "d": "24 innebygde regionsguider. Reisene dine blir på enheten din."
+        }
+      ],
+      "privacy_blurb": "Reisene og listene dine blir på enheten din. Det valgfrie været bruker Apples WeatherKit.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Spill",
-    "games_sub": "Originale gåter som respekterer deg: ingen reklame mellom nivåer, ingen energitimere, ingen moro bak betalingsmurer.",
+    "games_sub": "Originale spill som respekterer deg — ingen reklame mellom nivåer, ingen energitimere, ingen moro bak betalingsmurer.",
     "tools_title": "Verktøy",
     "tools_sub": "Små, skarpe verktøy som ikke står i veien for deg — og ikke rører dataene dine."
   },
   "teaser": {
     "badge": "Under utvikling",
-    "title": "Project 006",
-    "desc": "Noe nytt gløder i mørket. Ingen spoilere ennå."
+    "title": "Project 009",
+    "desc": "Noe varmer opp bak scenen. Teppet går snart opp."
   },
   "about": {
     "title": "Om utvikleren",
-    "body": "Jeg er soloutvikleren bak Sparkfall Games. Hvert spill og verktøy er 100 % native for iOS, lokalisert til 31 språk og bygget rundt én regel: dataene dine blir på enheten din."
+    "body": "Jeg er soloutvikleren bak Sparkfall Games. Hvert spill og verktøy er 100 % native for iOS, lokalisert til 34 språk og bygget rundt én regel: dataene dine blir på enheten din."
   },
   "badges": {
     "onetime": "Engangskjøp",

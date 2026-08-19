@@ -26,7 +26,7 @@
     "honest_title": "Eerlijke prijzen",
     "honest_desc": "Gratis functies blijven voor altijd gratis. Geen abonnementsvallen, geen neptimers.",
     "global_title": "Voor iedereen gemaakt",
-    "global_desc": "Elke app is volledig gelokaliseerd in 31 talen, met donkere modus en toegankelijkheid."
+    "global_desc": "Elke app is volledig gelokaliseerd in 34 talen, met donkere modus en toegankelijkheid."
   },
   "common": {
     "coming_soon": "Binnenkort in de App Store",
@@ -43,7 +43,9 @@
     "finance": "Financiën",
     "utilities": "Hulpprogramma's",
     "health": "Gezondheid en fitness",
-    "games": "Games"
+    "games": "Games",
+    "reference": "Naslag",
+    "travel": "Reizen"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Overzichten per dag, maand en categorie laten zien waar je geld heen gaat."
         },
         {
-          "t": "31 talen",
+          "t": "34 talen",
           "d": "Wereldwijd volledig gelokaliseerd, met donkere modus en grote tekst."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall werkt volledig offline en verzamelt niets.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Elk scherm in jouw taal.",
+      "card_desc": "Live schermvertaling voor games, apps en afbeeldingen — volledig op het apparaat.",
+      "subtitle": "Een zwevend venster vertaalt games, apps en afbeeldingen op je scherm live — volledig op je apparaat.",
+      "meta_desc": "OverLens vertaalt de tekst op je scherm live in een zwevend venster, plus gratis onbeperkte screenshotvertaling. 100% op het apparaat, geen upload.",
+      "features": [
+        {
+          "t": "Live zwevend venster",
+          "d": "Eén keer starten, wisselen naar elke game of app — de vertaling reist met je mee."
+        },
+        {
+          "t": "Screenshotvertaling",
+          "d": "Kies of plak een afbeelding — de vertaling verschijnt er direct overheen. Gratis en onbeperkt."
+        },
+        {
+          "t": "Volledig offline",
+          "d": "Taalpakketten download je één keer. Je scherm verlaat nooit het apparaat."
+        },
+        {
+          "t": "Betaal één keer",
+          "d": "Geen abonnement, geen munten. Elke dag gratis livetijd, één eerlijke ontgrendeling."
+        }
+      ],
+      "privacy_blurb": "Tekstherkenning en vertaling draaien volledig op je apparaat. Er wordt niets opgenomen, opgeslagen of geüpload.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Voeg helden samen. Houd stand.",
+      "card_desc": "Een tactisch merge-verdedigingsduel, van de Drie Koninkrijken en verder.",
+      "subtitle": "Voeg helden samen, smeed uitrusting en verschalk golf na golf een gespiegelde rivaal — van de Drie Koninkrijken via het oude Egypte tot het strijdende Fusang.",
+      "meta_desc": "Mergehold is een tactisch merge-verdedigingsduel voor iPhone: bouw je bord, voeg helden samen en verdedig je kasteel tegen een gespiegelde rivaal. Drie historische tijdperken. Geen lootboxes.",
+      "features": [
+        {
+          "t": "Gespiegelde duels",
+          "d": "Jij en je rivaal krijgen dezelfde golven op dezelfde kaart — pure planning, geen geluk."
+        },
+        {
+          "t": "Drie speelbare tijdperken",
+          "d": "Drie Koninkrijken, het oude Egypte en Fusang — elk met eigen helden, uitrusting en talenten."
+        },
+        {
+          "t": "Samenvoegen en aanvoeren",
+          "d": "Voeg kaarten samen tot sterkere helden, kies talenten en activeer factie-synergieën."
+        },
+        {
+          "t": "Geen pay-to-win",
+          "d": "Alleen cosmetica en tijdperk-passen — kracht is nooit te koop, en er zijn geen lootboxes."
+        }
+      ],
+      "privacy_blurb": "Wedstrijden draaien op je apparaat en Game Center. We beheren geen servers en verzamelen niets.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Goed gepakt, elke reis weer.",
+      "card_desc": "Slimme paklijsten op basis van je reis, het weer en je activiteiten.",
+      "subtitle": "PackNest bouwt je paklijst op uit de reis zelf — dagen, klimaat en activiteiten — zodat je niets vergeet.",
+      "meta_desc": "PackNest genereert slimme paklijsten op basis van bestemming, data en activiteiten. Meerdere koffers en reizigers, PDF-export, volledig offline.",
+      "features": [
+        {
+          "t": "Lijsten die zichzelf maken",
+          "d": "Geef dagen, klimaat en activiteiten op — en krijg in seconden een complete lijst."
+        },
+        {
+          "t": "Koffers en mensen",
+          "d": "Verdeel spullen over koffers en gezinsleden, en vink samen af."
+        },
+        {
+          "t": "Altijd-mee favorieten",
+          "d": "Houd een herbruikbare kit met essentials bij die in elke nieuwe reis meegaat."
+        },
+        {
+          "t": "Werkt offline",
+          "d": "24 regiogidsen ingebouwd. Je reizen blijven op je apparaat."
+        }
+      ],
+      "privacy_blurb": "Je reizen en lijsten blijven op je apparaat. Het optionele weer gebruikt Apples WeatherKit.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Games",
-    "games_sub": "Originele puzzels die jou respecteren: geen advertenties tussen levels, geen energietimers, geen plezier achter een betaalmuur.",
+    "games_sub": "Originele games die je respecteren — geen advertenties tussen levels, geen energie-timers, geen plezier achter een betaalmuur.",
     "tools_title": "Tools",
     "tools_sub": "Kleine, scherpe hulpprogramma's die je niet in de weg zitten — en van je data afblijven."
   },
   "teaser": {
     "badge": "In ontwikkeling",
-    "title": "Project 006",
-    "desc": "Iets nieuws gloeit in het donker. Nog geen spoilers."
+    "title": "Project 009",
+    "desc": "Achter de schermen wordt al warmgedraaid. Het doek gaat binnenkort op."
   },
   "about": {
     "title": "Over de ontwikkelaar",
-    "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 31 talen en gebouwd rond één regel: je gegevens blijven op je apparaat."
+    "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 34 talen en gebouwd rond één regel: je gegevens blijven op je apparaat."
   },
   "badges": {
     "onetime": "Eenmalige aankoop",

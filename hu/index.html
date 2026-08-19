@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sparkfall Games — Indie játékok és őszinte iOS-alkalmazások</title>
 <meta name="description" content="A Sparkfall Games egyszemélyes indie stúdió, amely játékos játékokat és őszinte, privát iOS-eszközöket készít. Nincs fiók, nincs szerver, nincs követés.">
+<meta name="theme-color" content="#0d0b09">
 <link rel="canonical" href="https://sparkfallgames.com/hu/">
 <link rel="alternate" hreflang="en" href="https://sparkfallgames.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://sparkfallgames.com/zh-hans/">
@@ -42,10 +43,10 @@
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
-<body>
+<body class="zone-dark">
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/hu/">Sparkfall Games</a>
+    <a class="brand" href="/hu/"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</a>
     <nav>
       <a href="/hu/#games">Játékok</a>
       <a href="/hu/#tools">Eszközök</a>
@@ -57,8 +58,8 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-grid" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="hero-vign" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <span class="hero-kicker">Egyszemélyes játékstúdió</span>
     <h1>Játékos játékok. Őszinte <span class="grad">eszközök.</span></h1>
@@ -69,90 +70,126 @@
     </div>
   </div>
 </section>
-<main class="wrap">
+<div class="zone-games">
   <section class="sec" id="games">
-    <div class="sec-head reveal">
-      <h2><span class="grad">Játékok</span></h2>
-      <p>Eredeti fejtörők, amelyek tisztelnek téged: nincs reklám a szintek között, nincs energiaidőzítő, nincs fizetőfal mögé zárt szórakozás.</p>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="grad">Játékok</span></h2>
+        <p>Eredeti játékok, amelyek tisztelnek téged — nincs reklám a szintek között, nincs energiaidőzítő, nincs fizetőfal mögé zárt szórakozás.</p>
+      </div>
+      <div class="game-grid">
+      <a class="game-card reveal" href="/hu/numzen/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+        <div class="game-copy">
+          <span class="badge">Játékok</span>
+          <h3>NumZen</h3>
+          <p class="game-tagline">Naponta három fejtörő. Az egész világ játszik.</p>
+          <p class="game-desc">Napi fejszámolós fejtörők tanító tippekkel.</p>
+          <span class="card-more">Tudj meg többet →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-numzen.webp" alt="NumZen" loading="lazy"></div>
+      </a>
+      <a class="game-card reveal" href="/hu/gloomfall/" style="--aa:#E8853D;--ab:#B85A1E;">
+        <div class="game-copy">
+          <span class="badge">Játékok</span>
+          <h3>Gloomfall</h3>
+          <p class="game-tagline">Az ellenség minden lépése előre be van jelentve.</p>
+          <p class="game-desc">Egykezes irányításra tervezett sötét fantasy taktikai RPG.</p>
+          <span class="card-more">Tudj meg többet →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-gloomfall.webp" alt="Gloomfall" loading="lazy"></div>
+      </a>
+      <a class="game-card reveal" href="/hu/mergehold/" style="--aa:#D9A441;--ab:#B0432E;">
+        <div class="game-copy">
+          <span class="badge">Játékok</span>
+          <h3>Mergehold</h3>
+          <p class="game-tagline">Olvassz össze hősöket. Tartsd a vonalat.</p>
+          <p class="game-desc">Taktikai merge-védekező párbaj a Három Királyságtól tovább.</p>
+          <span class="card-more">Tudj meg többet →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-mergehold.webp" alt="Mergehold" loading="lazy"></div>
+      </a>
+      <div class="tease-card reveal">
+        <span class="badge" style="--aa:#e0a84e;">Fejlesztés alatt</span>
+        <h3>Project 009</h3>
+        <p>A színfalak mögött már zajlik a bemelegítés. Hamarosan felmegy a függöny.</p>
+        <span class="tease-glyph" aria-hidden="true">?</span>
+      </div>
+      </div>
     </div>
-    <div class="game-grid">
-    <a class="game-card reveal" href="/hu/numzen/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="game-copy">
-        <span class="badge">Játékok</span>
-        <h3>NumZen</h3>
-        <p class="game-tagline">Naponta három fejtörő. Az egész világ játszik.</p>
-        <p class="game-desc">Napi fejszámolós fejtörők tanító tippekkel.</p>
+  </section>
+</div>
+<div class="zone-break" aria-hidden="true"><svg class="spark-divider" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e0a84e" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg></div>
+<div class="zone-light">
+  <main class="wrap">
+    <section class="sec" id="tools" style="padding-top:56px;">
+      <div class="sec-head reveal">
+        <h2>Eszközök</h2>
+        <p>Kicsi, éles segédeszközök, amelyek nem állnak az utadba — és nem nyúlnak az adataidhoz.</p>
+      </div>
+      <div class="tool-grid">
+      <a class="tool-card reveal" href="/hu/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-quickcost.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">Pénzügyek</span>
+        </div>
+        <h3>QuickCost</h3>
+        <p class="tool-tagline">Rögzíts egy kiadást 3 másodperc alatt.</p>
         <span class="card-more">Tudj meg többet →</span>
-      </div>
-      <div class="game-shot"><img src="/assets/img/shot-numzen.png" alt="NumZen" loading="lazy"></div>
-    </a>
-    <a class="game-card reveal" href="/hu/gloomfall/" style="--aa:#E8853D;--ab:#B85A1E;">
-      <div class="game-copy">
-        <span class="badge">Játékok</span>
-        <h3>Gloomfall</h3>
-        <p class="game-tagline">Az ellenség minden lépése előre be van jelentve.</p>
-        <p class="game-desc">Egykezes irányításra tervezett sötét fantasy taktikai RPG.</p>
+      </a>
+      <a class="tool-card reveal" href="/hu/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-decibelmeter.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">Segédprogramok</span>
+        </div>
+        <h3>Decibel Meter</h3>
+        <p class="tool-tagline">Ismerd a zajt. Védd a hallásod.</p>
         <span class="card-more">Tudj meg többet →</span>
+      </a>
+      <a class="tool-card reveal" href="/hu/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-fastzen.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">Egészség és fitnesz</span>
+        </div>
+        <h3>FastZen</h3>
+        <p class="tool-tagline">Az őszinte böjtidőzítő.</p>
+        <span class="card-more">Tudj meg többet →</span>
+      </a>
+      <a class="tool-card reveal" href="/hu/overlens/" style="--aa:#6F5BF5;--ab:#4B36C9;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-overlens.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">Kézikönyvek</span>
+        </div>
+        <h3>OverLens</h3>
+        <p class="tool-tagline">Bármely képernyő a te nyelveden.</p>
+        <span class="card-more">Tudj meg többet →</span>
+      </a>
+      <a class="tool-card reveal" href="/hu/packnest/" style="--aa:#2FA877;--ab:#1E7A55;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-packnest.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">Utazás</span>
+        </div>
+        <h3>PackNest</h3>
+        <p class="tool-tagline">Csomagolj jól, minden útra.</p>
+        <span class="card-more">Tudj meg többet →</span>
+      </a>
       </div>
-      <div class="game-shot"><img src="/assets/img/shot-gloomfall.png" alt="Gloomfall" loading="lazy"></div>
-    </a>
-    <div class="tease-card reveal">
-      <span class="badge" style="--aa:#8b5cf6;">Fejlesztés alatt</span>
-      <h3>Project 006</h3>
-      <p>Valami új izzik a sötétben. Egyelőre nincs spoiler.</p>
-      <span class="tease-glyph" aria-hidden="true">?</span>
-    </div>
-    </div>
-  </section>
-  <section class="sec" id="tools">
-    <div class="sec-head reveal">
-      <h2>Eszközök</h2>
-      <p>Kicsi, éles segédeszközök, amelyek nem állnak az utadba — és nem nyúlnak az adataidhoz.</p>
-    </div>
-    <div class="tool-grid">
-    <a class="tool-card reveal" href="/hu/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
-        <span class="badge">Pénzügyek</span>
+    </section>
+    <section class="values">
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Adatvédelem alapból</h3><p>Minden az eszközödön tárolódik. Nem üzemeltetünk szervereket, és nem látjuk az adataidat.</p></div>
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>Őszinte árazás</h3><p>Ami ingyenes, örökre ingyenes marad. Nincsenek előfizetési csapdák és hamis visszaszámlálók.</p></div>
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>Mindenkinek készült</h3><p>Minden alkalmazás 34 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel.</p></div>
+    </section>
+    <section id="about">
+      <div class="about reveal">
+        <h2>A fejlesztőről</h2>
+        <p>Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 34 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak.</p>
       </div>
-      <h3>QuickCost</h3>
-      <p class="tool-tagline">Rögzíts egy kiadást 3 másodperc alatt.</p>
-      <span class="card-more">Tudj meg többet →</span>
-    </a>
-    <a class="tool-card reveal" href="/hu/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
-        <span class="badge">Segédprogramok</span>
-      </div>
-      <h3>Decibel Meter</h3>
-      <p class="tool-tagline">Ismerd a zajt. Védd a hallásod.</p>
-      <span class="card-more">Tudj meg többet →</span>
-    </a>
-    <a class="tool-card reveal" href="/hu/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
-        <span class="badge">Egészség és fitnesz</span>
-      </div>
-      <h3>FastZen</h3>
-      <p class="tool-tagline">Az őszinte böjtidőzítő.</p>
-      <span class="card-more">Tudj meg többet →</span>
-    </a>
-    </div>
-  </section>
-</main>
-  <section class="values wrap">
-    <div class="value reveal"><div class="value-ic">🔒</div><h3>Adatvédelem alapból</h3><p>Minden az eszközödön tárolódik. Nem üzemeltetünk szervereket, és nem látjuk az adataidat.</p></div>
-    <div class="value reveal"><div class="value-ic">🤝</div><h3>Őszinte árazás</h3><p>Ami ingyenes, örökre ingyenes marad. Nincsenek előfizetési csapdák és hamis visszaszámlálók.</p></div>
-    <div class="value reveal"><div class="value-ic">🌍</div><h3>Mindenkinek készült</h3><p>Minden alkalmazás 31 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel.</p></div>
-  </section>
-<section class="wrap" id="about">
-  <div class="about reveal">
-    <h2>A fejlesztőről</h2>
-    <p>Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 31 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak.</p>
-  </div>
-</section>
+    </section>
+  </main>
+</div>
 <footer class="foot">
   <div class="wrap">
+    <div class="foot-brand"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</div>
     <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a> · <a href="/hu/legal/">Adatvédelmi irányelvek</a></p>
   </div>
 </footer>

@@ -26,7 +26,7 @@
     "honest_title": "Őszinte árazás",
     "honest_desc": "Ami ingyenes, örökre ingyenes marad. Nincsenek előfizetési csapdák és hamis visszaszámlálók.",
     "global_title": "Mindenkinek készült",
-    "global_desc": "Minden alkalmazás 31 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel."
+    "global_desc": "Minden alkalmazás 34 nyelvre teljesen honosított, sötét móddal és akadálymentesítéssel."
   },
   "common": {
     "coming_soon": "Hamarosan az App Store-ban",
@@ -43,7 +43,9 @@
     "finance": "Pénzügyek",
     "utilities": "Segédprogramok",
     "health": "Egészség és fitnesz",
-    "games": "Játékok"
+    "games": "Játékok",
+    "reference": "Kézikönyvek",
+    "travel": "Utazás"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Napi, havi és kategóriánkénti összesítések mutatják, hová megy a pénzed."
         },
         {
-          "t": "31 nyelv",
+          "t": "34 nyelv",
           "d": "Teljes honosítás világszerte, sötét móddal és nagy betűkkel."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "A Gloomfall teljesen offline működik, és semmit nem gyűjt.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Bármely képernyő a te nyelveden.",
+      "card_desc": "Élő képernyőfordítás játékokhoz, appokhoz és képekhez — teljes egészében az eszközön.",
+      "subtitle": "Egy lebegő ablak élőben fordítja a képernyődön lévő játékokat, appokat és képeket — teljes egészében az eszközödön.",
+      "meta_desc": "Az OverLens lebegő ablakban élőben fordítja a képernyőd szövegét, emellett ingyenes, korlátlan képernyőkép-fordítást kínál. 100% az eszközön, feltöltés nélkül.",
+      "features": [
+        {
+          "t": "Élő lebegő ablak",
+          "d": "Indítsd el egyszer, válts bármelyik játékra vagy appra — a fordítás követ téged."
+        },
+        {
+          "t": "Képernyőkép-fordítás",
+          "d": "Válassz vagy illessz be egy képet — a fordítás közvetlenül a szöveg fölött jelenik meg. Ingyenes, korlátlan."
+        },
+        {
+          "t": "Teljesen offline",
+          "d": "A nyelvi csomagokat csak egyszer kell letölteni. A képernyőd soha nem hagyja el az eszközt."
+        },
+        {
+          "t": "Egyszeri fizetés",
+          "d": "Nincs előfizetés, nincsenek érmék. Minden nap ingyenes élő idő, egyetlen tisztességes feloldás."
+        }
+      ],
+      "privacy_blurb": "A szövegfelismerés és a fordítás teljes egészében az eszközödön fut. Semmit sem rögzítünk, tárolunk vagy töltünk fel.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Olvassz össze hősöket. Tartsd a vonalat.",
+      "card_desc": "Taktikai merge-védekező párbaj a Három Királyságtól tovább.",
+      "subtitle": "Olvassz össze hősöket, kovácsolj felszerelést, és járj túl a tükrözött rivális eszén hullámról hullámra — a Három Királyságtól az ókori Egyiptomon át a háborús Fusangig.",
+      "meta_desc": "A Mergehold taktikai merge-védekező párbaj iPhone-ra: építsd a táblát, olvassz össze hősöket, és védd meg a várat a tükrözött rivális ellen. Három történelmi korszak. Semmi lootbox.",
+      "features": [
+        {
+          "t": "Tükrözött párbajok",
+          "d": "Te és a riválisod ugyanazokkal a hullámokkal néztek szembe ugyanazon a térképen — tiszta stratégia, semmi szerencse."
+        },
+        {
+          "t": "Három játszható korszak",
+          "d": "Három Királyság, ókori Egyiptom és Fusang — mindegyiknek saját hősei, felszerelése és tehetségei."
+        },
+        {
+          "t": "Olvassz és vezényelj",
+          "d": "Olvaszd a lapokat erősebb hősökké, válassz tehetségeket, és indítsd be a frakciószinergiákat."
+        },
+        {
+          "t": "Nincs pay-to-win",
+          "d": "Csak kozmetikum és korszakbérlet — erőt sosem árulunk, és lootbox sincs."
+        }
+      ],
+      "privacy_blurb": "A meccsek az eszközödön és a Game Centerben futnak. Nem üzemeltetünk szervereket, és semmit sem gyűjtünk.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Csomagolj jól, minden útra.",
+      "card_desc": "Okos csomagolólisták az utad, az időjárás és a programjaid alapján.",
+      "subtitle": "A PackNest magából az útból építi fel a csomagolólistát — napok, éghajlat és programok — hogy semmi se maradjon otthon.",
+      "meta_desc": "A PackNest okos csomagolólistákat készít az úti cél, a dátumok és a programok alapján. Több bőrönd és utazó, PDF-exportálás, teljesen offline.",
+      "features": [
+        {
+          "t": "Önmagukat összeállító listák",
+          "d": "Add meg a napokat, az éghajlatot és a programokat — másodpercek alatt teljes listát kapsz."
+        },
+        {
+          "t": "Bőröndök és emberek",
+          "d": "Oszd el a holmikat bőröndök és családtagok között, és pipáljátok ki együtt."
+        },
+        {
+          "t": "Mindig kéznél lévő alapok",
+          "d": "Tarts egy újrahasználható alapcsomagot, amely minden új útba bekerül."
+        },
+        {
+          "t": "Offline is működik",
+          "d": "24 beépített régiókalauz. Az útjaid az eszközödön maradnak."
+        }
+      ],
+      "privacy_blurb": "Útjaid és listáid az eszközödön maradnak. Az opcionális időjárás az Apple WeatherKitjét használja.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Játékok",
-    "games_sub": "Eredeti fejtörők, amelyek tisztelnek téged: nincs reklám a szintek között, nincs energiaidőzítő, nincs fizetőfal mögé zárt szórakozás.",
+    "games_sub": "Eredeti játékok, amelyek tisztelnek téged — nincs reklám a szintek között, nincs energiaidőzítő, nincs fizetőfal mögé zárt szórakozás.",
     "tools_title": "Eszközök",
     "tools_sub": "Kicsi, éles segédeszközök, amelyek nem állnak az utadba — és nem nyúlnak az adataidhoz."
   },
   "teaser": {
     "badge": "Fejlesztés alatt",
-    "title": "Project 006",
-    "desc": "Valami új izzik a sötétben. Egyelőre nincs spoiler."
+    "title": "Project 009",
+    "desc": "A színfalak mögött már zajlik a bemelegítés. Hamarosan felmegy a függöny."
   },
   "about": {
     "title": "A fejlesztőről",
-    "body": "Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 31 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak."
+    "body": "Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 34 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak."
   },
   "badges": {
     "onetime": "Egyszeri vásárlás",

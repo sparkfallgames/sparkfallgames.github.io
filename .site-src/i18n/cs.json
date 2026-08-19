@@ -26,7 +26,7 @@
     "honest_title": "Poctivé ceny",
     "honest_desc": "Bezplatné funkce zůstávají zdarma navždy. Žádné předplatitelské pasti, žádné falešné odpočty.",
     "global_title": "Pro všechny",
-    "global_desc": "Každá aplikace je plně lokalizována do 31 jazyků, s tmavým režimem a zpřístupněním."
+    "global_desc": "Každá aplikace je plně lokalizována do 34 jazyků, s tmavým režimem a zpřístupněním."
   },
   "common": {
     "coming_soon": "Již brzy v App Store",
@@ -43,7 +43,9 @@
     "finance": "Finance",
     "utilities": "Nástroje",
     "health": "Zdraví a fitness",
-    "games": "Hry"
+    "games": "Hry",
+    "reference": "Příručky",
+    "travel": "Cestování"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Denní, měsíční a kategorické přehledy ukazují, kam jdou vaše peníze."
         },
         {
-          "t": "31 jazyků",
+          "t": "34 jazyků",
           "d": "Plná lokalizace po celém světě, s tmavým režimem a velkým písmem."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall funguje zcela offline a nic nesbírá.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Každá obrazovka ve vašem jazyce.",
+      "card_desc": "Živý překlad obrazovky pro hry, aplikace a obrázky — vše přímo v zařízení.",
+      "subtitle": "Plovoucí okno v reálném čase překládá hry, aplikace a obrázky na vaší obrazovce — vše přímo ve vašem zařízení.",
+      "meta_desc": "OverLens překládá text na obrazovce v reálném čase v plovoucím okně a navíc nabízí bezplatný neomezený překlad snímků obrazovky. 100% v zařízení, nic se neodesílá.",
+      "features": [
+        {
+          "t": "Plovoucí okno v reálném čase",
+          "d": "Spusťte jednou, přepněte do libovolné hry nebo aplikace — překlad jde s vámi."
+        },
+        {
+          "t": "Překlad snímků obrazovky",
+          "d": "Vyberte nebo vložte obrázek — překlad se zobrazí přímo přes text. Zdarma a bez omezení."
+        },
+        {
+          "t": "Zcela offline",
+          "d": "Jazykové balíčky se stáhnou jen jednou. Vaše obrazovka nikdy neopustí zařízení."
+        },
+        {
+          "t": "Jedna platba",
+          "d": "Žádné předplatné, žádné mince. Denní čas překladu zdarma a jedno poctivé odemčení."
+        }
+      ],
+      "privacy_blurb": "Rozpoznávání textu i překlad běží zcela ve vašem zařízení. Nic se nenahrává, neukládá ani neodesílá.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Spojuj hrdiny. Drž linii.",
+      "card_desc": "Taktický obranný duel typu merge — od Tří království dál.",
+      "subtitle": "Spojujte hrdiny, kujte výbavu a přechytračte zrcadlového soupeře vlnu za vlnou — od Tří království přes starověký Egypt po válčící Fusang.",
+      "meta_desc": "Mergehold je taktický obranný duel typu merge pro iPhone: postavte pole, spojujte hrdiny a ubraňte hrad před zrcadlovým soupeřem. Tři historické éry. Žádné lootboxy.",
+      "features": [
+        {
+          "t": "Zrcadlové duely",
+          "d": "Vy i soupeř čelíte stejným vlnám na stejné mapě — čistá strategie, žádné štěstí."
+        },
+        {
+          "t": "Tři hratelné éry",
+          "d": "Tři království, starověký Egypt a Fusang — každá s vlastními hrdiny, výbavou a talenty."
+        },
+        {
+          "t": "Spojuj a vel",
+          "d": "Spojujte karty do silnějších hrdinů, vybírejte talenty a spouštějte synergie frakcí."
+        },
+        {
+          "t": "Žádné pay-to-win",
+          "d": "Jen kosmetika a průkazy ér — síla se nikdy neprodává a lootboxy neexistují."
+        }
+      ],
+      "privacy_blurb": "Zápasy běží na vašem zařízení a v Game Center. Neprovozujeme žádné servery a nic nesbíráme.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Sbaleno správně na každou cestu.",
+      "card_desc": "Chytré balicí seznamy podle cesty, počasí a aktivit.",
+      "subtitle": "PackNest sestaví balicí seznam ze samotné cesty — dnů, podnebí a aktivit — aby nic nezůstalo doma.",
+      "meta_desc": "PackNest vytváří chytré balicí seznamy podle destinace, termínů a aktivit. Více zavazadel a cestujících, export do PDF, zcela offline.",
+      "features": [
+        {
+          "t": "Seznamy, které se sestaví samy",
+          "d": "Zadejte dny, podnebí a aktivity — a během vteřin máte kompletní seznam."
+        },
+        {
+          "t": "Zavazadla a lidé",
+          "d": "Rozdělte věci mezi kufry a členy rodiny a odškrtávejte společně."
+        },
+        {
+          "t": "Nezbytnosti stále po ruce",
+          "d": "Udržujte opakovaně použitelnou sadu základních věcí, která se přidá do každé nové cesty."
+        },
+        {
+          "t": "Funguje offline",
+          "d": "24 vestavěných regionálních průvodců. Vaše cesty zůstávají ve vašem zařízení."
+        }
+      ],
+      "privacy_blurb": "Vaše cesty a seznamy zůstávají ve vašem zařízení. Volitelné počasí využívá WeatherKit od Applu.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Hry",
-    "games_sub": "Originální hádanky, které vás respektují: žádné reklamy mezi úrovněmi, žádné časovače energie, žádná zábava za paywallem.",
+    "games_sub": "Originální hry, které si vás váží — žádné reklamy mezi úrovněmi, žádné časovače energie, žádná zábava za paywallem.",
     "tools_title": "Nástroje",
     "tools_sub": "Malé, přesné utility, které vám nepřekážejí — a nesahají na vaše data."
   },
   "teaser": {
     "badge": "Ve vývoji",
-    "title": "Project 006",
-    "desc": "Ve tmě září něco nového. Zatím bez spoilerů."
+    "title": "Project 009",
+    "desc": "V zákulisí se něco rozehřívá. Opona se brzy zvedne."
   },
   "about": {
     "title": "O vývojáři",
-    "body": "Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 31 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení."
+    "body": "Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 34 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení."
   },
   "badges": {
     "onetime": "Jednorázový nákup",

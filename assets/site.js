@@ -34,7 +34,8 @@
     var ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    var COLORS = ["#a78bfa", "#60a5fa", "#22d3ee", "#f472b6"];
+    // Embers drift DOWN — echoes the in-app "sparkfall" launch sequence.
+    var COLORS = ["#ffb469", "#ff9040", "#e0a84e", "#ffd9a8", "#e0664a"];
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = 0, h = 0, parts = [], raf = 0;
 
@@ -43,7 +44,7 @@
       w = r.width; h = r.height;
       canvas.width = w * dpr; canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var n = Math.min(70, Math.max(28, Math.round(w / 16)));
+      var n = Math.min(64, Math.max(26, Math.round(w / 18)));
       parts = [];
       for (var i = 0; i < n; i++) parts.push(spawn(true));
     }
@@ -51,13 +52,14 @@
     function spawn(anywhere) {
       return {
         x: Math.random() * w,
-        y: anywhere ? Math.random() * h : h + 6,
-        vx: (Math.random() - 0.5) * 0.22,
-        vy: -(0.25 + Math.random() * 0.6),
-        r: 0.6 + Math.random() * 1.7,
+        y: anywhere ? Math.random() * h : -6,
+        vx: (Math.random() - 0.5) * 0.16,
+        vy: 0.22 + Math.random() * 0.55,
+        r: 0.6 + Math.random() * 1.6,
         c: COLORS[(Math.random() * COLORS.length) | 0],
-        a: 0.25 + Math.random() * 0.55,
-        tw: Math.random() * Math.PI * 2
+        a: 0.22 + Math.random() * 0.5,
+        tw: Math.random() * Math.PI * 2,
+        sway: 0.2 + Math.random() * 0.5
       };
     }
 
@@ -65,13 +67,15 @@
       ctx.clearRect(0, 0, w, h);
       for (var i = 0; i < parts.length; i++) {
         var p = parts[i];
-        p.x += p.vx; p.y += p.vy; p.tw += 0.04;
-        if (p.y < -8 || p.x < -8 || p.x > w + 8) parts[i] = p = spawn(false);
-        var glow = p.a * (0.65 + 0.35 * Math.sin(p.tw));
+        p.tw += 0.035;
+        p.x += p.vx + Math.sin(p.tw) * 0.12 * p.sway;
+        p.y += p.vy;
+        if (p.y > h + 8 || p.x < -8 || p.x > w + 8) parts[i] = p = spawn(false);
+        var glow = p.a * (0.6 + 0.4 * Math.sin(p.tw));
         ctx.globalAlpha = glow;
         ctx.fillStyle = p.c;
         ctx.shadowColor = p.c;
-        ctx.shadowBlur = 8;
+        ctx.shadowBlur = 7;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();

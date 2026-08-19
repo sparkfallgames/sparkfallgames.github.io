@@ -26,7 +26,7 @@
     "honest_title": "Rehellinen hinnoittelu",
     "honest_desc": "Ilmaiset ominaisuudet pysyvät ilmaisina ikuisesti. Ei tilausansoja, ei valheellisia laskureita.",
     "global_title": "Tehty kaikille",
-    "global_desc": "Jokainen sovellus on täysin lokalisoitu 31 kielelle, tumman tilan ja saavutettavuuden kera."
+    "global_desc": "Jokainen sovellus on täysin lokalisoitu 34 kielelle, tumman tilan ja saavutettavuuden kera."
   },
   "common": {
     "coming_soon": "Tulossa pian App Storeen",
@@ -43,7 +43,9 @@
     "finance": "Talous",
     "utilities": "Apuohjelmat",
     "health": "Terveys ja kuntoilu",
-    "games": "Pelit"
+    "games": "Pelit",
+    "reference": "Hakuteokset",
+    "travel": "Matkailu"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Päivä-, kuukausi- ja kategoriayhteenvedot näyttävät, mihin rahasi menevät."
         },
         {
-          "t": "31 kieltä",
+          "t": "34 kieltä",
           "d": "Täysin lokalisoitu maailmanlaajuisesti, tumma tila ja suuri teksti."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall toimii täysin offline-tilassa eikä kerää mitään.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Näe mikä tahansa näyttö omalla kielelläsi.",
+      "card_desc": "Reaaliaikainen näytön käännös peleille, sovelluksille ja kuville — kokonaan laitteella.",
+      "subtitle": "Kelluva ikkuna kääntää näytölläsi näkyvät pelit, sovellukset ja kuvat reaaliajassa — kokonaan laitteellasi.",
+      "meta_desc": "OverLens kääntää näytön tekstin reaaliajassa kelluvassa ikkunassa, ja lisäksi kuvakaappausten käännös on ilmainen ja rajaton. 100 % laitteella, ei latauksia verkkoon.",
+      "features": [
+        {
+          "t": "Kelluva live-ikkuna",
+          "d": "Käynnistä kerran, vaihda mihin tahansa peliin tai sovellukseen — käännös seuraa mukana."
+        },
+        {
+          "t": "Kuvakaappausten käännös",
+          "d": "Valitse tai liitä kuva — käännös ilmestyy suoraan tekstin päälle. Ilmainen ja rajaton."
+        },
+        {
+          "t": "Täysin offline",
+          "d": "Kielipaketit ladataan vain kerran. Näyttösi ei koskaan poistu laitteelta."
+        },
+        {
+          "t": "Maksa kerran",
+          "d": "Ei tilausta, ei kolikoita. Ilmaista live-aikaa joka päivä ja yksi reilu avaus."
+        }
+      ],
+      "privacy_blurb": "Tekstintunnistus ja käännös tapahtuvat kokonaan laitteellasi. Mitään ei nauhoiteta, tallenneta eikä lähetetä verkkoon.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Yhdistä sankarit. Pidä linja.",
+      "card_desc": "Taktinen merge-puolustuskaksintaistelu Kolmesta kuningaskunnasta eteenpäin.",
+      "subtitle": "Yhdistä sankareita, tao varusteita ja päihitä peilattu vastustaja aalto aallolta — Kolmesta kuningaskunnasta muinaiseen Egyptiin ja sotivaan Fusangiin.",
+      "meta_desc": "Mergehold on taktinen merge-puolustuskaksintaistelu iPhonelle: rakenna lauta, yhdistä sankareita ja puolusta linnaasi peilattua vastustajaa vastaan. Kolme historiallista aikakautta. Ei loot boxeja.",
+      "features": [
+        {
+          "t": "Peilatut kaksintaistelut",
+          "d": "Sinä ja vastustajasi kohtaatte samat aallot samalla kartalla — puhdasta strategiaa, ei tuuria."
+        },
+        {
+          "t": "Kolme pelattavaa aikakautta",
+          "d": "Kolme kuningaskuntaa, muinainen Egypti ja Fusang — jokaisella omat sankarinsa, varusteensa ja kykynsä."
+        },
+        {
+          "t": "Yhdistä ja komenna",
+          "d": "Yhdistä kortteja vahvemmiksi sankareiksi, valitse kykyjä ja laukaise ryhmittymäsynergioita."
+        },
+        {
+          "t": "Ei pay-to-winiä",
+          "d": "Vain kosmetiikkaa ja aikakausipasseja — voimaa ei koskaan myydä, eikä loot boxeja ole."
+        }
+      ],
+      "privacy_blurb": "Ottelut pyörivät laitteellasi ja Game Centerissä. Emme ylläpidä palvelimia emmekä kerää mitään.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Pakkaa oikein, joka matkalle.",
+      "card_desc": "Älykkäät pakkauslistat matkasi, sään ja aktiviteettien mukaan.",
+      "subtitle": "PackNest rakentaa pakkauslistan itse matkasta — päivistä, ilmastosta ja aktiviteeteista — jotta mitään ei unohdu.",
+      "meta_desc": "PackNest luo älykkäät pakkauslistat kohteen, päivämäärien ja aktiviteettien mukaan. Useita laukkuja ja matkustajia, PDF-vienti, täysin offline.",
+      "features": [
+        {
+          "t": "Itsestään rakentuvat listat",
+          "d": "Kerro päivät, ilmasto ja aktiviteetit — saat täydellisen listan sekunneissa."
+        },
+        {
+          "t": "Laukut ja ihmiset",
+          "d": "Jaa tavarat matkalaukkujen ja perheenjäsenten kesken ja kuitatkaa yhdessä."
+        },
+        {
+          "t": "Aina pakatut suosikit",
+          "d": "Pidä uudelleenkäytettävä välttämättömyyksien setti, joka liitetään jokaiseen uuteen matkaan."
+        },
+        {
+          "t": "Toimii offline",
+          "d": "24 sisäänrakennettua alueopasta. Matkasi pysyvät laitteellasi."
+        }
+      ],
+      "privacy_blurb": "Matkasi ja listasi pysyvät laitteellasi. Valinnainen sää käyttää Applen WeatherKitiä.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Pelit",
-    "games_sub": "Omaperäisiä pulmia, jotka kunnioittavat sinua: ei mainoksia tasojen välissä, ei energia-ajastimia, ei maksumuurin taakse lukittua hauskuutta.",
+    "games_sub": "Omaperäisiä pelejä, jotka kunnioittavat sinua — ei mainoksia tasojen välissä, ei energiakelloja, ei hauskuutta maksumuurin takana.",
     "tools_title": "Työkalut",
     "tools_sub": "Pieniä, teräviä apuohjelmia, jotka eivät ole tielläsi — eivätkä koske tietoihisi."
   },
   "teaser": {
     "badge": "Kehitteillä",
-    "title": "Project 006",
-    "desc": "Jotain uutta hehkuu pimeydessä. Ei spoilereita vielä."
+    "title": "Project 009",
+    "desc": "Kulissien takana lämmitellään. Esirippu nousee pian."
   },
   "about": {
     "title": "Tietoa kehittäjästä",
-    "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 31 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi."
+    "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 34 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi."
   },
   "badges": {
     "onetime": "Kertaosto",

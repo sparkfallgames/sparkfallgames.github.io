@@ -26,7 +26,7 @@
     "honest_title": "Ehrliche Preise",
     "honest_desc": "Kostenlose Funktionen bleiben für immer kostenlos. Keine Abo-Fallen, keine falschen Countdowns.",
     "global_title": "Für alle gemacht",
-    "global_desc": "Jede App ist vollständig in 31 Sprachen lokalisiert, mit Dark Mode und Bedienungshilfen."
+    "global_desc": "Jede App ist vollständig in 34 Sprachen lokalisiert, mit Dark Mode und Bedienungshilfen."
   },
   "common": {
     "coming_soon": "Bald im App Store",
@@ -43,7 +43,9 @@
     "finance": "Finanzen",
     "utilities": "Dienstprogramme",
     "health": "Gesundheit & Fitness",
-    "games": "Spiele"
+    "games": "Spiele",
+    "reference": "Nachschlagen",
+    "travel": "Reisen"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Tages-, Monats- und Kategorie-Übersichten zeigen, wohin dein Geld fließt."
         },
         {
-          "t": "31 Sprachen",
+          "t": "34 Sprachen",
           "d": "Weltweit vollständig lokalisiert, mit Dark Mode und großer Schrift."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall funktioniert komplett offline und erhebt nichts.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Jeder Bildschirm in deiner Sprache.",
+      "card_desc": "Live-Bildschirmübersetzung für Spiele, Apps und Bilder — komplett auf dem Gerät.",
+      "subtitle": "Ein schwebendes Fenster übersetzt Spiele, Apps und Bilder auf deinem Bildschirm live – vollständig auf deinem Gerät.",
+      "meta_desc": "OverLens übersetzt den Text auf deinem Bildschirm live in einem schwebenden Fenster, dazu kostenlose unbegrenzte Screenshot-Übersetzung. 100 % auf dem Gerät, kein Upload.",
+      "features": [
+        {
+          "t": "Schwebendes Live-Fenster",
+          "d": "Einmal starten, zu jedem Spiel oder jeder App wechseln – die Übersetzung folgt dir."
+        },
+        {
+          "t": "Screenshot-Übersetzung",
+          "d": "Bild auswählen oder einfügen – die Übersetzung erscheint direkt darüber. Kostenlos und unbegrenzt."
+        },
+        {
+          "t": "Komplett offline",
+          "d": "Sprachpakete werden einmal geladen. Dein Bildschirm verlässt nie das Gerät."
+        },
+        {
+          "t": "Einmal zahlen",
+          "d": "Kein Abo, keine Münzen. Täglich kostenlose Live-Zeit, eine ehrliche Freischaltung."
+        }
+      ],
+      "privacy_blurb": "Texterkennung und Übersetzung laufen vollständig auf deinem Gerät. Nichts wird aufgenommen, gespeichert oder hochgeladen.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Helden verschmelzen. Stellung halten.",
+      "card_desc": "Ein taktisches Merge-Verteidigungsduell von den Drei Reichen bis in ferne Welten.",
+      "subtitle": "Verschmilz Helden, schmiede Ausrüstung und überliste Welle für Welle einen gespiegelten Gegner — von den Drei Reichen über das alte Ägypten bis ins umkämpfte Fusang.",
+      "meta_desc": "Mergehold ist ein taktisches Merge-Verteidigungsduell für iPhone: Baue dein Brett, verschmilz Helden und halte deine Burg gegen einen gespiegelten Rivalen. Drei historische Epochen. Keine Lootboxen.",
+      "features": [
+        {
+          "t": "Gespiegelte Duelle",
+          "d": "Du und dein Gegner meistert dieselben Wellen auf derselben Karte — reine Planung, kein Glück."
+        },
+        {
+          "t": "Drei spielbare Epochen",
+          "d": "Drei Reiche, altes Ägypten und Fusang — jede mit eigenen Helden, Ausrüstung und Talenten."
+        },
+        {
+          "t": "Verschmelzen und befehligen",
+          "d": "Verschmilz Karten zu stärkeren Helden, wähle Talente und löse Fraktions-Synergien aus."
+        },
+        {
+          "t": "Kein Pay-to-win",
+          "d": "Nur Kosmetik und Epochen-Pässe — Stärke ist niemals käuflich, und es gibt keine Lootboxen."
+        }
+      ],
+      "privacy_blurb": "Partien laufen auf deinem Gerät und über Game Center. Wir betreiben keine Server und sammeln nichts.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Richtig packen, auf jeder Reise.",
+      "card_desc": "Smarte Packlisten aus Reise, Wetter und Aktivitäten.",
+      "subtitle": "PackNest erstellt deine Packliste aus der Reise selbst — Tage, Klima und Aktivitäten — damit nichts zurückbleibt.",
+      "meta_desc": "PackNest erstellt smarte Packlisten aus Ziel, Daten und Aktivitäten. Mehrere Koffer und Reisende, PDF-Export, komplett offline.",
+      "features": [
+        {
+          "t": "Listen, die sich selbst erstellen",
+          "d": "Gib Tage, Klima und Aktivitäten an — und erhalte in Sekunden eine vollständige Liste."
+        },
+        {
+          "t": "Koffer und Personen",
+          "d": "Verteile Gegenstände auf Koffer und Familienmitglieder und hakt gemeinsam ab."
+        },
+        {
+          "t": "Immer-dabei-Favoriten",
+          "d": "Pflege ein wiederverwendbares Set an Essentials, das in jede neue Reise einfließt."
+        },
+        {
+          "t": "Funktioniert offline",
+          "d": "24 Regionsführer integriert. Deine Reisen bleiben auf deinem Gerät."
+        }
+      ],
+      "privacy_blurb": "Deine Reisen und Listen bleiben auf deinem Gerät. Das optionale Wetter nutzt Apples WeatherKit.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Spiele",
-    "games_sub": "Originelle Rätsel mit Respekt – keine Werbung zwischen Leveln, keine Energie-Timer, kein Spaß hinter Bezahlschranken.",
+    "games_sub": "Originale Spiele, die dich respektieren — keine Werbung zwischen Leveln, keine Energie-Timer, kein Spaß hinter Bezahlschranken.",
     "tools_title": "Tools",
     "tools_sub": "Kleine, präzise Utilities, die dir nicht im Weg stehen – und deinen Daten fernbleiben."
   },
   "teaser": {
     "badge": "In Entwicklung",
-    "title": "Project 006",
-    "desc": "Etwas Neues glüht im Dunkeln. Noch keine Spoiler."
+    "title": "Project 009",
+    "desc": "Hinter der Bühne wird schon geprobt. Der Vorhang hebt sich bald."
   },
   "about": {
     "title": "Über den Entwickler",
-    "body": "Ich bin der Solo-Entwickler hinter Sparkfall Games. Jedes Spiel und Tool ist zu 100 % nativ für iOS, in 31 Sprachen lokalisiert und folgt einer Regel: Deine Daten bleiben auf deinem Gerät."
+    "body": "Ich bin der Solo-Entwickler hinter Sparkfall Games. Jedes Spiel und Tool ist zu 100 % nativ für iOS, in 34 Sprachen lokalisiert und folgt einer Regel: Deine Daten bleiben auf deinem Gerät."
   },
   "badges": {
     "onetime": "Einmal kaufen",

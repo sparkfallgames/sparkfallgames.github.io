@@ -4,13 +4,19 @@
 ## Apps
 - [NumZen](https://sparkfallgames.com/numzen/): Three daily puzzles. The whole world plays.
 - [Gloomfall](https://sparkfallgames.com/gloomfall/): Every enemy move is telegraphed.
+- [Mergehold](https://sparkfallgames.com/mergehold/): Merge heroes. Hold the line.
 - [QuickCost](https://sparkfallgames.com/quickcost/): Log an expense in 3 seconds.
 - [Decibel Meter](https://sparkfallgames.com/decibelmeter/): Know your noise. Protect your hearing.
 - [FastZen](https://sparkfallgames.com/fastzen/): The honest fasting timer.
+- [OverLens](https://sparkfallgames.com/overlens/): See any screen in your language.
+- [PackNest](https://sparkfallgames.com/packnest/): Pack right, every trip.
 
 ## Support
 - [NumZen support & FAQ](https://sparkfallgames.com/numzen/support.html)
 - [Gloomfall support & FAQ](https://sparkfallgames.com/gloomfall/support.html)
+- [Mergehold support & FAQ](https://sparkfallgames.com/mergehold/support.html)
 - [QuickCost support & FAQ](https://sparkfallgames.com/quickcost/support.html)
 - [Decibel Meter support & FAQ](https://sparkfallgames.com/decibelmeter/support.html)
 - [FastZen support & FAQ](https://sparkfallgames.com/fastzen/support.html)
+- [OverLens support & FAQ](https://sparkfallgames.com/overlens/support.html)
+- [PackNest support & FAQ](https://sparkfallgames.com/packnest/support.html)

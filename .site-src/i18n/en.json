@@ -26,7 +26,7 @@
     "honest_title": "Honest pricing",
     "honest_desc": "Free tiers stay free forever. No subscription traps, no fake countdowns.",
     "global_title": "Made for everyone",
-    "global_desc": "Every app is fully localized in 31 languages, with dark mode and accessibility support."
+    "global_desc": "Every app is fully localized in 34 languages, with dark mode and accessibility support."
   },
   "common": {
     "coming_soon": "Coming soon to the App Store",
@@ -43,7 +43,9 @@
     "finance": "Finance",
     "utilities": "Utilities",
     "health": "Health & Fitness",
-    "games": "Games"
+    "games": "Games",
+    "reference": "Reference",
+    "travel": "Travel"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Daily, monthly and category summaries show where your money goes."
         },
         {
-          "t": "31 languages",
+          "t": "34 languages",
           "d": "Fully localized worldwide, with dark mode and large-type support."
         }
       ],
@@ -150,6 +152,32 @@
       "privacy_blurb": "NumZen works entirely offline and collects nothing.",
       "disclaimer": ""
     },
+    "mergehold": {
+      "tagline": "Merge heroes. Hold the line.",
+      "card_desc": "A merge tactics defense duel across the Three Kingdoms and beyond.",
+      "subtitle": "Merge heroes, forge gear and out-plan a mirrored rival wave by wave — from the Three Kingdoms to ancient Egypt and warring Fusang.",
+      "meta_desc": "Mergehold is a merge tactics defense duel for iPhone: build your board, merge heroes and hold your castle against a mirrored rival. Three historic eras. No loot boxes.",
+      "features": [
+        {
+          "t": "Mirrored duels",
+          "d": "You and your rival face the same waves on the same map — pure planning, no luck."
+        },
+        {
+          "t": "Three playable eras",
+          "d": "Three Kingdoms, ancient Egypt and Fusang — each with its own heroes, gear and talents."
+        },
+        {
+          "t": "Merge and command",
+          "d": "Merge cards into stronger heroes, pick talents and trigger faction synergies."
+        },
+        {
+          "t": "No pay-to-win",
+          "d": "Cosmetics and era passes only — power is never for sale, and there are no loot boxes."
+        }
+      ],
+      "privacy_blurb": "Matches run on your device and Game Center. We run no servers and collect nothing.",
+      "disclaimer": ""
+    },
     "gloomfall": {
       "tagline": "Every enemy move is telegraphed.",
       "card_desc": "A dark fantasy tactics RPG built for one hand.",
@@ -175,22 +203,74 @@
       ],
       "privacy_blurb": "Gloomfall works entirely offline and collects nothing.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "See any screen in your language.",
+      "card_desc": "Live on-screen translation for games, apps and images — fully on-device.",
+      "subtitle": "A floating window that live-translates games, apps and images on your screen — entirely on your device.",
+      "meta_desc": "OverLens live-translates the text on your screen with a floating window, plus free unlimited screenshot translation. 100% on-device, no upload.",
+      "features": [
+        {
+          "t": "Live floating window",
+          "d": "Start once, switch to any game or app, and translations follow you."
+        },
+        {
+          "t": "Screenshot translation",
+          "d": "Pick or paste an image — the translation appears right on top. Free, unlimited."
+        },
+        {
+          "t": "Fully offline",
+          "d": "Language packs download once. Your screen never leaves the device."
+        },
+        {
+          "t": "Pay once",
+          "d": "No subscription, no coins. Free daily live time, one honest unlock."
+        }
+      ],
+      "privacy_blurb": "Text recognition and translation run entirely on your device. Nothing is recorded, stored or uploaded.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Pack right, every trip.",
+      "card_desc": "Smart packing lists built from your trip, weather and activities.",
+      "subtitle": "PackNest builds your packing list from the trip itself — days, climate and activities — so nothing gets left behind.",
+      "meta_desc": "PackNest generates smart packing lists from your destination, dates and activities. Multiple bags and travelers, PDF export, fully offline.",
+      "features": [
+        {
+          "t": "Lists that build themselves",
+          "d": "Tell it the days, climate and activities — get a complete list in seconds."
+        },
+        {
+          "t": "Bags and people",
+          "d": "Split items across suitcases and family members, and check off together."
+        },
+        {
+          "t": "Always-packed favorites",
+          "d": "Keep a reusable kit of essentials that drops into every new trip."
+        },
+        {
+          "t": "Works offline",
+          "d": "24 region guides built in. Your trips stay on your device."
+        }
+      ],
+      "privacy_blurb": "Your trips and lists stay on your device. Optional weather uses Apple's WeatherKit.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Games",
-    "games_sub": "Original puzzles built to respect you — no ads between levels, no energy timers, no paywalled fun.",
+    "games_sub": "Original games built to respect you — no ads between levels, no energy timers, no paywalled fun.",
     "tools_title": "Tools",
     "tools_sub": "Small, sharp utilities that stay out of your way — and out of your data."
   },
   "teaser": {
     "badge": "In development",
-    "title": "Project 006",
-    "desc": "Something new is glowing in the dark. No spoilers yet."
+    "title": "Project 009",
+    "desc": "Something is warming up backstage. The curtain rises soon."
   },
   "about": {
     "title": "About the developer",
-    "body": "I'm the solo developer behind Sparkfall Games. Every game and tool is 100% native to iOS, localized in 31 languages, and built around one rule: your data stays on your device."
+    "body": "I'm the solo developer behind Sparkfall Games. Every game and tool is 100% native to iOS, localized in 34 languages, and built around one rule: your data stays on your device."
   },
   "badges": {
     "onetime": "One-time purchase",

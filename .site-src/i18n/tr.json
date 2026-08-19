@@ -26,7 +26,7 @@
     "honest_title": "Dürüst fiyatlandırma",
     "honest_desc": "Ücretsiz özellikler sonsuza dek ücretsiz kalır. Abonelik tuzağı yok, sahte geri sayım yok.",
     "global_title": "Herkes için",
-    "global_desc": "Her uygulama 31 dile tam yerelleştirilmiştir; karanlık mod ve erişilebilirlik desteğiyle."
+    "global_desc": "Her uygulama 34 dile tam yerelleştirilmiştir; karanlık mod ve erişilebilirlik desteğiyle."
   },
   "common": {
     "coming_soon": "Yakında App Store'da",
@@ -43,7 +43,9 @@
     "finance": "Finans",
     "utilities": "Araçlar",
     "health": "Sağlık ve Fitness",
-    "games": "Oyunlar"
+    "games": "Oyunlar",
+    "reference": "Başvuru",
+    "travel": "Seyahat"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Günlük, aylık ve kategori özetleri paranızın nereye gittiğini gösterir."
         },
         {
-          "t": "31 dil",
+          "t": "34 dil",
           "d": "Dünya çapında tam yerelleştirme, karanlık mod ve büyük yazı desteği."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall tamamen çevrimdışı çalışır ve hiçbir şey toplamaz.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Her ekranı kendi dilinizde görün.",
+      "card_desc": "Oyunlar, uygulamalar ve görseller için canlı ekran çevirisi — tamamen cihaz üzerinde.",
+      "subtitle": "Yüzen bir pencere, ekranınızdaki oyunları, uygulamaları ve görselleri canlı çevirir — tamamı cihazınızda.",
+      "meta_desc": "OverLens ekranınızdaki metni yüzen bir pencerede canlı çevirir; ekran görüntüsü çevirisi ise ücretsiz ve sınırsızdır. %100 cihaz üzerinde, yükleme yok.",
+      "features": [
+        {
+          "t": "Canlı yüzen pencere",
+          "d": "Bir kez başlatın, istediğiniz oyuna veya uygulamaya geçin — çeviri sizi takip eder."
+        },
+        {
+          "t": "Ekran görüntüsü çevirisi",
+          "d": "Bir görsel seçin veya yapıştırın — çeviri doğrudan üzerinde belirir. Ücretsiz, sınırsız."
+        },
+        {
+          "t": "Tamamen çevrimdışı",
+          "d": "Dil paketleri yalnızca bir kez indirilir. Ekranınız cihazdan asla çıkmaz."
+        },
+        {
+          "t": "Bir kez ödeyin",
+          "d": "Abonelik yok, jeton yok. Her gün ücretsiz canlı süre, tek ve dürüst bir kilit açma."
+        }
+      ],
+      "privacy_blurb": "Metin tanıma ve çeviri tamamen cihazınızda çalışır. Hiçbir şey kaydedilmez, saklanmaz veya yüklenmez.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Kahramanları birleştir. Hattı tut.",
+      "card_desc": "Üç Krallık'tan başlayıp ötesine uzanan birleştirmeli taktik savunma düellosu.",
+      "subtitle": "Kahramanları birleştirin, ekipman dövün ve aynadaki rakibi dalga dalga alt edin — Üç Krallık'tan antik Mısır'a ve savaşan Fusang'a.",
+      "meta_desc": "Mergehold, iPhone için birleştirmeli taktik savunma düellosu: tahtanızı kurun, kahramanları birleştirin ve kaleyi aynadaki rakibe karşı savunun. Üç tarihi çağ. Loot box yok.",
+      "features": [
+        {
+          "t": "Ayna düellolar",
+          "d": "Siz ve rakibiniz aynı haritada aynı dalgalarla karşılaşırsınız — saf strateji, şans yok."
+        },
+        {
+          "t": "Üç oynanabilir çağ",
+          "d": "Üç Krallık, antik Mısır ve Fusang — her birinin kendi kahramanları, ekipmanı ve yetenekleri var."
+        },
+        {
+          "t": "Birleştir ve komuta et",
+          "d": "Kartları daha güçlü kahramanlara birleştirin, yetenek seçin ve hizip sinerjilerini tetikleyin."
+        },
+        {
+          "t": "Pay-to-win yok",
+          "d": "Sadece kozmetik ve çağ geçişleri — güç asla satılmaz, loot box da yoktur."
+        }
+      ],
+      "privacy_blurb": "Maçlar cihazınızda ve Game Center üzerinde oynanır. Sunucu işletmiyor, hiçbir veri toplamıyoruz.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Her seyahatte doğru bavul.",
+      "card_desc": "Seyahatinize, havaya ve etkinliklere göre kurulan akıllı bavul listeleri.",
+      "subtitle": "PackNest bavul listenizi seyahatin kendisinden oluşturur — gün sayısı, iklim ve etkinlikler — böylece hiçbir şey geride kalmaz.",
+      "meta_desc": "PackNest; varış noktası, tarihler ve etkinliklere göre akıllı bavul listeleri üretir. Birden çok çanta ve yolcu, PDF dışa aktarma, tamamen çevrimdışı.",
+      "features": [
+        {
+          "t": "Kendi kendine kurulan listeler",
+          "d": "Gün sayısını, iklimi ve etkinlikleri söyleyin — saniyeler içinde eksiksiz bir liste alın."
+        },
+        {
+          "t": "Çantalar ve kişiler",
+          "d": "Eşyaları valizlere ve aile üyelerine bölüştürün, birlikte işaretleyin."
+        },
+        {
+          "t": "Hep hazır favoriler",
+          "d": "Her yeni seyahate otomatik eklenen, yeniden kullanılabilir bir temel eşya seti tutun."
+        },
+        {
+          "t": "Çevrimdışı çalışır",
+          "d": "24 bölge rehberi yerleşik. Seyahatleriniz cihazınızda kalır."
+        }
+      ],
+      "privacy_blurb": "Seyahatleriniz ve listeleriniz cihazınızda kalır. İsteğe bağlı hava durumu Apple'ın WeatherKit'ini kullanır.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Oyunlar",
-    "games_sub": "Size saygı duyan özgün bulmacalar: bölümler arasında reklam yok, enerji sayacı yok, ücretli duvarların ardında eğlence yok.",
+    "games_sub": "Size saygı duyan özgün oyunlar — bölümler arasında reklam yok, enerji sayacı yok, eğlence ödeme duvarının arkasında değil.",
     "tools_title": "Araçlar",
     "tools_sub": "Yolunuza çıkmayan, verilerinize dokunmayan küçük ve keskin yardımcı araçlar."
   },
   "teaser": {
     "badge": "Geliştiriliyor",
-    "title": "Project 006",
-    "desc": "Karanlıkta yeni bir şey parlıyor. Şimdilik spoiler yok."
+    "title": "Project 009",
+    "desc": "Sahne arkasında hazırlıklar sürüyor. Perde yakında açılıyor."
   },
   "about": {
     "title": "Geliştirici hakkında",
-    "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 31 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır."
+    "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 34 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır."
   },
   "badges": {
     "onetime": "Tek seferlik satın alma",

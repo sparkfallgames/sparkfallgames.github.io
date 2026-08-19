@@ -26,7 +26,7 @@
     "honest_title": "Giá cả trung thực",
     "honest_desc": "Tính năng miễn phí sẽ miễn phí mãi mãi. Không bẫy đăng ký, không đồng hồ đếm ngược giả.",
     "global_title": "Dành cho mọi người",
-    "global_desc": "Mỗi ứng dụng được bản địa hóa đầy đủ 31 ngôn ngữ, có chế độ tối và trợ năng."
+    "global_desc": "Mỗi ứng dụng được bản địa hóa đầy đủ 34 ngôn ngữ, có chế độ tối và trợ năng."
   },
   "common": {
     "coming_soon": "Sắp ra mắt trên App Store",
@@ -43,7 +43,9 @@
     "finance": "Tài chính",
     "utilities": "Tiện ích",
     "health": "Sức khỏe & Thể chất",
-    "games": "Trò chơi"
+    "games": "Trò chơi",
+    "reference": "Tra cứu",
+    "travel": "Du lịch"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Tổng hợp theo ngày, tháng và danh mục cho biết tiền của bạn đi đâu."
         },
         {
-          "t": "31 ngôn ngữ",
+          "t": "34 ngôn ngữ",
           "d": "Bản địa hóa đầy đủ trên toàn cầu, có chế độ tối và chữ lớn."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall hoạt động hoàn toàn ngoại tuyến và không thu thập gì.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Xem mọi màn hình bằng ngôn ngữ của bạn.",
+      "card_desc": "Dịch màn hình trực tiếp cho game, ứng dụng và hình ảnh — hoàn toàn trên thiết bị.",
+      "subtitle": "Cửa sổ nổi dịch trực tiếp trò chơi, ứng dụng và hình ảnh trên màn hình của bạn — hoàn toàn trên thiết bị của bạn.",
+      "meta_desc": "OverLens dịch trực tiếp văn bản trên màn hình bằng cửa sổ nổi, kèm dịch ảnh chụp màn hình miễn phí không giới hạn. 100% trên thiết bị, không tải lên.",
+      "features": [
+        {
+          "t": "Cửa sổ nổi trực tiếp",
+          "d": "Khởi động một lần, chuyển sang bất kỳ trò chơi hay ứng dụng nào — bản dịch luôn theo bạn."
+        },
+        {
+          "t": "Dịch ảnh chụp màn hình",
+          "d": "Chọn hoặc dán một hình ảnh — bản dịch hiện ngay bên trên. Miễn phí, không giới hạn."
+        },
+        {
+          "t": "Hoàn toàn ngoại tuyến",
+          "d": "Gói ngôn ngữ chỉ cần tải một lần. Màn hình của bạn không bao giờ rời khỏi thiết bị."
+        },
+        {
+          "t": "Trả một lần",
+          "d": "Không thuê bao, không xu. Thời gian dịch trực tiếp miễn phí mỗi ngày, một lần mở khóa trung thực."
+        }
+      ],
+      "privacy_blurb": "Nhận dạng văn bản và dịch thuật chạy hoàn toàn trên thiết bị của bạn. Không có gì bị ghi lại, lưu trữ hay tải lên.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Hợp nhất tướng lĩnh. Giữ vững thành trì.",
+      "card_desc": "Trận đấu phòng thủ chiến thuật kiểu hợp nhất, từ Tam Quốc trở đi.",
+      "subtitle": "Hợp nhất tướng, rèn trang bị và đấu trí với đối thủ phản chiếu qua từng đợt — từ Tam Quốc đến Ai Cập cổ đại và Phù Tang thời chiến.",
+      "meta_desc": "Mergehold là trận đấu phòng thủ chiến thuật kiểu hợp nhất trên iPhone: xếp bàn cờ, hợp nhất tướng và bảo vệ thành trước đối thủ phản chiếu. Ba kỷ nguyên lịch sử. Không loot box.",
+      "features": [
+        {
+          "t": "Đấu phản chiếu",
+          "d": "Bạn và đối thủ đối mặt cùng những đợt quân trên cùng bản đồ — thuần chiến thuật, không may rủi."
+        },
+        {
+          "t": "Ba kỷ nguyên",
+          "d": "Tam Quốc, Ai Cập cổ đại và Phù Tang — mỗi kỷ nguyên có tướng, trang bị và thiên phú riêng."
+        },
+        {
+          "t": "Hợp nhất và chỉ huy",
+          "d": "Hợp nhất thẻ bài thành tướng mạnh hơn, chọn thiên phú và kích hoạt cộng hưởng phe phái."
+        },
+        {
+          "t": "Không pay-to-win",
+          "d": "Chỉ bán ngoại hình và vé kỷ nguyên — sức mạnh không bao giờ bán, và không có loot box."
+        }
+      ],
+      "privacy_blurb": "Trận đấu chạy trên thiết bị của bạn và Game Center. Chúng tôi không vận hành máy chủ và không thu thập gì.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Xếp đồ chuẩn cho mọi chuyến đi.",
+      "card_desc": "Danh sách hành lý thông minh dựa trên chuyến đi, thời tiết và hoạt động.",
+      "subtitle": "PackNest tạo danh sách hành lý từ chính chuyến đi — số ngày, khí hậu và hoạt động — để không bỏ sót thứ gì.",
+      "meta_desc": "PackNest tạo danh sách hành lý thông minh theo điểm đến, ngày đi và hoạt động. Nhiều vali và người đi cùng, xuất PDF, hoạt động hoàn toàn ngoại tuyến.",
+      "features": [
+        {
+          "t": "Danh sách tự hình thành",
+          "d": "Cho biết số ngày, khí hậu và hoạt động — nhận danh sách đầy đủ trong vài giây."
+        },
+        {
+          "t": "Vali và thành viên",
+          "d": "Chia đồ theo vali và người trong gia đình, cùng nhau đánh dấu."
+        },
+        {
+          "t": "Đồ quen luôn sẵn sàng",
+          "d": "Giữ một bộ đồ thiết yếu dùng lại được, tự thêm vào mỗi chuyến đi mới."
+        },
+        {
+          "t": "Hoạt động ngoại tuyến",
+          "d": "Tích hợp sẵn 24 cẩm nang vùng. Chuyến đi của bạn chỉ nằm trên thiết bị của bạn."
+        }
+      ],
+      "privacy_blurb": "Chuyến đi và danh sách của bạn nằm trên thiết bị của bạn. Tính năng thời tiết tùy chọn dùng WeatherKit của Apple.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Trò chơi",
-    "games_sub": "Những câu đố nguyên bản tôn trọng bạn: không quảng cáo giữa các màn, không đồng hồ năng lượng, không khóa niềm vui sau bức tường trả phí.",
+    "games_sub": "Game nguyên bản tôn trọng người chơi — không quảng cáo giữa các màn, không hẹn giờ thể lực, không khóa niềm vui sau tường phí.",
     "tools_title": "Công cụ",
     "tools_sub": "Các tiện ích nhỏ gọn, sắc bén, không cản trở bạn — và không chạm vào dữ liệu của bạn."
   },
   "teaser": {
     "badge": "Đang phát triển",
-    "title": "Project 006",
-    "desc": "Điều gì đó mới đang phát sáng trong bóng tối. Chưa tiết lộ."
+    "title": "Project 009",
+    "desc": "Có điều gì đó đang khởi động sau cánh gà. Màn sắp kéo lên."
   },
   "about": {
     "title": "Về nhà phát triển",
-    "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 31 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn."
+    "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 34 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn."
   },
   "badges": {
     "onetime": "Mua một lần",

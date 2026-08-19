@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sparkfall Games — 인디 게임과 정직한 iOS 앱</title>
 <meta name="description" content="Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음.">
+<meta name="theme-color" content="#0d0b09">
 <link rel="canonical" href="https://sparkfallgames.com/ko/">
 <link rel="alternate" hreflang="en" href="https://sparkfallgames.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://sparkfallgames.com/zh-hans/">
@@ -42,10 +43,10 @@
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
-<body>
+<body class="zone-dark">
 <header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="/ko/">Sparkfall Games</a>
+    <a class="brand" href="/ko/"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</a>
     <nav>
       <a href="/ko/#games">게임</a>
       <a href="/ko/#tools">도구</a>
@@ -57,8 +58,8 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-grid" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="hero-vign" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <span class="hero-kicker">1인 게임 스튜디오</span>
     <h1>재미있는 게임, 정직한 <span class="grad">도구.</span></h1>
@@ -69,90 +70,126 @@
     </div>
   </div>
 </section>
-<main class="wrap">
+<div class="zone-games">
   <section class="sec" id="games">
-    <div class="sec-head reveal">
-      <h2><span class="grad">게임</span></h2>
-      <p>플레이어를 존중하는 오리지널 퍼즐 — 레벨 사이 광고 없음, 에너지 타이머 없음, 유료 장벽 없음.</p>
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="grad">게임</span></h2>
+        <p>플레이어를 존중하는 오리지널 게임 — 레벨 사이 광고 없음, 스태미나 타이머 없음, 재미를 유료 장벽 뒤에 가두지 않습니다.</p>
+      </div>
+      <div class="game-grid">
+      <a class="game-card reveal" href="/ko/numzen/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
+        <div class="game-copy">
+          <span class="badge">게임</span>
+          <h3>NumZen</h3>
+          <p class="game-tagline">매일 세 퍼즐, 전 세계가 함께.</p>
+          <p class="game-desc">가르쳐 주는 힌트가 있는 매일의 암산 퍼즐.</p>
+          <span class="card-more">자세히 보기 →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-numzen.webp" alt="NumZen" loading="lazy"></div>
+      </a>
+      <a class="game-card reveal" href="/ko/gloomfall/" style="--aa:#E8853D;--ab:#B85A1E;">
+        <div class="game-copy">
+          <span class="badge">게임</span>
+          <h3>Gloomfall</h3>
+          <p class="game-tagline">적의 모든 수가 미리 공개됩니다.</p>
+          <p class="game-desc">한 손으로 즐기는 다크 판타지 전술 RPG.</p>
+          <span class="card-more">자세히 보기 →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-gloomfall.webp" alt="Gloomfall" loading="lazy"></div>
+      </a>
+      <a class="game-card reveal" href="/ko/mergehold/" style="--aa:#D9A441;--ab:#B0432E;">
+        <div class="game-copy">
+          <span class="badge">게임</span>
+          <h3>Mergehold</h3>
+          <p class="game-tagline">영웅을 합성하고, 성을 지켜라.</p>
+          <p class="game-desc">삼국에서 세계로 이어지는 합성 타워 디펜스 대결.</p>
+          <span class="card-more">자세히 보기 →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-mergehold.webp" alt="Mergehold" loading="lazy"></div>
+      </a>
+      <div class="tease-card reveal">
+        <span class="badge" style="--aa:#e0a84e;">개발 중</span>
+        <h3>Project 009</h3>
+        <p>무대 뒤에서 준비가 한창입니다. 곧 막이 오릅니다.</p>
+        <span class="tease-glyph" aria-hidden="true">?</span>
+      </div>
+      </div>
     </div>
-    <div class="game-grid">
-    <a class="game-card reveal" href="/ko/numzen/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-      <div class="game-copy">
-        <span class="badge">게임</span>
-        <h3>NumZen</h3>
-        <p class="game-tagline">매일 세 퍼즐, 전 세계가 함께.</p>
-        <p class="game-desc">가르쳐 주는 힌트가 있는 매일의 암산 퍼즐.</p>
+  </section>
+</div>
+<div class="zone-break" aria-hidden="true"><svg class="spark-divider" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e0a84e" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg></div>
+<div class="zone-light">
+  <main class="wrap">
+    <section class="sec" id="tools" style="padding-top:56px;">
+      <div class="sec-head reveal">
+        <h2>도구</h2>
+        <p>작고 정교한 유틸리티. 방해하지 않고, 데이터도 건드리지 않습니다.</p>
+      </div>
+      <div class="tool-grid">
+      <a class="tool-card reveal" href="/ko/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-quickcost.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">금융</span>
+        </div>
+        <h3>QuickCost</h3>
+        <p class="tool-tagline">3초 만에 지출 기록.</p>
         <span class="card-more">자세히 보기 →</span>
-      </div>
-      <div class="game-shot"><img src="/assets/img/shot-numzen.png" alt="NumZen" loading="lazy"></div>
-    </a>
-    <a class="game-card reveal" href="/ko/gloomfall/" style="--aa:#E8853D;--ab:#B85A1E;">
-      <div class="game-copy">
-        <span class="badge">게임</span>
-        <h3>Gloomfall</h3>
-        <p class="game-tagline">적의 모든 수가 미리 공개됩니다.</p>
-        <p class="game-desc">한 손으로 즐기는 다크 판타지 전술 RPG.</p>
+      </a>
+      <a class="tool-card reveal" href="/ko/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-decibelmeter.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">유틸리티</span>
+        </div>
+        <h3>Decibel Meter</h3>
+        <p class="tool-tagline">소음을 알고, 청력을 지키세요.</p>
         <span class="card-more">자세히 보기 →</span>
+      </a>
+      <a class="tool-card reveal" href="/ko/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-fastzen.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">건강 및 피트니스</span>
+        </div>
+        <h3>FastZen</h3>
+        <p class="tool-tagline">정직한 단식 타이머.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </a>
+      <a class="tool-card reveal" href="/ko/overlens/" style="--aa:#6F5BF5;--ab:#4B36C9;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-overlens.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">참고</span>
+        </div>
+        <h3>OverLens</h3>
+        <p class="tool-tagline">어떤 화면이든 내 언어로.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </a>
+      <a class="tool-card reveal" href="/ko/packnest/" style="--aa:#2FA877;--ab:#1E7A55;">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-packnest.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">여행</span>
+        </div>
+        <h3>PackNest</h3>
+        <p class="tool-tagline">어떤 여행이든, 빠짐없이 챙기세요.</p>
+        <span class="card-more">자세히 보기 →</span>
+      </a>
       </div>
-      <div class="game-shot"><img src="/assets/img/shot-gloomfall.png" alt="Gloomfall" loading="lazy"></div>
-    </a>
-    <div class="tease-card reveal">
-      <span class="badge" style="--aa:#8b5cf6;">개발 중</span>
-      <h3>Project 006</h3>
-      <p>어둠 속에서 새로운 무언가가 빛나고 있습니다. 아직은 비밀입니다.</p>
-      <span class="tease-glyph" aria-hidden="true">?</span>
-    </div>
-    </div>
-  </section>
-  <section class="sec" id="tools">
-    <div class="sec-head reveal">
-      <h2>도구</h2>
-      <p>작고 정교한 유틸리티. 방해하지 않고, 데이터도 건드리지 않습니다.</p>
-    </div>
-    <div class="tool-grid">
-    <a class="tool-card reveal" href="/ko/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-quickcost.png" alt="" width="52" height="52">
-        <span class="badge">금융</span>
+    </section>
+    <section class="values">
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>프라이버시 중심 설계</h3><p>모든 데이터는 기기에 저장됩니다. 서버를 운영하지 않으며 당신의 데이터를 볼 수 없습니다.</p></div>
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>정직한 가격</h3><p>무료 기능은 영원히 무료입니다. 구독 함정도, 가짜 카운트다운도 없습니다.</p></div>
+      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>모두를 위한 앱</h3><p>모든 앱이 34개 언어를 완벽 지원하며 다크 모드와 손쉬운 사용도 지원합니다.</p></div>
+    </section>
+    <section id="about">
+      <div class="about reveal">
+        <h2>개발자 소개</h2>
+        <p>Sparkfall Games를 만드는 1인 개발자입니다. 모든 게임과 도구는 100% iOS 네이티브이며 34개 언어로 현지화되어 있고, '데이터는 기기 밖으로 내보내지 않는다'는 하나의 원칙으로 만들어집니다.</p>
       </div>
-      <h3>QuickCost</h3>
-      <p class="tool-tagline">3초 만에 지출 기록.</p>
-      <span class="card-more">자세히 보기 →</span>
-    </a>
-    <a class="tool-card reveal" href="/ko/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-decibelmeter.png" alt="" width="52" height="52">
-        <span class="badge">유틸리티</span>
-      </div>
-      <h3>Decibel Meter</h3>
-      <p class="tool-tagline">소음을 알고, 청력을 지키세요.</p>
-      <span class="card-more">자세히 보기 →</span>
-    </a>
-    <a class="tool-card reveal" href="/ko/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-fastzen.png" alt="" width="52" height="52">
-        <span class="badge">건강 및 피트니스</span>
-      </div>
-      <h3>FastZen</h3>
-      <p class="tool-tagline">정직한 단식 타이머.</p>
-      <span class="card-more">자세히 보기 →</span>
-    </a>
-    </div>
-  </section>
-</main>
-  <section class="values wrap">
-    <div class="value reveal"><div class="value-ic">🔒</div><h3>프라이버시 중심 설계</h3><p>모든 데이터는 기기에 저장됩니다. 서버를 운영하지 않으며 당신의 데이터를 볼 수 없습니다.</p></div>
-    <div class="value reveal"><div class="value-ic">🤝</div><h3>정직한 가격</h3><p>무료 기능은 영원히 무료입니다. 구독 함정도, 가짜 카운트다운도 없습니다.</p></div>
-    <div class="value reveal"><div class="value-ic">🌍</div><h3>모두를 위한 앱</h3><p>모든 앱이 31개 언어를 완벽 지원하며 다크 모드와 손쉬운 사용도 지원합니다.</p></div>
-  </section>
-<section class="wrap" id="about">
-  <div class="about reveal">
-    <h2>개발자 소개</h2>
-    <p>Sparkfall Games를 만드는 1인 개발자입니다. 모든 게임과 도구는 100% iOS 네이티브이며 31개 언어로 현지화되어 있고, '데이터는 기기 밖으로 내보내지 않는다'는 하나의 원칙으로 만들어집니다.</p>
-  </div>
-</section>
+    </section>
+  </main>
+</div>
 <footer class="foot">
   <div class="wrap">
+    <div class="foot-brand"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</div>
     <p>© 2026 Sparkfall Games · <a href="mailto:2645809444@qq.com">2645809444@qq.com</a> · <a href="/ko/legal/">개인정보 처리방침</a></p>
   </div>
 </footer>

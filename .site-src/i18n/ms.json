@@ -26,7 +26,7 @@
     "honest_title": "Harga yang jujur",
     "honest_desc": "Ciri percuma kekal percuma selamanya. Tiada perangkap langganan, tiada kiraan detik palsu.",
     "global_title": "Dibina untuk semua",
-    "global_desc": "Setiap aplikasi disetempatkan sepenuhnya dalam 31 bahasa, dengan mod gelap dan kebolehcapaian."
+    "global_desc": "Setiap aplikasi disetempatkan sepenuhnya dalam 34 bahasa, dengan mod gelap dan kebolehcapaian."
   },
   "common": {
     "coming_soon": "Akan datang di App Store",
@@ -43,7 +43,9 @@
     "finance": "Kewangan",
     "utilities": "Utiliti",
     "health": "Kesihatan & Kecergasan",
-    "games": "Permainan"
+    "games": "Permainan",
+    "reference": "Rujukan",
+    "travel": "Pelancongan"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Ringkasan harian, bulanan dan mengikut kategori menunjukkan ke mana wang anda pergi."
         },
         {
-          "t": "31 bahasa",
+          "t": "34 bahasa",
           "d": "Disetempatkan sepenuhnya di seluruh dunia, dengan mod gelap dan teks besar."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall berfungsi sepenuhnya luar talian dan tidak mengumpul apa-apa.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Lihat mana-mana skrin dalam bahasa anda.",
+      "card_desc": "Terjemahan skrin langsung untuk permainan, aplikasi dan imej — sepenuhnya pada peranti.",
+      "subtitle": "Tetingkap terapung menterjemah secara langsung permainan, aplikasi dan imej pada skrin anda — sepenuhnya pada peranti anda.",
+      "meta_desc": "OverLens menterjemah teks pada skrin anda secara langsung melalui tetingkap terapung, serta terjemahan tangkapan skrin percuma tanpa had. 100% pada peranti, tiada muat naik.",
+      "features": [
+        {
+          "t": "Tetingkap terapung langsung",
+          "d": "Mulakan sekali, tukar ke mana-mana permainan atau aplikasi — terjemahan mengikuti anda."
+        },
+        {
+          "t": "Terjemahan tangkapan skrin",
+          "d": "Pilih atau tampal imej — terjemahan muncul tepat di atasnya. Percuma, tanpa had."
+        },
+        {
+          "t": "Sepenuhnya luar talian",
+          "d": "Pek bahasa dimuat turun sekali sahaja. Skrin anda tidak pernah meninggalkan peranti."
+        },
+        {
+          "t": "Bayar sekali",
+          "d": "Tiada langganan, tiada syiling. Masa langsung percuma setiap hari, satu buka kunci yang jujur."
+        }
+      ],
+      "privacy_blurb": "Pengecaman teks dan terjemahan berjalan sepenuhnya pada peranti anda. Tiada apa-apa yang dirakam, disimpan atau dimuat naik.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Gabungkan wira. Pertahankan kubu.",
+      "card_desc": "Duel pertahanan taktikal gaya gabung, dari Tiga Kerajaan dan seterusnya.",
+      "subtitle": "Gabungkan wira, tempa kelengkapan dan atasi lawan cermin gelombang demi gelombang — dari Tiga Kerajaan ke Mesir purba hingga Fusang yang bergolak.",
+      "meta_desc": "Mergehold ialah duel pertahanan taktikal gaya gabung untuk iPhone: susun papan, gabungkan wira dan pertahankan istana daripada lawan cermin. Tiga era bersejarah. Tiada peti rampasan.",
+      "features": [
+        {
+          "t": "Duel cermin",
+          "d": "Anda dan lawan menghadapi gelombang yang sama di peta yang sama — strategi tulen, bukan nasib."
+        },
+        {
+          "t": "Tiga era boleh dimainkan",
+          "d": "Tiga Kerajaan, Mesir purba dan Fusang — setiap satu dengan wira, kelengkapan dan bakat tersendiri."
+        },
+        {
+          "t": "Gabung dan perintah",
+          "d": "Gabungkan kad menjadi wira lebih kuat, pilih bakat dan cetuskan sinergi puak."
+        },
+        {
+          "t": "Tiada pay-to-win",
+          "d": "Hanya kosmetik dan pas era — kuasa tidak pernah dijual, dan tiada peti rampasan."
+        }
+      ],
+      "privacy_blurb": "Perlawanan berjalan pada peranti anda dan Game Center. Kami tidak mengendalikan pelayan dan tidak mengumpul apa-apa.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Kemas tepat, setiap perjalanan.",
+      "card_desc": "Senarai kemas pintar berdasarkan perjalanan, cuaca dan aktiviti anda.",
+      "subtitle": "PackNest membina senarai kemas daripada perjalanan itu sendiri — bilangan hari, iklim dan aktiviti — supaya tiada yang tertinggal.",
+      "meta_desc": "PackNest menjana senarai kemas pintar berdasarkan destinasi, tarikh dan aktiviti. Berbilang beg dan pengembara, eksport PDF, sepenuhnya luar talian.",
+      "features": [
+        {
+          "t": "Senarai yang terbina sendiri",
+          "d": "Beritahu bilangan hari, iklim dan aktiviti — dapatkan senarai lengkap dalam beberapa saat."
+        },
+        {
+          "t": "Beg dan orang",
+          "d": "Agihkan barang antara beg dan ahli keluarga, dan tanda bersama-sama."
+        },
+        {
+          "t": "Kegemaran sentiasa sedia",
+          "d": "Simpan kit keperluan boleh guna semula yang masuk ke setiap perjalanan baharu."
+        },
+        {
+          "t": "Berfungsi luar talian",
+          "d": "24 panduan wilayah terbina dalam. Perjalanan anda kekal pada peranti anda."
+        }
+      ],
+      "privacy_blurb": "Perjalanan dan senarai anda kekal pada peranti anda. Cuaca pilihan menggunakan WeatherKit daripada Apple.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Permainan",
-    "games_sub": "Teka-teki asli yang menghormati anda: tiada iklan antara tahap, tiada pemasa tenaga, tiada keseronokan di sebalik tembok bayaran.",
+    "games_sub": "Permainan asli yang menghormati anda — tiada iklan antara peringkat, tiada pemasa tenaga, tiada keseronokan dikunci di sebalik tembok bayaran.",
     "tools_title": "Alat",
     "tools_sub": "Utiliti kecil dan tepat yang tidak mengganggu anda — dan tidak menyentuh data anda."
   },
   "teaser": {
     "badge": "Dalam pembangunan",
-    "title": "Project 006",
-    "desc": "Sesuatu yang baharu bersinar dalam gelap. Tiada pembocoran buat masa ini."
+    "title": "Project 009",
+    "desc": "Sesuatu sedang memanaskan badan di belakang pentas. Tirai bakal dibuka."
   },
   "about": {
     "title": "Perihal pembangun",
-    "body": "Saya pembangun solo di sebalik Sparkfall Games. Setiap permainan dan alat adalah 100% natif untuk iOS, disetempatkan ke 31 bahasa dan dibina dengan satu peraturan: data anda kekal pada peranti anda."
+    "body": "Saya pembangun solo di sebalik Sparkfall Games. Setiap permainan dan alat adalah 100% natif untuk iOS, disetempatkan ke 34 bahasa dan dibina dengan satu peraturan: data anda kekal pada peranti anda."
   },
   "badges": {
     "onetime": "Beli sekali",

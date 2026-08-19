@@ -26,7 +26,7 @@
     "honest_title": "Harga yang jujur",
     "honest_desc": "Fitur gratis tetap gratis selamanya. Tanpa jebakan langganan, tanpa hitung mundur palsu.",
     "global_title": "Dibuat untuk semua",
-    "global_desc": "Setiap aplikasi dilokalkan penuh dalam 31 bahasa, dengan mode gelap dan aksesibilitas."
+    "global_desc": "Setiap aplikasi dilokalkan penuh dalam 34 bahasa, dengan mode gelap dan aksesibilitas."
   },
   "common": {
     "coming_soon": "Segera hadir di App Store",
@@ -43,7 +43,9 @@
     "finance": "Keuangan",
     "utilities": "Utilitas",
     "health": "Kesehatan & Kebugaran",
-    "games": "Game"
+    "games": "Game",
+    "reference": "Referensi",
+    "travel": "Perjalanan"
   },
   "apps": {
     "quickcost": {
@@ -65,7 +67,7 @@
           "d": "Ringkasan harian, bulanan, dan per kategori menunjukkan ke mana uang Anda pergi."
         },
         {
-          "t": "31 bahasa",
+          "t": "34 bahasa",
           "d": "Dilokalkan penuh di seluruh dunia, dengan mode gelap dan teks besar."
         }
       ],
@@ -175,22 +177,100 @@
       ],
       "privacy_blurb": "Gloomfall bekerja sepenuhnya offline dan tidak mengumpulkan apa pun.",
       "disclaimer": ""
+    },
+    "overlens": {
+      "tagline": "Lihat layar apa pun dalam bahasa Anda.",
+      "card_desc": "Terjemahan layar langsung untuk game, aplikasi, dan gambar — sepenuhnya di perangkat.",
+      "subtitle": "Jendela mengambang menerjemahkan langsung game, aplikasi, dan gambar di layar Anda — seluruhnya di perangkat Anda.",
+      "meta_desc": "OverLens menerjemahkan teks di layar Anda secara langsung lewat jendela mengambang, plus terjemahan tangkapan layar gratis tanpa batas. 100% di perangkat, tanpa unggahan.",
+      "features": [
+        {
+          "t": "Jendela mengambang langsung",
+          "d": "Mulai sekali, beralih ke game atau aplikasi mana pun — terjemahan mengikuti Anda."
+        },
+        {
+          "t": "Terjemahan tangkapan layar",
+          "d": "Pilih atau tempel gambar — terjemahan muncul tepat di atasnya. Gratis, tanpa batas."
+        },
+        {
+          "t": "Sepenuhnya offline",
+          "d": "Paket bahasa cukup diunduh sekali. Layar Anda tidak pernah meninggalkan perangkat."
+        },
+        {
+          "t": "Bayar sekali",
+          "d": "Tanpa langganan, tanpa koin. Waktu langsung gratis setiap hari, satu pembukaan yang jujur."
+        }
+      ],
+      "privacy_blurb": "Pengenalan teks dan terjemahan berjalan sepenuhnya di perangkat Anda. Tidak ada yang direkam, disimpan, atau diunggah.",
+      "disclaimer": ""
+    },
+    "mergehold": {
+      "tagline": "Gabungkan pahlawan. Pertahankan benteng.",
+      "card_desc": "Duel pertahanan taktis bergaya merge, dari Tiga Kerajaan dan seterusnya.",
+      "subtitle": "Gabungkan pahlawan, tempa perlengkapan, dan kalahkan rival cermin gelombang demi gelombang — dari Tiga Kerajaan ke Mesir kuno hingga Fusang yang berperang.",
+      "meta_desc": "Mergehold adalah duel pertahanan taktis bergaya merge untuk iPhone: susun papan, gabungkan pahlawan, dan pertahankan kastel dari rival cermin. Tiga era bersejarah. Tanpa loot box.",
+      "features": [
+        {
+          "t": "Duel cermin",
+          "d": "Anda dan rival menghadapi gelombang yang sama di peta yang sama — murni strategi, bukan keberuntungan."
+        },
+        {
+          "t": "Tiga era yang bisa dimainkan",
+          "d": "Tiga Kerajaan, Mesir kuno, dan Fusang — masing-masing punya pahlawan, perlengkapan, dan talenta sendiri."
+        },
+        {
+          "t": "Gabungkan dan pimpin",
+          "d": "Gabungkan kartu menjadi pahlawan yang lebih kuat, pilih talenta, dan picu sinergi faksi."
+        },
+        {
+          "t": "Tanpa pay-to-win",
+          "d": "Hanya kosmetik dan tiket era — kekuatan tidak pernah dijual, dan tidak ada loot box."
+        }
+      ],
+      "privacy_blurb": "Pertandingan berjalan di perangkat Anda dan Game Center. Kami tidak mengoperasikan server dan tidak mengumpulkan apa pun.",
+      "disclaimer": ""
+    },
+    "packnest": {
+      "tagline": "Berkemas tepat di setiap perjalanan.",
+      "card_desc": "Daftar kemas pintar dari perjalanan, cuaca, dan aktivitas Anda.",
+      "subtitle": "PackNest menyusun daftar kemas dari perjalanan itu sendiri — jumlah hari, iklim, dan aktivitas — agar tak ada yang tertinggal.",
+      "meta_desc": "PackNest membuat daftar kemas pintar dari tujuan, tanggal, dan aktivitas. Banyak tas dan pelancong, ekspor PDF, sepenuhnya offline.",
+      "features": [
+        {
+          "t": "Daftar yang menyusun dirinya",
+          "d": "Beri tahu jumlah hari, iklim, dan aktivitas — dapatkan daftar lengkap dalam hitungan detik."
+        },
+        {
+          "t": "Tas dan orang",
+          "d": "Bagi barang ke beberapa koper dan anggota keluarga, lalu centang bersama."
+        },
+        {
+          "t": "Favorit selalu siap",
+          "d": "Simpan kit barang wajib yang bisa dipakai ulang dan otomatis masuk ke setiap perjalanan baru."
+        },
+        {
+          "t": "Bekerja offline",
+          "d": "24 panduan wilayah bawaan. Perjalanan Anda tetap di perangkat Anda."
+        }
+      ],
+      "privacy_blurb": "Perjalanan dan daftar Anda tetap di perangkat Anda. Cuaca opsional menggunakan WeatherKit dari Apple.",
+      "disclaimer": ""
     }
   },
   "sections": {
     "games_title": "Game",
-    "games_sub": "Teka-teki orisinal yang menghargai Anda: tanpa iklan di antara level, tanpa timer energi, tanpa kesenangan yang dikunci berbayar.",
+    "games_sub": "Game orisinal yang menghargai Anda — tanpa iklan antarlevel, tanpa timer energi, tanpa keseruan yang dikunci di balik tembok bayar.",
     "tools_title": "Alat",
     "tools_sub": "Utilitas kecil dan tajam yang tidak menghalangi Anda — dan tidak menyentuh data Anda."
   },
   "teaser": {
     "badge": "Dalam pengembangan",
-    "title": "Project 006",
-    "desc": "Sesuatu yang baru bersinar dalam gelap. Belum ada bocoran."
+    "title": "Project 009",
+    "desc": "Sesuatu sedang pemanasan di belakang panggung. Tirai segera terangkat."
   },
   "about": {
     "title": "Tentang pengembang",
-    "body": "Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 31 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda."
+    "body": "Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 34 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda."
   },
   "badges": {
     "onetime": "Beli sekali",

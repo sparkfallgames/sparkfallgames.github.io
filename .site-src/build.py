@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """Static site generator for the apps site (sparkfallgames.com, hosted on GitHub Pages).
 
+Design system v2 "Ember": unified warm-ink shell (nav/footer), dual content zones —
+zone-dark for games (ink + ember glow), zone-light for tools (warm paper, Apple-calm).
+
 Reads apps.json + i18n/<lang>.json, emits:
   /index.html, /<app>/index.html            (English, site root)
   /<lang>/index.html, /<lang>/<app>/...     (30 more languages)
@@ -11,7 +14,6 @@ NEVER touched by this script — their URLs are referenced from shipped apps.
 """
 
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -61,11 +63,16 @@ def process_images():
     for app in APPS:
         raw = SRC / "shots" / f"raw-{app['slug']}.png"
         if raw.exists():
-            im = Image.open(raw)
+            im = Image.open(raw).convert("RGB")
             w = 640
             h = round(im.height * w / im.width)
-            im.resize((w, h), Image.LANCZOS).save(
-                img_dir / f"shot-{app['slug']}.png", optimize=True)
+            im = im.resize((w, h), Image.LANCZOS)
+            # WebP 有损 + 超预算自动降质：性能预算单图 ≤80KB（原画类 PNG 会到 1MB+）
+            out = img_dir / f"shot-{app['slug']}.webp"
+            for q in (82, 72, 62, 52):
+                im.save(out, quality=q, method=6)
+                if out.stat().st_size <= 82_000:
+                    break
 
     icon_map = {
         "quickcost": ROOT.parent / "001/QuickCost/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
@@ -73,11 +80,14 @@ def process_images():
         "fastzen": ROOT.parent / "003/FastZen/Assets.xcassets/AppIcon.appiconset/AppIcon1024.png",
         "numzen": ROOT.parent / "004/NumZen/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
         "gloomfall": ROOT.parent / "005/Gloomfall/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        "mergehold": ROOT.parent / "006/Mergehold/Assets.xcassets/AppIcon.appiconset/AppIcon-1024.png",
+        "overlens": ROOT.parent / "007/OverLens/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
+        "packnest": ROOT.parent / "008/PackNest/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
     }
     for slug, src in icon_map.items():
         if src.exists():
-            im = Image.open(src).resize((192, 192), Image.LANCZOS)
-            im.save(img_dir / f"icon-{slug}.png", optimize=True)
+            im = Image.open(src).convert("RGB").resize((192, 192), Image.LANCZOS)
+            im.save(img_dir / f"icon-{slug}.webp", quality=88, method=6)
 
 
 def t(d, dotted):
@@ -114,10 +124,39 @@ def switcher(current, page):
             'onchange="location.href=this.value">' + "".join(opts) + "</select>")
 
 
-def head(lang, s, title, desc, page, canonical, extra=""):
+# Brand spark mark (four-point spark, ember gradient). Inline SVG, no asset request.
+SPARK_MARK = (
+    '<svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true">'
+    '<defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24">'
+    '<stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/>'
+    '</linearGradient></defs>'
+    '<path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/>'
+    '</svg>')
+
+SPARK_DIVIDER = (
+    '<svg class="spark-divider" viewBox="0 0 24 24" aria-hidden="true">'
+    '<path fill="#e0a84e" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/>'
+    '</svg>')
+
+VALUE_ICONS = {
+    "private": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+                'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+                '<rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/>'
+                '<path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg>'),
+    "honest": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+               'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+               '<path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/>'
+               '<circle cx="7.5" cy="7.5" r="1.4"/></svg>'),
+    "global": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
+               'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
+               '<circle cx="12" cy="12" r="9"/><path d="M3 12h18"/>'
+               '<path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg>'),
+}
+
+
+def head(lang, s, title, desc, page, canonical, zone, extra=""):
     direction = ' dir="rtl"' if lang.get("dir") == "rtl" else ""
-    asset = "../" if page.count("/") and lang["path"] == "" else ""
-    # Use absolute asset paths — simplest and works at any depth.
+    theme_color = "#faf8f5" if zone == "zone-light" else "#0d0b09"
     return f"""<!DOCTYPE html>
 <html lang="{lang['hreflang']}"{direction}>
 <head>
@@ -125,11 +164,13 @@ def head(lang, s, title, desc, page, canonical, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
+<meta name="theme-color" content="{theme_color}">
 <link rel="canonical" href="{canonical}">
 {hreflang_links(page)}{extra}
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
+<body class="{zone}">
 """
 
 
@@ -141,6 +182,7 @@ BADGE_SETS = {
 CATEGORY_SCHEMA = {
     "games": "GameApplication", "finance": "FinanceApplication",
     "health": "HealthApplication", "utilities": "UtilitiesApplication",
+    "reference": "ReferenceApplication", "travel": "TravelApplication",
 }
 
 
@@ -196,7 +238,7 @@ def header_nav(lang, s, page):
     home = lang_url(lang, "")
     return f"""<header class="nav">
   <div class="wrap nav-inner">
-    <a class="brand" href="{home}">{SITE['brand']}</a>
+    <a class="brand" href="{home}">{SPARK_MARK}{SITE['brand']}</a>
     <nav>
       <a href="{home}#games">{t(s, 'nav.games')}</a>
       <a href="{home}#tools">{t(s, 'nav.tools')}</a>
@@ -214,6 +256,7 @@ def footer(lang, s):
     legal = lang_url(lang, "legal/")
     return f"""<footer class="foot">
   <div class="wrap">
+    <div class="foot-brand">{SPARK_MARK}{SITE['brand']}</div>
     <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a></p>
   </div>
 </footer>
@@ -231,45 +274,45 @@ def store_button(app, s):
 def phone(app, size=""):
     return f"""<div class="phone {size}" style="--pa:{app['gradient'][0]};--pb:{app['gradient'][1]};">
   <div class="phone-frame">
-    <img src="/assets/img/shot-{app['slug']}.png" alt="{app['name']}" loading="lazy">
+    <img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" loading="lazy">
   </div>
 </div>"""
 
 
 def game_card(lang, s, app):
     aurl = lang_url(lang, f"{app['slug']}/")
-    return f"""    <a class="game-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
-      <div class="game-copy">
-        <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
-        <h3>{app['name']}</h3>
-        <p class="game-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
-        <p class="game-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
-        <span class="card-more">{t(s, 'common.learn_more')} →</span>
-      </div>
-      <div class="game-shot"><img src="/assets/img/shot-{app['slug']}.png" alt="{app['name']}" loading="lazy"></div>
-    </a>"""
+    return f"""      <a class="game-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+        <div class="game-copy">
+          <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
+          <h3>{app['name']}</h3>
+          <p class="game-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
+          <p class="game-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
+          <span class="card-more">{t(s, 'common.learn_more')} →</span>
+        </div>
+        <div class="game-shot"><img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" loading="lazy"></div>
+      </a>"""
 
 
 def tease_card(s):
-    return f"""    <div class="tease-card reveal">
-      <span class="badge" style="--aa:#8b5cf6;">{t(s, 'teaser.badge')}</span>
-      <h3>{t(s, 'teaser.title')}</h3>
-      <p>{t(s, 'teaser.desc')}</p>
-      <span class="tease-glyph" aria-hidden="true">?</span>
-    </div>"""
+    return f"""      <div class="tease-card reveal">
+        <span class="badge" style="--aa:#e0a84e;">{t(s, 'teaser.badge')}</span>
+        <h3>{t(s, 'teaser.title')}</h3>
+        <p>{t(s, 'teaser.desc')}</p>
+        <span class="tease-glyph" aria-hidden="true">?</span>
+      </div>"""
 
 
 def tool_card(lang, s, app):
     aurl = lang_url(lang, f"{app['slug']}/")
-    return f"""    <a class="tool-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
-      <div class="tool-top">
-        <img class="app-icon" src="/assets/img/icon-{app['slug']}.png" alt="" width="52" height="52">
-        <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
-      </div>
-      <h3>{app['name']}</h3>
-      <p class="tool-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
-      <span class="card-more">{t(s, 'common.learn_more')} →</span>
-    </a>"""
+    return f"""      <a class="tool-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+        <div class="tool-top">
+          <img class="app-icon" src="/assets/img/icon-{app['slug']}.webp" alt="" width="56" height="56" loading="lazy">
+          <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
+        </div>
+        <h3>{app['name']}</h3>
+        <p class="tool-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
+        <span class="card-more">{t(s, 'common.learn_more')} →</span>
+      </a>"""
 
 
 def render_home(lang, s):
@@ -282,11 +325,11 @@ def render_home(lang, s):
     game_cards += "\n" + tease_card(s)
     tool_cards = "\n".join(tool_card(lang, s, a) for a in tools)
 
-    values = f"""  <section class="values wrap">
-    <div class="value reveal"><div class="value-ic">🔒</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
-    <div class="value reveal"><div class="value-ic">🤝</div><h3>{t(s, 'values.honest_title')}</h3><p>{t(s, 'values.honest_desc')}</p></div>
-    <div class="value reveal"><div class="value-ic">🌍</div><h3>{t(s, 'values.global_title')}</h3><p>{t(s, 'values.global_desc')}</p></div>
-  </section>"""
+    values = f"""    <section class="values">
+      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['private']}</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
+      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['honest']}</div><h3>{t(s, 'values.honest_title')}</h3><p>{t(s, 'values.honest_desc')}</p></div>
+      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['global']}</div><h3>{t(s, 'values.global_title')}</h3><p>{t(s, 'values.global_desc')}</p></div>
+    </section>"""
 
     # Wrap the last word of the hero title in a gradient span.
     title_words = t(s, "hero.title").rsplit(" ", 1)
@@ -304,12 +347,12 @@ def render_home(lang, s):
         "description": t(s, "meta.home_desc"),
     })
     html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"),
-                page, canonical, "\n" + org)
-    html += "<body>\n" + header_nav(lang, s, page)
+                page, canonical, "zone-dark", "\n" + org)
+    html += header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <div class="hero-grid" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
+  <div class="hero-vign" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <span class="hero-kicker">{t(s, 'hero.kicker')}</span>
     <h1>{hero_title}</h1>
@@ -320,33 +363,40 @@ def render_home(lang, s):
     </div>
   </div>
 </section>
-<main class="wrap">
+<div class="zone-games">
   <section class="sec" id="games">
-    <div class="sec-head reveal">
-      <h2><span class="grad">{t(s, 'sections.games_title')}</span></h2>
-      <p>{t(s, 'sections.games_sub')}</p>
-    </div>
-    <div class="game-grid">
+    <div class="wrap">
+      <div class="sec-head reveal">
+        <h2><span class="grad">{t(s, 'sections.games_title')}</span></h2>
+        <p>{t(s, 'sections.games_sub')}</p>
+      </div>
+      <div class="game-grid">
 {game_cards}
+      </div>
     </div>
   </section>
-  <section class="sec" id="tools">
-    <div class="sec-head reveal">
-      <h2>{t(s, 'sections.tools_title')}</h2>
-      <p>{t(s, 'sections.tools_sub')}</p>
-    </div>
-    <div class="tool-grid">
+</div>
+<div class="zone-break" aria-hidden="true">{SPARK_DIVIDER}</div>
+<div class="zone-light">
+  <main class="wrap">
+    <section class="sec" id="tools" style="padding-top:56px;">
+      <div class="sec-head reveal">
+        <h2>{t(s, 'sections.tools_title')}</h2>
+        <p>{t(s, 'sections.tools_sub')}</p>
+      </div>
+      <div class="tool-grid">
 {tool_cards}
-    </div>
-  </section>
-</main>
+      </div>
+    </section>
 {values}
-<section class="wrap" id="about">
-  <div class="about reveal">
-    <h2>{t(s, 'about.title')}</h2>
-    <p>{t(s, 'about.body')}</p>
-  </div>
-</section>
+    <section id="about">
+      <div class="about reveal">
+        <h2>{t(s, 'about.title')}</h2>
+        <p>{t(s, 'about.body')}</p>
+      </div>
+    </section>
+  </main>
+</div>
 """
     html += footer(lang, s)
     out = ROOT / lang["path"] / "index.html" if lang["path"] else ROOT / "index.html"
@@ -359,6 +409,7 @@ def render_app(lang, s, app):
     page = f"{slug}/"
     canonical = SITE["base_url"] + lang_url(lang, page)
     a = s["apps"][slug]
+    zone = "zone-dark" if app["kind"] == "game" else "zone-light"
     feats = []
     for f in a["features"]:
         feats.append(f"""      <div class="feat reveal"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
@@ -369,12 +420,13 @@ def render_app(lang, s, app):
     if app.get("store_id"):
         extra += (f'\n<meta name="apple-itunes-app" '
                   f'content="app-id={app["store_id"]}">')
-    html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"], page, canonical, extra)
-    html += "<body>\n" + header_nav(lang, s, page)
+    html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"],
+                page, canonical, zone, extra)
+    html += header_nav(lang, s, page)
     html += f"""<section class="app-hero" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
   <div class="wrap app-hero-inner">
     <div class="app-hero-copy">
-      <img class="app-icon-lg" src="/assets/img/icon-{slug}.png" alt="" width="88" height="88">
+      <img class="app-icon-lg" src="/assets/img/icon-{slug}.webp" alt="" width="92" height="92">
       <h1>{app['name']}</h1>
       <p class="lede">{esc(a['subtitle'])}</p>
       {badge_row(app, s)}
@@ -394,7 +446,7 @@ def render_app(lang, s, app):
 {chr(10).join(feats)}
     </div>
   </section>
-  <section class="privacy-strip reveal">
+  <section class="privacy-strip reveal" style="--aa:{app['gradient'][0]};">
     <h2>{t(s, 'common.privacy_heading')}</h2>
     <p>{esc(a['privacy_blurb'])} <a href="/{slug}/privacy.html">{t(s, 'common.privacy_policy')}</a></p>
     {disclaimer}
@@ -419,7 +471,7 @@ def render_legal(lang, s):
     rows = []
     for app in APPS:
         rows.append(f"""    <div class="legal-row reveal" style="--aa:{app['gradient'][0]};">
-      <img class="app-icon" src="/assets/img/icon-{app['slug']}.png" alt="" width="44" height="44">
+      <img class="app-icon" src="/assets/img/icon-{app['slug']}.webp" alt="" width="44" height="44">
       <h3>{app['name']}</h3>
       <div class="legal-links">
         <a href="/{app['slug']}/privacy.html">{t(s, 'common.privacy_policy')}</a>
@@ -427,8 +479,9 @@ def render_legal(lang, s):
       </div>
     </div>""")
 
-    html = head(lang, s, title, t(s, "meta.home_desc"), page, canonical)
-    html += "<body>\n" + header_nav(lang, s, page)
+    html = head(lang, s, title, t(s, "meta.home_desc"), page, canonical,
+                "zone-light")
+    html += header_nav(lang, s, page)
     html += f"""<main class="wrap legal-hub">
   <div class="sec-head">
     <h2>{t(s, 'common.footer_privacy')}</h2>
