@@ -272,9 +272,10 @@ def store_button(app, s):
 
 
 def phone(app, size=""):
+    # 产品页首屏主图：不 lazy + 提高抓取优先级（LCP）
     return f"""<div class="phone {size}" style="--pa:{app['gradient'][0]};--pb:{app['gradient'][1]};">
   <div class="phone-frame">
-    <img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" loading="lazy">
+    <img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" fetchpriority="high">
   </div>
 </div>"""
 
