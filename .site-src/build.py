@@ -399,22 +399,27 @@ def render_home(lang, s):
     html += header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
+  <svg class="hero-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#c25a12" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>
   <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
     <span class="hero-kicker">{t(s, 'hero.kicker')}</span>
     <h1>{hero_title}</h1>
     <p>{t(s, 'hero.subtitle')}</p>
+    <div class="cta-row">
+      <a class="btn btn-primary" href="{lang_url(lang, 'games/')}">{t(s, 'hero.explore')}</a>
+      <a class="btn" href="{lang_url(lang, 'tools/')}">{t(s, 'hero.explore_tools')}</a>
+    </div>
   </div>
 </section>
 <main class="wrap">
   <div class="entry-grid">
-    <a class="entry-card" href="{lang_url(lang, 'games/')}">
+    <a class="entry-card entry-games" href="{lang_url(lang, 'games/')}">
       <div class="entry-media"><div class="entry-shots">{game_shots}</div></div>
       <h2>{t(s, 'nav.games')}</h2>
       <p>{t(s, 'home.games_card_desc')}</p>
       <span class="entry-cta">{t(s, 'home.games_cta')} →</span>
     </a>
-    <a class="entry-card" href="{lang_url(lang, 'tools/')}">
+    <a class="entry-card entry-tools" href="{lang_url(lang, 'tools/')}">
       <div class="entry-media"><div class="entry-shots">{tool_shots}</div></div>
       <h2>{t(s, 'nav.tools')}</h2>
       <p>{t(s, 'home.tools_card_desc')}</p>

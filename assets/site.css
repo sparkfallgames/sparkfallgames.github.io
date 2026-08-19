@@ -19,9 +19,14 @@
   --ember-grad: linear-gradient(100deg, #f0964a 0%, #e06f28 55%, #c94f22 100%);
   --radius: 20px;
   --radius-sm: 14px;
-  --wrap: 1080px;
+  --wrap: 1200px;
   --shadow-sm: 0 2px 10px rgba(70, 50, 25, 0.05);
   --shadow-md: 0 14px 40px rgba(70, 50, 25, 0.10);
+}
+
+/* 大屏适配：更宽的内容区 */
+@media (min-width: 1520px) {
+  :root { --wrap: 1360px; }
 }
 
 * { box-sizing: border-box; }
@@ -36,7 +41,13 @@ body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
     "Helvetica Neue", "PingFang SC", "Hiragino Sans", "Noto Sans", sans-serif;
-  background: var(--paper);
+  /* 暖色晕染水洗层：纸白不再一片素色 */
+  background:
+    radial-gradient(52% 38% at 88% -6%, rgba(255, 144, 64, 0.09), transparent 70%),
+    radial-gradient(44% 34% at -8% 24%, rgba(217, 154, 60, 0.08), transparent 68%),
+    radial-gradient(56% 40% at 108% 62%, rgba(207, 64, 41, 0.05), transparent 70%),
+    var(--paper);
+  background-attachment: fixed;
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -113,7 +124,7 @@ a { color: var(--accent-deep); }
 
 .hero {
   position: relative;
-  padding: 110px 0 84px;
+  padding: clamp(110px, 14vh, 170px) 0 clamp(84px, 10vh, 130px);
   text-align: center;
   overflow: hidden;
   isolation: isolate;
@@ -124,8 +135,21 @@ a { color: var(--accent-deep); }
   inset: 0;
   z-index: -2;
   background:
-    radial-gradient(50% 42% at 50% -4%, rgba(255, 144, 64, 0.10), transparent 70%),
-    var(--paper);
+    radial-gradient(56% 48% at 50% -6%, rgba(255, 144, 64, 0.18), transparent 70%),
+    radial-gradient(40% 36% at 12% 88%, rgba(217, 154, 60, 0.10), transparent 68%),
+    radial-gradient(36% 32% at 90% 78%, rgba(207, 64, 41, 0.07), transparent 70%);
+}
+
+.hero-mark {
+  position: absolute;
+  z-index: -1;
+  width: clamp(300px, 34vw, 560px);
+  height: clamp(300px, 34vw, 560px);
+  inset-inline-end: -6%;
+  top: 4%;
+  opacity: 0.06;
+  transform: rotate(14deg);
+  pointer-events: none;
 }
 
 #sparks {
@@ -163,8 +187,8 @@ a { color: var(--accent-deep); }
 }
 
 .hero h1 {
-  font-size: clamp(2.5rem, 6.6vw, 4.4rem);
-  line-height: 1.08;
+  font-size: clamp(2.5rem, 6.8vw, 5.4rem);
+  line-height: 1.06;
   letter-spacing: -0.028em;
   margin: 0 0 20px;
   font-weight: 800;
@@ -180,10 +204,12 @@ a { color: var(--accent-deep); }
 
 .hero p {
   color: var(--text-2);
-  font-size: clamp(1rem, 2vw, 1.16rem);
-  max-width: 600px;
-  margin: 0 auto;
+  font-size: clamp(1rem, 2vw, 1.24rem);
+  max-width: 640px;
+  margin: 0 auto 34px;
 }
+
+.hero .cta-row { justify-content: center; }
 
 /* ---------- 首页双入口大卡 ---------- */
 
@@ -201,15 +227,29 @@ a { color: var(--accent-deep); }
   background: var(--card);
   border: 1px solid var(--hair);
   border-radius: var(--radius);
-  padding: 40px 40px 36px;
+  padding: clamp(36px, 3.4vw, 52px) clamp(36px, 3.4vw, 52px) 36px;
   box-shadow: var(--shadow-sm);
   transition: transform 0.18s ease, box-shadow 0.18s ease, border-color 0.18s ease;
 }
 
+.entry-games {
+  background:
+    radial-gradient(120% 110% at 88% -12%, rgba(217, 154, 60, 0.16), transparent 58%),
+    linear-gradient(165deg, #fffdf9, #fdf6ea);
+  border-color: rgba(217, 154, 60, 0.3);
+}
+
+.entry-tools {
+  background:
+    radial-gradient(120% 110% at 88% -12%, rgba(240, 118, 46, 0.13), transparent 58%),
+    linear-gradient(165deg, #fffdf9, #fdf1e6);
+  border-color: rgba(224, 111, 40, 0.26);
+}
+
 .entry-card:hover {
   transform: translateY(-4px);
-  border-color: rgba(194, 90, 18, 0.35);
-  box-shadow: var(--shadow-md);
+  border-color: rgba(194, 90, 18, 0.4);
+  box-shadow: 0 18px 46px rgba(194, 90, 18, 0.13);
 }
 
 .entry-card h2 {
@@ -301,8 +341,10 @@ a { color: var(--accent-deep); }
 .stat {
   padding: 22px 24px 20px;
   border-radius: var(--radius-sm);
-  background: var(--card);
-  border: 1px solid var(--hair);
+  background:
+    radial-gradient(120% 120% at 90% -20%, rgba(224, 111, 40, 0.08), transparent 60%),
+    var(--card);
+  border: 1px solid rgba(224, 111, 40, 0.16);
   box-shadow: var(--shadow-sm);
 }
 
@@ -418,10 +460,13 @@ a { color: var(--accent-deep); }
   display: flex;
   gap: 26px;
   align-items: center;
-  padding: 32px;
+  padding: clamp(30px, 2.6vw, 40px);
   border-radius: var(--radius);
-  background: var(--card);
-  border: 1px solid var(--hair);
+  /* 每张卡带自家品牌色的浅渐变 */
+  background:
+    radial-gradient(120% 130% at 92% -16%, color-mix(in srgb, var(--aa, #c25a12) 13%, transparent), transparent 55%),
+    linear-gradient(160deg, #fffefc, color-mix(in srgb, var(--aa, #c25a12) 5%, #fdfaf5));
+  border: 1px solid color-mix(in srgb, var(--aa, #c25a12) 22%, var(--hair));
   box-shadow: var(--shadow-sm);
   text-decoration: none;
   color: var(--text);
@@ -430,8 +475,8 @@ a { color: var(--accent-deep); }
 
 .game-card:hover {
   transform: translateY(-4px);
-  border-color: color-mix(in srgb, var(--aa, #c25a12) 40%, var(--hair));
-  box-shadow: var(--shadow-md);
+  border-color: color-mix(in srgb, var(--aa, #c25a12) 48%, var(--hair));
+  box-shadow: 0 18px 46px color-mix(in srgb, var(--aa, #c25a12) 16%, rgba(70, 50, 25, 0.08));
 }
 
 .game-copy { flex: 1; min-width: 0; }

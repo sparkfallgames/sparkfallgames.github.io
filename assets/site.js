@@ -25,7 +25,7 @@
       w = r.width; h = r.height;
       canvas.width = w * dpr; canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var n = Math.min(18, Math.max(10, Math.round(w / 90)));
+      var n = Math.min(34, Math.max(14, Math.round(w / 52)));
       parts = [];
       for (var i = 0; i < n; i++) parts.push(spawn(true));
     }
