@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indiespel & ärliga iOS-appar",
-    "home_desc": "Sparkfall Games är en enmans indiestudio som gör lekfulla spel och ärliga, privata iOS-verktyg. Inga konton, inga servrar, ingen spårning."
+    "home_desc": "Sparkfall Games är en enmans indiestudio som gör lekfulla spel och ärliga, privata iOS-verktyg. Inga konton, inga servrar, ingen spårning.",
+    "games_title": "Spel — Sparkfall Games",
+    "games_desc": "Originella iOS-spel utan annonser, energitimers och lootlådor — från merge-försvarsdueller till dagliga sifferpussel.",
+    "tools_title": "Verktyg — Sparkfall Games",
+    "tools_desc": "Små, vassa iOS-verktyg med ärliga priser och full integritet: utgifter, decibelmätare, fasta, skärmöversättare, packlistor."
   },
   "nav": {
     "contact": "Kontakt",
@@ -277,6 +281,19 @@
     "nosub": "Ingen prenumeration",
     "noads": "Inga annonser",
     "notracking": "Ingen spårning",
-    "honest": "Ärliga priser"
+    "honest": "Ärliga priser",
+    "noloot": "Inga lootlådor",
+    "nop2w": "Ingen pay-to-win",
+    "offline": "Helt offline"
+  },
+  "home": {
+    "games_stage": "Tre originella spel.",
+    "games_card_title": "Från De tre kungadömena och vidare.",
+    "games_card_desc": "En speglad merge-duell, ett mörkt taktik-RPG, daglig huvudräkning — och ett fjärde värmer upp bakom scenen.",
+    "games_cta": "In i spelhallen",
+    "tools_stage": "Fem små, vassa verktyg.",
+    "tools_card_title": "Små, vassa, ärliga.",
+    "tools_card_desc": "Utgifter, decibelmätare, fasta, skärmöversättare, packlistor — ärligt pris, betala en gång.",
+    "tools_cta": "In i verkstaden"
   }
 }

@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — 인디 게임과 정직한 iOS 앱",
-    "home_desc": "Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음."
+    "home_desc": "Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음.",
+    "games_title": "게임 — Sparkfall Games",
+    "games_desc": "광고 없음, 스태미나 타이머 없음, 루트박스 없음의 오리지널 iOS 게임 — 미러 대결 타워 디펜스부터 매일 숫자 퍼즐까지.",
+    "tools_title": "도구 — Sparkfall Games",
+    "tools_desc": "작고 정확하며 정직한 가격의 완전 프라이빗 iOS 도구: 가계부, 소음 측정, 단식 타이머, 화면 번역, 짐 목록."
   },
   "nav": {
     "contact": "문의하기",
@@ -277,6 +281,19 @@
     "nosub": "구독 없음",
     "noads": "광고 없음",
     "notracking": "추적 없음",
-    "honest": "정직한 가격"
+    "honest": "정직한 가격",
+    "noloot": "루트박스 없음",
+    "nop2w": "Pay-to-Win 없음",
+    "offline": "완전 오프라인"
+  },
+  "home": {
+    "games_stage": "3개의 오리지널 게임.",
+    "games_card_title": "삼국에서 세계로.",
+    "games_card_desc": "미러 대결 합성 배틀, 다크 전술 RPG, 매일 암산 퍼즐 — 네 번째 작품도 무대 뒤에서 준비 중.",
+    "games_cta": "게임관 입장",
+    "tools_stage": "작고 정확한 5가지 도구.",
+    "tools_card_title": "작고, 정확하고, 정직하게.",
+    "tools_card_desc": "가계부, 소음 측정, 단식 타이머, 화면 번역, 짐 목록 — 정직한 가격, 한 번만 결제.",
+    "tools_cta": "도구실 입장"
   }
 }

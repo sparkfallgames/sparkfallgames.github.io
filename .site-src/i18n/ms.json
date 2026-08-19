@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Permainan indie & aplikasi iOS yang jujur",
-    "home_desc": "Sparkfall Games ialah studio indie seorang diri yang mencipta permainan seronok serta alat iOS yang jujur dan privat. Tiada akaun, tiada pelayan, tiada penjejakan."
+    "home_desc": "Sparkfall Games ialah studio indie seorang diri yang mencipta permainan seronok serta alat iOS yang jujur dan privat. Tiada akaun, tiada pelayan, tiada penjejakan.",
+    "games_title": "Permainan — Sparkfall Games",
+    "games_desc": "Permainan iOS asli tanpa iklan, tanpa pemasa tenaga, tanpa peti rampasan — daripada duel pertahanan gabung hingga teka-teki nombor harian.",
+    "tools_title": "Alat — Sparkfall Games",
+    "tools_desc": "Alat iOS kecil dan tajam dengan harga jujur dan privasi penuh: catatan perbelanjaan, meter desibel, pemasa puasa, penterjemah skrin, senarai kemas."
   },
   "nav": {
     "contact": "Hubungi kami",
@@ -277,6 +281,19 @@
     "nosub": "Tiada langganan",
     "noads": "Tiada iklan",
     "notracking": "Tiada penjejakan",
-    "honest": "Harga jujur"
+    "honest": "Harga jujur",
+    "noloot": "Tiada peti rampasan",
+    "nop2w": "Tiada pay-to-win",
+    "offline": "Sepenuhnya luar talian"
+  },
+  "home": {
+    "games_stage": "Tiga permainan asli.",
+    "games_card_title": "Dari Tiga Kerajaan dan seterusnya.",
+    "games_card_desc": "Duel gabung cermin, RPG taktikal gelap, kira cepat harian — dan yang keempat sedang memanaskan badan di belakang pentas.",
+    "games_cta": "Masuk dewan permainan",
+    "tools_stage": "Lima alat kecil lagi tajam.",
+    "tools_card_title": "Kecil, tajam, jujur.",
+    "tools_card_desc": "Catatan perbelanjaan, meter desibel, pemasa puasa, penterjemah skrin, senarai kemas — harga jujur, bayar sekali.",
+    "tools_cta": "Masuk bengkel alat"
   }
 }

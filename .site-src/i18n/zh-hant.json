@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — 獨立遊戲與誠實的 iOS 工具",
-    "home_desc": "Sparkfall Games 是一人獨立工作室，打造好玩的遊戲和誠實、注重隱私的 iOS 工具。無帳號、無伺服器、無追蹤。"
+    "home_desc": "Sparkfall Games 是一人獨立工作室，打造好玩的遊戲和誠實、注重隱私的 iOS 工具。無帳號、無伺服器、無追蹤。",
+    "games_title": "遊戲 — Sparkfall Games",
+    "games_desc": "無廣告、無體力限制、無開箱的原創 iOS 遊戲——從鏡像塔防對決到每日心算謎題。",
+    "tools_title": "工具 — Sparkfall Games",
+    "tools_desc": "小而精、明碼標價、完全保護隱私的 iOS 工具：記帳、分貝儀、斷食計時、螢幕翻譯、行李清單。"
   },
   "nav": {
     "contact": "聯絡我們",
@@ -277,6 +281,19 @@
     "nosub": "無訂閱",
     "noads": "無廣告",
     "notracking": "無追蹤",
-    "honest": "明碼標價"
+    "honest": "明碼標價",
+    "noloot": "無開箱",
+    "nop2w": "不賣戰力",
+    "offline": "完全離線"
+  },
+  "home": {
+    "games_stage": "三款原創遊戲。",
+    "games_card_title": "從三國到萬國。",
+    "games_card_desc": "鏡像對決自走棋、暗黑戰棋 RPG、每日心算謎題——第四款正在後台熱身。",
+    "games_cta": "進入遊戲館",
+    "tools_stage": "五款小而精的工具。",
+    "tools_card_title": "小而精，夠誠實。",
+    "tools_card_desc": "記帳、分貝儀、斷食計時、螢幕翻譯、行李清單——明碼標價，一次買斷。",
+    "tools_cta": "進入工具間"
   }
 }

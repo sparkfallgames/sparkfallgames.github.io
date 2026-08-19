@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Jogos indie e apps honestos para iOS",
-    "home_desc": "A Sparkfall Games é um estúdio indie de uma pessoa só que cria jogos divertidos e ferramentas honestas e privadas para iOS. Sem contas, sem servidores, sem rastreamento."
+    "home_desc": "A Sparkfall Games é um estúdio indie de uma pessoa só que cria jogos divertidos e ferramentas honestas e privadas para iOS. Sem contas, sem servidores, sem rastreamento.",
+    "games_title": "Jogos — Sparkfall Games",
+    "games_desc": "Jogos originais para iOS sem anúncios, sem timers de energia e sem loot boxes — de duelos de defesa com fusões a quebra-cabeças numéricos diários.",
+    "tools_title": "Ferramentas — Sparkfall Games",
+    "tools_desc": "Utilitários iOS pequenos e afiados, com preços honestos e privacidade total: gastos, decibelímetro, jejum, tradutor de tela, bagagem."
   },
   "nav": {
     "contact": "Contato",
@@ -277,6 +281,19 @@
     "nosub": "Sem assinatura",
     "noads": "Sem anúncios",
     "notracking": "Sem rastreamento",
-    "honest": "Preços honestos"
+    "honest": "Preços honestos",
+    "noloot": "Sem loot boxes",
+    "nop2w": "Sem pay-to-win",
+    "offline": "Totalmente offline"
+  },
+  "home": {
+    "games_stage": "Três jogos originais.",
+    "games_card_title": "Dos Três Reinos em diante.",
+    "games_card_desc": "Um duelo espelhado de fusões, um RPG tático sombrio, cálculo mental diário — e um quarto se aquecendo nos bastidores.",
+    "games_cta": "Entrar no salão de jogos",
+    "tools_stage": "Cinco ferramentas pequenas e afiadas.",
+    "tools_card_title": "Pequenas, afiadas, honestas.",
+    "tools_card_desc": "Gastos, decibelímetro, jejum, tradutor de tela, listas de bagagem — preço honesto, pague uma vez.",
+    "tools_cta": "Entrar na oficina"
   }
 }

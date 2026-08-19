@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Jocuri indie și aplicații iOS oneste",
-    "home_desc": "Sparkfall Games este un studio indie dintr-o singură persoană care creează jocuri antrenante și instrumente iOS oneste și private. Fără conturi, fără servere, fără urmărire."
+    "home_desc": "Sparkfall Games este un studio indie dintr-o singură persoană care creează jocuri antrenante și instrumente iOS oneste și private. Fără conturi, fără servere, fără urmărire.",
+    "games_title": "Jocuri — Sparkfall Games",
+    "games_desc": "Jocuri iOS originale fără reclame, fără cronometre de energie și fără loot box-uri — de la dueluri de apărare cu fuziuni la puzzle-uri numerice zilnice.",
+    "tools_title": "Instrumente — Sparkfall Games",
+    "tools_desc": "Instrumente iOS mici și precise, cu prețuri oneste și confidențialitate totală: cheltuieli, sonometru, post, traducător de ecran, liste de bagaje."
   },
   "nav": {
     "contact": "Contact",
@@ -277,6 +281,19 @@
     "nosub": "Fără abonament",
     "noads": "Fără reclame",
     "notracking": "Fără urmărire",
-    "honest": "Prețuri corecte"
+    "honest": "Prețuri corecte",
+    "noloot": "Fără loot box-uri",
+    "nop2w": "Fără pay-to-win",
+    "offline": "Complet offline"
+  },
+  "home": {
+    "games_stage": "Trei jocuri originale.",
+    "games_card_title": "De la Cele Trei Regate mai departe.",
+    "games_card_desc": "Un duel merge în oglindă, un RPG tactic întunecat, calcul mintal zilnic — iar al patrulea se încălzește în culise.",
+    "games_cta": "Intră în sala de jocuri",
+    "tools_stage": "Cinci instrumente mici și precise.",
+    "tools_card_title": "Mici, precise, oneste.",
+    "tools_card_desc": "Cheltuieli, sonometru, post, traducător de ecran, liste de bagaje — preț onest, plătești o dată.",
+    "tools_cta": "Intră în atelier"
   }
 }

@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indie-Spiele & ehrliche iOS-Apps",
-    "home_desc": "Sparkfall Games ist ein Ein-Personen-Indie-Studio für verspielte Games und ehrliche, private iOS-Tools. Keine Konten, keine Server, kein Tracking."
+    "home_desc": "Sparkfall Games ist ein Ein-Personen-Indie-Studio für verspielte Games und ehrliche, private iOS-Tools. Keine Konten, keine Server, kein Tracking.",
+    "games_title": "Spiele — Sparkfall Games",
+    "games_desc": "Originale iOS-Spiele ohne Werbung, Energie-Timer und Lootboxen — vom Merge-Verteidigungsduell bis zum täglichen Zahlenrätsel.",
+    "tools_title": "Werkzeuge — Sparkfall Games",
+    "tools_desc": "Kleine, präzise iOS-Werkzeuge mit ehrlichen Preisen und voller Privatsphäre: Ausgaben, Schallpegel, Fasten, Bildschirmübersetzer, Packlisten."
   },
   "nav": {
     "contact": "Kontakt",
@@ -277,6 +281,19 @@
     "nosub": "Kein Abo",
     "noads": "Keine Werbung",
     "notracking": "Kein Tracking",
-    "honest": "Ehrliche Preise"
+    "honest": "Ehrliche Preise",
+    "noloot": "Keine Lootboxen",
+    "nop2w": "Kein Pay-to-win",
+    "offline": "Komplett offline"
+  },
+  "home": {
+    "games_stage": "Drei originale Spiele.",
+    "games_card_title": "Von den Drei Reichen und darüber hinaus.",
+    "games_card_desc": "Ein gespiegeltes Merge-Duell, ein dunkles Taktik-RPG, tägliches Kopfrechnen — und ein viertes wärmt sich hinter der Bühne auf.",
+    "games_cta": "Zur Spielhalle",
+    "tools_stage": "Fünf kleine, präzise Werkzeuge.",
+    "tools_card_title": "Klein, präzise, ehrlich.",
+    "tools_card_desc": "Ausgaben, Schallpegel, Fasten, Bildschirmübersetzer, Packlisten — ehrlich bepreist, einmal zahlen.",
+    "tools_cta": "Zur Werkstatt"
   }
 }

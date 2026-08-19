@@ -1,41 +1,22 @@
 /* Sparkfall Games — site enhancements.
-   Self-written, zero third-party code, no tracking.
-   1. Scroll-reveal animations
-   2. Hero spark particles (canvas, skipped for reduced motion / saved data)
-   3. First-visit language redirect + explicit choice memory */
+   Self-written, zero third-party code, no tracking. Site is fully static;
+   the only motion is a whisper of falling embers in the home hero.
+   1. Hero ember motes (canvas; skipped for reduced motion)
+   2. First-visit language redirect + explicit choice memory */
 (function () {
   "use strict";
 
   var reduced = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-  // ---- Scroll reveal ----
+  // ---- Hero ember motes（纸白底上的极轻余烬，品牌记忆点） ----
   document.addEventListener("DOMContentLoaded", function () {
-    var els = document.querySelectorAll(".reveal");
-    if (reduced || !("IntersectionObserver" in window)) {
-      els.forEach(function (el) { el.classList.add("in"); });
-    } else {
-      var io = new IntersectionObserver(function (entries) {
-        entries.forEach(function (e) {
-          if (e.isIntersecting) {
-            e.target.classList.add("in");
-            io.unobserve(e.target);
-          }
-        });
-      }, { threshold: 0.15 });
-      els.forEach(function (el) { io.observe(el); });
-    }
-    sparks();
-  });
-
-  // ---- Hero spark particles ----
-  function sparks() {
     var canvas = document.getElementById("sparks");
     if (!canvas || reduced) return;
     var ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // Embers drift DOWN — echoes the in-app "sparkfall" launch sequence.
-    var COLORS = ["#ffb469", "#ff9040", "#e0a84e", "#ffd9a8", "#e0664a"];
+    // 深一档的暖色，低透明度——纸上可见但不抢戏
+    var COLORS = ["#e06f28", "#d99a3c", "#c94f22", "#e8975a"];
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = 0, h = 0, parts = [], raf = 0;
 
@@ -44,7 +25,7 @@
       w = r.width; h = r.height;
       canvas.width = w * dpr; canvas.height = h * dpr;
       ctx.setTransform(dpr, 0, 0, dpr, 0, 0);
-      var n = Math.min(64, Math.max(26, Math.round(w / 18)));
+      var n = Math.min(18, Math.max(10, Math.round(w / 90)));
       parts = [];
       for (var i = 0; i < n; i++) parts.push(spawn(true));
     }
@@ -53,13 +34,13 @@
       return {
         x: Math.random() * w,
         y: anywhere ? Math.random() * h : -6,
-        vx: (Math.random() - 0.5) * 0.16,
-        vy: 0.22 + Math.random() * 0.55,
-        r: 0.6 + Math.random() * 1.6,
+        vx: (Math.random() - 0.5) * 0.12,
+        vy: 0.16 + Math.random() * 0.34,
+        r: 0.8 + Math.random() * 1.4,
         c: COLORS[(Math.random() * COLORS.length) | 0],
-        a: 0.22 + Math.random() * 0.5,
+        a: 0.12 + Math.random() * 0.22,
         tw: Math.random() * Math.PI * 2,
-        sway: 0.2 + Math.random() * 0.5
+        sway: 0.2 + Math.random() * 0.4
       };
     }
 
@@ -67,25 +48,20 @@
       ctx.clearRect(0, 0, w, h);
       for (var i = 0; i < parts.length; i++) {
         var p = parts[i];
-        p.tw += 0.035;
-        p.x += p.vx + Math.sin(p.tw) * 0.12 * p.sway;
+        p.tw += 0.03;
+        p.x += p.vx + Math.sin(p.tw) * 0.1 * p.sway;
         p.y += p.vy;
         if (p.y > h + 8 || p.x < -8 || p.x > w + 8) parts[i] = p = spawn(false);
-        var glow = p.a * (0.6 + 0.4 * Math.sin(p.tw));
-        ctx.globalAlpha = glow;
+        ctx.globalAlpha = p.a * (0.6 + 0.4 * Math.sin(p.tw));
         ctx.fillStyle = p.c;
-        ctx.shadowColor = p.c;
-        ctx.shadowBlur = 7;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
         ctx.fill();
       }
       ctx.globalAlpha = 1;
-      ctx.shadowBlur = 0;
       raf = requestAnimationFrame(tick);
     }
 
-    // Pause when the tab is hidden.
     document.addEventListener("visibilitychange", function () {
       if (document.hidden) { cancelAnimationFrame(raf); }
       else { raf = requestAnimationFrame(tick); }
@@ -94,7 +70,7 @@
     window.addEventListener("resize", resize);
     resize();
     raf = requestAnimationFrame(tick);
-  }
+  });
 
   // ---- Language handling ----
   document.addEventListener("change", function (e) {

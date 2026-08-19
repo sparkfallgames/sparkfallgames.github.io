@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indie hry a poctivé aplikace pro iOS",
-    "home_desc": "Sparkfall Games je indie studio jednoho člověka, které vytváří hravé hry a poctivé, soukromé nástroje pro iOS. Žádné účty, žádné servery, žádné sledování."
+    "home_desc": "Sparkfall Games je indie studio jednoho člověka, které vytváří hravé hry a poctivé, soukromé nástroje pro iOS. Žádné účty, žádné servery, žádné sledování.",
+    "games_title": "Hry — Sparkfall Games",
+    "games_desc": "Originální iOS hry bez reklam, časovačů energie a lootboxů — od merge-obranných duelů po každodenní číselné hádanky.",
+    "tools_title": "Nástroje — Sparkfall Games",
+    "tools_desc": "Malé, přesné iOS nástroje s poctivými cenami a plným soukromím: výdaje, decibelmetr, půst, překladač obrazovky, balicí seznamy."
   },
   "nav": {
     "contact": "Kontakt",
@@ -277,6 +281,19 @@
     "nosub": "Bez předplatného",
     "noads": "Bez reklam",
     "notracking": "Bez sledování",
-    "honest": "Poctivé ceny"
+    "honest": "Poctivé ceny",
+    "noloot": "Žádné lootboxy",
+    "nop2w": "Žádné pay-to-win",
+    "offline": "Zcela offline"
+  },
+  "home": {
+    "games_stage": "Tři originální hry.",
+    "games_card_title": "Od Tří království dál.",
+    "games_card_desc": "Zrcadlový merge-duel, temné taktické RPG, každodenní počítání zpaměti — a čtvrtá hra se rozehřívá v zákulisí.",
+    "games_cta": "Do herního sálu",
+    "tools_stage": "Pět malých, přesných nástrojů.",
+    "tools_card_title": "Malé, přesné, poctivé.",
+    "tools_card_desc": "Výdaje, decibelmetr, půst, překladač obrazovky, balicí seznamy — poctivá cena, platíte jednou.",
+    "tools_cta": "Do dílny"
   }
 }

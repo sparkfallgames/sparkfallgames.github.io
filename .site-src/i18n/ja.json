@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — インディーゲームと誠実な iOS アプリ",
-    "home_desc": "Sparkfall Games は、遊び心のあるゲームと誠実でプライベートな iOS ツールを作るひとりのインディースタジオです。アカウント不要、サーバーなし、トラッキングなし。"
+    "home_desc": "Sparkfall Games は、遊び心のあるゲームと誠実でプライベートな iOS ツールを作るひとりのインディースタジオです。アカウント不要、サーバーなし、トラッキングなし。",
+    "games_title": "ゲーム — Sparkfall Games",
+    "games_desc": "広告なし・スタミナ制なし・ルートボックスなしのオリジナル iOS ゲーム。ミラー対決タワーディフェンスから毎日の数字パズルまで。",
+    "tools_title": "ツール — Sparkfall Games",
+    "tools_desc": "小さく鋭く、正直な価格で完全プライベートな iOS ツール：家計簿・騒音計・断食タイマー・画面翻訳・パッキングリスト。"
   },
   "nav": {
     "contact": "お問い合わせ",
@@ -277,6 +281,19 @@
     "nosub": "サブスクなし",
     "noads": "広告なし",
     "notracking": "トラッキングなし",
-    "honest": "明朗価格"
+    "honest": "明朗価格",
+    "noloot": "ルートボックスなし",
+    "nop2w": "Pay-to-Win なし",
+    "offline": "完全オフライン"
+  },
+  "home": {
+    "games_stage": "3 つのオリジナルゲーム。",
+    "games_card_title": "三国から、世界へ。",
+    "games_card_desc": "ミラー対決の合成バトル、ダークな戦術 RPG、毎日の暗算パズル——4 作目も舞台裏で準備中。",
+    "games_cta": "ゲームの間へ",
+    "tools_stage": "小さく鋭い 5 つのツール。",
+    "tools_card_title": "小さく、鋭く、正直に。",
+    "tools_card_desc": "家計簿・騒音計・断食タイマー・画面翻訳・パッキングリスト——正直な価格で買い切り。",
+    "tools_cta": "道具の間へ"
   }
 }

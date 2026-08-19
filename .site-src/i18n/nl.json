@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indiegames & eerlijke iOS-apps",
-    "home_desc": "Sparkfall Games is een eenpersoons indiestudio die speelse games en eerlijke, privacyvriendelijke iOS-tools maakt. Geen accounts, geen servers, geen tracking."
+    "home_desc": "Sparkfall Games is een eenpersoons indiestudio die speelse games en eerlijke, privacyvriendelijke iOS-tools maakt. Geen accounts, geen servers, geen tracking.",
+    "games_title": "Games — Sparkfall Games",
+    "games_desc": "Originele iOS-games zonder advertenties, energietimers of lootboxes — van merge-verdedigingsduels tot dagelijkse cijferpuzzels.",
+    "tools_title": "Tools — Sparkfall Games",
+    "tools_desc": "Kleine, scherpe iOS-tools met eerlijke prijzen en volledige privacy: uitgaven, decibelmeter, vasten, schermvertaler, paklijsten."
   },
   "nav": {
     "contact": "Contact",
@@ -277,6 +281,19 @@
     "nosub": "Geen abonnement",
     "noads": "Geen advertenties",
     "notracking": "Geen tracking",
-    "honest": "Eerlijke prijzen"
+    "honest": "Eerlijke prijzen",
+    "noloot": "Geen lootboxes",
+    "nop2w": "Geen pay-to-win",
+    "offline": "Volledig offline"
+  },
+  "home": {
+    "games_stage": "Drie originele games.",
+    "games_card_title": "Van de Drie Koninkrijken en verder.",
+    "games_card_desc": "Een gespiegeld merge-duel, een duistere tactiek-RPG, dagelijks hoofdrekenen — en een vierde draait warm achter de schermen.",
+    "games_cta": "Naar de speelhal",
+    "tools_stage": "Vijf kleine, scherpe tools.",
+    "tools_card_title": "Klein, scherp, eerlijk.",
+    "tools_card_desc": "Uitgaven, decibelmeter, vasten, schermvertaler, paklijsten — eerlijk geprijsd, één keer betalen.",
+    "tools_cta": "Naar de werkplaats"
   }
 }

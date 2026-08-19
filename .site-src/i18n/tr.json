@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Bağımsız oyunlar ve dürüst iOS uygulamaları",
-    "home_desc": "Sparkfall Games, eğlenceli oyunlar ile dürüst ve gizliliğe saygılı iOS araçları yapan tek kişilik bir bağımsız stüdyodur. Hesap yok, sunucu yok, takip yok."
+    "home_desc": "Sparkfall Games, eğlenceli oyunlar ile dürüst ve gizliliğe saygılı iOS araçları yapan tek kişilik bir bağımsız stüdyodur. Hesap yok, sunucu yok, takip yok.",
+    "games_title": "Oyunlar — Sparkfall Games",
+    "games_desc": "Reklamsız, enerji sayaçsız ve loot box'sız özgün iOS oyunları — birleştirmeli savunma düellolarından günlük sayı bulmacalarına.",
+    "tools_title": "Araçlar — Sparkfall Games",
+    "tools_desc": "Küçük, keskin, dürüst fiyatlı ve tamamen gizli iOS araçları: harcama, desibel ölçer, oruç sayacı, ekran çevirisi, bavul listeleri."
   },
   "nav": {
     "contact": "İletişim",
@@ -277,6 +281,19 @@
     "nosub": "Abonelik yok",
     "noads": "Reklam yok",
     "notracking": "Takip yok",
-    "honest": "Dürüst fiyatlar"
+    "honest": "Dürüst fiyatlar",
+    "noloot": "Loot box yok",
+    "nop2w": "Pay-to-win yok",
+    "offline": "Tamamen çevrimdışı"
+  },
+  "home": {
+    "games_stage": "Üç özgün oyun.",
+    "games_card_title": "Üç Krallık'tan öteye.",
+    "games_card_desc": "Ayna düellolu birleştirme savaşı, karanlık taktik RPG, günlük zihinden hesap — dördüncüsü de sahne arkasında ısınıyor.",
+    "games_cta": "Oyun salonuna gir",
+    "tools_stage": "Beş küçük ve keskin araç.",
+    "tools_card_title": "Küçük, keskin, dürüst.",
+    "tools_card_desc": "Harcama, desibel ölçer, oruç sayacı, ekran çevirisi, bavul listeleri — dürüst fiyat, tek ödeme.",
+    "tools_cta": "Atölyeye gir"
   }
 }

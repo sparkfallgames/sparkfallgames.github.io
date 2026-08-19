@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Gry indie i uczciwe aplikacje na iOS",
-    "home_desc": "Sparkfall Games to jednoosobowe studio indie tworzące wciągające gry oraz uczciwe, prywatne narzędzia na iOS. Bez kont, bez serwerów, bez śledzenia."
+    "home_desc": "Sparkfall Games to jednoosobowe studio indie tworzące wciągające gry oraz uczciwe, prywatne narzędzia na iOS. Bez kont, bez serwerów, bez śledzenia.",
+    "games_title": "Gry — Sparkfall Games",
+    "games_desc": "Oryginalne gry na iOS bez reklam, liczników energii i lootboxów — od pojedynków merge-obrony po codzienne łamigłówki liczbowe.",
+    "tools_title": "Narzędzia — Sparkfall Games",
+    "tools_desc": "Małe, precyzyjne narzędzia iOS z uczciwymi cenami i pełną prywatnością: wydatki, miernik decybeli, post, tłumacz ekranu, listy pakowania."
   },
   "nav": {
     "contact": "Kontakt",
@@ -277,6 +281,19 @@
     "nosub": "Bez subskrypcji",
     "noads": "Bez reklam",
     "notracking": "Bez śledzenia",
-    "honest": "Uczciwe ceny"
+    "honest": "Uczciwe ceny",
+    "noloot": "Bez lootboxów",
+    "nop2w": "Bez pay-to-win",
+    "offline": "W pełni offline"
+  },
+  "home": {
+    "games_stage": "Trzy oryginalne gry.",
+    "games_card_title": "Od Trzech Królestw i dalej.",
+    "games_card_desc": "Lustrzany pojedynek merge, mroczne taktyczne RPG, codzienne liczenie w pamięci — a czwarta gra rozgrzewa się za kulisami.",
+    "games_cta": "Wejdź do sali gier",
+    "tools_stage": "Pięć małych, precyzyjnych narzędzi.",
+    "tools_card_title": "Małe, precyzyjne, uczciwe.",
+    "tools_card_desc": "Wydatki, miernik decybeli, post, tłumacz ekranu, listy pakowania — uczciwa cena, płacisz raz.",
+    "tools_cta": "Wejdź do warsztatu"
   }
 }

@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indie-pelejä ja rehellisiä iOS-sovelluksia",
-    "home_desc": "Sparkfall Games on yhden hengen indie-studio, joka tekee leikkisiä pelejä ja rehellisiä, yksityisiä iOS-työkaluja. Ei tilejä, ei palvelimia, ei seurantaa."
+    "home_desc": "Sparkfall Games on yhden hengen indie-studio, joka tekee leikkisiä pelejä ja rehellisiä, yksityisiä iOS-työkaluja. Ei tilejä, ei palvelimia, ei seurantaa.",
+    "games_title": "Pelit — Sparkfall Games",
+    "games_desc": "Omaperäisiä iOS-pelejä ilman mainoksia, energiakelloja ja loot boxeja — merge-puolustuskaksintaisteluista päivittäisiin numeropulmiin.",
+    "tools_title": "Työkalut — Sparkfall Games",
+    "tools_desc": "Pieniä, teräviä iOS-työkaluja rehellisin hinnoin ja täydellä yksityisyydellä: kulut, desibelimittari, paasto, näytön kääntäjä, pakkauslistat."
   },
   "nav": {
     "contact": "Yhteystiedot",
@@ -277,6 +281,19 @@
     "nosub": "Ei tilausta",
     "noads": "Ei mainoksia",
     "notracking": "Ei seurantaa",
-    "honest": "Rehellinen hinnoittelu"
+    "honest": "Rehellinen hinnoittelu",
+    "noloot": "Ei loot boxeja",
+    "nop2w": "Ei pay-to-winiä",
+    "offline": "Täysin offline"
+  },
+  "home": {
+    "games_stage": "Kolme omaperäistä peliä.",
+    "games_card_title": "Kolmesta kuningaskunnasta eteenpäin.",
+    "games_card_desc": "Peilattu merge-kaksintaistelu, synkkä taktiikka-RPG, päivittäistä päässälaskua — ja neljäs lämmittelee kulissien takana.",
+    "games_cta": "Pelisaliin",
+    "tools_stage": "Viisi pientä, terävää työkalua.",
+    "tools_card_title": "Pieniä, teräviä, rehellisiä.",
+    "tools_card_desc": "Kulut, desibelimittari, paasto, näytön kääntäjä, pakkauslistat — rehellinen hinta, maksat kerran.",
+    "tools_cta": "Verstaaseen"
   }
 }

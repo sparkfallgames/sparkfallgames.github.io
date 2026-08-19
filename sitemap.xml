@@ -1,6 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://sparkfallgames.com/</loc></url>
+  <url><loc>https://sparkfallgames.com/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/gloomfall/</loc></url>
@@ -11,6 +13,8 @@
   <url><loc>https://sparkfallgames.com/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hans/</loc></url>
+  <url><loc>https://sparkfallgames.com/zh-hans/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/zh-hans/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hans/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hans/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hans/gloomfall/</loc></url>
@@ -21,6 +25,8 @@
   <url><loc>https://sparkfallgames.com/zh-hans/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hans/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hant/</loc></url>
+  <url><loc>https://sparkfallgames.com/zh-hant/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/zh-hant/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hant/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hant/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hant/gloomfall/</loc></url>
@@ -31,6 +37,8 @@
   <url><loc>https://sparkfallgames.com/zh-hant/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/zh-hant/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/es/</loc></url>
+  <url><loc>https://sparkfallgames.com/es/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/es/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/es/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/es/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/es/gloomfall/</loc></url>
@@ -41,6 +49,8 @@
   <url><loc>https://sparkfallgames.com/es/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/es/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/de/</loc></url>
+  <url><loc>https://sparkfallgames.com/de/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/de/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/de/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/de/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/de/gloomfall/</loc></url>
@@ -51,6 +61,8 @@
   <url><loc>https://sparkfallgames.com/de/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/de/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/fr/</loc></url>
+  <url><loc>https://sparkfallgames.com/fr/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/fr/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/fr/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/fr/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/fr/gloomfall/</loc></url>
@@ -61,6 +73,8 @@
   <url><loc>https://sparkfallgames.com/fr/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/fr/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ja/</loc></url>
+  <url><loc>https://sparkfallgames.com/ja/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ja/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ja/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ja/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ja/gloomfall/</loc></url>
@@ -71,6 +85,8 @@
   <url><loc>https://sparkfallgames.com/ja/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ja/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-br/</loc></url>
+  <url><loc>https://sparkfallgames.com/pt-br/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/pt-br/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-br/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-br/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-br/gloomfall/</loc></url>
@@ -81,6 +97,8 @@
   <url><loc>https://sparkfallgames.com/pt-br/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-br/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ko/</loc></url>
+  <url><loc>https://sparkfallgames.com/ko/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ko/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ko/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ko/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ko/gloomfall/</loc></url>
@@ -91,6 +109,8 @@
   <url><loc>https://sparkfallgames.com/ko/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ko/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/it/</loc></url>
+  <url><loc>https://sparkfallgames.com/it/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/it/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/it/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/it/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/it/gloomfall/</loc></url>
@@ -101,6 +121,8 @@
   <url><loc>https://sparkfallgames.com/it/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/it/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/nl/</loc></url>
+  <url><loc>https://sparkfallgames.com/nl/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/nl/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/nl/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/nl/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/nl/gloomfall/</loc></url>
@@ -111,6 +133,8 @@
   <url><loc>https://sparkfallgames.com/nl/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/nl/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-pt/</loc></url>
+  <url><loc>https://sparkfallgames.com/pt-pt/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/pt-pt/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-pt/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-pt/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-pt/gloomfall/</loc></url>
@@ -121,6 +145,8 @@
   <url><loc>https://sparkfallgames.com/pt-pt/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/pt-pt/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ru/</loc></url>
+  <url><loc>https://sparkfallgames.com/ru/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ru/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ru/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ru/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ru/gloomfall/</loc></url>
@@ -131,6 +157,8 @@
   <url><loc>https://sparkfallgames.com/ru/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ru/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/uk/</loc></url>
+  <url><loc>https://sparkfallgames.com/uk/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/uk/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/uk/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/uk/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/uk/gloomfall/</loc></url>
@@ -141,6 +169,8 @@
   <url><loc>https://sparkfallgames.com/uk/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/uk/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/tr/</loc></url>
+  <url><loc>https://sparkfallgames.com/tr/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/tr/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/tr/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/tr/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/tr/gloomfall/</loc></url>
@@ -151,6 +181,8 @@
   <url><loc>https://sparkfallgames.com/tr/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/tr/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ar/</loc></url>
+  <url><loc>https://sparkfallgames.com/ar/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ar/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ar/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ar/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ar/gloomfall/</loc></url>
@@ -161,6 +193,8 @@
   <url><loc>https://sparkfallgames.com/ar/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ar/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/th/</loc></url>
+  <url><loc>https://sparkfallgames.com/th/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/th/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/th/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/th/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/th/gloomfall/</loc></url>
@@ -171,6 +205,8 @@
   <url><loc>https://sparkfallgames.com/th/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/th/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/vi/</loc></url>
+  <url><loc>https://sparkfallgames.com/vi/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/vi/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/vi/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/vi/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/vi/gloomfall/</loc></url>
@@ -181,6 +217,8 @@
   <url><loc>https://sparkfallgames.com/vi/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/vi/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/id/</loc></url>
+  <url><loc>https://sparkfallgames.com/id/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/id/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/id/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/id/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/id/gloomfall/</loc></url>
@@ -191,6 +229,8 @@
   <url><loc>https://sparkfallgames.com/id/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/id/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ms/</loc></url>
+  <url><loc>https://sparkfallgames.com/ms/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ms/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ms/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ms/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ms/gloomfall/</loc></url>
@@ -201,6 +241,8 @@
   <url><loc>https://sparkfallgames.com/ms/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ms/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/hi/</loc></url>
+  <url><loc>https://sparkfallgames.com/hi/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/hi/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/hi/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/hi/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/hi/gloomfall/</loc></url>
@@ -211,6 +253,8 @@
   <url><loc>https://sparkfallgames.com/hi/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/hi/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/pl/</loc></url>
+  <url><loc>https://sparkfallgames.com/pl/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/pl/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/pl/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/pl/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/pl/gloomfall/</loc></url>
@@ -221,6 +265,8 @@
   <url><loc>https://sparkfallgames.com/pl/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/pl/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/sv/</loc></url>
+  <url><loc>https://sparkfallgames.com/sv/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/sv/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/sv/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/sv/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/sv/gloomfall/</loc></url>
@@ -231,6 +277,8 @@
   <url><loc>https://sparkfallgames.com/sv/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/sv/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/da/</loc></url>
+  <url><loc>https://sparkfallgames.com/da/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/da/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/da/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/da/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/da/gloomfall/</loc></url>
@@ -241,6 +289,8 @@
   <url><loc>https://sparkfallgames.com/da/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/da/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/fi/</loc></url>
+  <url><loc>https://sparkfallgames.com/fi/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/fi/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/fi/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/fi/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/fi/gloomfall/</loc></url>
@@ -251,6 +301,8 @@
   <url><loc>https://sparkfallgames.com/fi/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/fi/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/no/</loc></url>
+  <url><loc>https://sparkfallgames.com/no/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/no/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/no/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/no/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/no/gloomfall/</loc></url>
@@ -261,6 +313,8 @@
   <url><loc>https://sparkfallgames.com/no/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/no/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/cs/</loc></url>
+  <url><loc>https://sparkfallgames.com/cs/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/cs/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/cs/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/cs/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/cs/gloomfall/</loc></url>
@@ -271,6 +325,8 @@
   <url><loc>https://sparkfallgames.com/cs/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/cs/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/hu/</loc></url>
+  <url><loc>https://sparkfallgames.com/hu/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/hu/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/hu/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/hu/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/hu/gloomfall/</loc></url>
@@ -281,6 +337,8 @@
   <url><loc>https://sparkfallgames.com/hu/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/hu/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/ro/</loc></url>
+  <url><loc>https://sparkfallgames.com/ro/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/ro/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/ro/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/ro/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/ro/gloomfall/</loc></url>
@@ -291,6 +349,8 @@
   <url><loc>https://sparkfallgames.com/ro/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/ro/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/el/</loc></url>
+  <url><loc>https://sparkfallgames.com/el/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/el/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/el/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/el/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/el/gloomfall/</loc></url>
@@ -301,6 +361,8 @@
   <url><loc>https://sparkfallgames.com/el/overlens/</loc></url>
   <url><loc>https://sparkfallgames.com/el/packnest/</loc></url>
   <url><loc>https://sparkfallgames.com/he/</loc></url>
+  <url><loc>https://sparkfallgames.com/he/games/</loc></url>
+  <url><loc>https://sparkfallgames.com/he/tools/</loc></url>
   <url><loc>https://sparkfallgames.com/he/legal/</loc></url>
   <url><loc>https://sparkfallgames.com/he/numzen/</loc></url>
   <url><loc>https://sparkfallgames.com/he/gloomfall/</loc></url>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sparkfall Games — Juegos indie y apps honestas para iOS</title>
 <meta name="description" content="Sparkfall Games es un estudio indie de una sola persona que crea juegos divertidos y herramientas honestas y privadas para iOS. Sin cuentas, sin servidores, sin rastreo.">
-<meta name="theme-color" content="#0d0b09">
+<meta name="theme-color" content="#faf8f5">
 <link rel="canonical" href="https://sparkfallgames.com/es/">
 <link rel="alternate" hreflang="en" href="https://sparkfallgames.com/">
 <link rel="alternate" hreflang="zh-Hans" href="https://sparkfallgames.com/zh-hans/">
@@ -43,13 +43,13 @@
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
-<body class="zone-dark">
+<body>
 <header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="/es/"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</a>
     <nav>
-      <a href="/es/#games">Juegos</a>
-      <a href="/es/#tools">Herramientas</a>
+      <a href="/es/games/">Juegos</a>
+      <a href="/es/tools/">Herramientas</a>
       <a href="/es/#about">Acerca de</a>
       <a href="mailto:2645809444@qq.com">Contacto</a>
       <select class="lang-switch" aria-label="Language" onchange="location.href=this.value"><option value="/">English</option><option value="/zh-hans/">简体中文</option><option value="/zh-hant/">繁體中文</option><option value="/es/" selected>Español</option><option value="/de/">Deutsch</option><option value="/fr/">Français</option><option value="/ja/">日本語</option><option value="/pt-br/">Português (Brasil)</option><option value="/ko/">한국어</option><option value="/it/">Italiano</option><option value="/nl/">Nederlands</option><option value="/pt-pt/">Português (Portugal)</option><option value="/ru/">Русский</option><option value="/uk/">Українська</option><option value="/tr/">Türkçe</option><option value="/ar/">العربية</option><option value="/th/">ไทย</option><option value="/vi/">Tiếng Việt</option><option value="/id/">Bahasa Indonesia</option><option value="/ms/">Bahasa Melayu</option><option value="/hi/">हिन्दी</option><option value="/pl/">Polski</option><option value="/sv/">Svenska</option><option value="/da/">Dansk</option><option value="/fi/">Suomi</option><option value="/no/">Norsk</option><option value="/cs/">Čeština</option><option value="/hu/">Magyar</option><option value="/ro/">Română</option><option value="/el/">Ελληνικά</option><option value="/he/">עברית</option></select>
@@ -59,134 +59,39 @@
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
-  <div class="hero-vign" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <span class="hero-kicker">Estudio de una sola persona</span>
     <h1>Juegos divertidos. Herramientas <span class="grad">honestas.</span></h1>
     <p>Cada título está creado en solitario y es privado por diseño: tus datos se quedan en tu dispositivo. Sin cuentas, sin servidores, sin rastreo.</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#games">Ver los juegos</a>
-      <a class="btn" href="#tools">Ver las herramientas</a>
-    </div>
   </div>
 </section>
-<div class="zone-games">
-  <section class="sec" id="games">
-    <div class="wrap">
-      <div class="sec-head reveal">
-        <h2><span class="grad">Juegos</span></h2>
-        <p>Juegos originales que te respetan: sin anuncios entre niveles, sin temporizadores de energía, sin diversión tras un muro de pago.</p>
-      </div>
-      <div class="game-grid">
-      <a class="game-card reveal" href="/es/numzen/" style="--aa:#7C5CFF;--ab:#5B3CE0;">
-        <div class="game-copy">
-          <span class="badge">Juegos</span>
-          <h3>NumZen</h3>
-          <p class="game-tagline">Tres puzles diarios. Juega el mundo entero.</p>
-          <p class="game-desc">Puzles diarios de cálculo mental con pistas que enseñan.</p>
-          <span class="card-more">Más información →</span>
-        </div>
-        <div class="game-shot"><img src="/assets/img/shot-numzen.webp" alt="NumZen" loading="lazy"></div>
-      </a>
-      <a class="game-card reveal" href="/es/gloomfall/" style="--aa:#E8853D;--ab:#B85A1E;">
-        <div class="game-copy">
-          <span class="badge">Juegos</span>
-          <h3>Gloomfall</h3>
-          <p class="game-tagline">Cada movimiento enemigo está anunciado.</p>
-          <p class="game-desc">Un RPG táctico de fantasía oscura hecho para una mano.</p>
-          <span class="card-more">Más información →</span>
-        </div>
-        <div class="game-shot"><img src="/assets/img/shot-gloomfall.webp" alt="Gloomfall" loading="lazy"></div>
-      </a>
-      <a class="game-card reveal" href="/es/mergehold/" style="--aa:#D9A441;--ab:#B0432E;">
-        <div class="game-copy">
-          <span class="badge">Juegos</span>
-          <h3>Mergehold</h3>
-          <p class="game-tagline">Fusiona héroes. Defiende la línea.</p>
-          <p class="game-desc">Un duelo de defensa táctica con fusiones, de los Tres Reinos en adelante.</p>
-          <span class="card-more">Más información →</span>
-        </div>
-        <div class="game-shot"><img src="/assets/img/shot-mergehold.webp" alt="Mergehold" loading="lazy"></div>
-      </a>
-      <div class="tease-card reveal">
-        <span class="badge" style="--aa:#e0a84e;">En desarrollo</span>
-        <h3>Project 009</h3>
-        <p>Algo se prepara entre bastidores. El telón sube pronto.</p>
-        <span class="tease-glyph" aria-hidden="true">?</span>
-      </div>
-      </div>
+<main class="wrap">
+  <div class="entry-grid">
+    <a class="entry-card" href="/es/games/">
+      <div class="entry-media"><div class="entry-shots"><img src="/assets/img/shot-numzen.webp" alt="NumZen" loading="lazy"><img src="/assets/img/shot-gloomfall.webp" alt="Gloomfall" loading="lazy"><img src="/assets/img/shot-mergehold.webp" alt="Mergehold" loading="lazy"></div></div>
+      <h2>Juegos</h2>
+      <p>Un duelo espejo de fusiones, un RPG táctico oscuro, cálculo mental diario — y un cuarto calentando entre bastidores.</p>
+      <span class="entry-cta">Entrar a la sala de juegos →</span>
+    </a>
+    <a class="entry-card" href="/es/tools/">
+      <div class="entry-media"><div class="entry-icons"><img src="/assets/img/icon-quickcost.webp" alt="QuickCost" loading="lazy"><img src="/assets/img/icon-decibelmeter.webp" alt="Decibel Meter" loading="lazy"><img src="/assets/img/icon-fastzen.webp" alt="FastZen" loading="lazy"><img src="/assets/img/icon-overlens.webp" alt="OverLens" loading="lazy"><img src="/assets/img/icon-packnest.webp" alt="PackNest" loading="lazy"></div></div>
+      <h2>Herramientas</h2>
+      <p>Gastos, sonómetro, ayuno, traductor de pantalla, listas de equipaje — precio honesto, se paga una vez.</p>
+      <span class="entry-cta">Entrar al taller →</span>
+    </a>
+  </div>
+    <section class="values">
+      <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Privacidad por diseño</h3><p>Todo se guarda en tu dispositivo. No operamos servidores y no podemos ver tus datos.</p></div>
+      <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>Precios honestos</h3><p>Lo gratuito es gratuito para siempre. Sin trampas de suscripción ni cuentas atrás falsas.</p></div>
+      <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>Hecho para todos</h3><p>Cada app está totalmente localizada en 34 idiomas, con modo oscuro y accesibilidad.</p></div>
+    </section>
+  <section id="about">
+    <div class="about">
+      <h2>Sobre el desarrollador</h2>
+      <p>Soy el desarrollador independiente detrás de Sparkfall Games. Cada juego y herramienta es 100 % nativo de iOS, está localizado en 34 idiomas y sigue una sola regla: tus datos se quedan en tu dispositivo.</p>
     </div>
   </section>
-</div>
-<div class="zone-break" aria-hidden="true"><svg class="spark-divider" viewBox="0 0 24 24" aria-hidden="true"><path fill="#e0a84e" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg></div>
-<div class="zone-light">
-  <main class="wrap">
-    <section class="sec" id="tools" style="padding-top:56px;">
-      <div class="sec-head reveal">
-        <h2>Herramientas</h2>
-        <p>Utilidades pequeñas y precisas que no se interponen en tu camino — ni en tus datos.</p>
-      </div>
-      <div class="tool-grid">
-      <a class="tool-card reveal" href="/es/quickcost/" style="--aa:#2E9E5B;--ab:#1C7A44;">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-quickcost.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">Finanzas</span>
-        </div>
-        <h3>QuickCost</h3>
-        <p class="tool-tagline">Registra un gasto en 3 segundos.</p>
-        <span class="card-more">Más información →</span>
-      </a>
-      <a class="tool-card reveal" href="/es/decibelmeter/" style="--aa:#1AC766;--ab:#0F8A4D;">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-decibelmeter.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">Utilidades</span>
-        </div>
-        <h3>Decibel Meter</h3>
-        <p class="tool-tagline">Conoce tu ruido. Protege tu oído.</p>
-        <span class="card-more">Más información →</span>
-      </a>
-      <a class="tool-card reveal" href="/es/fastzen/" style="--aa:#F9A833;--ab:#E86A1A;">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-fastzen.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">Salud y forma física</span>
-        </div>
-        <h3>FastZen</h3>
-        <p class="tool-tagline">El temporizador de ayuno honesto.</p>
-        <span class="card-more">Más información →</span>
-      </a>
-      <a class="tool-card reveal" href="/es/overlens/" style="--aa:#6F5BF5;--ab:#4B36C9;">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-overlens.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">Referencia</span>
-        </div>
-        <h3>OverLens</h3>
-        <p class="tool-tagline">Cualquier pantalla, en tu idioma.</p>
-        <span class="card-more">Más información →</span>
-      </a>
-      <a class="tool-card reveal" href="/es/packnest/" style="--aa:#2FA877;--ab:#1E7A55;">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-packnest.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">Viajes</span>
-        </div>
-        <h3>PackNest</h3>
-        <p class="tool-tagline">Haz la maleta bien, en cada viaje.</p>
-        <span class="card-more">Más información →</span>
-      </a>
-      </div>
-    </section>
-    <section class="values">
-      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Privacidad por diseño</h3><p>Todo se guarda en tu dispositivo. No operamos servidores y no podemos ver tus datos.</p></div>
-      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>Precios honestos</h3><p>Lo gratuito es gratuito para siempre. Sin trampas de suscripción ni cuentas atrás falsas.</p></div>
-      <div class="value reveal"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M3 12h18"/><path d="M12 3c2.5 2.6 3.8 5.6 3.8 9s-1.3 6.4-3.8 9c-2.5-2.6-3.8-5.6-3.8-9S9.5 5.6 12 3z"/></svg></div><h3>Hecho para todos</h3><p>Cada app está totalmente localizada en 34 idiomas, con modo oscuro y accesibilidad.</p></div>
-    </section>
-    <section id="about">
-      <div class="about reveal">
-        <h2>Sobre el desarrollador</h2>
-        <p>Soy el desarrollador independiente detrás de Sparkfall Games. Cada juego y herramienta es 100 % nativo de iOS, está localizado en 34 idiomas y sigue una sola regla: tus datos se quedan en tu dispositivo.</p>
-      </div>
-    </section>
-  </main>
-</div>
+</main>
 <footer class="foot">
   <div class="wrap">
     <div class="foot-brand"><svg class="spark-mark" viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="sgrad" x1="0" y1="0" x2="24" y2="24"><stop stop-color="#ffb469"/><stop offset="1" stop-color="#e0664a"/></linearGradient></defs><path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>Sparkfall Games</div>

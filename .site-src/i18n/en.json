@@ -1,7 +1,21 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indie games & honest iOS apps",
-    "home_desc": "Sparkfall Games is a one-person indie studio making playful games and honest, private iOS tools. No accounts, no servers, no tracking."
+    "home_desc": "Sparkfall Games is a one-person indie studio making playful games and honest, private iOS tools. No accounts, no servers, no tracking.",
+    "games_title": "Games — Sparkfall Games",
+    "games_desc": "Original iOS games with no ads, no energy timers and no loot boxes. From merge-defense duels to daily number puzzles.",
+    "tools_title": "Tools — Sparkfall Games",
+    "tools_desc": "Small, sharp iOS utilities with honest pricing and full privacy. Expense log, decibel meter, fasting timer, screen translator, packing lists."
+  },
+  "home": {
+    "games_stage": "Three original games.",
+    "games_card_title": "From the Three Kingdoms and beyond.",
+    "games_card_desc": "A mirror-duel merge battler, a dark tactics RPG, daily mental math — and a fourth warming up backstage.",
+    "games_cta": "Enter the games hall",
+    "tools_stage": "Five small, sharp tools.",
+    "tools_card_title": "Small, sharp, honest.",
+    "tools_card_desc": "Expense log, decibel meter, fasting timer, screen translator, packing lists — priced honestly, pay once.",
+    "tools_cta": "Enter the tool shed"
   },
   "nav": {
     "contact": "Contact",
@@ -277,6 +291,9 @@
     "nosub": "No subscription",
     "noads": "No ads",
     "notracking": "No tracking",
-    "honest": "Honest pricing"
+    "honest": "Honest pricing",
+    "noloot": "No loot boxes",
+    "nop2w": "No pay-to-win",
+    "offline": "Fully offline"
   }
 }

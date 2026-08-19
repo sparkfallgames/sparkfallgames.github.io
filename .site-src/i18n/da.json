@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indiespil & ærlige iOS-apps",
-    "home_desc": "Sparkfall Games er et enmands indiestudie, der laver legende spil og ærlige, private iOS-værktøjer. Ingen konti, ingen servere, ingen sporing."
+    "home_desc": "Sparkfall Games er et enmands indiestudie, der laver legende spil og ærlige, private iOS-værktøjer. Ingen konti, ingen servere, ingen sporing.",
+    "games_title": "Spil — Sparkfall Games",
+    "games_desc": "Originale iOS-spil uden reklamer, energi-timere og lootbokse — fra merge-forsvarsdueller til daglige talgåder.",
+    "tools_title": "Værktøjer — Sparkfall Games",
+    "tools_desc": "Små, skarpe iOS-værktøjer med ærlige priser og fuld privatliv: udgifter, decibelmåler, faste, skærmoversætter, pakkelister."
   },
   "nav": {
     "contact": "Kontakt",
@@ -277,6 +281,19 @@
     "nosub": "Intet abonnement",
     "noads": "Ingen reklamer",
     "notracking": "Ingen sporing",
-    "honest": "Ærlige priser"
+    "honest": "Ærlige priser",
+    "noloot": "Ingen lootbokse",
+    "nop2w": "Ingen pay-to-win",
+    "offline": "Helt offline"
+  },
+  "home": {
+    "games_stage": "Tre originale spil.",
+    "games_card_title": "Fra De Tre Kongeriger og videre.",
+    "games_card_desc": "En spejlet merge-duel, et mørkt taktik-RPG, daglig hovedregning — og et fjerde varmer op bag scenen.",
+    "games_cta": "Ind i spillehallen",
+    "tools_stage": "Fem små, skarpe værktøjer.",
+    "tools_card_title": "Små, skarpe, ærlige.",
+    "tools_card_desc": "Udgifter, decibelmåler, faste, skærmoversætter, pakkelister — ærlig pris, betal én gang.",
+    "tools_cta": "Ind i værkstedet"
   }
 }

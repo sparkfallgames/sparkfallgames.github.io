@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Game indie và ứng dụng iOS trung thực",
-    "home_desc": "Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi."
+    "home_desc": "Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi.",
+    "games_title": "Trò chơi — Sparkfall Games",
+    "games_desc": "Game iOS nguyên bản không quảng cáo, không hẹn giờ thể lực, không loot box — từ trận phòng thủ hợp nhất đối gương đến câu đố số mỗi ngày.",
+    "tools_title": "Công cụ — Sparkfall Games",
+    "tools_desc": "Công cụ iOS nhỏ gọn, giá minh bạch, riêng tư tuyệt đối: sổ chi tiêu, đo decibel, hẹn giờ nhịn ăn, dịch màn hình, danh sách hành lý."
   },
   "nav": {
     "contact": "Liên hệ",
@@ -277,6 +281,19 @@
     "nosub": "Không thuê bao",
     "noads": "Không quảng cáo",
     "notracking": "Không theo dõi",
-    "honest": "Giá minh bạch"
+    "honest": "Giá minh bạch",
+    "noloot": "Không loot box",
+    "nop2w": "Không pay-to-win",
+    "offline": "Hoàn toàn ngoại tuyến"
+  },
+  "home": {
+    "games_stage": "Ba trò chơi nguyên bản.",
+    "games_card_title": "Từ Tam Quốc và xa hơn.",
+    "games_card_desc": "Trận hợp nhất đối gương, RPG chiến thuật u tối, tính nhẩm mỗi ngày — trò thứ tư đang khởi động sau cánh gà.",
+    "games_cta": "Vào sảnh trò chơi",
+    "tools_stage": "Năm công cụ nhỏ mà sắc.",
+    "tools_card_title": "Nhỏ, sắc, trung thực.",
+    "tools_card_desc": "Sổ chi tiêu, đo decibel, hẹn giờ nhịn ăn, dịch màn hình, danh sách hành lý — giá minh bạch, trả một lần.",
+    "tools_cta": "Vào xưởng công cụ"
   }
 }

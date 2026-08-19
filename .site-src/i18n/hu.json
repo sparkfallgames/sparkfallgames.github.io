@@ -1,7 +1,11 @@
 {
   "meta": {
     "home_title": "Sparkfall Games — Indie játékok és őszinte iOS-alkalmazások",
-    "home_desc": "A Sparkfall Games egyszemélyes indie stúdió, amely játékos játékokat és őszinte, privát iOS-eszközöket készít. Nincs fiók, nincs szerver, nincs követés."
+    "home_desc": "A Sparkfall Games egyszemélyes indie stúdió, amely játékos játékokat és őszinte, privát iOS-eszközöket készít. Nincs fiók, nincs szerver, nincs követés.",
+    "games_title": "Játékok — Sparkfall Games",
+    "games_desc": "Eredeti iOS-játékok reklámok, energiaidőzítők és lootboxok nélkül — a merge-védekező párbajoktól a napi számrejtvényekig.",
+    "tools_title": "Eszközök — Sparkfall Games",
+    "tools_desc": "Kicsi, éles iOS-eszközök becsületes árakkal és teljes adatvédelemmel: kiadások, decibelmérő, böjt, képernyőfordító, csomagolólisták."
   },
   "nav": {
     "contact": "Kapcsolat",
@@ -277,6 +281,19 @@
     "nosub": "Nincs előfizetés",
     "noads": "Nincs reklám",
     "notracking": "Nincs követés",
-    "honest": "Tisztességes árak"
+    "honest": "Tisztességes árak",
+    "noloot": "Nincs lootbox",
+    "nop2w": "Nincs pay-to-win",
+    "offline": "Teljesen offline"
+  },
+  "home": {
+    "games_stage": "Három eredeti játék.",
+    "games_card_title": "A Három Királyságtól tovább.",
+    "games_card_desc": "Tükrözött merge-párbaj, sötét taktikai RPG, napi fejszámolás — a negyedik pedig a színfalak mögött melegít.",
+    "games_cta": "Be a játékterembe",
+    "tools_stage": "Öt kicsi, éles eszköz.",
+    "tools_card_title": "Kicsi, éles, becsületes.",
+    "tools_card_desc": "Kiadások, decibelmérő, böjt, képernyőfordító, csomagolólisták — becsületes ár, egyszer fizetsz.",
+    "tools_cta": "Be a műhelybe"
   }
 }

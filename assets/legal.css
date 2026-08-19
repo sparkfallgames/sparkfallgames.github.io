@@ -4,18 +4,18 @@
    (header.site, main.page, ...) — page HTML is hand-written and never touched. */
 
 :root {
-  --ink: #0d0b09;
   --paper: #faf8f5;
+  --paper-2: #f2eee7;
   --surface: #ffffff;
-  --text: #211b14;
-  --text-secondary: #6c6255;
-  --border: rgba(32, 25, 16, 0.12);
+  --text: #221c15;
+  --text-secondary: #6d6357;
+  --border: rgba(34, 28, 21, 0.12);
   --link: #a34a10;
-  --shell-text: #f4efe7;
-  --shell-text-2: #b5aa9b;
-  --shell-border: rgba(255, 236, 214, 0.10);
-  --ember: #ff9040;
-  --gold: #e0a84e;
+  --shell-text: #221c15;
+  --shell-text-2: #6d6357;
+  --shell-border: rgba(34, 28, 21, 0.10);
+  --ember: #e06f28;
+  --gold: #d99a3c;
 }
 
 * { box-sizing: border-box; }
@@ -34,7 +34,7 @@ body {
 
 header.site {
   border-bottom: 1px solid var(--shell-border);
-  background: var(--ink);
+  background: var(--paper);
 }
 
 header.site .wrap {
@@ -74,7 +74,6 @@ nav.site a:hover,
   border-radius: 50%;
   margin-inline-end: 8px;
   background: linear-gradient(120deg, var(--gold), var(--ember));
-  box-shadow: 0 0 8px rgba(255, 144, 64, 0.55);
   vertical-align: 1px;
 }
 
@@ -105,12 +104,12 @@ details.lang[open] summary { color: var(--shell-text); }
   min-width: 170px;
   max-height: 320px;
   overflow-y: auto;
-  background: #16120e;
-  border: 1px solid rgba(255, 236, 214, 0.14);
+  background: var(--surface);
+  border: 1px solid var(--border);
   border-radius: 12px;
   padding: 6px;
   z-index: 60;
-  box-shadow: 0 14px 40px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 14px 40px rgba(70, 50, 25, 0.15);
 }
 
 .lang-menu a {
@@ -122,7 +121,7 @@ details.lang[open] summary { color: var(--shell-text); }
   font-size: 0.9rem;
 }
 
-.lang-menu a:hover { background: rgba(255, 240, 220, 0.07); color: var(--shell-text); }
+.lang-menu a:hover { background: var(--paper-2); color: var(--shell-text); }
 
 .lang-menu a[aria-current="true"] { color: var(--ember); }
 
@@ -172,14 +171,14 @@ footer.site {
   padding: 26px 0 40px;
   color: var(--shell-text-2);
   font-size: 0.88rem;
-  background: var(--ink);
+  background: var(--paper-2);
 }
 
 footer.site a { color: var(--shell-text-2); }
 
 @media print {
   :root {
-    --paper: #fff; --surface: #fff; --text: #111;
+    --paper: #fff; --paper-2: #fff; --surface: #fff; --text: #111;
     --text-secondary: #333; --link: #0645ad;
   }
   header.site, footer.site { background: #fff; }

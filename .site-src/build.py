@@ -133,11 +133,6 @@ SPARK_MARK = (
     '<path fill="url(#sgrad)" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/>'
     '</svg>')
 
-SPARK_DIVIDER = (
-    '<svg class="spark-divider" viewBox="0 0 24 24" aria-hidden="true">'
-    '<path fill="#e0a84e" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/>'
-    '</svg>')
-
 VALUE_ICONS = {
     "private": ('<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" '
                 'stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">'
@@ -154,9 +149,8 @@ VALUE_ICONS = {
 }
 
 
-def head(lang, s, title, desc, page, canonical, zone, extra=""):
+def head(lang, s, title, desc, page, canonical, extra=""):
     direction = ' dir="rtl"' if lang.get("dir") == "rtl" else ""
-    theme_color = "#faf8f5" if zone == "zone-light" else "#0d0b09"
     return f"""<!DOCTYPE html>
 <html lang="{lang['hreflang']}"{direction}>
 <head>
@@ -164,13 +158,13 @@ def head(lang, s, title, desc, page, canonical, zone, extra=""):
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<meta name="theme-color" content="{theme_color}">
+<meta name="theme-color" content="#faf8f5">
 <link rel="canonical" href="{canonical}">
 {hreflang_links(page)}{extra}
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
-<body class="{zone}">
+<body>
 """
 
 
@@ -240,8 +234,8 @@ def header_nav(lang, s, page):
   <div class="wrap nav-inner">
     <a class="brand" href="{home}">{SPARK_MARK}{SITE['brand']}</a>
     <nav>
-      <a href="{home}#games">{t(s, 'nav.games')}</a>
-      <a href="{home}#tools">{t(s, 'nav.tools')}</a>
+      <a href="{lang_url(lang, 'games/')}">{t(s, 'nav.games')}</a>
+      <a href="{lang_url(lang, 'tools/')}">{t(s, 'nav.tools')}</a>
       <a href="{home}#about">{t(s, 'nav.about')}</a>
       <a href="mailto:{SITE['contact_email']}">{t(s, 'nav.contact')}</a>
       {switcher(lang, page)}
@@ -281,9 +275,8 @@ def phone(app, size=""):
 
 def game_card(lang, s, app):
     aurl = lang_url(lang, f"{app['slug']}/")
-    return f"""      <a class="game-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+    return f"""      <a class="game-card" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
         <div class="game-copy">
-          <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
           <h3>{app['name']}</h3>
           <p class="game-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
           <p class="game-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
@@ -294,17 +287,15 @@ def game_card(lang, s, app):
 
 
 def tease_card(s):
-    return f"""      <div class="tease-card reveal">
-        <span class="badge" style="--aa:#e0a84e;">{t(s, 'teaser.badge')}</span>
+    return f"""      <div class="tease-card">
         <h3>{t(s, 'teaser.title')}</h3>
         <p>{t(s, 'teaser.desc')}</p>
-        <span class="tease-glyph" aria-hidden="true">?</span>
       </div>"""
 
 
 def tool_card(lang, s, app):
     aurl = lang_url(lang, f"{app['slug']}/")
-    return f"""      <a class="tool-card reveal" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
+    return f"""      <a class="tool-card" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
         <div class="tool-top">
           <img class="app-icon" src="/assets/img/icon-{app['slug']}.webp" alt="" width="56" height="56" loading="lazy">
           <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
@@ -316,19 +307,23 @@ def tool_card(lang, s, app):
 
 
 def render_home(lang, s):
+    """短首页：品牌开场 + 游戏/工具两张大入口卡 + 价值观 + 关于。"""
     page = ""
     canonical = SITE["base_url"] + lang_url(lang, page)
     games = [a for a in APPS if a["kind"] == "game"]
     tools = [a for a in APPS if a["kind"] == "tool"]
 
-    game_cards = "\n".join(game_card(lang, s, a) for a in games)
-    game_cards += "\n" + tease_card(s)
-    tool_cards = "\n".join(tool_card(lang, s, a) for a in tools)
+    game_shots = "".join(
+        f'<img src="/assets/img/shot-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        for a in games)
+    tool_icons = "".join(
+        f'<img src="/assets/img/icon-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        for a in tools)
 
     values = f"""    <section class="values">
-      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['private']}</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
-      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['honest']}</div><h3>{t(s, 'values.honest_title')}</h3><p>{t(s, 'values.honest_desc')}</p></div>
-      <div class="value reveal"><div class="value-ic">{VALUE_ICONS['global']}</div><h3>{t(s, 'values.global_title')}</h3><p>{t(s, 'values.global_desc')}</p></div>
+      <div class="value"><div class="value-ic">{VALUE_ICONS['private']}</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
+      <div class="value"><div class="value-ic">{VALUE_ICONS['honest']}</div><h3>{t(s, 'values.honest_title')}</h3><p>{t(s, 'values.honest_desc')}</p></div>
+      <div class="value"><div class="value-ic">{VALUE_ICONS['global']}</div><h3>{t(s, 'values.global_title')}</h3><p>{t(s, 'values.global_desc')}</p></div>
     </section>"""
 
     # Wrap the last word of the hero title in a gradient span.
@@ -347,59 +342,102 @@ def render_home(lang, s):
         "description": t(s, "meta.home_desc"),
     })
     html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"),
-                page, canonical, "zone-dark", "\n" + org)
+                page, canonical, "\n" + org)
     html += header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
   <canvas id="sparks" aria-hidden="true"></canvas>
-  <div class="hero-vign" aria-hidden="true"></div>
   <div class="wrap hero-inner">
     <span class="hero-kicker">{t(s, 'hero.kicker')}</span>
     <h1>{hero_title}</h1>
     <p>{t(s, 'hero.subtitle')}</p>
-    <div class="cta-row">
-      <a class="btn btn-primary" href="#games">{t(s, 'hero.explore')}</a>
-      <a class="btn" href="#tools">{t(s, 'hero.explore_tools')}</a>
-    </div>
   </div>
 </section>
-<div class="zone-games">
-  <section class="sec" id="games">
+<main class="wrap">
+  <div class="entry-grid">
+    <a class="entry-card" href="{lang_url(lang, 'games/')}">
+      <div class="entry-media"><div class="entry-shots">{game_shots}</div></div>
+      <h2>{t(s, 'nav.games')}</h2>
+      <p>{t(s, 'home.games_card_desc')}</p>
+      <span class="entry-cta">{t(s, 'home.games_cta')} →</span>
+    </a>
+    <a class="entry-card" href="{lang_url(lang, 'tools/')}">
+      <div class="entry-media"><div class="entry-icons">{tool_icons}</div></div>
+      <h2>{t(s, 'nav.tools')}</h2>
+      <p>{t(s, 'home.tools_card_desc')}</p>
+      <span class="entry-cta">{t(s, 'home.tools_cta')} →</span>
+    </a>
+  </div>
+{values}
+  <section id="about">
+    <div class="about">
+      <h2>{t(s, 'about.title')}</h2>
+      <p>{t(s, 'about.body')}</p>
+    </div>
+  </section>
+</main>
+"""
+    html += footer(lang, s)
+    out = ROOT / lang["path"] / "index.html" if lang["path"] else ROOT / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
+
+
+def render_games(lang, s):
+    """独立游戏页（暗色 zone）：游戏大卡 + 009 预告。"""
+    page = "games/"
+    canonical = SITE["base_url"] + lang_url(lang, page)
+    games = [a for a in APPS if a["kind"] == "game"]
+    cards = "\n".join(game_card(lang, s, a) for a in games)
+    cards += "\n" + tease_card(s)
+    html = head(lang, s, t(s, "meta.games_title"), t(s, "meta.games_desc"),
+                page, canonical)
+    html += header_nav(lang, s, page)
+    html += f"""<main>
+  <section class="page-head" id="games">
     <div class="wrap">
-      <div class="sec-head reveal">
-        <h2><span class="grad">{t(s, 'sections.games_title')}</span></h2>
+      <div class="sec-head">
+        <h2>{t(s, 'sections.games_title')}</h2>
         <p>{t(s, 'sections.games_sub')}</p>
       </div>
       <div class="game-grid">
-{game_cards}
+{cards}
       </div>
     </div>
   </section>
-</div>
-<div class="zone-break" aria-hidden="true">{SPARK_DIVIDER}</div>
-<div class="zone-light">
-  <main class="wrap">
-    <section class="sec" id="tools" style="padding-top:56px;">
-      <div class="sec-head reveal">
+</main>
+"""
+    html += footer(lang, s)
+    out = (ROOT / lang["path"] if lang["path"] else ROOT) / "games" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
+
+
+def render_tools(lang, s):
+    """独立工具页（亮色 zone）：工具卡阵。"""
+    page = "tools/"
+    canonical = SITE["base_url"] + lang_url(lang, page)
+    tools = [a for a in APPS if a["kind"] == "tool"]
+    cards = "\n".join(tool_card(lang, s, a) for a in tools)
+    html = head(lang, s, t(s, "meta.tools_title"), t(s, "meta.tools_desc"),
+                page, canonical)
+    html += header_nav(lang, s, page)
+    html += f"""<main>
+  <section class="page-head" id="tools">
+    <div class="wrap">
+      <div class="sec-head">
         <h2>{t(s, 'sections.tools_title')}</h2>
         <p>{t(s, 'sections.tools_sub')}</p>
       </div>
       <div class="tool-grid">
-{tool_cards}
+{cards}
       </div>
-    </section>
-{values}
-    <section id="about">
-      <div class="about reveal">
-        <h2>{t(s, 'about.title')}</h2>
-        <p>{t(s, 'about.body')}</p>
-      </div>
-    </section>
-  </main>
-</div>
+    </div>
+  </section>
+</main>
 """
     html += footer(lang, s)
-    out = ROOT / lang["path"] / "index.html" if lang["path"] else ROOT / "index.html"
+    out = (ROOT / lang["path"] if lang["path"] else ROOT) / "tools" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
 
@@ -409,10 +447,9 @@ def render_app(lang, s, app):
     page = f"{slug}/"
     canonical = SITE["base_url"] + lang_url(lang, page)
     a = s["apps"][slug]
-    zone = "zone-dark" if app["kind"] == "game" else "zone-light"
     feats = []
     for f in a["features"]:
-        feats.append(f"""      <div class="feat reveal"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
+        feats.append(f"""      <div class="feat"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
     disclaimer = f'<p class="disclaimer">{esc(a["disclaimer"])}</p>' if a["disclaimer"] else ""
     features_heading = t(s, "common.features").replace("{app}", app["name"])
 
@@ -421,7 +458,7 @@ def render_app(lang, s, app):
         extra += (f'\n<meta name="apple-itunes-app" '
                   f'content="app-id={app["store_id"]}">')
     html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"],
-                page, canonical, zone, extra)
+                page, canonical, extra)
     html += header_nav(lang, s, page)
     html += f"""<section class="app-hero" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
   <div class="wrap app-hero-inner">
@@ -446,7 +483,7 @@ def render_app(lang, s, app):
 {chr(10).join(feats)}
     </div>
   </section>
-  <section class="privacy-strip reveal" style="--aa:{app['gradient'][0]};">
+  <section class="privacy-strip" style="--aa:{app['gradient'][0]};">
     <h2>{t(s, 'common.privacy_heading')}</h2>
     <p>{esc(a['privacy_blurb'])} <a href="/{slug}/privacy.html">{t(s, 'common.privacy_policy')}</a></p>
     {disclaimer}
@@ -470,7 +507,7 @@ def render_legal(lang, s):
     title = f"{t(s, 'common.footer_privacy')} — {SITE['brand']}"
     rows = []
     for app in APPS:
-        rows.append(f"""    <div class="legal-row reveal" style="--aa:{app['gradient'][0]};">
+        rows.append(f"""    <div class="legal-row" style="--aa:{app['gradient'][0]};">
       <img class="app-icon" src="/assets/img/icon-{app['slug']}.webp" alt="" width="44" height="44">
       <h3>{app['name']}</h3>
       <div class="legal-links">
@@ -479,8 +516,7 @@ def render_legal(lang, s):
       </div>
     </div>""")
 
-    html = head(lang, s, title, t(s, "meta.home_desc"), page, canonical,
-                "zone-light")
+    html = head(lang, s, title, t(s, "meta.home_desc"), page, canonical)
     html += header_nav(lang, s, page)
     html += f"""<main class="wrap legal-hub">
   <div class="sec-head">
@@ -501,6 +537,8 @@ def render_sitemap():
     urls = []
     for lang in LANGS:
         urls.append(SITE["base_url"] + lang_url(lang, ""))
+        urls.append(SITE["base_url"] + lang_url(lang, "games/"))
+        urls.append(SITE["base_url"] + lang_url(lang, "tools/"))
         urls.append(SITE["base_url"] + lang_url(lang, "legal/"))
         for app in APPS:
             urls.append(SITE["base_url"] + lang_url(lang, f"{app['slug']}/"))
@@ -542,8 +580,10 @@ def main():
     for lang in LANGS:
         s = i18n[lang["code"]]
         render_home(lang, s)
+        render_games(lang, s)
+        render_tools(lang, s)
         render_legal(lang, s)
-        count += 2
+        count += 4
         for app in APPS:
             render_app(lang, s, app)
             count += 1
