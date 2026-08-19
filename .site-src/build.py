@@ -193,9 +193,11 @@ VALUE_ICONS = {
 }
 
 
-def head(lang, s, title, desc, page, canonical, extra="", og_image="og-brand.jpg"):
+def head(lang, s, title, desc, page, canonical, extra="", og_image="og-brand.jpg",
+         hreflangs=True):
     direction = ' dir="rtl"' if lang.get("dir") == "rtl" else ""
     og_url = f"{SITE['base_url']}/assets/img/{og_image}"
+    hl = hreflang_links(page) if hreflangs else ""
     return f"""<!DOCTYPE html>
 <html lang="{lang['hreflang']}"{direction}>
 <head>
@@ -220,7 +222,7 @@ def head(lang, s, title, desc, page, canonical, extra="", og_image="og-brand.jpg
 <meta name="twitter:title" content="{esc(title)}">
 <meta name="twitter:description" content="{esc(desc)}">
 <meta name="twitter:image" content="{og_url}">
-{hreflang_links(page)}{extra}
+{hl}{extra}
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
@@ -311,7 +313,7 @@ def footer(lang, s):
     return f"""<footer class="foot">
   <div class="wrap">
     <div class="foot-brand">{SPARK_MARK}{SITE['brand']}</div>
-    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a></p>
+    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a> · <a href="/press/">Press Kit</a></p>
   </div>
 </footer>
 </body>
@@ -620,6 +622,80 @@ def render_legal(lang, s):
     out.write_text(html)
 
 
+def render_press():
+    """Press Kit 单页（行业惯例英文单语；资产 ZIP 在 /press/sparkfall-presskit.zip）。"""
+    en = next(l for l in LANGS if l["code"] == "en")
+    s = json.loads((SRC / "i18n" / "en.json").read_text())
+    canonical = f"{SITE['base_url']}/press/"
+    games = [a for a in APPS if a["kind"] == "game"]
+    tools = [a for a in APPS if a["kind"] == "tool"]
+
+    def title_rows(apps_list, label):
+        rows = "".join(
+            f'<li><strong>{a["name"]}</strong> — {esc(s["apps"][a["slug"]]["tagline"])} '
+            f'<a href="/{a["slug"]}/">page</a></li>'
+            for a in apps_list)
+        return f"<h3>{label}</h3><ul>{rows}</ul>"
+
+    shots_grid = "".join(
+        f'<img src="/assets/img/framed-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        for a in (games + tools)[:8])
+
+    html = head(en, s, f"Press Kit — {SITE['brand']}",
+                "Press kit for Sparkfall Games: factsheet, logos, key art, icons and "
+                "high-resolution screenshots. One-person indie studio making private, "
+                "honest iOS games and tools.",
+                "press/", canonical, hreflangs=False)
+    html += header_nav(en, s, "press/")
+    html += f"""<main class="wrap" style="padding-top:64px;">
+  <div class="sec-head">
+    <h2>Press Kit</h2>
+    <p>Everything you need to cover Sparkfall Games — free to use in articles and videos.</p>
+  </div>
+  <div class="cta-row" style="margin-bottom:40px;">
+    <a class="btn btn-primary" href="/press/sparkfall-presskit.zip" download>Download all assets (ZIP, 5.5 MB)</a>
+    <a class="btn" href="mailto:{SITE['contact_email']}?subject=%5BPress%5D">Press contact</a>
+  </div>
+  <div class="studio-cols" style="margin-bottom:44px;">
+    <div class="studio-story">
+      <h3 style="margin-top:0;">About</h3>
+      <p>{esc(s['about']['body'])}</p>
+      <p>{esc(s['about']['story2'])}</p>
+      {title_rows(games, 'Games')}
+      {title_rows(tools, 'Tools')}
+    </div>
+    <div class="studio-promises">
+      <h3>Factsheet</h3>
+      <ul style="font-weight:400;">
+        <li><strong>Studio:</strong> {SITE['brand']}</li>
+        <li><strong>Type:</strong> Independent one-person studio</li>
+        <li><strong>Founded:</strong> 2026</li>
+        <li><strong>Platform:</strong> iOS, 100% native</li>
+        <li><strong>Languages:</strong> 34 per title</li>
+        <li><strong>Pricing:</strong> honest one-time purchases</li>
+        <li><strong>Privacy:</strong> no ads, no tracking, no accounts</li>
+        <li><strong>Web:</strong> sparkfallgames.com</li>
+        <li><strong>Contact:</strong> {SITE['contact_email']}</li>
+      </ul>
+    </div>
+  </div>
+  <div class="sec-head"><h2 style="font-size:1.5rem;">Logos &amp; key art</h2></div>
+  <div class="feat-grid" style="margin-bottom:44px;">
+    <div class="feat" style="text-align:center;"><img src="/assets/press/spark-512.png" alt="Spark logo" style="width:96px;"><p><a href="/assets/press/spark-512.png" download>spark-512.png</a> · <a href="/favicon.svg" download>spark.svg</a></p></div>
+    <div class="feat" style="text-align:center;"><img src="/assets/press/wordmark-on-light.png" alt="Wordmark" style="max-width:100%;"><p><a href="/assets/press/wordmark-on-light.png" download>wordmark-on-light.png</a></p></div>
+    <div class="feat" style="text-align:center;background:#221c15;"><img src="/assets/press/wordmark-on-dark.png" alt="Wordmark dark" style="max-width:100%;"><p><a href="/assets/press/wordmark-on-dark.png" download style="color:#ffb469;">wordmark-on-dark.png</a></p></div>
+    <div class="feat" style="text-align:center;"><img src="/assets/press/keyart-1200x630.jpg" alt="Key art" style="max-width:100%;border-radius:10px;"><p><a href="/assets/press/keyart-1200x630.jpg" download>keyart-1200x630.jpg</a></p></div>
+  </div>
+  <div class="sec-head"><h2 style="font-size:1.5rem;">Screenshots</h2><p>High-resolution originals for all eight titles are included in the ZIP.</p></div>
+  <div class="entry-shots" style="justify-content:flex-start;flex-wrap:wrap;gap:14px;margin-bottom:56px;">{shots_grid}</div>
+</main>
+"""
+    html += footer(en, s)
+    out = ROOT / "press" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
+
+
 def render_404():
     """品牌化 404（GitHub Pages 全站共用根目录单文件，英文）。"""
     en = next(l for l in LANGS if l["code"] == "en")
@@ -656,6 +732,7 @@ def render_sitemap():
     for app in APPS:
         urls.append(f"{SITE['base_url']}/{app['slug']}/privacy.html")
         urls.append(f"{SITE['base_url']}/{app['slug']}/support.html")
+    urls.append(f"{SITE['base_url']}/press/")
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -698,6 +775,7 @@ def main():
         for app in APPS:
             render_app(lang, s, app)
             count += 1
+    render_press()
     render_404()
     render_sitemap()
     render_llms()
