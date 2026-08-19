@@ -246,14 +246,6 @@ a { color: var(--accent-deep); }
   box-shadow: 0 8px 22px rgba(70, 50, 25, 0.14);
 }
 
-.entry-icons { display: flex; gap: 14px; flex-wrap: wrap; }
-
-.entry-icons img {
-  width: 60px;
-  height: 60px;
-  border-radius: 14px;
-  box-shadow: 0 6px 16px rgba(70, 50, 25, 0.12);
-}
 
 /* ---------- 简化价值观（无卡片框，一行三列） ---------- */
 
@@ -389,35 +381,7 @@ a { color: var(--accent-deep); }
 
 .tease-glyph { display: none; }
 
-/* ---------- 工具卡 ---------- */
-
-.tool-grid {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(min(300px, 100%), 1fr));
-  gap: 20px;
-}
-
-.tool-card {
-  display: flex;
-  flex-direction: column;
-  gap: 9px;
-  padding: 26px;
-  border-radius: var(--radius);
-  background: var(--card);
-  border: 1px solid var(--hair);
-  box-shadow: var(--shadow-sm);
-  text-decoration: none;
-  color: var(--text);
-  transition: transform 0.16s ease, border-color 0.16s ease, box-shadow 0.16s ease;
-}
-
-.tool-card:hover {
-  transform: translateY(-3px);
-  border-color: color-mix(in srgb, var(--aa, #c25a12) 38%, var(--hair));
-  box-shadow: var(--shadow-md);
-}
-
-.tool-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; }
+/* ---------- 工具卡（与游戏卡同构，走 .game-card） ---------- */
 
 .app-icon {
   width: 56px;
@@ -532,6 +496,51 @@ a { color: var(--accent-deep); }
 .features-sec { padding: 60px 0 8px; }
 
 .features-sec h2 { font-size: 1.55rem; letter-spacing: -0.015em; margin: 0 0 24px; font-weight: 800; }
+
+/* 功能走查：一图一段，左右交替 */
+
+.walk { display: flex; flex-direction: column; gap: 26px; }
+
+.walk-item {
+  display: flex;
+  align-items: center;
+  gap: 52px;
+  padding: 36px 44px;
+  border-radius: var(--radius);
+  background: var(--card);
+  border: 1px solid var(--hair);
+  box-shadow: var(--shadow-sm);
+}
+
+.walk-item:nth-child(even) { flex-direction: row-reverse; }
+
+.walk-media { flex: 0 0 240px; }
+
+.walk-media img {
+  width: 100%;
+  height: auto;
+  display: block;
+  border-radius: 22px;
+  border: 1px solid var(--hair);
+  box-shadow: 0 12px 30px rgba(70, 50, 25, 0.14);
+}
+
+.walk-copy { flex: 1; min-width: 0; }
+
+.walk-copy h3 {
+  font-size: clamp(1.25rem, 2.4vw, 1.6rem);
+  letter-spacing: -0.015em;
+  margin: 0 0 10px;
+  font-weight: 800;
+}
+
+.walk-copy p { margin: 0; color: var(--text-2); font-size: 1.02rem; max-width: 480px; }
+
+@media (max-width: 720px) {
+  .walk-item, .walk-item:nth-child(even) { flex-direction: column; gap: 24px; padding: 26px; text-align: center; }
+  .walk-media { flex: none; width: min(220px, 58vw); }
+  .walk-copy p { margin-inline: auto; }
+}
 
 .feat-grid {
   display: grid;

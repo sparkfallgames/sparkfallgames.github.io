@@ -60,19 +60,25 @@ def process_images():
     img_dir = ROOT / "assets" / "img"
     img_dir.mkdir(parents=True, exist_ok=True)
 
+    def webp(src, out, width):
+        im = Image.open(src).convert("RGB")
+        h = round(im.height * width / im.width)
+        im = im.resize((width, h), Image.LANCZOS)
+        # WebP 有损 + 超预算自动降质：性能预算单图 ≤80KB（原画类 PNG 会到 1MB+）
+        for q in (82, 72, 62, 52):
+            im.save(out, quality=q, method=6)
+            if out.stat().st_size <= 82_000:
+                break
+
     for app in APPS:
         raw = SRC / "shots" / f"raw-{app['slug']}.png"
         if raw.exists():
-            im = Image.open(raw).convert("RGB")
-            w = 640
-            h = round(im.height * w / im.width)
-            im = im.resize((w, h), Image.LANCZOS)
-            # WebP 有损 + 超预算自动降质：性能预算单图 ≤80KB（原画类 PNG 会到 1MB+）
-            out = img_dir / f"shot-{app['slug']}.webp"
-            for q in (82, 72, 62, 52):
-                im.save(out, quality=q, method=6)
-                if out.stat().st_size <= 82_000:
-                    break
+            webp(raw, img_dir / f"shot-{app['slug']}.webp", 640)
+        # 走查图（产品页功能讲解区，英文界面全语言通用）
+        for n in range(1, 5):
+            walk = SRC / "shots" / f"walk-{app['slug']}-{n}.png"
+            if walk.exists():
+                webp(walk, img_dir / f"walk-{app['slug']}-{n}.webp", 520)
 
     icon_map = {
         "quickcost": ROOT.parent / "001/QuickCost/Assets.xcassets/AppIcon.appiconset/AppIcon.png",
@@ -293,17 +299,26 @@ def tease_card(s):
       </div>"""
 
 
-def tool_card(lang, s, app):
-    aurl = lang_url(lang, f"{app['slug']}/")
-    return f"""      <a class="tool-card" href="{aurl}" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
-        <div class="tool-top">
-          <img class="app-icon" src="/assets/img/icon-{app['slug']}.webp" alt="" width="56" height="56" loading="lazy">
-          <span class="badge">{t(s, f'categories.{app["category_key"]}')}</span>
-        </div>
-        <h3>{app['name']}</h3>
-        <p class="tool-tagline">{t(s, f'apps.{app["slug"]}.tagline')}</p>
-        <span class="card-more">{t(s, 'common.learn_more')} →</span>
-      </a>"""
+def walkthrough(lang, s, app):
+    """产品页功能走查：每条特性配一张截图，左右交替（截图缺失时回退纯文字卡）。"""
+    slug = app["slug"]
+    a = s["apps"][slug]
+    blocks, plain = [], []
+    for i, f in enumerate(a["features"], 1):
+        shot = SRC / "shots" / f"walk-{slug}-{i}.png"
+        if shot.exists():
+            blocks.append(f"""      <div class="walk-item">
+        <div class="walk-media"><img src="/assets/img/walk-{slug}-{i}.webp" alt="{esc(f['t'])}" loading="lazy" width="260"></div>
+        <div class="walk-copy"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>
+      </div>""")
+        else:
+            plain.append(f"""      <div class="feat"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
+    html = ""
+    if blocks:
+        html += '<div class="walk">\n' + "\n".join(blocks) + "\n    </div>"
+    if plain:
+        html += '\n    <div class="feat-grid">\n' + "\n".join(plain) + "\n    </div>"
+    return html
 
 
 def render_home(lang, s):
@@ -316,9 +331,9 @@ def render_home(lang, s):
     game_shots = "".join(
         f'<img src="/assets/img/shot-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
         for a in games)
-    tool_icons = "".join(
-        f'<img src="/assets/img/icon-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
-        for a in tools)
+    tool_shots = "".join(
+        f'<img src="/assets/img/shot-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        for a in tools[:3])
 
     values = f"""    <section class="values">
       <div class="value"><div class="value-ic">{VALUE_ICONS['private']}</div><h3>{t(s, 'values.private_title')}</h3><p>{t(s, 'values.private_desc')}</p></div>
@@ -362,7 +377,7 @@ def render_home(lang, s):
       <span class="entry-cta">{t(s, 'home.games_cta')} →</span>
     </a>
     <a class="entry-card" href="{lang_url(lang, 'tools/')}">
-      <div class="entry-media"><div class="entry-icons">{tool_icons}</div></div>
+      <div class="entry-media"><div class="entry-shots">{tool_shots}</div></div>
       <h2>{t(s, 'nav.tools')}</h2>
       <p>{t(s, 'home.tools_card_desc')}</p>
       <span class="entry-cta">{t(s, 'home.tools_cta')} →</span>
@@ -418,7 +433,7 @@ def render_tools(lang, s):
     page = "tools/"
     canonical = SITE["base_url"] + lang_url(lang, page)
     tools = [a for a in APPS if a["kind"] == "tool"]
-    cards = "\n".join(tool_card(lang, s, a) for a in tools)
+    cards = "\n".join(game_card(lang, s, a) for a in tools)
     html = head(lang, s, t(s, "meta.tools_title"), t(s, "meta.tools_desc"),
                 page, canonical)
     html += header_nav(lang, s, page)
@@ -429,7 +444,7 @@ def render_tools(lang, s):
         <h2>{t(s, 'sections.tools_title')}</h2>
         <p>{t(s, 'sections.tools_sub')}</p>
       </div>
-      <div class="tool-grid">
+      <div class="game-grid">
 {cards}
       </div>
     </div>
@@ -447,9 +462,6 @@ def render_app(lang, s, app):
     page = f"{slug}/"
     canonical = SITE["base_url"] + lang_url(lang, page)
     a = s["apps"][slug]
-    feats = []
-    for f in a["features"]:
-        feats.append(f"""      <div class="feat"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
     disclaimer = f'<p class="disclaimer">{esc(a["disclaimer"])}</p>' if a["disclaimer"] else ""
     features_heading = t(s, "common.features").replace("{app}", app["name"])
 
@@ -479,9 +491,7 @@ def render_app(lang, s, app):
 <main class="wrap">
   <section class="features-sec">
     <h2>{esc(features_heading)}</h2>
-    <div class="feat-grid">
-{chr(10).join(feats)}
-    </div>
+    {walkthrough(lang, s, app)}
   </section>
   <section class="privacy-strip" style="--aa:{app['gradient'][0]};">
     <h2>{t(s, 'common.privacy_heading')}</h2>
