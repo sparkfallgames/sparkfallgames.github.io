@@ -193,8 +193,9 @@ VALUE_ICONS = {
 }
 
 
-def head(lang, s, title, desc, page, canonical, extra=""):
+def head(lang, s, title, desc, page, canonical, extra="", og_image="og-brand.jpg"):
     direction = ' dir="rtl"' if lang.get("dir") == "rtl" else ""
+    og_url = f"{SITE['base_url']}/assets/img/{og_image}"
     return f"""<!DOCTYPE html>
 <html lang="{lang['hreflang']}"{direction}>
 <head>
@@ -204,6 +205,21 @@ def head(lang, s, title, desc, page, canonical, extra=""):
 <meta name="description" content="{esc(desc)}">
 <meta name="theme-color" content="#faf8f5">
 <link rel="canonical" href="{canonical}">
+<link rel="icon" href="/favicon.ico" sizes="48x48">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="{SITE['brand']}">
+<meta property="og:title" content="{esc(title)}">
+<meta property="og:description" content="{esc(desc)}">
+<meta property="og:url" content="{canonical}">
+<meta property="og:image" content="{og_url}">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="{esc(title)}">
+<meta name="twitter:description" content="{esc(desc)}">
+<meta name="twitter:image" content="{og_url}">
 {hreflang_links(page)}{extra}
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
@@ -531,7 +547,7 @@ def render_app(lang, s, app):
         extra += (f'\n<meta name="apple-itunes-app" '
                   f'content="app-id={app["store_id"]}">')
     html = head(lang, s, f"{app['name']} — {a['tagline']}", a["meta_desc"],
-                page, canonical, extra)
+                page, canonical, extra, og_image=f"og-{slug}.jpg")
     html += header_nav(lang, s, page)
     html += f"""<section class="app-hero" style="--aa:{app['gradient'][0]};--ab:{app['gradient'][1]};">
   <div class="wrap app-hero-inner">
@@ -604,6 +620,30 @@ def render_legal(lang, s):
     out.write_text(html)
 
 
+def render_404():
+    """品牌化 404（GitHub Pages 全站共用根目录单文件，英文）。"""
+    en = next(l for l in LANGS if l["code"] == "en")
+    s_en = json.loads((SRC / "i18n" / "en.json").read_text())
+    html = head(en, s_en, f"Page not found — {SITE['brand']}",
+                s_en["meta"]["home_desc"], "", f"{SITE['base_url']}/404.html")
+    html += header_nav(en, s_en, "")
+    html += f"""<main class="wrap" style="min-height:56vh;display:grid;place-items:center;text-align:center;">
+  <div>
+    <p style="font-size:5rem;margin:0;line-height:1;">404</p>
+    <h1 style="font-size:1.6rem;margin:14px 0 10px;">Page not found</h1>
+    <p style="color:var(--text-2);margin:0 0 28px;">The page you're looking for doesn't exist or has moved.</p>
+    <div class="cta-row" style="justify-content:center;">
+      <a class="btn btn-primary" href="/">{SITE['brand']}</a>
+      <a class="btn" href="/games/">{s_en['nav']['games']}</a>
+      <a class="btn" href="/tools/">{s_en['nav']['tools']}</a>
+    </div>
+  </div>
+</main>
+"""
+    html += footer(en, s_en)
+    (ROOT / "404.html").write_text(html)
+
+
 def render_sitemap():
     urls = []
     for lang in LANGS:
@@ -658,6 +698,7 @@ def main():
         for app in APPS:
             render_app(lang, s, app)
             count += 1
+    render_404()
     render_sitemap()
     render_llms()
     print(f"Generated {count} pages for {len(LANGS)} languages.")
