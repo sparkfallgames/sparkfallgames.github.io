@@ -53,6 +53,37 @@ def load_i18n():
     return data
 
 
+def device_frame(shot_path, width=520):
+    """给纯界面截图加程序绘制的设备边框（圆角深框 + 灵动岛胶囊），返回 RGBA。"""
+    from PIL import Image, ImageDraw
+
+    shot = Image.open(shot_path).convert("RGB")
+    sw = width
+    sh = round(shot.height * sw / shot.width)
+    shot = shot.resize((sw, sh), Image.LANCZOS)
+    B = round(sw * 0.045)
+    R = round(sw * 0.155)
+    W, H = sw + B * 2, sh + B * 2
+    SS = 3  # 超采样抗锯齿
+    frame = Image.new("RGBA", (W * SS, H * SS), (0, 0, 0, 0))
+    d = ImageDraw.Draw(frame)
+    d.rounded_rectangle([0, 0, W * SS - 1, H * SS - 1], radius=R * SS,
+                        fill=(26, 24, 22, 255))
+    frame = frame.resize((W, H), Image.LANCZOS)
+    ir = round(R * 0.72)
+    mask = Image.new("L", (sw * SS, sh * SS), 0)
+    ImageDraw.Draw(mask).rounded_rectangle(
+        [0, 0, sw * SS - 1, sh * SS - 1], radius=ir * SS, fill=255)
+    mask = mask.resize((sw, sh), Image.LANCZOS)
+    frame.paste(shot, (B, B), mask)
+    d = ImageDraw.Draw(frame)
+    pw, ph = round(sw * 0.26), round(sw * 0.065)
+    px, py = (W - pw) // 2, B + round(sw * 0.032)
+    d.rounded_rectangle([px, py, px + pw, py + ph], radius=ph // 2,
+                        fill=(16, 14, 13, 255))
+    return frame
+
+
 def process_images():
     """Resize raw simulator screenshots for web, copy app icons."""
     from PIL import Image
@@ -74,6 +105,13 @@ def process_images():
         raw = SRC / "shots" / f"raw-{app['slug']}.png"
         if raw.exists():
             webp(raw, img_dir / f"shot-{app['slug']}.webp", 640)
+            # 设备框版（B「斜放展示」拍板：列表卡/入口卡/产品页首屏用）
+            framed = device_frame(raw, 520)
+            out = img_dir / f"framed-{app['slug']}.webp"
+            for q in (82, 72, 62):
+                framed.save(out, quality=q, method=6)
+                if out.stat().st_size <= 82_000:
+                    break
         # 走查图（产品页功能讲解区，英文界面全语言通用）
         for n in range(1, 5):
             walk = SRC / "shots" / f"walk-{app['slug']}-{n}.png"
@@ -272,11 +310,9 @@ def store_button(app, s):
 
 
 def phone(app, size=""):
-    # 产品页首屏主图：不 lazy + 提高抓取优先级（LCP）
-    return f"""<div class="phone {size}" style="--pa:{app['gradient'][0]};--pb:{app['gradient'][1]};">
-  <div class="phone-frame">
-    <img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" fetchpriority="high">
-  </div>
+    # 产品页首屏主图（B 斜放展示）：不 lazy + 提高抓取优先级（LCP）
+    return f"""<div class="phone {size}">
+  <img src="/assets/img/framed-{app['slug']}.webp" alt="{app['name']}" fetchpriority="high">
 </div>"""
 
 
@@ -289,7 +325,7 @@ def game_card(lang, s, app):
           <p class="game-desc">{t(s, f'apps.{app["slug"]}.card_desc')}</p>
           <span class="card-more">{t(s, 'common.learn_more')} →</span>
         </div>
-        <div class="game-shot"><img src="/assets/img/shot-{app['slug']}.webp" alt="{app['name']}" loading="lazy"></div>
+        <div class="game-shot"><img src="/assets/img/framed-{app['slug']}.webp" alt="{app['name']}" loading="lazy"></div>
       </a>"""
 
 
@@ -331,10 +367,10 @@ def render_home(lang, s):
     tools = [a for a in APPS if a["kind"] == "tool"]
 
     game_shots = "".join(
-        f'<img src="/assets/img/shot-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        f'<img src="/assets/img/framed-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
         for a in games)
     tool_shots = "".join(
-        f'<img src="/assets/img/shot-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
+        f'<img src="/assets/img/framed-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
         for a in tools[:3])
 
     values = f"""    <section class="values">
