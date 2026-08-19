@@ -47,7 +47,6 @@ body {
     radial-gradient(44% 34% at -8% 24%, rgba(217, 154, 60, 0.08), transparent 68%),
     radial-gradient(56% 40% at 108% 62%, rgba(207, 64, 41, 0.05), transparent 70%),
     var(--paper);
-  background-attachment: fixed;
   color: var(--text);
   line-height: 1.7;
   -webkit-font-smoothing: antialiased;
@@ -681,9 +680,14 @@ a { color: var(--accent-deep); }
   .walk { grid-template-columns: repeat(2, 1fr); }
 }
 
+/* 手机档：保持 2×2 紧凑格，页面长度减半 */
 @media (max-width: 460px) {
-  .walk { grid-template-columns: 1fr; }
-  .walk-media { width: min(220px, 64vw); margin-inline: auto; }
+  .walk { gap: 12px; }
+  .walk-item { padding: 12px 12px 14px; border-radius: var(--radius-sm); }
+  .walk-media { margin-bottom: 10px; }
+  .walk-media img { border-radius: 12px; }
+  .walk-item h3 { font-size: 0.9rem; margin-bottom: 3px; }
+  .walk-item p { font-size: 0.78rem; line-height: 1.5; }
 }
 
 .feat-grid {
@@ -824,10 +828,16 @@ a { color: var(--accent-deep); }
 }
 
 @media (max-width: 640px) {
-  .hero { padding: 84px 0 64px; }
-  .sec, .page-head { padding-top: 56px; }
-  .game-card { flex-direction: column; text-align: center; padding: 26px; }
-  .game-shot { width: min(150px, 44vw); }
-  .nav-inner { height: auto; padding: 10px 0; flex-wrap: wrap; }
-  .nav nav { gap: 4px 14px; }
+  .hero { padding: 78px 0 60px; }
+  .sec, .page-head { padding-top: 52px; }
+  .game-card { flex-direction: column; text-align: center; padding: 24px; }
+  .game-shot { width: min(180px, 50vw); padding: 4px 0 0; }
+  .nav-inner { height: auto; padding: 10px 0; flex-wrap: wrap; justify-content: center; }
+  .nav nav { gap: 6px 16px; width: 100%; justify-content: center; }
+  .btn, .btn-soon { padding: 11px 20px; font-size: 0.92rem; }
+  .stats { grid-template-columns: repeat(2, 1fr); gap: 12px; }
+  .stat { padding: 16px 18px 14px; }
+  .stat-n { font-size: 2rem; }
+  .studio-story, .studio-promises { padding: 24px 22px; }
+  .entry-shots img { width: min(96px, 26vw); }
 }
