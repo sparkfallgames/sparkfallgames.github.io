@@ -273,8 +273,14 @@
     "desc": "Za kulisami trwa rozgrzewka. Kurtyna wkrótce pójdzie w górę."
   },
   "about": {
-    "title": "O deweloperze",
-    "body": "Jestem niezależnym deweloperem stojącym za Sparkfall Games. Każda gra i narzędzie są w 100% natywne dla iOS, zlokalizowane na 34 języków i zbudowane wokół jednej zasady: Twoje dane zostają na Twoim urządzeniu."
+    "title": "O studiu",
+    "body": "Jestem niezależnym deweloperem stojącym za Sparkfall Games. Każda gra i narzędzie są w 100% natywne dla iOS, zlokalizowane na 34 języków i zbudowane wokół jednej zasady: Twoje dane zostają na Twoim urządzeniu.",
+    "story2": "Projekt, kod, grafikę i muzykę robię sam, dzięki czemu każda aplikacja pozostaje mała, szybka i uczciwa. Bez inwestorów i sztuczek wzrostu — kupując moją aplikację, jesteś klientem, nie produktem.",
+    "promises_title": "Cztery obietnice",
+    "stat_apps": "gier i aplikacji",
+    "stat_langs": "języki",
+    "stat_clean": "reklam, trackerów, kont",
+    "stat_person": "osoba robi wszystko"
   },
   "badges": {
     "onetime": "Jednorazowy zakup",
@@ -284,7 +290,8 @@
     "honest": "Uczciwe ceny",
     "noloot": "Bez lootboxów",
     "nop2w": "Bez pay-to-win",
-    "offline": "W pełni offline"
+    "offline": "W pełni offline",
+    "ondevice": "Dane zostają na twoim urządzeniu"
   },
   "home": {
     "games_stage": "Trzy oryginalne gry.",

@@ -273,8 +273,14 @@
     "desc": "Sesuatu sedang memanaskan badan di belakang pentas. Tirai bakal dibuka."
   },
   "about": {
-    "title": "Perihal pembangun",
-    "body": "Saya pembangun solo di sebalik Sparkfall Games. Setiap permainan dan alat adalah 100% natif untuk iOS, disetempatkan ke 34 bahasa dan dibina dengan satu peraturan: data anda kekal pada peranti anda."
+    "title": "Tentang studio",
+    "body": "Saya pembangun solo di sebalik Sparkfall Games. Setiap permainan dan alat adalah 100% natif untuk iOS, disetempatkan ke 34 bahasa dan dibina dengan satu peraturan: data anda kekal pada peranti anda.",
+    "story2": "Reka bentuk, kod, lukisan dan muzik semuanya saya buat sendiri, jadi setiap aplikasi kekal kecil, pantas dan jujur. Tiada pelabur, tiada helah pertumbuhan — apabila anda membeli aplikasi saya, anda pelanggan, bukan produk.",
+    "promises_title": "Empat janji",
+    "stat_apps": "permainan & aplikasi",
+    "stat_langs": "bahasa",
+    "stat_clean": "iklan, penjejak, akaun",
+    "stat_person": "orang membina semuanya"
   },
   "badges": {
     "onetime": "Beli sekali",
@@ -284,7 +290,8 @@
     "honest": "Harga jujur",
     "noloot": "Tiada peti rampasan",
     "nop2w": "Tiada pay-to-win",
-    "offline": "Sepenuhnya luar talian"
+    "offline": "Sepenuhnya luar talian",
+    "ondevice": "Data kekal pada peranti anda"
   },
   "home": {
     "games_stage": "Tiga permainan asli.",

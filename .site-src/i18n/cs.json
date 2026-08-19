@@ -273,8 +273,14 @@
     "desc": "V zákulisí se něco rozehřívá. Opona se brzy zvedne."
   },
   "about": {
-    "title": "O vývojáři",
-    "body": "Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 34 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení."
+    "title": "O studiu",
+    "body": "Jsem nezávislý vývojář stojící za Sparkfall Games. Každá hra a nástroj jsou 100% nativní pro iOS, lokalizované do 34 jazyků a postavené na jediném pravidle: vaše data zůstávají ve vašem zařízení.",
+    "story2": "Design, kód, grafiku i hudbu dělám všechno sám, takže každá aplikace zůstává malá, rychlá a poctivá. Žádní investoři, žádné růstové triky — když si koupíte moji aplikaci, jste zákazník, ne produkt.",
+    "promises_title": "Čtyři sliby",
+    "stat_apps": "her a aplikací",
+    "stat_langs": "jazyků",
+    "stat_clean": "reklam, trackerů, účtů",
+    "stat_person": "člověk dělá vše"
   },
   "badges": {
     "onetime": "Jednorázový nákup",
@@ -284,7 +290,8 @@
     "honest": "Poctivé ceny",
     "noloot": "Žádné lootboxy",
     "nop2w": "Žádné pay-to-win",
-    "offline": "Zcela offline"
+    "offline": "Zcela offline",
+    "ondevice": "Data zůstávají ve vašem zařízení"
   },
   "home": {
     "games_stage": "Tři originální hry.",

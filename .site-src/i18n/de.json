@@ -273,8 +273,14 @@
     "desc": "Hinter der Bühne wird schon geprobt. Der Vorhang hebt sich bald."
   },
   "about": {
-    "title": "Über den Entwickler",
-    "body": "Ich bin der Solo-Entwickler hinter Sparkfall Games. Jedes Spiel und Tool ist zu 100 % nativ für iOS, in 34 Sprachen lokalisiert und folgt einer Regel: Deine Daten bleiben auf deinem Gerät."
+    "title": "Über das Studio",
+    "body": "Ich bin der Solo-Entwickler hinter Sparkfall Games. Jedes Spiel und Tool ist zu 100 % nativ für iOS, in 34 Sprachen lokalisiert und folgt einer Regel: Deine Daten bleiben auf deinem Gerät.",
+    "story2": "Design, Code, Grafik und Musik mache ich alles selbst — so bleibt jede App klein, schnell und ehrlich. Keine Investoren, keine Growth-Tricks: Wer eine meiner Apps kauft, ist Kunde, nicht Produkt.",
+    "promises_title": "Vier Versprechen",
+    "stat_apps": "Spiele & Apps",
+    "stat_langs": "Sprachen",
+    "stat_clean": "Werbung, Tracker, Konten",
+    "stat_person": "Person baut alles"
   },
   "badges": {
     "onetime": "Einmal kaufen",
@@ -284,7 +290,8 @@
     "honest": "Ehrliche Preise",
     "noloot": "Keine Lootboxen",
     "nop2w": "Kein Pay-to-win",
-    "offline": "Komplett offline"
+    "offline": "Komplett offline",
+    "ondevice": "Daten bleiben auf deinem Gerät"
   },
   "home": {
     "games_stage": "Drei originale Spiele.",

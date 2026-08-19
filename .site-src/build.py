@@ -301,7 +301,7 @@ def tease_card(s):
 
 
 def walkthrough(lang, s, app):
-    """产品页功能走查：每条特性配一张截图，左右交替（截图缺失时回退纯文字卡）。"""
+    """产品页功能走查：一行四图，图下短标题 + 一句话（截图缺失时回退纯文字卡）。"""
     slug = app["slug"]
     a = s["apps"][slug]
     blocks, plain = [], []
@@ -309,8 +309,9 @@ def walkthrough(lang, s, app):
         shot = SRC / "shots" / f"walk-{slug}-{i}.png"
         if shot.exists():
             blocks.append(f"""      <div class="walk-item">
-        <div class="walk-media"><img src="/assets/img/walk-{slug}-{i}.webp" alt="{esc(f['t'])}" loading="lazy" width="260"></div>
-        <div class="walk-copy"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>
+        <div class="walk-media"><img src="/assets/img/walk-{slug}-{i}.webp" alt="{esc(f['t'])}" loading="lazy"></div>
+        <h3>{esc(f['t'])}</h3>
+        <p>{esc(f['d'])}</p>
       </div>""")
         else:
             plain.append(f"""      <div class="feat"><h3>{esc(f['t'])}</h3><p>{esc(f['d'])}</p></div>""")
@@ -385,10 +386,28 @@ def render_home(lang, s):
     </a>
   </div>
 {values}
-  <section id="about">
-    <div class="about">
-      <h2>{t(s, 'about.title')}</h2>
-      <p>{t(s, 'about.body')}</p>
+  <section id="about" class="studio">
+    <h2>{t(s, 'about.title')}</h2>
+    <div class="stats">
+      <div class="stat"><span class="stat-n">9</span><span class="stat-l">{t(s, 'about.stat_apps')}</span></div>
+      <div class="stat"><span class="stat-n">34</span><span class="stat-l">{t(s, 'about.stat_langs')}</span></div>
+      <div class="stat"><span class="stat-n">0</span><span class="stat-l">{t(s, 'about.stat_clean')}</span></div>
+      <div class="stat"><span class="stat-n">1</span><span class="stat-l">{t(s, 'about.stat_person')}</span></div>
+    </div>
+    <div class="studio-cols">
+      <div class="studio-story">
+        <p>{t(s, 'about.body')}</p>
+        <p>{t(s, 'about.story2')}</p>
+      </div>
+      <div class="studio-promises">
+        <h3>{t(s, 'about.promises_title')}</h3>
+        <ul>
+          <li>{t(s, 'badges.noads')}</li>
+          <li>{t(s, 'badges.notracking')}</li>
+          <li>{t(s, 'badges.honest')}</li>
+          <li>{t(s, 'badges.ondevice')}</li>
+        </ul>
+      </div>
     </div>
   </section>
 </main>

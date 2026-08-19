@@ -273,8 +273,14 @@
     "desc": "Noget varmer op bag scenen. Tæppet går snart op."
   },
   "about": {
-    "title": "Om udvikleren",
-    "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 34 sprog og bygget om én regel: dine data bliver på din enhed."
+    "title": "Om studiet",
+    "body": "Jeg er soloudvikleren bag Sparkfall Games. Hvert spil og værktøj er 100 % native til iOS, lokaliseret til 34 sprog og bygget om én regel: dine data bliver på din enhed.",
+    "story2": "Design, kode, tegninger og musik laver jeg alt sammen selv, så hver app forbliver lille, hurtig og ærlig. Ingen investorer, ingen væksttricks — når du køber en af mine apps, er du kunden, ikke produktet.",
+    "promises_title": "Fire løfter",
+    "stat_apps": "spil & apps",
+    "stat_langs": "sprog",
+    "stat_clean": "reklamer, trackere, konti",
+    "stat_person": "person bygger det hele"
   },
   "badges": {
     "onetime": "Engangskøb",
@@ -284,7 +290,8 @@
     "honest": "Ærlige priser",
     "noloot": "Ingen lootbokse",
     "nop2w": "Ingen pay-to-win",
-    "offline": "Helt offline"
+    "offline": "Helt offline",
+    "ondevice": "Data bliver på din enhed"
   },
   "home": {
     "games_stage": "Tre originale spil.",

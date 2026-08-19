@@ -273,8 +273,14 @@
     "desc": "A színfalak mögött már zajlik a bemelegítés. Hamarosan felmegy a függöny."
   },
   "about": {
-    "title": "A fejlesztőről",
-    "body": "Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 34 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak."
+    "title": "A stúdióról",
+    "body": "Én vagyok a Sparkfall Games mögött álló egyszemélyes fejlesztő. Minden játék és eszköz 100%-ban natív iOS-re, 34 nyelvre honosítva, és egyetlen szabály köré épül: az adataid az eszközödön maradnak.",
+    "story2": "A dizájnt, a kódot, a grafikát és a zenét is mind magam készítem, így minden alkalmazás kicsi, gyors és becsületes maradhat. Nincsenek befektetők, nincsenek növekedési trükkök — ha megveszed az egyik alkalmazásomat, te vagy az ügyfél, nem a termék.",
+    "promises_title": "Négy ígéret",
+    "stat_apps": "játék és alkalmazás",
+    "stat_langs": "nyelv",
+    "stat_clean": "hirdetés, követő, fiók",
+    "stat_person": "ember készít mindent"
   },
   "badges": {
     "onetime": "Egyszeri vásárlás",
@@ -284,7 +290,8 @@
     "honest": "Tisztességes árak",
     "noloot": "Nincs lootbox",
     "nop2w": "Nincs pay-to-win",
-    "offline": "Teljesen offline"
+    "offline": "Teljesen offline",
+    "ondevice": "Az adataid az eszközödön maradnak"
   },
   "home": {
     "games_stage": "Három eredeti játék.",

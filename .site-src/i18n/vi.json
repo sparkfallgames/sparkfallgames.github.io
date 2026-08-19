@@ -273,8 +273,14 @@
     "desc": "Có điều gì đó đang khởi động sau cánh gà. Màn sắp kéo lên."
   },
   "about": {
-    "title": "Về nhà phát triển",
-    "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 34 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn."
+    "title": "Về studio",
+    "body": "Tôi là nhà phát triển độc lập đứng sau Sparkfall Games. Mỗi trò chơi và công cụ đều 100% native cho iOS, được bản địa hóa sang 34 ngôn ngữ và xây dựng theo một quy tắc duy nhất: dữ liệu của bạn ở lại trên thiết bị của bạn.",
+    "story2": "Thiết kế, lập trình, vẽ và soạn nhạc đều do một mình tôi làm, nên mỗi ứng dụng luôn nhỏ gọn, nhanh và trung thực. Không nhà đầu tư, không chiêu trò tăng trưởng — khi mua ứng dụng của tôi, bạn là khách hàng, không phải sản phẩm.",
+    "promises_title": "Bốn lời hứa",
+    "stat_apps": "game và ứng dụng",
+    "stat_langs": "ngôn ngữ",
+    "stat_clean": "quảng cáo, theo dõi, tài khoản",
+    "stat_person": "người làm tất cả"
   },
   "badges": {
     "onetime": "Mua một lần",
@@ -284,7 +290,8 @@
     "honest": "Giá minh bạch",
     "noloot": "Không loot box",
     "nop2w": "Không pay-to-win",
-    "offline": "Hoàn toàn ngoại tuyến"
+    "offline": "Hoàn toàn ngoại tuyến",
+    "ondevice": "Dữ liệu chỉ nằm trên thiết bị của bạn"
   },
   "home": {
     "games_stage": "Ba trò chơi nguyên bản.",

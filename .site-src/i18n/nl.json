@@ -273,8 +273,14 @@
     "desc": "Achter de schermen wordt al warmgedraaid. Het doek gaat binnenkort op."
   },
   "about": {
-    "title": "Over de ontwikkelaar",
-    "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 34 talen en gebouwd rond één regel: je gegevens blijven op je apparaat."
+    "title": "Over de studio",
+    "body": "Ik ben de solo-ontwikkelaar achter Sparkfall Games. Elke game en tool is 100% native voor iOS, gelokaliseerd in 34 talen en gebouwd rond één regel: je gegevens blijven op je apparaat.",
+    "story2": "Ontwerp, code, tekeningen en muziek maak ik allemaal zelf, zodat elke app klein, snel en eerlijk blijft. Geen investeerders, geen groeitrucs — als je een van mijn apps koopt, ben jij de klant, niet het product.",
+    "promises_title": "Vier beloftes",
+    "stat_apps": "games & apps",
+    "stat_langs": "talen",
+    "stat_clean": "advertenties, trackers, accounts",
+    "stat_person": "persoon bouwt alles"
   },
   "badges": {
     "onetime": "Eenmalige aankoop",
@@ -284,7 +290,8 @@
     "honest": "Eerlijke prijzen",
     "noloot": "Geen lootboxes",
     "nop2w": "Geen pay-to-win",
-    "offline": "Volledig offline"
+    "offline": "Volledig offline",
+    "ondevice": "Data blijft op je apparaat"
   },
   "home": {
     "games_stage": "Drie originele games.",

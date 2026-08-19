@@ -273,8 +273,14 @@
     "desc": "Sesuatu sedang pemanasan di belakang panggung. Tirai segera terangkat."
   },
   "about": {
-    "title": "Tentang pengembang",
-    "body": "Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 34 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda."
+    "title": "Tentang studio",
+    "body": "Saya pengembang solo di balik Sparkfall Games. Setiap game dan alat 100% native untuk iOS, dilokalkan ke 34 bahasa, dan dibangun dengan satu aturan: data Anda tetap di perangkat Anda.",
+    "story2": "Desain, kode, gambar, dan musik semuanya saya kerjakan sendiri, sehingga setiap aplikasi tetap kecil, cepat, dan jujur. Tanpa investor, tanpa trik pertumbuhan — saat membeli aplikasi saya, Anda adalah pelanggan, bukan produk.",
+    "promises_title": "Empat janji",
+    "stat_apps": "game & aplikasi",
+    "stat_langs": "bahasa",
+    "stat_clean": "iklan, pelacak, akun",
+    "stat_person": "orang membuat semuanya"
   },
   "badges": {
     "onetime": "Beli sekali",
@@ -284,7 +290,8 @@
     "honest": "Harga jujur",
     "noloot": "Tanpa loot box",
     "nop2w": "Tanpa pay-to-win",
-    "offline": "Sepenuhnya offline"
+    "offline": "Sepenuhnya offline",
+    "ondevice": "Data tetap di perangkat Anda"
   },
   "home": {
     "games_stage": "Tiga game orisinal.",

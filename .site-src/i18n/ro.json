@@ -273,8 +273,14 @@
     "desc": "Ceva se încălzește în culise. Cortina se ridică în curând."
   },
   "about": {
-    "title": "Despre dezvoltator",
-    "body": "Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 34 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău."
+    "title": "Despre studio",
+    "body": "Sunt dezvoltatorul independent din spatele Sparkfall Games. Fiecare joc și instrument este 100% nativ pentru iOS, localizat în 34 de limbi și construit în jurul unei singure reguli: datele tale rămân pe dispozitivul tău.",
+    "story2": "Designul, codul, grafica și muzica le fac pe toate singur, așa că fiecare aplicație rămâne mică, rapidă și onestă. Fără investitori, fără trucuri de creștere — când cumperi una dintre aplicațiile mele, ești clientul, nu produsul.",
+    "promises_title": "Patru promisiuni",
+    "stat_apps": "jocuri și aplicații",
+    "stat_langs": "limbi",
+    "stat_clean": "reclame, trackere, conturi",
+    "stat_person": "persoană construiește tot"
   },
   "badges": {
     "onetime": "Plată unică",
@@ -284,7 +290,8 @@
     "honest": "Prețuri corecte",
     "noloot": "Fără loot box-uri",
     "nop2w": "Fără pay-to-win",
-    "offline": "Complet offline"
+    "offline": "Complet offline",
+    "ondevice": "Datele rămân pe dispozitivul tău"
   },
   "home": {
     "games_stage": "Trei jocuri originale.",

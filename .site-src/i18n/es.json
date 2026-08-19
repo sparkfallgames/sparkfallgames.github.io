@@ -273,8 +273,14 @@
     "desc": "Algo se prepara entre bastidores. El telón sube pronto."
   },
   "about": {
-    "title": "Sobre el desarrollador",
-    "body": "Soy el desarrollador independiente detrás de Sparkfall Games. Cada juego y herramienta es 100 % nativo de iOS, está localizado en 34 idiomas y sigue una sola regla: tus datos se quedan en tu dispositivo."
+    "title": "Sobre el estudio",
+    "body": "Soy el desarrollador independiente detrás de Sparkfall Games. Cada juego y herramienta es 100 % nativo de iOS, está localizado en 34 idiomas y sigue una sola regla: tus datos se quedan en tu dispositivo.",
+    "story2": "Diseño, programo, dibujo y compongo todo yo mismo, así cada app se mantiene pequeña, rápida y honesta. Sin inversores ni trucos de crecimiento: cuando compras una de mis apps, eres el cliente, no el producto.",
+    "promises_title": "Cuatro promesas",
+    "stat_apps": "juegos y apps",
+    "stat_langs": "idiomas",
+    "stat_clean": "anuncios, rastreadores, cuentas",
+    "stat_person": "persona lo construye todo"
   },
   "badges": {
     "onetime": "Pago único",
@@ -284,7 +290,8 @@
     "honest": "Precios honestos",
     "noloot": "Sin cajas de botín",
     "nop2w": "Sin pay-to-win",
-    "offline": "Totalmente sin conexión"
+    "offline": "Totalmente sin conexión",
+    "ondevice": "Tus datos se quedan en tu dispositivo"
   },
   "home": {
     "games_stage": "Tres juegos originales.",

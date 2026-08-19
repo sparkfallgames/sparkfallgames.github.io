@@ -273,8 +273,14 @@
     "desc": "Något värmer upp bakom scenen. Ridån går snart upp."
   },
   "about": {
-    "title": "Om utvecklaren",
-    "body": "Jag är soloutvecklaren bakom Sparkfall Games. Varje spel och verktyg är 100 % native för iOS, lokaliserat till 34 språk och byggt kring en enda regel: dina data stannar på din enhet."
+    "title": "Om studion",
+    "body": "Jag är soloutvecklaren bakom Sparkfall Games. Varje spel och verktyg är 100 % native för iOS, lokaliserat till 34 språk och byggt kring en enda regel: dina data stannar på din enhet.",
+    "story2": "Design, kod, bild och musik gör jag allt själv, så varje app förblir liten, snabb och ärlig. Inga investerare, inga tillväxttrick — när du köper en av mina appar är du kunden, inte produkten.",
+    "promises_title": "Fyra löften",
+    "stat_apps": "spel & appar",
+    "stat_langs": "språk",
+    "stat_clean": "annonser, spårare, konton",
+    "stat_person": "person bygger allt"
   },
   "badges": {
     "onetime": "Engångsköp",
@@ -284,7 +290,8 @@
     "honest": "Ärliga priser",
     "noloot": "Inga lootlådor",
     "nop2w": "Ingen pay-to-win",
-    "offline": "Helt offline"
+    "offline": "Helt offline",
+    "ondevice": "Data stannar på din enhet"
   },
   "home": {
     "games_stage": "Tre originella spel.",

@@ -273,8 +273,14 @@
     "desc": "Sahne arkasında hazırlıklar sürüyor. Perde yakında açılıyor."
   },
   "about": {
-    "title": "Geliştirici hakkında",
-    "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 34 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır."
+    "title": "Stüdyo hakkında",
+    "body": "Sparkfall Games'in arkasındaki bağımsız geliştiriciyim. Her oyun ve araç %100 iOS yerlisidir, 34 dile yerelleştirilmiştir ve tek bir kurala göre yapılır: verileriniz cihazınızda kalır.",
+    "story2": "Tasarımı, kodu, çizimi ve müziği hep kendim yapıyorum; böylece her uygulama küçük, hızlı ve dürüst kalıyor. Yatırımcı yok, büyüme hilesi yok — uygulamalarımdan birini aldığınızda müşterisiniz, ürün değil.",
+    "promises_title": "Dört söz",
+    "stat_apps": "oyun ve uygulama",
+    "stat_langs": "dil",
+    "stat_clean": "reklam, izleyici, hesap",
+    "stat_person": "kişi her şeyi yapıyor"
   },
   "badges": {
     "onetime": "Tek seferlik satın alma",
@@ -284,7 +290,8 @@
     "honest": "Dürüst fiyatlar",
     "noloot": "Loot box yok",
     "nop2w": "Pay-to-win yok",
-    "offline": "Tamamen çevrimdışı"
+    "offline": "Tamamen çevrimdışı",
+    "ondevice": "Verileriniz cihazınızda kalır"
   },
   "home": {
     "games_stage": "Üç özgün oyun.",

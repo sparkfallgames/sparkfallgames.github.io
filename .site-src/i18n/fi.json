@@ -273,8 +273,14 @@
     "desc": "Kulissien takana lämmitellään. Esirippu nousee pian."
   },
   "about": {
-    "title": "Tietoa kehittäjästä",
-    "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 34 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi."
+    "title": "Tietoa studiosta",
+    "body": "Olen Sparkfall Gamesin takana oleva itsenäinen kehittäjä. Jokainen peli ja työkalu on 100 % natiivi iOS:lle, lokalisoitu 34 kielelle ja rakennettu yhden säännön ympärille: tietosi pysyvät laitteellasi.",
+    "story2": "Suunnittelen, koodaan, piirrän ja sävellän kaiken itse, joten jokainen sovellus pysyy pienenä, nopeana ja rehellisenä. Ei sijoittajia eikä kasvukikkoja — kun ostat sovellukseni, olet asiakas, et tuote.",
+    "promises_title": "Neljä lupausta",
+    "stat_apps": "peliä ja sovellusta",
+    "stat_langs": "kieltä",
+    "stat_clean": "mainoksia, seuraimia, tilejä",
+    "stat_person": "ihminen tekee kaiken"
   },
   "badges": {
     "onetime": "Kertaosto",
@@ -284,7 +290,8 @@
     "honest": "Rehellinen hinnoittelu",
     "noloot": "Ei loot boxeja",
     "nop2w": "Ei pay-to-winiä",
-    "offline": "Täysin offline"
+    "offline": "Täysin offline",
+    "ondevice": "Tiedot pysyvät laitteellasi"
   },
   "home": {
     "games_stage": "Kolme omaperäistä peliä.",
