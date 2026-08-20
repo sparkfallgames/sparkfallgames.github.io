@@ -102,11 +102,29 @@ def process_images():
             if out.stat().st_size <= budget:
                 break
 
-    # 深色版视觉素材：品牌 key art（hero 背景，预算放宽到 160KB）+
+    # 深色版视觉素材：品牌 key art（hero 背景）+
     # 游戏原画压暗调色（游戏电影横幅背景；源画在 006 工程，与 icon_map 同一依赖口径）
+    # key art 源图仅 1536 宽（AI 生图上限）：锐化上采样出桌面 2304 版 +
+    # 手机 1280 版；整体压暗一档让文字站住（2026-08-20 用户反馈「糊+抢眼」）
     keyart = SRC / "art" / "keyart-dark.png"
     if keyart.exists():
-        webp(keyart, img_dir / "keyart-dark.webp", 1920, budget=160_000)
+        from PIL import ImageChops, ImageFilter
+        base = Image.open(keyart).convert("RGB")
+        base = ImageEnhance.Brightness(base).enhance(0.78)
+        for name, width, budget in (("keyart-dark.webp", 2304, 220_000),
+                                    ("keyart-dark-m.webp", 1280, 90_000)):
+            im = base.resize((width, round(base.height * width / base.width)),
+                             Image.LANCZOS)
+            im = im.filter(ImageFilter.UnsharpMask(radius=2, percent=120, threshold=2))
+            # 细颗粒：掩盖上采样的软 + 电影质感
+            grain = Image.effect_noise(im.size, 9).convert("L")
+            im = ImageChops.add(im, Image.merge("RGB", [grain] * 3),
+                                scale=1, offset=-128)
+            out = img_dir / name
+            for q in (82, 74, 66, 58):
+                im.save(out, quality=q, method=6)
+                if out.stat().st_size <= budget:
+                    break
     chibi = (ROOT.parent / "006/Mergehold/Assets.xcassets/Art"
              / "env_chibi.imageset/env_chibi.jpg")
     if chibi.exists():
@@ -440,8 +458,10 @@ def render_home(lang, s):
         "email": SITE["contact_email"],
         "description": t(s, "meta.home_desc"),
     })
-    preload = ('\n<link rel="preload" as="image" '
-               'href="/assets/img/keyart-dark.webp" fetchpriority="high">')
+    preload = ('\n<link rel="preload" as="image" href="/assets/img/keyart-dark.webp"'
+               ' media="(min-width:701px)" fetchpriority="high">'
+               '\n<link rel="preload" as="image" href="/assets/img/keyart-dark-m.webp"'
+               ' media="(max-width:700px)" fetchpriority="high">')
     html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"),
                 page, canonical, "\n" + org + preload)
     html += header_nav(lang, s, page)

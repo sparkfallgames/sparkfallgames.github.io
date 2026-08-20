@@ -138,14 +138,19 @@ img { max-width: 100%; }
   background: var(--bg-deep) url("/assets/img/keyart-dark.webp") center / cover no-repeat;
 }
 
-/* 左侧压字暗部 + 底部融入页面底色 */
+/* 手机走小图（1280 版，省 130KB+） */
+@media (max-width: 700px) {
+  .hero-bg { background-image: url("/assets/img/keyart-dark-m.webp"); }
+}
+
+/* 分层扫暗：左侧压字暗部渐弱延伸到右缘（背景让位文字，全域降一档）+ 底部融入页面底色 */
 .hero-bg::after {
   content: "";
   position: absolute;
   inset: 0;
   background:
-    linear-gradient(90deg, rgba(5, 4, 3, 0.88) 0%, rgba(5, 4, 3, 0.55) 44%, rgba(5, 4, 3, 0) 75%),
-    linear-gradient(0deg, var(--bg) 0%, rgba(12, 10, 9, 0) 22%);
+    linear-gradient(90deg, rgba(5, 4, 3, 0.92) 0%, rgba(5, 4, 3, 0.62) 42%, rgba(5, 4, 3, 0.28) 72%, rgba(5, 4, 3, 0.14) 100%),
+    linear-gradient(0deg, var(--bg) 0%, rgba(12, 10, 9, 0) 24%);
 }
 
 /* RTL：整层水平镜像（key art 火花与压字暗部一起换边） */
