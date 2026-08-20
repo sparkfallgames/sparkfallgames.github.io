@@ -349,19 +349,43 @@ def header_nav(lang, s, page, switcher_on=True):
 """
 
 
+# Inline monochrome marks (no third-party icon CDN — privacy + offline).
+SOCIAL_ICONS = {
+    "x": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M18.244 2H21.5l-7.5 8.57L22.5 22h-6.59l-5.16-6.74L5.2 22H1.94l8.03-9.17L1.5 2h6.75l4.66 6.18L18.244 2zm-1.16 18h1.82L7.08 3.94H5.13L17.084 20z"/></svg>',
+    "reddit": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2C6.48 2 2 6.18 2 11.5c0 3.54 2.2 6.56 5.4 8.05-.07-.62-.14-1.57.03-2.25.15-.62.98-4.16.98-4.16s-.25-.5-.25-1.24c0-1.16.67-2.03 1.51-2.03.71 0 1.06.54 1.06 1.18 0 .72-.46 1.8-.7 2.8-.2.84.42 1.52 1.25 1.52 1.5 0 2.65-1.58 2.65-3.86 0-2.02-1.45-3.43-3.52-3.43-2.4 0-3.81 1.8-3.81 3.66 0 .72.28 1.5.63 1.92a.24.24 0 0 1 .06.23c-.07.28-.22.9-.25 1.02-.04.17-.14.2-.32.12-1.2-.56-1.95-2.32-1.95-3.74 0-3.05 2.22-5.85 6.4-5.85 3.36 0 5.97 2.4 5.97 5.6 0 3.34-2.1 6.03-5.02 6.03-.98 0-1.9-.51-2.22-1.11l-.6 2.3c-.22.84-.81 1.9-1.21 2.54A10.4 10.4 0 0 0 12 21c5.52 0 10-4.18 10-9.5S17.52 2 12 2z"/></svg>',
+    "producthunt": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 2a10 10 0 1 0 .001 20.001A10 10 0 0 0 12 2zm1.75 11.25H12.5v2.5h-1.75v-2.5H8.5V9.5h5.25a2.38 2.38 0 0 1 0 4.75zM12.5 11h1.25a.88.88 0 0 0 0-1.75H12.5V11z"/></svg>',
+    "linkedin": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M4.98 3.5C4.98 4.88 3.87 6 2.5 6S0 4.88 0 3.5 1.12 1 2.5 1s2.48 1.12 2.48 2.5zM.5 8.5h4V23h-4V8.5zM8.5 8.5h3.8v2h.05c.53-1 1.83-2.05 3.77-2.05 4.03 0 4.78 2.65 4.78 6.1V23h-4v-6.6c0-1.57-.03-3.6-2.2-3.6-2.2 0-2.54 1.72-2.54 3.5V23h-4V8.5z"/></svg>',
+    "discord": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.27 5.33C17.94 4.71 16.5 4.26 15 4a.09.09 0 0 0-.07.03c-.18.33-.39.76-.53 1.09a16.1 16.1 0 0 0-4.8 0c-.14-.34-.36-.76-.54-1.09A.09.09 0 0 0 9 4c-1.5.26-2.94.71-4.27 1.33A.08.08 0 0 0 4.67 5.4C2.53 8.87 1.9 12.24 2.21 15.57a.1.1 0 0 0 .04.07 15.9 15.9 0 0 0 4.79 2.43.1.1 0 0 0 .11-.03c.37-.5.7-1.03.98-1.58a.09.09 0 0 0-.05-.13 10.5 10.5 0 0 1-1.5-.73.09.09 0 0 1 0-.15c.1-.08.2-.16.3-.24a.09.09 0 0 1 .09-.01c3.16 1.44 6.58 1.44 9.7 0a.09.09 0 0 1 .1.01c.1.08.2.16.3.24a.09.09 0 0 1 0 .15c-.48.28-.98.52-1.5.73a.09.09 0 0 0-.05.13c.29.55.62 1.08.98 1.58a.1.1 0 0 0 .11.03 15.85 15.85 0 0 0 4.8-2.43.1.1 0 0 0 .04-.07c.37-3.86-.63-7.2-2.66-10.17a.07.07 0 0 0-.06-.04zM8.7 13.73c-.95 0-1.73-.88-1.73-1.95s.76-1.95 1.73-1.95 1.75.88 1.73 1.95c0 1.07-.76 1.95-1.73 1.95zm6.61 0c-.95 0-1.73-.88-1.73-1.95s.76-1.95 1.73-1.95 1.75.88 1.73 1.95c0 1.07-.77 1.95-1.73 1.95z"/></svg>',
+    "instagram": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5zm0 2a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V7a3 3 0 0 0-3-3H7zm11.25 1.5a1.25 1.25 0 1 1 0 2.5 1.25 1.25 0 0 1 0-2.5zM12 7.5A4.5 4.5 0 1 1 12 16.5 4.5 4.5 0 0 1 12 7.5zm0 2a2.5 2.5 0 1 0 0 5 2.5 2.5 0 0 0 0-5z"/></svg>',
+    "youtube": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M23.5 6.2a3 3 0 0 0-2.1-2.1C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.4.6A3 3 0 0 0 .5 6.2 31.5 31.5 0 0 0 0 12a31.5 31.5 0 0 0 .5 5.8 3 3 0 0 0 2.1 2.1c1.9.6 9.4.6 9.4.6s7.5 0 9.4-.6a3 3 0 0 0 2.1-2.1A31.5 31.5 0 0 0 24 12a31.5 31.5 0 0 0-.5-5.8zM9.75 15.5v-7l6.5 3.5-6.5 3.5z"/></svg>',
+    "tiktok": '<svg class="social-ico" viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M19.6 7.2a5.6 5.6 0 0 1-3.3-1.1v7.3a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v2.8a2.8 2.8 0 1 0 2 2.7V2.5h2.7c.2 1.6 1.2 3.1 2.6 4 .9.5 1.9.8 2.7.9v2.8z"/></svg>',
+}
+
+
+def social_icon(key):
+    return SOCIAL_ICONS.get(key, "")
+
+
 def footer(lang, s):
     rights = t(s, "common.footer_rights").replace("{year}", SITE["year"])
     legal = lang_url(lang, "legal/")
     social = SITE.get("social") or {}
-    # Official brand socials only (Tier1 live). Compact text links — hub for matrix.
     order = [("x", "X"), ("reddit", "Reddit"), ("producthunt", "Product Hunt"),
-             ("linkedin", "LinkedIn")]
-    social_bits = " · ".join(
-        f'<a href="{esc(social[k])}" rel="me noopener">{label}</a>'
-        for k, label in order if social.get(k))
+             ("linkedin", "LinkedIn"), ("discord", "Discord"),
+             ("instagram", "Instagram"), ("youtube", "YouTube"), ("tiktok", "TikTok")]
+    chips = []
+    for k, label in order:
+        if not social.get(k):
+            continue
+        chips.append(
+            f'<a class="foot-social-chip" href="{esc(social[k])}" rel="me noopener" '
+            f'target="_blank" aria-label="{esc(label)}">{social_icon(k)}'
+            f'<span>{esc(label)}</span></a>')
+    chips_html = "".join(chips)
     social_line = (
-        f'\n    <p class="foot-social"><a href="/social/">Follow us</a>'
-        f'{(" · " + social_bits) if social_bits else ""}</p>'
+        f'\n    <div class="foot-social">'
+        f'<a class="foot-social-hub" href="/social/">Follow us</a>'
+        f'{chips_html}</div>'
     )
     return f"""<footer class="foot">
   <div class="wrap">
@@ -794,6 +818,7 @@ def render_social():
         if not url:
             continue
         cards.append(f"""    <a class="social-card" href="{esc(url)}" rel="me noopener" target="_blank">
+      <span class="social-card-icon" aria-hidden="true">{social_icon(key)}</span>
       <div class="social-card-copy">
         <h3>{esc(name)}</h3>
         <p>{esc(blurb)}</p>
