@@ -15,8 +15,8 @@
     var ctx = canvas.getContext("2d");
     if (!ctx) return;
 
-    // 深一档的暖色，低透明度——纸上可见但不抢戏
-    var COLORS = ["#e06f28", "#d99a3c", "#c94f22", "#e8975a"];
+    // 深炭底上的亮余烬（v4 火花电影）——与 key art 火花呼应
+    var COLORS = ["#ffb469", "#f5a35c", "#e0664a", "#ffd9a0"];
     var dpr = Math.min(window.devicePixelRatio || 1, 2);
     var w = 0, h = 0, parts = [], raf = 0;
 
@@ -38,7 +38,7 @@
         vy: 0.16 + Math.random() * 0.34,
         r: 0.8 + Math.random() * 1.4,
         c: COLORS[(Math.random() * COLORS.length) | 0],
-        a: 0.12 + Math.random() * 0.22,
+        a: 0.22 + Math.random() * 0.3,
         tw: Math.random() * Math.PI * 2,
         sway: 0.2 + Math.random() * 0.4
       };

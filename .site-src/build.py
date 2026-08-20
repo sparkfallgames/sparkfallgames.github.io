@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Static site generator for the apps site (sparkfallgames.com, hosted on GitHub Pages).
 
-Design system v2 "Ember": unified warm-ink shell (nav/footer), dual content zones —
-zone-dark for games (ink + ember glow), zone-light for tools (warm paper, Apple-calm).
+Design system v4 "火花电影 / Ember Cinema" (2026-08-20 用户赛马拍板 A 案):
+dark charcoal shell site-wide, original spark-shower key art hero, cinematic
+full-width bands for games/tools, ember-amber accent. Never pure black.
 
 Reads apps.json + i18n/<lang>.json, emits:
   /index.html, /<app>/index.html            (English, site root)
@@ -85,20 +86,38 @@ def device_frame(shot_path, width=520):
 
 
 def process_images():
-    """Resize raw simulator screenshots for web, copy app icons."""
-    from PIL import Image
+    """Resize raw simulator screenshots for web, copy app icons, grade key art."""
+    from PIL import Image, ImageEnhance
 
     img_dir = ROOT / "assets" / "img"
     img_dir.mkdir(parents=True, exist_ok=True)
 
-    def webp(src, out, width):
+    def webp(src, out, width, budget=82_000):
         im = Image.open(src).convert("RGB")
         h = round(im.height * width / im.width)
         im = im.resize((width, h), Image.LANCZOS)
         # WebP 有损 + 超预算自动降质：性能预算单图 ≤80KB（原画类 PNG 会到 1MB+）
         for q in (82, 72, 62, 52):
             im.save(out, quality=q, method=6)
-            if out.stat().st_size <= 82_000:
+            if out.stat().st_size <= budget:
+                break
+
+    # 深色版视觉素材：品牌 key art（hero 背景，预算放宽到 160KB）+
+    # 游戏原画压暗调色（游戏电影横幅背景；源画在 006 工程，与 icon_map 同一依赖口径）
+    keyart = SRC / "art" / "keyart-dark.png"
+    if keyart.exists():
+        webp(keyart, img_dir / "keyart-dark.webp", 1920, budget=160_000)
+    chibi = (ROOT.parent / "006/Mergehold/Assets.xcassets/Art"
+             / "env_chibi.imageset/env_chibi.jpg")
+    if chibi.exists():
+        im = Image.open(chibi).convert("RGB")
+        im = im.crop((0, round(im.height * 0.60), im.width, im.height))
+        im = im.resize((1600, round(im.height * 1600 / im.width)), Image.LANCZOS)
+        im = ImageEnhance.Brightness(im).enhance(0.42)
+        out = img_dir / "art-chibi.webp"
+        for q in (80, 70, 60):
+            im.save(out, quality=q, method=6)
+            if out.stat().st_size <= 140_000:
                 break
 
     for app in APPS:
@@ -205,7 +224,7 @@ def head(lang, s, title, desc, page, canonical, extra="", og_image="og-brand.jpg
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>{esc(title)}</title>
 <meta name="description" content="{esc(desc)}">
-<meta name="theme-color" content="#faf8f5">
+<meta name="theme-color" content="#0c0a09">
 <link rel="canonical" href="{canonical}">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -386,15 +405,16 @@ def walkthrough(lang, s, app):
 
 
 def render_home(lang, s):
-    """短首页：品牌开场 + 游戏/工具两张大入口卡 + 价值观 + 关于。"""
+    """短首页（v4 火花电影）：key art 满屏 hero + 游戏/工具两条电影横幅 + 价值观 + 关于。"""
     page = ""
     canonical = SITE["base_url"] + lang_url(lang, page)
     games = [a for a in APPS if a["kind"] == "game"]
     tools = [a for a in APPS if a["kind"] == "tool"]
 
+    # 反序让 Mergehold（三国原画）打头，与横幅标题「从三国到万国」对齐
     game_shots = "".join(
         f'<img src="/assets/img/framed-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
-        for a in games)
+        for a in reversed(games))
     tool_shots = "".join(
         f'<img src="/assets/img/framed-{a["slug"]}.webp" alt="{a["name"]}" loading="lazy">'
         for a in tools[:3])
@@ -420,12 +440,13 @@ def render_home(lang, s):
         "email": SITE["contact_email"],
         "description": t(s, "meta.home_desc"),
     })
+    preload = ('\n<link rel="preload" as="image" '
+               'href="/assets/img/keyart-dark.webp" fetchpriority="high">')
     html = head(lang, s, t(s, "meta.home_title"), t(s, "meta.home_desc"),
-                page, canonical, "\n" + org)
+                page, canonical, "\n" + org + preload)
     html += header_nav(lang, s, page)
     html += f"""<section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <svg class="hero-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#c25a12" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>
   <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
     <span class="hero-kicker">{t(s, 'hero.kicker')}</span>
@@ -438,20 +459,28 @@ def render_home(lang, s):
   </div>
 </section>
 <main class="wrap">
-  <div class="entry-grid">
-    <a class="entry-card entry-games" href="{lang_url(lang, 'games/')}">
-      <div class="entry-media"><div class="entry-shots">{game_shots}</div></div>
-      <h2>{t(s, 'nav.games')}</h2>
-      <p>{t(s, 'home.games_card_desc')}</p>
-      <span class="entry-cta">{t(s, 'home.games_cta')} →</span>
-    </a>
-    <a class="entry-card entry-tools" href="{lang_url(lang, 'tools/')}">
-      <div class="entry-media"><div class="entry-shots">{tool_shots}</div></div>
-      <h2>{t(s, 'nav.tools')}</h2>
-      <p>{t(s, 'home.tools_card_desc')}</p>
-      <span class="entry-cta">{t(s, 'home.tools_cta')} →</span>
-    </a>
-  </div>
+  <a class="band band-games" href="{lang_url(lang, 'games/')}">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">{t(s, 'nav.games')}</span>
+        <h2>{t(s, 'home.games_card_title')}</h2>
+        <p>{t(s, 'home.games_card_desc')}</p>
+        <span class="band-more">{t(s, 'home.games_cta')} →</span>
+      </div>
+      <div class="band-shots">{game_shots}</div>
+    </div>
+  </a>
+  <a class="band band-tools" href="{lang_url(lang, 'tools/')}">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">{t(s, 'nav.tools')}</span>
+        <h2>{t(s, 'home.tools_card_title')}</h2>
+        <p>{t(s, 'home.tools_card_desc')}</p>
+        <span class="band-more">{t(s, 'home.tools_cta')} →</span>
+      </div>
+      <div class="band-shots">{tool_shots}</div>
+    </div>
+  </a>
 {values}
   <section id="about" class="studio">
     <h2>{t(s, 'about.title')}</h2>
@@ -691,8 +720,8 @@ def render_press():
   <div class="sec-head"><h2 style="font-size:1.5rem;">Logos &amp; key art</h2></div>
   <div class="feat-grid" style="margin-bottom:44px;">
     <div class="feat" style="text-align:center;"><img src="/assets/press/spark-512.png" alt="Spark logo" style="width:96px;"><p><a href="/assets/press/spark-512.png" download>spark-512.png</a> · <a href="/favicon.svg" download>spark.svg</a></p></div>
-    <div class="feat" style="text-align:center;"><img src="/assets/press/wordmark-on-light.png" alt="Wordmark" style="max-width:100%;"><p><a href="/assets/press/wordmark-on-light.png" download>wordmark-on-light.png</a></p></div>
-    <div class="feat" style="text-align:center;background:#221c15;"><img src="/assets/press/wordmark-on-dark.png" alt="Wordmark dark" style="max-width:100%;"><p><a href="/assets/press/wordmark-on-dark.png" download style="color:#ffb469;">wordmark-on-dark.png</a></p></div>
+    <div class="feat" style="text-align:center;"><img src="/assets/press/wordmark-on-light.png" alt="Wordmark" style="max-width:100%;background:#f5f1ea;border-radius:10px;padding:10px 14px;box-sizing:border-box;"><p><a href="/assets/press/wordmark-on-light.png" download>wordmark-on-light.png</a></p></div>
+    <div class="feat" style="text-align:center;"><img src="/assets/press/wordmark-on-dark.png" alt="Wordmark dark" style="max-width:100%;"><p><a href="/assets/press/wordmark-on-dark.png" download>wordmark-on-dark.png</a></p></div>
     <div class="feat" style="text-align:center;"><img src="/assets/press/keyart-1200x630.jpg" alt="Key art" style="max-width:100%;border-radius:10px;"><p><a href="/assets/press/keyart-1200x630.jpg" download>keyart-1200x630.jpg</a></p></div>
   </div>
   <div class="sec-head"><h2 style="font-size:1.5rem;">Screenshots</h2><p>High-resolution originals for all eight titles are included in the ZIP.</p></div>

@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sparkfall Games — Game indie và ứng dụng iOS trung thực</title>
 <meta name="description" content="Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi.">
-<meta name="theme-color" content="#faf8f5">
+<meta name="theme-color" content="#0c0a09">
 <link rel="canonical" href="https://sparkfallgames.com/vi/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -55,6 +55,7 @@
 <link rel="alternate" hreflang="he" href="https://sparkfallgames.com/he/">
 <link rel="alternate" hreflang="x-default" href="https://sparkfallgames.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Sparkfall Games", "url": "https://sparkfallgames.com", "email": "support@sparkfallgames.com", "description": "Sparkfall Games là studio indie một người, tạo ra những game vui nhộn và công cụ iOS trung thực, riêng tư. Không tài khoản, không máy chủ, không theo dõi."}</script>
+<link rel="preload" as="image" href="/assets/img/keyart-dark.webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
@@ -74,7 +75,6 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <svg class="hero-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#c25a12" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>
   <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
     <span class="hero-kicker">Studio game một người</span>
@@ -87,20 +87,28 @@
   </div>
 </section>
 <main class="wrap">
-  <div class="entry-grid">
-    <a class="entry-card entry-games" href="/vi/games/">
-      <div class="entry-media"><div class="entry-shots"><img src="/assets/img/framed-numzen.webp" alt="NumZen" loading="lazy"><img src="/assets/img/framed-gloomfall.webp" alt="Gloomfall" loading="lazy"><img src="/assets/img/framed-mergehold.webp" alt="Mergehold" loading="lazy"></div></div>
-      <h2>Trò chơi</h2>
-      <p>Trận hợp nhất đối gương, RPG chiến thuật u tối, tính nhẩm mỗi ngày — trò thứ tư đang khởi động sau cánh gà.</p>
-      <span class="entry-cta">Vào sảnh trò chơi →</span>
-    </a>
-    <a class="entry-card entry-tools" href="/vi/tools/">
-      <div class="entry-media"><div class="entry-shots"><img src="/assets/img/framed-quickcost.webp" alt="QuickCost" loading="lazy"><img src="/assets/img/framed-decibelmeter.webp" alt="Decibel Meter" loading="lazy"><img src="/assets/img/framed-fastzen.webp" alt="FastZen" loading="lazy"></div></div>
-      <h2>Công cụ</h2>
-      <p>Sổ chi tiêu, đo decibel, hẹn giờ nhịn ăn, dịch màn hình, danh sách hành lý — giá minh bạch, trả một lần.</p>
-      <span class="entry-cta">Vào xưởng công cụ →</span>
-    </a>
-  </div>
+  <a class="band band-games" href="/vi/games/">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">Trò chơi</span>
+        <h2>Từ Tam Quốc và xa hơn.</h2>
+        <p>Trận hợp nhất đối gương, RPG chiến thuật u tối, tính nhẩm mỗi ngày — trò thứ tư đang khởi động sau cánh gà.</p>
+        <span class="band-more">Vào sảnh trò chơi →</span>
+      </div>
+      <div class="band-shots"><img src="/assets/img/framed-mergehold.webp" alt="Mergehold" loading="lazy"><img src="/assets/img/framed-gloomfall.webp" alt="Gloomfall" loading="lazy"><img src="/assets/img/framed-numzen.webp" alt="NumZen" loading="lazy"></div>
+    </div>
+  </a>
+  <a class="band band-tools" href="/vi/tools/">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">Công cụ</span>
+        <h2>Nhỏ, sắc, trung thực.</h2>
+        <p>Sổ chi tiêu, đo decibel, hẹn giờ nhịn ăn, dịch màn hình, danh sách hành lý — giá minh bạch, trả một lần.</p>
+        <span class="band-more">Vào xưởng công cụ →</span>
+      </div>
+      <div class="band-shots"><img src="/assets/img/framed-quickcost.webp" alt="QuickCost" loading="lazy"><img src="/assets/img/framed-decibelmeter.webp" alt="Decibel Meter" loading="lazy"><img src="/assets/img/framed-fastzen.webp" alt="FastZen" loading="lazy"></div>
+    </div>
+  </a>
     <section class="values">
       <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>Riêng tư từ thiết kế</h3><p>Mọi thứ được lưu trên thiết bị của bạn. Chúng tôi không vận hành máy chủ và không thể xem dữ liệu của bạn.</p></div>
       <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>Giá cả trung thực</h3><p>Tính năng miễn phí sẽ miễn phí mãi mãi. Không bẫy đăng ký, không đồng hồ đếm ngược giả.</p></div>

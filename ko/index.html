@@ -5,7 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Sparkfall Games — 인디 게임과 정직한 iOS 앱</title>
 <meta name="description" content="Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음.">
-<meta name="theme-color" content="#faf8f5">
+<meta name="theme-color" content="#0c0a09">
 <link rel="canonical" href="https://sparkfallgames.com/ko/">
 <link rel="icon" href="/favicon.ico" sizes="48x48">
 <link rel="icon" href="/favicon.svg" type="image/svg+xml">
@@ -55,6 +55,7 @@
 <link rel="alternate" hreflang="he" href="https://sparkfallgames.com/he/">
 <link rel="alternate" hreflang="x-default" href="https://sparkfallgames.com/">
 <script type="application/ld+json">{"@context": "https://schema.org", "@type": "Organization", "name": "Sparkfall Games", "url": "https://sparkfallgames.com", "email": "support@sparkfallgames.com", "description": "Sparkfall Games는 재미있는 게임과 정직하고 프라이버시를 지키는 iOS 도구를 만드는 1인 인디 스튜디오입니다. 계정 없음, 서버 없음, 추적 없음."}</script>
+<link rel="preload" as="image" href="/assets/img/keyart-dark.webp" fetchpriority="high">
 <link rel="stylesheet" href="/assets/site.css">
 <script defer src="/assets/site.js"></script>
 </head>
@@ -74,7 +75,6 @@
 </header>
 <section class="hero">
   <div class="hero-bg" aria-hidden="true"></div>
-  <svg class="hero-mark" viewBox="0 0 24 24" aria-hidden="true"><path fill="#c25a12" d="M12 1.5c.68 4.3 2.1 7 4 8.6 1.5 1.2 3.6 2 6.5 2.4-4.3.68-7 2.1-8.6 4-1.2 1.5-2 3.6-2.4 6.5-.68-4.3-2.1-7-4-8.6-1.5-1.2-3.6-2-6.5-2.4 4.3-.68 7-2.1 8.6-4 1.2-1.5 2-3.6 2.4-6.5z"/></svg>
   <canvas id="sparks" aria-hidden="true"></canvas>
   <div class="wrap hero-inner">
     <span class="hero-kicker">1인 게임 스튜디오</span>
@@ -87,20 +87,28 @@
   </div>
 </section>
 <main class="wrap">
-  <div class="entry-grid">
-    <a class="entry-card entry-games" href="/ko/games/">
-      <div class="entry-media"><div class="entry-shots"><img src="/assets/img/framed-numzen.webp" alt="NumZen" loading="lazy"><img src="/assets/img/framed-gloomfall.webp" alt="Gloomfall" loading="lazy"><img src="/assets/img/framed-mergehold.webp" alt="Mergehold" loading="lazy"></div></div>
-      <h2>게임</h2>
-      <p>미러 대결 합성 배틀, 다크 전술 RPG, 매일 암산 퍼즐 — 네 번째 작품도 무대 뒤에서 준비 중.</p>
-      <span class="entry-cta">게임관 입장 →</span>
-    </a>
-    <a class="entry-card entry-tools" href="/ko/tools/">
-      <div class="entry-media"><div class="entry-shots"><img src="/assets/img/framed-quickcost.webp" alt="QuickCost" loading="lazy"><img src="/assets/img/framed-decibelmeter.webp" alt="Decibel Meter" loading="lazy"><img src="/assets/img/framed-fastzen.webp" alt="FastZen" loading="lazy"></div></div>
-      <h2>도구</h2>
-      <p>가계부, 소음 측정, 단식 타이머, 화면 번역, 짐 목록 — 정직한 가격, 한 번만 결제.</p>
-      <span class="entry-cta">도구실 입장 →</span>
-    </a>
-  </div>
+  <a class="band band-games" href="/ko/games/">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">게임</span>
+        <h2>삼국에서 세계로.</h2>
+        <p>미러 대결 합성 배틀, 다크 전술 RPG, 매일 암산 퍼즐 — 네 번째 작품도 무대 뒤에서 준비 중.</p>
+        <span class="band-more">게임관 입장 →</span>
+      </div>
+      <div class="band-shots"><img src="/assets/img/framed-mergehold.webp" alt="Mergehold" loading="lazy"><img src="/assets/img/framed-gloomfall.webp" alt="Gloomfall" loading="lazy"><img src="/assets/img/framed-numzen.webp" alt="NumZen" loading="lazy"></div>
+    </div>
+  </a>
+  <a class="band band-tools" href="/ko/tools/">
+    <div class="band-inner">
+      <div class="band-copy">
+        <span class="band-label">도구</span>
+        <h2>작고, 정확하고, 정직하게.</h2>
+        <p>가계부, 소음 측정, 단식 타이머, 화면 번역, 짐 목록 — 정직한 가격, 한 번만 결제.</p>
+        <span class="band-more">도구실 입장 →</span>
+      </div>
+      <div class="band-shots"><img src="/assets/img/framed-quickcost.webp" alt="QuickCost" loading="lazy"><img src="/assets/img/framed-decibelmeter.webp" alt="Decibel Meter" loading="lazy"><img src="/assets/img/framed-fastzen.webp" alt="FastZen" loading="lazy"></div>
+    </div>
+  </a>
     <section class="values">
       <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="10.5" width="16" height="9.5" rx="2.5"/><path d="M8 10.5V7a4 4 0 0 1 8 0v3.5"/></svg></div><h3>프라이버시 중심 설계</h3><p>모든 데이터는 기기에 저장됩니다. 서버를 운영하지 않으며 당신의 데이터를 볼 수 없습니다.</p></div>
       <div class="value"><div class="value-ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20.6 13.3 13.3 20.6a2 2 0 0 1-2.8 0L3 13V3h10l7.6 7.6a2 2 0 0 1 0 2.7z"/><circle cx="7.5" cy="7.5" r="1.4"/></svg></div><h3>정직한 가격</h3><p>무료 기능은 영원히 무료입니다. 구독 함정도, 가짜 카운트다운도 없습니다.</p></div>

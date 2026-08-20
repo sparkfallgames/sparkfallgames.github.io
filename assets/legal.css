@@ -1,21 +1,21 @@
 /* Legal / support document pages (privacy.html, support.html).
-   Design system v2 "Ember": warm-ink shell (header/footer) + paper document body.
-   Highly readable and printable. Keeps the legacy class names
+   Design system v4 "Ember Cinema": dark charcoal shell, highly readable,
+   prints light. Keeps the legacy class names
    (header.site, main.page, ...) — page HTML is hand-written and never touched. */
 
 :root {
-  --paper: #faf8f5;
-  --paper-2: #f2eee7;
-  --surface: #ffffff;
-  --text: #221c15;
-  --text-secondary: #6d6357;
-  --border: rgba(34, 28, 21, 0.12);
-  --link: #a34a10;
-  --shell-text: #221c15;
-  --shell-text-2: #6d6357;
-  --shell-border: rgba(34, 28, 21, 0.10);
-  --ember: #e06f28;
-  --gold: #d99a3c;
+  --paper: #0c0a09;
+  --paper-2: #050403;
+  --surface: #151210;
+  --text: #f2ece4;
+  --text-secondary: #b3a89c;
+  --border: rgba(255, 214, 170, 0.14);
+  --link: #ffb469;
+  --shell-text: #f2ece4;
+  --shell-text-2: #b3a89c;
+  --shell-border: rgba(255, 214, 170, 0.10);
+  --ember: #e0664a;
+  --gold: #d9a441;
 }
 
 * { box-sizing: border-box; }
