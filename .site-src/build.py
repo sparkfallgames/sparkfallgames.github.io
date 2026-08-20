@@ -302,6 +302,7 @@ def header_nav(lang, s, page, switcher_on=True):
       <a href="{lang_url(lang, 'games/')}">{t(s, 'nav.games')}</a>
       <a href="{lang_url(lang, 'tools/')}">{t(s, 'nav.tools')}</a>
       <a href="{home}#about">{t(s, 'nav.about')}</a>
+      <a href="/press/">Press</a>
       <a href="mailto:{SITE['contact_email']}">{t(s, 'nav.contact')}</a>
       {sw}
     </nav>
@@ -583,6 +584,7 @@ def render_app(lang, s, app):
     <h2>{t(s, 'common.privacy_heading')}</h2>
     <p>{esc(a['privacy_blurb'])} <a href="/{slug}/privacy.html">{t(s, 'common.privacy_policy')}</a></p>
     {disclaimer}
+    <p style="margin-top:14px;"><a href="/{slug}/support.html">{t(s, 'common.support')}</a> · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a></p>
   </section>
 </main>
 """
