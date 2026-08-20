@@ -775,6 +775,7 @@ def render_press():
         <li><strong>Reddit:</strong> <a href="{esc((SITE.get('social') or {}).get('reddit',''))}">u/SparkfallGames</a></li>
         <li><strong>Product Hunt:</strong> <a href="{esc((SITE.get('social') or {}).get('producthunt',''))}">@sparkfallgames</a></li>
         <li><strong>LinkedIn:</strong> <a href="{esc((SITE.get('social') or {}).get('linkedin',''))}">Sparkfall Games</a></li>
+        <li><strong>Discord:</strong> <a href="{esc((SITE.get('social') or {}).get('discord',''))}">discord.gg/srg5buCFW</a></li>
       </ul>
     </div>
   </div>
