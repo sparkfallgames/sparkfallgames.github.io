@@ -327,7 +327,11 @@ def footer(lang, s):
 def store_button(app, s):
     if app["released"] and app["store_url"]:
         return f'<a class="btn btn-store" href="{app["store_url"]}" rel="noopener">{t(s, "common.download")}</a>'
-    return f'<span class="btn btn-soon">{t(s, "common.coming_soon")}</span>'
+    # 上架前意向收集（零第三方 waitlist）：mailto 报名，标题带 App 名便于建名单
+    notify = (f'mailto:{SITE["contact_email"]}'
+              f'?subject=%5BNotify%5D%20{app["name"].replace(" ", "%20")}')
+    return (f'<span class="btn btn-soon">{t(s, "common.coming_soon")}</span>\n'
+            f'        <a class="btn btn-store" href="{notify}">{t(s, "common.notify_me")}</a>')
 
 
 def phone(app, size=""):

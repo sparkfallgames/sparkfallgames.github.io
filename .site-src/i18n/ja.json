@@ -41,7 +41,8 @@
     "privacy_heading": "プライバシー",
     "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "プライバシーポリシー",
-    "learn_more": "詳しく見る"
+    "learn_more": "詳しく見る",
+    "notify_me": "リリース時にメールで知らせる"
   },
   "categories": {
     "finance": "ファイナンス",

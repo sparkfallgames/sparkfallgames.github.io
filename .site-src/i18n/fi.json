@@ -41,7 +41,8 @@
     "privacy_heading": "Tietosuoja",
     "footer_rights": "© {year} Sparkfall Games",
     "footer_privacy": "Tietosuojakäytännöt",
-    "learn_more": "Lue lisää"
+    "learn_more": "Lue lisää",
+    "notify_me": "Ilmoita minulle sähköpostitse julkaisusta"
   },
   "categories": {
     "finance": "Talous",
