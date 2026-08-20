@@ -806,6 +806,119 @@ img { max-width: 100%; }
 
 .foot p { margin: 0; }
 
+.foot-social {
+  margin-top: 10px !important;
+  font-size: 0.9rem;
+}
+
+.foot-social a { font-weight: 600; }
+
+/* ---------- Follow / social hub ---------- */
+
+.social-page {
+  padding-top: 72px;
+  padding-bottom: 72px;
+  max-width: 880px;
+}
+
+.social-hero {
+  margin-bottom: 36px;
+}
+
+.social-kicker {
+  margin: 0 0 10px;
+  font-size: 0.8rem;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--accent);
+  font-weight: 700;
+}
+
+.social-hero h1 {
+  margin: 0 0 12px;
+  font-size: clamp(2rem, 4vw, 2.75rem);
+  letter-spacing: -0.02em;
+  color: var(--text);
+}
+
+.social-hero .lede {
+  margin: 0;
+  max-width: 36rem;
+  color: var(--text-2);
+  font-size: 1.05rem;
+  line-height: 1.55;
+}
+
+.social-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.social-card {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 22px 24px;
+  text-decoration: none;
+  color: inherit;
+  border-radius: 16px;
+  border: 1px solid var(--hair);
+  background:
+    linear-gradient(135deg, rgba(255, 180, 105, 0.07), transparent 42%),
+    var(--bg-elev);
+  transition: border-color 0.2s ease, transform 0.2s ease, background 0.2s ease;
+}
+
+.social-card:hover {
+  border-color: rgba(255, 180, 105, 0.45);
+  transform: translateY(-1px);
+  background:
+    linear-gradient(135deg, rgba(255, 180, 105, 0.12), transparent 50%),
+    var(--bg-elev);
+}
+
+.social-card-copy h3 {
+  margin: 0 0 4px;
+  font-size: 1.2rem;
+  color: var(--text);
+}
+
+.social-card-copy p {
+  margin: 0;
+  color: var(--text-2);
+  font-size: 0.95rem;
+  line-height: 1.45;
+}
+
+.social-card-cta {
+  flex-shrink: 0;
+  font-weight: 700;
+  font-size: 0.92rem;
+  color: var(--accent);
+  white-space: nowrap;
+}
+
+.social-note {
+  margin: 28px 0 0;
+  color: var(--text-3);
+  font-size: 0.9rem;
+}
+
+.social-note a { color: var(--text-2); font-weight: 600; }
+
+.social-note a:hover { color: var(--accent); }
+
+@media (max-width: 640px) {
+  .social-card {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 18px 18px;
+  }
+}
+
 /* ---------- Responsive ---------- */
 
 @media (max-width: 860px) {

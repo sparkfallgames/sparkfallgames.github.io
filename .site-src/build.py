@@ -339,6 +339,7 @@ def header_nav(lang, s, page, switcher_on=True):
       <a href="{lang_url(lang, 'games/')}">{t(s, 'nav.games')}</a>
       <a href="{lang_url(lang, 'tools/')}">{t(s, 'nav.tools')}</a>
       <a href="{home}#about">{t(s, 'nav.about')}</a>
+      <a href="/social/">Follow</a>
       <a href="/press/">Press</a>
       <a href="mailto:{SITE['contact_email']}">{t(s, 'nav.contact')}</a>
       {sw}
@@ -351,10 +352,21 @@ def header_nav(lang, s, page, switcher_on=True):
 def footer(lang, s):
     rights = t(s, "common.footer_rights").replace("{year}", SITE["year"])
     legal = lang_url(lang, "legal/")
+    social = SITE.get("social") or {}
+    # Official brand socials only (Tier1 live). Compact text links — hub for matrix.
+    order = [("x", "X"), ("reddit", "Reddit"), ("producthunt", "Product Hunt"),
+             ("linkedin", "LinkedIn")]
+    social_bits = " · ".join(
+        f'<a href="{esc(social[k])}" rel="me noopener">{label}</a>'
+        for k, label in order if social.get(k))
+    social_line = (
+        f'\n    <p class="foot-social"><a href="/social/">Follow us</a>'
+        f'{(" · " + social_bits) if social_bits else ""}</p>'
+    )
     return f"""<footer class="foot">
   <div class="wrap">
     <div class="foot-brand">{SPARK_MARK}{SITE['brand']}</div>
-    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a> · <a href="/press/">Press Kit</a></p>
+    <p>{rights} · <a href="mailto:{SITE['contact_email']}">{SITE['contact_email']}</a> · <a href="{legal}">{t(s, 'common.footer_privacy')}</a> · <a href="/press/">Press Kit</a></p>{social_line}
   </div>
 </footer>
 </body>
@@ -712,6 +724,7 @@ def render_press():
   </div>
   <div class="cta-row" style="margin-bottom:40px;">
     <a class="btn btn-primary" href="/press/sparkfall-presskit.zip" download>Download all assets (ZIP, 5.5 MB)</a>
+    <a class="btn" href="/social/">Follow us</a>
     <a class="btn" href="mailto:{SITE['contact_email']}?subject=%5BPress%5D">Press contact</a>
   </div>
   <div class="studio-cols" style="margin-bottom:44px;">
@@ -734,6 +747,10 @@ def render_press():
         <li><strong>Privacy:</strong> no ads, no tracking, no accounts</li>
         <li><strong>Web:</strong> sparkfallgames.com</li>
         <li><strong>Contact:</strong> {SITE['contact_email']}</li>
+        <li><strong>X:</strong> <a href="{esc((SITE.get('social') or {}).get('x',''))}">@SparkfallGames</a></li>
+        <li><strong>Reddit:</strong> <a href="{esc((SITE.get('social') or {}).get('reddit',''))}">u/SparkfallGames</a></li>
+        <li><strong>Product Hunt:</strong> <a href="{esc((SITE.get('social') or {}).get('producthunt',''))}">@sparkfallgames</a></li>
+        <li><strong>LinkedIn:</strong> <a href="{esc((SITE.get('social') or {}).get('linkedin',''))}">Sparkfall Games</a></li>
       </ul>
     </div>
   </div>
@@ -750,6 +767,61 @@ def render_press():
 """
     html += footer(en, s)
     out = ROOT / "press" / "index.html"
+    out.parent.mkdir(parents=True, exist_ok=True)
+    out.write_text(html)
+
+
+def render_social():
+    """Follow hub — English-only like Press. Big one-tap cards, live platforms only."""
+    en = next(l for l in LANGS if l["code"] == "en")
+    s = json.loads((SRC / "i18n" / "en.json").read_text())
+    canonical = f"{SITE['base_url']}/social/"
+    social = SITE.get("social") or {}
+    # label, blurb, cta — only emitted when URL present (Tier1 live).
+    catalog = [
+        ("x", "X", "Dev logs, release notes, and short clips.", "Follow on X"),
+        ("reddit", "Reddit", "Niche threads and honest product talk.", "Follow on Reddit"),
+        ("producthunt", "Product Hunt", "Launch days and maker updates.", "Follow on Product Hunt"),
+        ("linkedin", "LinkedIn", "Studio notes for press and partners.", "Follow on LinkedIn"),
+        ("discord", "Discord", "Announcements and community chat.", "Join Discord"),
+        ("instagram", "Instagram", "Visual highlights and Reels.", "Follow on Instagram"),
+        ("youtube", "YouTube", "Longer demos and Shorts.", "Subscribe on YouTube"),
+        ("tiktok", "TikTok", "Short gameplay and tool demos.", "Follow on TikTok"),
+    ]
+    cards = []
+    for key, name, blurb, cta in catalog:
+        url = social.get(key)
+        if not url:
+            continue
+        cards.append(f"""    <a class="social-card" href="{esc(url)}" rel="me noopener" target="_blank">
+      <div class="social-card-copy">
+        <h3>{esc(name)}</h3>
+        <p>{esc(blurb)}</p>
+      </div>
+      <span class="social-card-cta">{esc(cta)} →</span>
+    </a>""")
+    grid = "\n".join(cards) if cards else (
+        '    <p class="lede">Social links coming soon.</p>')
+
+    html = head(en, s, f"Follow — {SITE['brand']}",
+                "Follow Sparkfall Games on X, Reddit, Product Hunt, LinkedIn, and more. "
+                "No ads, no tracking — just indie games and honest iOS tools.",
+                "social/", canonical, hreflangs=False)
+    html += header_nav(en, s, "social/", switcher_on=False)
+    html += f"""<main class="wrap social-page">
+  <div class="social-hero">
+    <p class="social-kicker">Sparkfall Games</p>
+    <h1>Follow the studio</h1>
+    <p class="lede">One tap to each official channel. Same brand everywhere — no ads, no tracking.</p>
+  </div>
+  <div class="social-grid">
+{grid}
+  </div>
+  <p class="social-note">Press kit and logos → <a href="/press/">sparkfallgames.com/press</a></p>
+</main>
+"""
+    html += footer(en, s)
+    out = ROOT / "social" / "index.html"
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(html)
 
@@ -791,6 +863,7 @@ def render_sitemap():
         urls.append(f"{SITE['base_url']}/{app['slug']}/privacy.html")
         urls.append(f"{SITE['base_url']}/{app['slug']}/support.html")
     urls.append(f"{SITE['base_url']}/press/")
+    urls.append(f"{SITE['base_url']}/social/")
     body = "\n".join(f"  <url><loc>{u}</loc></url>" for u in urls)
     (ROOT / "sitemap.xml").write_text(
         '<?xml version="1.0" encoding="UTF-8"?>\n'
@@ -816,6 +889,9 @@ def render_llms():
     for app in APPS:
         lines.append(f"- [{app['name']} support & FAQ]"
                      f"({SITE['base_url']}/{app['slug']}/support.html)")
+    lines += ["", "## Studio",
+              f"- [Follow us]({SITE['base_url']}/social/)",
+              f"- [Press kit]({SITE['base_url']}/press/)"]
     (ROOT / "llms.txt").write_text("\n".join(lines) + "\n")
 
 
@@ -834,6 +910,7 @@ def main():
             render_app(lang, s, app)
             count += 1
     render_press()
+    render_social()
     render_404()
     render_sitemap()
     render_llms()

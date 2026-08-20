@@ -3,7 +3,13 @@
     "brand": "Sparkfall Games",
     "base_url": "https://sparkfallgames.com",
     "contact_email": "support@sparkfallgames.com",
-    "year": "2026"
+    "year": "2026",
+    "social": {
+      "x": "https://x.com/SparkfallGames",
+      "reddit": "https://www.reddit.com/user/SparkfallGames/",
+      "producthunt": "https://www.producthunt.com/@sparkfallgames",
+      "linkedin": "https://www.linkedin.com/in/sparkfall-games-85876642b/"
+    }
   },
   "apps": [
     {
