@@ -290,8 +290,11 @@ def app_structured_data(lang, s, app, canonical):
     return "\n" + jsonld(software) + "\n" + jsonld(crumbs)
 
 
-def header_nav(lang, s, page):
+def header_nav(lang, s, page, switcher_on=True):
+    """switcher_on=False 用于单语页面（如 /press/）——全语言切换器会指向不存在的
+    /<lang>/<page>/ 造成 404（2026-08-20 实锤）。"""
     home = lang_url(lang, "")
+    sw = switcher(lang, page) if switcher_on else ""
     return f"""<header class="nav">
   <div class="wrap nav-inner">
     <a class="brand" href="{home}">{SPARK_MARK}{SITE['brand']}</a>
@@ -300,7 +303,7 @@ def header_nav(lang, s, page):
       <a href="{lang_url(lang, 'tools/')}">{t(s, 'nav.tools')}</a>
       <a href="{home}#about">{t(s, 'nav.about')}</a>
       <a href="mailto:{SITE['contact_email']}">{t(s, 'nav.contact')}</a>
-      {switcher(lang, page)}
+      {sw}
     </nav>
   </div>
 </header>
@@ -646,7 +649,7 @@ def render_press():
                 "high-resolution screenshots. One-person indie studio making private, "
                 "honest iOS games and tools.",
                 "press/", canonical, hreflangs=False)
-    html += header_nav(en, s, "press/")
+    html += header_nav(en, s, "press/", switcher_on=False)
     html += f"""<main class="wrap" style="padding-top:64px;">
   <div class="sec-head">
     <h2>Press Kit</h2>
